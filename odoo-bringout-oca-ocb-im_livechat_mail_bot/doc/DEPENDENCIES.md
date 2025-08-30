@@ -2,5 +2,5 @@
 
 This addon depends on:
 
-- [mail_bot](https://github.com/bringout/oca-ocb-core/tree/b8a76bf74d4ef2767aa510ddf3515d4c8c9b941d/odoo-bringout-oca-ocb-mail_bot)
-- [im_livechat](https://github.com/bringout/oca-ocb-mail/tree/ab2c4369b062be9addbecff7b1f2cac76da18371/odoo-bringout-oca-ocb-im_livechat)
+- [mail_bot](https://github.com/bringout/oca-ocb-core/tree/3269462e6a0442fbf5ae30a27b3c18135ac733b9/odoo-bringout-oca-ocb-mail_bot)
+- [im_livechat](https://github.com/bringout/oca-ocb-mail/tree/534b2ac35be56816fb1c12f4e180d4a8b19d4981/odoo-bringout-oca-ocb-im_livechat)
