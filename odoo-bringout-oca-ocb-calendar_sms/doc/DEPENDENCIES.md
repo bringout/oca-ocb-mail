@@ -2,5 +2,5 @@
 
 This addon depends on:
 
-- [calendar](../../odoo-bringout-oca-ocb-calendar)
-- [sms](../../odoo-bringout-oca-ocb-sms)
+- [calendar](../../../../../oca-ocb-technical/odoo-bringout-oca-ocb-calendar)
+- [sms](../../../../odoo-bringout-oca-ocb-sms)
