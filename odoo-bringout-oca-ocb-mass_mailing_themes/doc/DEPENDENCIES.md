@@ -2,4 +2,4 @@
 
 This addon depends on:
 
-- [mass_mailing](https://github.com/bringout/oca-ocb-mail/tree/4ece4b53301be495feccc3ec0a5f37b61ab120db/odoo-bringout-oca-ocb-mass_mailing)
+- [mass_mailing](https://github.com/bringout/oca-ocb-mail/tree/23498205c67330c50a91031576e33fdf36f2beac/odoo-bringout-oca-ocb-mass_mailing)

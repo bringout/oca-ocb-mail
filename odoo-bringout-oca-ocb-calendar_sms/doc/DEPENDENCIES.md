@@ -2,5 +2,5 @@
 
 This addon depends on:
 
-- [calendar](https://github.com/bringout/oca-ocb-technical/tree/88371c78cad15e33295a8d1fee0e733653eb4213/odoo-bringout-oca-ocb-calendar)
-- [sms](https://github.com/bringout/oca-ocb-mail/tree/4ece4b53301be495feccc3ec0a5f37b61ab120db/odoo-bringout-oca-ocb-sms)
+- [calendar](https://github.com/bringout/oca-ocb-technical/tree/c402a40a06d0be2fb22b984c2e7c0bd673fa7f80/odoo-bringout-oca-ocb-calendar)
+- [sms](https://github.com/bringout/oca-ocb-mail/tree/23498205c67330c50a91031576e33fdf36f2beac/odoo-bringout-oca-ocb-sms)
