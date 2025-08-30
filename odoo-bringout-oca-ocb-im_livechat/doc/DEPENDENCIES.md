@@ -2,7 +2,7 @@
 
 This addon depends on:
 
-- [mail](https://github.com/bringout/oca-ocb-core)
-- [rating](https://github.com/bringout/oca-ocb-core)
-- [digest](https://github.com/bringout/oca-ocb-core)
-- [utm](https://github.com/bringout/oca-ocb-core)
+- [mail](https://github.com/bringout/oca-ocb-core/tree/b3e6fb998e53b9eb1bc9669d992017616c2bd7b3/odoo-bringout-oca-ocb-mail)
+- [rating](https://github.com/bringout/oca-ocb-core/tree/b3e6fb998e53b9eb1bc9669d992017616c2bd7b3/odoo-bringout-oca-ocb-rating)
+- [digest](https://github.com/bringout/oca-ocb-core/tree/b3e6fb998e53b9eb1bc9669d992017616c2bd7b3/odoo-bringout-oca-ocb-digest)
+- [utm](https://github.com/bringout/oca-ocb-core/tree/b3e6fb998e53b9eb1bc9669d992017616c2bd7b3/odoo-bringout-oca-ocb-utm)
