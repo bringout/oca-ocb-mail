@@ -2,6 +2,6 @@
 
 This addon depends on:
 
-- [portal](../../../../../oca-ocb-website/odoo-bringout-oca-ocb-portal)
-- [mass_mailing](../../../../odoo-bringout-oca-ocb-mass_mailing)
-- [sms](../../../../odoo-bringout-oca-ocb-sms)
+- [portal](https://github.com/bringout/oca-ocb-website)
+- [mass_mailing](https://github.com/bringout/oca-ocb-mail)
+- [sms](https://github.com/bringout/oca-ocb-mail)

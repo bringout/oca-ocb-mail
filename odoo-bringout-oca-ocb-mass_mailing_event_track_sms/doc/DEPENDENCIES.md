@@ -2,7 +2,7 @@
 
 This addon depends on:
 
-- [mass_mailing](../../../../odoo-bringout-oca-ocb-mass_mailing)
-- [mass_mailing_sms](../../../../odoo-bringout-oca-ocb-mass_mailing_sms)
-- [sms](../../../../odoo-bringout-oca-ocb-sms)
-- [website_event_track](../../../../../oca-ocb-website/odoo-bringout-oca-ocb-website_event_track)
+- [mass_mailing](https://github.com/bringout/oca-ocb-mail)
+- [mass_mailing_sms](https://github.com/bringout/oca-ocb-mail)
+- [sms](https://github.com/bringout/oca-ocb-mail)
+- [website_event_track](https://github.com/bringout/oca-ocb-website)

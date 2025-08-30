@@ -2,5 +2,5 @@
 
 This addon depends on:
 
-- [project](../../../../../oca-ocb-project/odoo-bringout-oca-ocb-project)
-- [sms](../../../../odoo-bringout-oca-ocb-sms)
+- [project](https://github.com/bringout/oca-ocb-project)
+- [sms](https://github.com/bringout/oca-ocb-mail)
