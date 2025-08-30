@@ -2,7 +2,7 @@
 
 This addon depends on:
 
-- [mail](https://github.com/bringout/oca-ocb-core/tree/11a704b400b8bf0763643e267bf123858a85c9e6/odoo-bringout-oca-ocb-mail)
-- [rating](https://github.com/bringout/oca-ocb-core/tree/11a704b400b8bf0763643e267bf123858a85c9e6/odoo-bringout-oca-ocb-rating)
-- [digest](https://github.com/bringout/oca-ocb-core/tree/11a704b400b8bf0763643e267bf123858a85c9e6/odoo-bringout-oca-ocb-digest)
-- [utm](https://github.com/bringout/oca-ocb-core/tree/11a704b400b8bf0763643e267bf123858a85c9e6/odoo-bringout-oca-ocb-utm)
+- [mail](https://github.com/bringout/oca-ocb-core/tree/b8a76bf74d4ef2767aa510ddf3515d4c8c9b941d/odoo-bringout-oca-ocb-mail)
+- [rating](https://github.com/bringout/oca-ocb-core/tree/b8a76bf74d4ef2767aa510ddf3515d4c8c9b941d/odoo-bringout-oca-ocb-rating)
+- [digest](https://github.com/bringout/oca-ocb-core/tree/b8a76bf74d4ef2767aa510ddf3515d4c8c9b941d/odoo-bringout-oca-ocb-digest)
+- [utm](https://github.com/bringout/oca-ocb-core/tree/b8a76bf74d4ef2767aa510ddf3515d4c8c9b941d/odoo-bringout-oca-ocb-utm)
