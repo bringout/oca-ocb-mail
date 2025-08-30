@@ -2,5 +2,5 @@
 
 This addon depends on:
 
-- [crm](https://github.com/bringout/oca-ocb-crm/tree/f57c024d38b5558f0e9ad32b1e05486b4c39cc36/odoo-bringout-oca-ocb-crm)
-- [mass_mailing](https://github.com/bringout/oca-ocb-mail/tree/cf28d72fa447cbe72e9004691397255796aaa651/odoo-bringout-oca-ocb-mass_mailing)
+- [crm](https://github.com/bringout/oca-ocb-crm/tree/e1a65339b7c7a28040a72ff2de3a7891f54e21c9/odoo-bringout-oca-ocb-crm)
+- [mass_mailing](https://github.com/bringout/oca-ocb-mail/tree/dba59fd2db10fc6a6fa1b0d807bf3edad793f7c3/odoo-bringout-oca-ocb-mass_mailing)
