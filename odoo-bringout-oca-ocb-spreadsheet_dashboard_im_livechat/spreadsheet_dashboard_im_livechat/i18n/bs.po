@@ -15,162 +15,161 @@ msgstr ""
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: \n"
 
+# taken from hr.po
 #. module: spreadsheet_dashboard_im_livechat
 #. odoo-javascript
-#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json
 #, python-format
 msgid "Average Rating"
 msgstr "Prosječna ocjena"
 
 #. module: spreadsheet_dashboard_im_livechat
 #. odoo-javascript
-#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json
 #, python-format
 msgid "Avg. Session Duration"
 msgstr "Prosječno trajanje sesije"
 
 #. module: spreadsheet_dashboard_im_livechat
 #. odoo-javascript
-#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json
 #, python-format
 msgid "Avg. Time to Answer"
 msgstr "Prosječno vrijeme odgovora"
 
 #. module: spreadsheet_dashboard_im_livechat
 #. odoo-javascript
-#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json
 #, python-format
 msgid "Avg. session duration"
 msgstr "Prosječno trajanje sesije"
 
 #. module: spreadsheet_dashboard_im_livechat
 #. odoo-javascript
-#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json
 #, python-format
 msgid "Avg. time to answer"
 msgstr "Prosječno vrijeme odgovora"
 
+# taken from hr.po
 #. module: spreadsheet_dashboard_im_livechat
 #. odoo-javascript
-#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
-#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json
 #, python-format
 msgid "Current"
 msgstr "Trenutno"
 
 #. module: spreadsheet_dashboard_im_livechat
 #. odoo-javascript
-#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json
 #, python-format
 msgid "Daily Sessions"
 msgstr "Dnevne sesije"
 
 #. module: spreadsheet_dashboard_im_livechat
 #. odoo-javascript
-#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json
 #, python-format
 msgid "KPI"
 msgstr "KPI"
 
 #. module: spreadsheet_dashboard_im_livechat
 #. odoo-javascript
-#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json
 #, python-format
 msgid "Livechat Support Statistics by Operator"
 msgstr "Statistike podrške uživo po operateru"
 
 #. module: spreadsheet_dashboard_im_livechat
 #. odoo-javascript
-#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
-#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json
 #, python-format
 msgid "Operator"
-msgstr "Operator"
+msgstr "Operater"
 
 #. module: spreadsheet_dashboard_im_livechat
 #. odoo-javascript
-#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json
 #, python-format
 msgid "Period"
 msgstr "Period"
 
+# taken from hr.po
 #. module: spreadsheet_dashboard_im_livechat
 #. odoo-javascript
-#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
-#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json
 #, python-format
 msgid "Previous"
 msgstr "Prethodni"
 
+# taken from hr.po
 #. module: spreadsheet_dashboard_im_livechat
 #. odoo-javascript
-#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json
 #, python-format
 msgid "Rating"
 msgstr "Ocjena"
 
+# taken from hr.po
 #. module: spreadsheet_dashboard_im_livechat
 #. odoo-javascript
-#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
-#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
-#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json
 #, python-format
 msgid "Sessions"
 msgstr "Smjene"
 
 #. module: spreadsheet_dashboard_im_livechat
 #. odoo-javascript
-#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json
 #, python-format
 msgid "Sessions by Operator"
 msgstr "Sesije po operateru"
 
 #. module: spreadsheet_dashboard_im_livechat
 #. odoo-javascript
-#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json
 #, python-format
 msgid "Top Operators"
 msgstr "Najbolji operateri"
 
 #. module: spreadsheet_dashboard_im_livechat
 #. odoo-javascript
-#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
-#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json
 #, python-format
 msgid "last period"
 msgstr "prošli period"
 
 #. module: spreadsheet_dashboard_im_livechat
 #. odoo-javascript
-#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json
 #, python-format
 msgid "sessions count - current"
 msgstr "broj sesija - trenutni"
 
 #. module: spreadsheet_dashboard_im_livechat
 #. odoo-javascript
-#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json
 #, python-format
 msgid "sessions count - previous"
 msgstr "broj sesija - prethodni"
 
 #. module: spreadsheet_dashboard_im_livechat
 #. odoo-javascript
-#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json
 #, python-format
 msgid "since last period"
 msgstr "od prošlog perioda"
 
 #. module: spreadsheet_dashboard_im_livechat
 #. odoo-javascript
-#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json
 #, python-format
 msgid "stats 2 - current"
 msgstr "statistike 2 - trenutne"
 
 #. module: spreadsheet_dashboard_im_livechat
 #. odoo-javascript
-#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json
 #, python-format
 msgid "stats 2 - previous"
 msgstr "statistike 2 - prethodne"

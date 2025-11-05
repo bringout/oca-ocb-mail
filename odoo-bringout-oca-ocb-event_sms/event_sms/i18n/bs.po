@@ -20,6 +20,7 @@ msgstr ""
 msgid "Event Automated Mailing"
 msgstr "Automatizovano slanje pošte događaja"
 
+# taken from hr.po
 #. module: event_sms
 #: model:ir.model,name:event_sms.model_event_registration
 msgid "Event Registration"
@@ -30,6 +31,7 @@ msgstr "Organizacija događaja"
 msgid "Event: Registration"
 msgstr "Događaj: Registracija"
 
+# taken from hr.po
 #. module: event_sms
 #: model:sms.template,name:event_sms.sms_template_data_event_reminder
 msgid "Event: Reminder"
@@ -46,6 +48,8 @@ msgid ""
 "Ready for \"{{ object.event_id.name }}\" {{ object.get_date_range_str(object.partner_id.lang) }}?\n"
 "{{ 'It starts at %s' % format_time(time=object.event_begin_date, tz=object.event_id.date_tz, time_format='short', lang_code=object.partner_id.lang) + (', at %s' % object.event_id.address_inline if object.event_id.address_inline else '') + '.\\nSee you there!' if object.event_id.address_inline or 'website_published' not in object.event_id._fields else 'Join us on %s/event/%i !' % (object.get_base_url(), object.event_id.id) }}"
 msgstr ""
+"Spremni za \"{{ object.event_id.name }}\" {{ object.get_date_range_str(object.partner_id.lang) }}?\n"
+"{{ 'Počinje u %s' % format_time(time=object.event_begin_date, tz=object.event_id.date_tz, time_format='short', lang_code=object.partner_id.lang) + (', na %s' % object.event_id.address_inline if object.event_id.address_inline else '') + '.\\nVidimo se tamo!' if object.event_id.address_inline or 'website_published' not in object.event_id._fields else 'Pridružite nam se na %s/event/%i !' % (object.get_base_url(), object.event_id.id) }}"
 
 #. module: event_sms
 #: model:ir.model,name:event_sms.model_event_mail_registration
@@ -54,7 +58,6 @@ msgstr "Planer pošte registracije"
 
 #. module: event_sms
 #: model:ir.model.fields.selection,name:event_sms.selection__event_mail__notification_type__sms
-#: model:ir.model.fields.selection,name:event_sms.selection__event_type_mail__notification_type__sms
 msgid "SMS"
 msgstr "SMS"
 
@@ -63,9 +66,9 @@ msgstr "SMS"
 msgid "SMS Templates"
 msgstr "SMS predlošci"
 
+# taken from hr.po
 #. module: event_sms
 #: model:ir.model.fields,field_description:event_sms.field_event_mail__notification_type
-#: model:ir.model.fields,field_description:event_sms.field_event_type_mail__notification_type
 msgid "Send"
 msgstr "Pošalji"
 
@@ -76,3 +79,6 @@ msgid ""
 "user.env.company.name }}: We are happy to confirm your registration for the "
 "{{ object.event_id.name }} event."
 msgstr ""
+"{{ object.event_id.organizer_id.name or object.event_id.company_id.name or "
+"user.env.company.name }}: Drago nam je da potvrdimo vašu registraciju za "
+"događaj {{ object.event_id.name }}."

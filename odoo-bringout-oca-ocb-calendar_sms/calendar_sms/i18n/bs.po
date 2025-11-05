@@ -15,6 +15,7 @@ msgstr ""
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: \n"
 
+# taken from hr.po
 #. module: calendar_sms
 #: model:ir.model,name:calendar_sms.model_calendar_event
 msgid "Calendar Event"
@@ -25,11 +26,13 @@ msgstr "Događaj na kalendaru"
 msgid "Calendar Event: Reminder"
 msgstr "Kalendarski događaj: Podsjetnik"
 
+# taken from hr.po
 #. module: calendar_sms
 #: model:ir.model,name:calendar_sms.model_calendar_alarm
 msgid "Event Alarm"
 msgstr "Podsjetnik događaja"
 
+# taken from hr.po
 #. module: calendar_sms
 #: model:ir.model,name:calendar_sms.model_calendar_alarm_manager
 msgid "Event Alarm Manager"
@@ -37,7 +40,7 @@ msgstr "Upravljanje podsjetnicima događaja"
 
 #. module: calendar_sms
 #. odoo-python
-#: code:addons/calendar_sms/models/calendar_event.py:0
+#: code:addons/calendar_sms/models/calendar_event.py
 #, python-format
 msgid "Event reminder: %(name)s, %(time)s."
 msgstr "Podsjetnik za događaj: %(name)s, %(time)s."
@@ -48,34 +51,41 @@ msgid ""
 "Event reminder: {{ object.name }}, {{ "
 "object.get_display_time_tz(object.partner_id.tz) }}"
 msgstr ""
+"Podsjetnik za događaj: {{ object.name }}, {{ "
+"object.get_display_time_tz(object.partner_id.tz) }}"
 
 #. module: calendar_sms
 #: model_terms:ir.ui.view,arch_db:calendar_sms.view_calendar_event_form_inherited
 msgid "SMS"
 msgstr "SMS"
 
+# taken from hr.po
 #. module: calendar_sms
 #: model:ir.model.fields,field_description:calendar_sms.field_calendar_alarm__sms_template_id
 msgid "SMS Template"
 msgstr "Predložak SMS poruke"
 
+# taken from hr.po
 #. module: calendar_sms
 #: model:ir.model.fields.selection,name:calendar_sms.selection__calendar_alarm__alarm_type__sms
 msgid "SMS Text Message"
 msgstr "SMS poruka"
 
+# taken from hr.po
 #. module: calendar_sms
 #: model_terms:ir.ui.view,arch_db:calendar_sms.view_calendar_event_tree_inherited
 msgid "Send SMS"
 msgstr "Pošalji SMS"
 
+# taken from hr.po
 #. module: calendar_sms
 #. odoo-python
-#: code:addons/calendar_sms/models/calendar_event.py:0
+#: code:addons/calendar_sms/models/calendar_event.py
 #, python-format
 msgid "Send SMS Text Message"
 msgstr "Podsetnik za događaj: %s na %s."
 
+# taken from hr.po
 #. module: calendar_sms
 #: model_terms:ir.ui.view,arch_db:calendar_sms.view_calendar_event_form_inherited
 msgid "Send SMS to attendees"
@@ -86,13 +96,15 @@ msgstr "Pošalji SMS svim polaznicima"
 msgid "Template used to render SMS reminder content."
 msgstr "Predložak koji se koristi za renderiranje sadržaja SMS podsjetnika."
 
+# taken from hr.po
 #. module: calendar_sms
 #. odoo-python
-#: code:addons/calendar_sms/models/calendar_event.py:0
+#: code:addons/calendar_sms/models/calendar_event.py
 #, python-format
 msgid "There are no attendees on these events"
 msgstr "SMS Tekst Poruka reminder sent !"
 
+# taken from hr.po
 #. module: calendar_sms
 #: model:ir.model.fields,field_description:calendar_sms.field_calendar_alarm__alarm_type
 msgid "Type"

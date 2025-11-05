@@ -21,6 +21,8 @@ msgid ""
 "If set, an SMS Text Message will be automatically sent to the customer when "
 "the project reaches this stage."
 msgstr ""
+"Ako je postavljena, SMS tekstualna poruka će biti automatski poslana "
+"korisniku kada projekat dosegne ovu fazu."
 
 #. module: project_sms
 #: model:ir.model.fields,help:project_sms.field_project_task_type__sms_template_id
@@ -28,7 +30,10 @@ msgid ""
 "If set, an SMS Text Message will be automatically sent to the customer when "
 "the task reaches this stage."
 msgstr ""
+"Ako je postavljena, SMS tekstualna poruka će biti automatski poslana "
+"korisniku kada zadatak dosegne ovu fazu."
 
+# taken from hr.po
 #. module: project_sms
 #: model:ir.model,name:project_sms.model_project_project
 msgid "Project"
@@ -39,23 +44,25 @@ msgstr "Projekt"
 msgid "Project Stage"
 msgstr "Faza projekta"
 
+# taken from hr.po
 #. module: project_sms
 #: model:ir.model.fields,field_description:project_sms.field_project_project_stage__sms_template_id
-#: model:ir.model.fields,field_description:project_sms.field_project_task_type__sms_template_id
 msgid "SMS Template"
 msgstr "Predložak SMS poruke"
 
+# taken from hr.po
 #. module: project_sms
 #: model:ir.actions.act_window,name:project_sms.project_project_act_window_sms_composer
-#: model:ir.actions.act_window,name:project_sms.project_task_act_window_sms_composer
 msgid "Send SMS Text Message"
 msgstr "Pošalji SMS poruku"
 
+# taken from hr.po
 #. module: project_sms
 #: model:ir.model,name:project_sms.model_project_task
 msgid "Task"
 msgstr "Zadatak"
 
+# taken from hr.po
 #. module: project_sms
 #: model:ir.model,name:project_sms.model_project_task_type
 msgid "Task Stage"

@@ -15,6 +15,7 @@ msgstr ""
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: \n"
 
+# taken from hr.po
 #. module: mass_mailing_crm_sms
 #: model:ir.model.fields.selection,name:mass_mailing_crm_sms.selection__utm_campaign__ab_testing_sms_winner_selection__crm_lead_count
 msgid "Leads"
@@ -25,6 +26,7 @@ msgstr "Potencijali"
 msgid "SMS Winner Selection"
 msgstr "Odabir pobjednika SMS-a"
 
+# taken from hr.po
 #. module: mass_mailing_crm_sms
 #: model:ir.model,name:mass_mailing_crm_sms.model_utm_campaign
 msgid "UTM Campaign"

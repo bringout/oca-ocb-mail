@@ -15,45 +15,53 @@ msgstr ""
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: \n"
 
+# taken from hr.po
 #. module: mass_mailing_crm
 #: model_terms:ir.ui.view,arch_db:mass_mailing_crm.mailing_mailing_view_form
 msgid ""
 "<span class=\"o_stat_text\" attrs=\"{'invisible': [('use_leads', '=', False)]}\">Leads</span>\n"
 "                        <span class=\"o_stat_text\" attrs=\"{'invisible': [('use_leads', '=', True)]}\">Opportunities</span>"
 msgstr ""
+"<span class=\"o_stat_text\" attrs=\"{'invisible': [('use_leads', '=', False)]}\">Potencijali</span>\n"
+"                        <span class=\"o_stat_text\" attrs=\"{'invisible': [('use_leads', '=', True)]}\">Prilike</span>"
 
+# taken from hr.po
 #. module: mass_mailing_crm
 #. odoo-python
-#: code:addons/mass_mailing_crm/models/mailing_mailing.py:0
+#: code:addons/mass_mailing_crm/models/mailing_mailing.py
 #, python-format
 msgid "LEADS"
 msgstr "Prvi bilten"
 
+# taken from hr.po
 #. module: mass_mailing_crm
 #: model:ir.model,name:mass_mailing_crm.model_crm_lead
 msgid "Lead/Opportunity"
 msgstr "Potencijal/prilika"
 
+# taken from hr.po
 #. module: mass_mailing_crm
 #. odoo-python
-#: code:addons/mass_mailing_crm/models/mailing_mailing.py:0
-#: model:ir.model.fields.selection,name:mass_mailing_crm.selection__utm_campaign__ab_testing_winner_selection__crm_lead_count
+#: code:addons/mass_mailing_crm/models/mailing_mailing.py
 #, python-format
 msgid "Leads"
 msgstr "Potencijali"
 
+# taken from hr.po
 #. module: mass_mailing_crm
 #. odoo-python
-#: code:addons/mass_mailing_crm/models/mailing_mailing.py:0
+#: code:addons/mass_mailing_crm/models/mailing_mailing.py
 #, python-format
 msgid "Leads Analysis"
 msgstr "Analiza potencijala"
 
+# taken from hr.po
 #. module: mass_mailing_crm
 #: model:ir.model.fields,field_description:mass_mailing_crm.field_mailing_mailing__crm_lead_count
 msgid "Leads/Opportunities Count"
 msgstr "Broj Potencijala/Prilika"
 
+# taken from hr.po
 #. module: mass_mailing_crm
 #: model:ir.model,name:mass_mailing_crm.model_mailing_mailing
 msgid "Mass Mailing"
@@ -61,23 +69,26 @@ msgstr "Masovno slanje pošte"
 
 #. module: mass_mailing_crm
 #. odoo-python
-#: code:addons/mass_mailing_crm/models/mailing_mailing.py:0
+#: code:addons/mass_mailing_crm/models/mailing_mailing.py
 #, python-format
 msgid "No %s yet!"
 msgstr "Još nema %s!"
 
 #. module: mass_mailing_crm
 #. odoo-python
-#: code:addons/mass_mailing_crm/models/mailing_mailing.py:0
+#: code:addons/mass_mailing_crm/models/mailing_mailing.py
 #, python-format
 msgid ""
 "Note that Odoo cannot track replies if they are sent towards email addresses"
 " to this database."
 msgstr ""
+"Imajte na umu da Odoo ne može pratiti odgovore ako se šalju na e-mail adrese"
+" u ovoj bazi podataka."
 
+# taken from hr.po
 #. module: mass_mailing_crm
 #. odoo-python
-#: code:addons/mass_mailing_crm/models/mailing_mailing.py:0
+#: code:addons/mass_mailing_crm/models/mailing_mailing.py
 #, python-format
 msgid "Opportunities"
 msgstr "Prilike"
@@ -87,11 +98,13 @@ msgstr "Prilike"
 msgid "Selection to determine the winner mailing that will be sent."
 msgstr "Broj prilika"
 
+# taken from hr.po
 #. module: mass_mailing_crm
 #: model:ir.model,name:mass_mailing_crm.model_utm_campaign
 msgid "UTM Campaign"
 msgstr "UTM kampanja"
 
+# taken from hr.po
 #. module: mass_mailing_crm
 #: model:ir.model.fields,field_description:mass_mailing_crm.field_mailing_mailing__use_leads
 msgid "Use Leads"

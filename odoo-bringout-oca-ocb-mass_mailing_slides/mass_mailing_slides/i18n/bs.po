@@ -15,20 +15,22 @@ msgstr ""
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: \n"
 
+# taken from hr.po
 #. module: mass_mailing_slides
 #: model_terms:ir.ui.view,arch_db:mass_mailing_slides.slide_channel_view_form
-#: model_terms:ir.ui.view,arch_db:mass_mailing_slides.slide_channel_view_kanban
 msgid "Contact Attendees"
 msgstr "Kontaktiraj prisutne"
 
+# taken from hr.po
 #. module: mass_mailing_slides
 #: model:ir.model,name:mass_mailing_slides.model_slide_channel
 msgid "Course"
 msgstr "Tečaj"
 
+# taken from hr.po
 #. module: mass_mailing_slides
 #. odoo-python
-#: code:addons/mass_mailing_slides/models/slide_channel.py:0
+#: code:addons/mass_mailing_slides/models/slide_channel.py
 #, python-format
 msgid "Mass Mail Course Members"
 msgstr "Masovna poruka sudionicima tečaja"
