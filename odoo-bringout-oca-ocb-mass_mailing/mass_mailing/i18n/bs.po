@@ -728,7 +728,7 @@ msgstr "A/B test opcija nije bila omogućena"
 #. module: mass_mailing
 #: model:ir.model.fields,field_description:mass_mailing.field_mailing_contact__message_needaction
 msgid "Action Needed"
-msgstr "Potrebna akcija"
+msgstr "Potrebna radnja"
 
 # taken from hr.po
 #. module: mass_mailing
@@ -751,7 +751,7 @@ msgstr "Aktivnosti"
 #. module: mass_mailing
 #: model:ir.model.fields,field_description:mass_mailing.field_mailing_mailing__activity_exception_decoration
 msgid "Activity Exception Decoration"
-msgstr "Dekoracija iznimke aktivnosti"
+msgstr "Dekoracija izuzetka aktivnosti"
 
 # taken from hr.po
 #. module: mass_mailing
@@ -1050,7 +1050,7 @@ msgstr "Zakači datoteku"
 #. module: mass_mailing
 #: model:ir.model.fields,field_description:mass_mailing.field_mailing_contact__message_attachment_count
 msgid "Attachment Count"
-msgstr "Broj zakački"
+msgstr "Broj priloga"
 
 # taken from hr.po
 #. module: mass_mailing
@@ -1499,7 +1499,7 @@ msgstr "Poredba"
 #. module: mass_mailing
 #: model:ir.model,name:mass_mailing.model_res_config_settings
 msgid "Config Settings"
-msgstr "Postavke"
+msgstr "Postavke konfiguracije"
 
 # taken from hr.po
 #. module: mass_mailing
@@ -1634,7 +1634,7 @@ msgstr "Kreirao"
 #. module: mass_mailing
 #: model:ir.model.fields,field_description:mass_mailing.field_mailing_contact__create_date
 msgid "Created on"
-msgstr "Kampanja masovnog slanja"
+msgstr "Kreirano"
 
 # taken from hr.po
 #. module: mass_mailing
@@ -2142,13 +2142,13 @@ msgstr "Prilagodi sadržaju"
 #. module: mass_mailing
 #: model:ir.model.fields,field_description:mass_mailing.field_mailing_contact__message_follower_ids
 msgid "Followers"
-msgstr "Pratioci"
+msgstr "Pratitelji"
 
 # taken from hr.po
 #. module: mass_mailing
 #: model:ir.model.fields,field_description:mass_mailing.field_mailing_contact__message_partner_ids
 msgid "Followers (Partners)"
-msgstr "Pratioci (Partneri)"
+msgstr "Pratitelji (partneri)"
 
 # taken from hr.po
 #. module: mass_mailing
@@ -2225,7 +2225,7 @@ msgstr "Velika vrijednost"
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.mailing_contact_view_search
 msgid "Group By"
-msgstr "Grupiši po"
+msgstr "Grupiši po..."
 
 # taken from hr.po
 #. module: mass_mailing
@@ -2353,7 +2353,7 @@ msgstr ""
 #. module: mass_mailing
 #: model:ir.model.fields,help:mass_mailing.field_mailing_contact__message_has_error
 msgid "If checked, some messages have a delivery error."
-msgstr "Lista email adresa odvojenih zarezom."
+msgstr "Ako je označeno neke poruke mogu imati grešku u dostavi."
 
 #. module: mass_mailing
 #: model:ir.model.fields,help:mass_mailing.field_account_invoice_send__mass_mailing_name
@@ -2485,7 +2485,7 @@ msgstr "Je li tijelo poruke prazno"
 #. module: mass_mailing
 #: model:ir.model.fields,field_description:mass_mailing.field_mailing_contact__message_is_follower
 msgid "Is Follower"
-msgstr "Je pratilac"
+msgstr "Pratilac"
 
 #. module: mass_mailing
 #: model:ir.model.fields,field_description:mass_mailing.field_utm_campaign__is_mailing_campaign_activated
@@ -2549,7 +2549,7 @@ msgstr "Posljednja funkcija"
 #. module: mass_mailing
 #: model:ir.model.fields,field_description:mass_mailing.field_mailing_contact____last_update
 msgid "Last Modified on"
-msgstr "Jeste email valjan"
+msgstr "Zadnja izmjena na"
 
 # taken from hr.po
 #. module: mass_mailing
@@ -2561,13 +2561,13 @@ msgstr "Zadnja promjena stanja"
 #. module: mass_mailing
 #: model:ir.model.fields,field_description:mass_mailing.field_mailing_contact__write_uid
 msgid "Last Updated by"
-msgstr "Zadnji ažurirao"
+msgstr "Zadnje ažuriranje izvršio"
 
 # taken from hr.po
 #. module: mass_mailing
 #: model:ir.model.fields,field_description:mass_mailing.field_mailing_contact__write_date
 msgid "Last Updated on"
-msgstr "Zadnje ažurirano"
+msgstr "Zadnje ažuriranje na"
 
 # taken from hr.po
 #. module: mass_mailing
@@ -3012,7 +3012,7 @@ msgstr "ID poruke"
 #. module: mass_mailing
 #: model:ir.model.fields,field_description:mass_mailing.field_mailing_contact__message_ids
 msgid "Messages"
-msgstr "Poruke"
+msgstr "Nepročitane poruke"
 
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.s_company_team
@@ -3146,13 +3146,13 @@ msgstr "Događaj sljedećeg kalendara aktivnosti"
 #. module: mass_mailing
 #: model:ir.model.fields,field_description:mass_mailing.field_mailing_mailing__activity_date_deadline
 msgid "Next Activity Deadline"
-msgstr "Krajnji rok slijedeće aktivnosti"
+msgstr "Krajnji rok za sljedeću aktivnost"
 
 # taken from hr.po
 #. module: mass_mailing
 #: model:ir.model.fields,field_description:mass_mailing.field_mailing_mailing__activity_summary
 msgid "Next Activity Summary"
-msgstr "Sažetak sljedeće aktivnosti"
+msgstr "Pregled sljedeće aktivnosti"
 
 # taken from hr.po
 #. module: mass_mailing
@@ -3793,7 +3793,7 @@ msgstr "Odgovoran"
 #. module: mass_mailing
 #: model:ir.model.fields,field_description:mass_mailing.field_mailing_mailing__activity_user_id
 msgid "Responsible User"
-msgstr "Odgovorna osoba"
+msgstr "Odgovorni korisnik"
 
 # taken from hr.po
 #. module: mass_mailing
@@ -4841,7 +4841,7 @@ msgstr ""
 #. module: mass_mailing
 #: model:ir.model.fields,field_description:mass_mailing.field_mailing_contact__website_message_ids
 msgid "Website Messages"
-msgstr "Poruke sa website-a"
+msgstr "Nepročitane poruke"
 
 # taken from hr.po
 #. module: mass_mailing
