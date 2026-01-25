@@ -103,10 +103,7 @@ msgstr ""
 #: code:addons/mass_mailing/models/ir_mail_server.py
 #, python-format
 msgid "(scheduled for %s)"
-msgstr ""
-"&amp;nbsp;\n"
-"                                        <span class=\"fa fa-credit-card fa-2x text-delta\" role=\"img\" aria-label=\"Naruči\" title=\"Naruči\"/>\n"
-"                                        &amp;nbsp;"
+msgstr "(scheduled for %s)"
 
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.ab_testing_description
@@ -1762,7 +1759,7 @@ msgstr ""
 #: code:addons/mass_mailing/models/mailing.py
 #, python-format
 msgid "Design added to the %s Templates!"
-msgstr "Demo potpis"
+msgstr "Design added to the %s Templates!"
 
 #. module: mass_mailing
 #. odoo-python
@@ -2115,7 +2112,7 @@ msgstr "Naziv filtera"
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.mailing_filter_view_search
 msgid "Filters saved by me"
-msgstr "Povratne informacije od %s: %s"
+msgstr "Filters saved by me"
 
 # taken from hr.po
 #. module: mass_mailing
@@ -4402,9 +4399,7 @@ msgstr "The recipient <strong>subscribed to %s</strong> mailing list(s)"
 #: code:addons/mass_mailing/models/mailing.py
 #, python-format
 msgid "The recipient <strong>unsubscribed from %s</strong> mailing list(s)"
-msgstr ""
-"Open source model Odoo-a nam je omogućio da iskoristimo hiljade programera i\n"
-"                                poslovnih eksperata da izgradi stotine aplikacija za samo nekoliko godina."
+msgstr "The recipient <strong>unsubscribed from %s</strong> mailing list(s)"
 
 #. module: mass_mailing
 #. odoo-python

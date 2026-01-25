@@ -764,7 +764,7 @@ msgstr "Pregled"
 #. module: sms
 #: model_terms:ir.ui.view,arch_db:sms.sms_template_reset_view_form
 msgid "Proceed"
-msgstr "Nedovoljno kredita, nije moguće poslati SMS poruku: %s"
+msgstr "Proceed"
 
 #. module: sms
 #: model_terms:ir.ui.view,arch_db:sms.sms_composer_view_form
@@ -775,13 +775,13 @@ msgstr "Put in queue"
 #. module: sms
 #: model_terms:ir.ui.view,arch_db:sms.mail_resend_message_view_form
 msgid "Reason"
-msgstr "Nedostaje broj mobilnog za %s."
+msgstr "Reason"
 
 # taken from hr.po
 #. module: sms
 #: model_terms:ir.ui.view,arch_db:sms.mail_resend_message_view_form
 msgid "Recipient"
-msgstr "Broj mobilnog nije definisan, nije moguće poslati SMS poruku: %s"
+msgstr "Recipient"
 
 #. module: sms
 #: model:ir.model.fields,field_description:sms.field_sms_resend_recipient__partner_name
@@ -1012,7 +1012,7 @@ msgstr "Pošalji SMS u grupi"
 #. module: sms
 #: model_terms:ir.ui.view,arch_db:sms.sms_composer_view_form
 msgid "Send an SMS"
-msgstr "SMS poruka poslana: %s"
+msgstr "Send an SMS"
 
 #. module: sms
 #: model_terms:ir.ui.view,arch_db:sms.ir_actions_server_view_form

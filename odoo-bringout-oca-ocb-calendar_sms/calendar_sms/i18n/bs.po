@@ -83,7 +83,7 @@ msgstr "Pošalji SMS"
 #: code:addons/calendar_sms/models/calendar_event.py
 #, python-format
 msgid "Send SMS Text Message"
-msgstr "Podsetnik za događaj: %s na %s."
+msgstr "Send SMS Text Message"
 
 # taken from hr.po
 #. module: calendar_sms
