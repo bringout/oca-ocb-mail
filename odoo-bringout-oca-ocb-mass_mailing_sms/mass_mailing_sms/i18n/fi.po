@@ -1,57 +1,41 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-# 	* mass_mailing_sms
-# 
-# Translators:
-# Veikko Väätäjä <veikko.vaataja@gmail.com>, 2022
-# Jussi Lehto <jussi@gulfeo.com>, 2022
-# Sari Mäyrä <sari.mayra@sv-oy.fi>, 2022
-# Kari Lindgren <kari.lindgren@emsystems.fi>, 2022
-# Svante Suominen <svante.suominen@web-veistamo.fi>, 2022
-# Johanna Valkonen <miujohanna@gmail.com>, 2022
-# Miika Nissi <miika.nissi@tawasta.fi>, 2022
-# Jenni Heikkilä <jenni.heikkila@sv-oy.fi>, 2022
-# Pekka Ikonen, 2022
-# Martin Trigaux, 2022
-# Mikko Salmela <salmemik@gmail.com>, 2022
-# Tuomo Aura <tuomo.aura@web-veistamo.fi>, 2022
-# Pekko Tuomisto <pekko.tuomisto@web-veistamo.fi>, 2022
-# Jarmo Kortetjärvi <jarmo.kortetjarvi@gmail.com>, 2023
-# Ossi Mantylahti <ossi.mantylahti@obs-solutions.fi>, 2024
-# 
+# * mass_mailing_sms
+#
+# "Tiffany Chang (tic)" <tic@odoo.com>, 2025.
+# Saara Hakanen <sahak@odoo.com>, 2025, 2026.
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 16.0beta\n"
+"Project-Id-Version: Odoo Server saas~18.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-04 09:24+0000\n"
-"PO-Revision-Date: 2022-09-22 05:53+0000\n"
-"Last-Translator: Ossi Mantylahti <ossi.mantylahti@obs-solutions.fi>, 2024\n"
-"Language-Team: Finnish (https://app.transifex.com/odoo/teams/41243/fi/)\n"
+"POT-Creation-Date: 2026-01-25 18:36+0000\n"
+"PO-Revision-Date: 2026-02-17 17:54+0000\n"
+"Last-Translator: Saara Hakanen <sahak@odoo.com>\n"
+"Language-Team: Finnish <https://translate.odoo.com/projects/odoo-19/"
+"mass_mailing_sms/fi/>\n"
+"Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Language: fi\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.14.3\n"
 
 #. module: mass_mailing_sms
 #. odoo-javascript
 #: code:addons/mass_mailing_sms/static/src/components/sms_widget/fields_sms_widget.js:0
-#, python-format
-msgid " (including link trackers and opt-out link) "
+msgid " (including link trackers and opt-out link)"
 msgstr " (mukaan lukien linkkiseuranta ja opt-out-linkki)"
 
 #. module: mass_mailing_sms
 #. odoo-javascript
 #: code:addons/mass_mailing_sms/static/src/components/sms_widget/fields_sms_widget.js:0
-#, python-format
-msgid " (including link trackers) "
+msgid " (including link trackers)"
 msgstr " (mukaan lukien linkkien seuranta)"
 
 #. module: mass_mailing_sms
 #. odoo-javascript
 #: code:addons/mass_mailing_sms/static/src/components/sms_widget/fields_sms_widget.js:0
-#, python-format
-msgid " (including opt-out link) "
+msgid " (including opt-out link)"
 msgstr " (mukaan lukien opt-out-linkki)"
 
 #. module: mass_mailing_sms
@@ -64,8 +48,8 @@ msgstr ""
 "+33 545 55 55 55"
 
 #. module: mass_mailing_sms
+#. odoo-python
 #: code:addons/mass_mailing_sms/models/mailing_mailing.py:0
-#, python-format
 msgid "24H Stats of %(mailing_type)s \"%(mailing_name)s\""
 msgstr "24h tilastot asiasta %(mailing_type)s \"%(mailing_name)s\""
 
@@ -73,60 +57,68 @@ msgstr "24h tilastot asiasta %(mailing_type)s \"%(mailing_name)s\""
 #: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_list_view_kanban
 msgid ""
 "<br/>\n"
-"                    <span class=\"text-secondary\">\n"
+"                    <span class=\"text-muted\">\n"
 "                        <i class=\"fa fa-phone\"/> Contacts\n"
 "                    </span>"
 msgstr ""
 "<br/>\n"
-"                    <span class=\"text-secondary\">\n"
+"                    <span class=\"text-muted\">\n"
 "                        <i class=\"fa fa-phone\"/> Yhteystiedot\n"
 "                    </span>"
 
 #. module: mass_mailing_sms
 #: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_form_sms
 msgid ""
-"<span name=\"canceled_text_sms\" attrs=\"{'invisible': [('mailing_type', "
-"'!=', 'sms')]}\">SMS Text Message have been canceled and will not be "
-"sent.</span>"
+"<span name=\"canceled_text_sms\" invisible=\"mailing_type != 'sms'\">SMS "
+"Text Message have been cancelled and will not be sent.</span>"
 msgstr ""
-"<span name=\"canceled_text_sms\" attrs=\"{'invisible': [('mailing_type', "
-"'!=', 'sms')]}\">Tekstiviesti on peruutettu eikä sitä lähetetä.</span>"
+"<span name=\"canceled_text_sms\" invisible=\"mailing_type != "
+"'sms'\">Tekstiviesti on peruutettu eikä sitä lähetetä.</span>"
 
 #. module: mass_mailing_sms
 #: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_form_sms
 msgid ""
-"<span name=\"failed_text_sms\" attrs=\"{'invisible': [('mailing_type', '!=',"
-" 'sms')]}\">SMS Text Message could not be sent.</span>"
+"<span name=\"failed_text_sms\" invisible=\"mailing_type != 'sms'\">SMS Text "
+"Messages could not be delivered.</span>"
 msgstr ""
-"<span name=\"failed_text_sms\" attrs=\"{'invisible': [('mailing_type', '!=',"
-" 'sms')]}\">SMS Tekstiviestiä ei voitu lähettää.</span>"
+"<span name=\"failed_text_sms\" invisible=\"mailing_type != "
+"'sms'\">Tekstiviestejä ei voitu toimittaa.</span>"
 
 #. module: mass_mailing_sms
 #: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_form_sms
 msgid ""
-"<span name=\"next_departure_text\" attrs=\"{'invisible': [('mailing_type', "
-"'!=', 'sms')]}\">This SMS marketing is scheduled for </span>"
+"<span name=\"next_departure_text\" invisible=\"mailing_type != 'sms'\">This "
+"SMS marketing is scheduled for </span>"
 msgstr ""
-"<span name=\"next_departure_text\" attrs=\"{'invisible': [('mailing_type', "
-"'!=', 'sms')]}\">Tämä tekstiviestimarkkinointi on ajoitettu </span>"
+"<span name=\"next_departure_text\" invisible=\"mailing_type != 'sms'\">Tämä "
+"tekstiviestimarkkinointi on ajoitettu </span>"
 
 #. module: mass_mailing_sms
 #: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_form_sms
 msgid ""
-"<span name=\"scheduled_text_sms\" attrs=\"{'invisible': [('mailing_type', "
-"'!=', 'sms')]}\">SMS Text Message are in queue and will be sent soon.</span>"
+"<span name=\"process_text_sms\" invisible=\"mailing_type != 'sms'\">SMS Text "
+"Messages are being processed.</span>"
 msgstr ""
-"<span name=\"scheduled_text_sms\" attrs=\"{'invisible': [('mailing_type', "
-"'!=', 'sms')]}\">Tekstiviestit ovat jonossa ja ne lähetetään pian.</span>"
+"<span name=\"process_text_sms\" invisible=\"mailing_type != "
+"'sms'\">Tekstiviestejä käsitellään.</span>"
 
 #. module: mass_mailing_sms
 #: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_form_sms
 msgid ""
-"<span name=\"sent_sms\" attrs=\"{'invisible': [('mailing_type', '!=', "
-"'sms')]}\">SMS Text Message have been sent.</span>"
+"<span name=\"scheduled_text_sms\" invisible=\"mailing_type != 'sms'\">SMS "
+"Text Messages are in queue and will be sent soon.</span>"
 msgstr ""
-"<span name=\"sent_sms\" attrs=\"{'invisible': [('mailing_type', '!=', "
-"'sms')]}\">Tekstiviesti on lähetetty.</span>"
+"<span name=\"scheduled_text_sms\" invisible=\"mailing_type != "
+"'sms'\">Tekstiviestit ovat jonossa ja ne lähetetään pian.</span>"
+
+#. module: mass_mailing_sms
+#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_form_sms
+msgid ""
+"<span name=\"sent_sms\" invisible=\"mailing_type != 'sms'\">SMS Text "
+"Messages have been sent.</span>"
+msgstr ""
+"<span name=\"sent_sms\" invisible=\"mailing_type != 'sms'\">Tekstiviestit on "
+"lähetetty.</span>"
 
 #. module: mass_mailing_sms
 #: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_trace_view_form_sms
@@ -134,31 +126,40 @@ msgid "<span widget=\"statinfo\">Open Recipient</span>"
 msgstr "<span widget=\"statinfo\">Avoin vastaanottaja</span>"
 
 #. module: mass_mailing_sms
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_list_view_kanban
-msgid "<span>Valid SMS Recipients</span>"
-msgstr "<span>Voimassa olevat tekstiviestien vastaanottajat</span>"
+#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_form_sms
+msgid ""
+"<strong>\n"
+"                            It appears you don't have enough IAP credits. "
+"Click here to buy credits.\n"
+"                        </strong>"
+msgstr ""
+"<strong>\n"
+"                            Sinulla ei näytä olevan tarpeeksi IAP-"
+"krediittejä. Klikkaa tästä ostaaksesi krediittejä.\n"
+"                        </strong>"
 
 #. module: mass_mailing_sms
 #: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_form_sms
 msgid ""
 "<strong>\n"
-"                            It appears you don't have enough IAP credits. Click here to buy credits.\n"
+"                            It appears your SMS account is not registered. "
+"Click here to set up your account.\n"
 "                        </strong>"
 msgstr ""
 "<strong>\n"
-"                            Sinulla ei näytä olevan tarpeeksi IAP-krediittejä. Klikkaa tästä ostaaksesi krediittejä.\n"
+"                            Näyttää siltä, että tekstiviestitiliäsi ei ole "
+"rekisteröity. Klikkaa tästä tilin perustamiseksi.\n"
 "                        </strong>"
 
 #. module: mass_mailing_sms
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_form_sms
-msgid ""
-"<strong>\n"
-"                            It appears your SMS account is not registered. Click here to set up your account.\n"
-"                        </strong>"
-msgstr ""
-"<strong>\n"
-"                            Näyttää siltä, että tekstiviestitiliäsi ei ole rekisteröity. Klikkaa tästä tilin perustamiseksi.\n"
-"                        </strong>"
+#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.blacklist_number
+msgid "<strong>Mailing List</strong>"
+msgstr "<strong>Postituslista</strong>"
+
+#. module: mass_mailing_sms
+#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_trace_view_form_sms
+msgid "<strong>This SMS could not be delivered.</strong>"
+msgstr "<strong>Tätä tekstiviestiä ei voitu toimittaa.</strong>"
 
 #. module: mass_mailing_sms
 #: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_trace_view_form_sms
@@ -177,13 +178,14 @@ msgid "A/B Test"
 msgstr "A/B-testi"
 
 #. module: mass_mailing_sms
+#: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_mailing__ab_testing_mailings_sms_count
 #: model:ir.model.fields,field_description:mass_mailing_sms.field_utm_campaign__ab_testing_mailings_sms_count
 msgid "A/B Test Mailings SMS #"
 msgstr "A/B Testi Viestien lähetys SMS #"
 
 #. module: mass_mailing_sms
+#. odoo-python
 #: code:addons/mass_mailing_sms/models/mailing_mailing.py:0
-#, python-format
 msgid "A/B Test: %s"
 msgstr "A/B-testi: %s"
 
@@ -193,9 +195,20 @@ msgid "Action Needed"
 msgstr "Vaatii toimenpiteitä"
 
 #. module: mass_mailing_sms
+#. odoo-python
+#: code:addons/mass_mailing_sms/wizard/mailing_sms_test.py:0
+msgid "An error occurred."
+msgstr "Käsittelyssä tapahtui virhe."
+
+#. module: mass_mailing_sms
 #: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_contact__message_attachment_count
 msgid "Attachment Count"
 msgstr "Liitteiden määrä"
+
+#. module: mass_mailing_sms
+#: model:ir.model.fields.selection,name:mass_mailing_sms.selection__mailing_trace__failure_type__twilio_authentication
+msgid "Authentication Error\""
+msgstr "Todennusvirhe\""
 
 #. module: mass_mailing_sms
 #: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_tree_sms
@@ -210,34 +223,25 @@ msgid "Average of Clicked"
 msgstr "Keskimäärin klikattuja"
 
 #. module: mass_mailing_sms
+#. odoo-python
 #: code:addons/mass_mailing_sms/models/mailing_mailing.py:0
-#, python-format
 msgid "BOUNCED (%i)"
 msgstr "BOUNCED (%i)"
 
 #. module: mass_mailing_sms
-#: model:utm.tag,name:mass_mailing_sms.mailing_tag_0
-msgid "Bioutifoul SMS"
-msgstr "Kaunis SMS"
-
-#. module: mass_mailing_sms
+#. odoo-python
 #: code:addons/mass_mailing_sms/controllers/main.py:0
-#, python-format
 msgid ""
-"Blacklist through SMS Marketing unsubscribe (mailing ID: %s - model: %s)"
+"Blacklist through SMS Marketing unsubscribe (mailing ID: %(mailing_id)s - "
+"model: %(model)s)"
 msgstr ""
 "Mustalle listalle tekstiviestimarkkinoinnin kautta tilauksen peruuttaminen "
-"(postitustunnus: %s - malli: %s)"
+"(postitustunnus: %(mailing_id)s - malli: %(model)s)"
 
 #. module: mass_mailing_sms
 #: model:ir.model.fields.selection,name:mass_mailing_sms.selection__mailing_trace__failure_type__sms_blacklist
 msgid "Blacklisted"
 msgstr "Markkinointikiellossa"
-
-#. module: mass_mailing_sms
-#: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_contact__mobile_blacklisted
-msgid "Blacklisted Phone Is Mobile"
-msgstr "Markkinointikiellossa oleva puhelin on matkapuhelin"
 
 #. module: mass_mailing_sms
 #: model:ir.ui.menu,name:mass_mailing_sms.phone_blacklist_menu
@@ -256,8 +260,8 @@ msgid "Bounced (%)"
 msgstr "Pompanneet (%)"
 
 #. module: mass_mailing_sms
+#. odoo-python
 #: code:addons/mass_mailing_sms/models/mailing_mailing.py:0
-#, python-format
 msgid "CLICKED (%i)"
 msgstr "KLIKATUT (%i)"
 
@@ -272,11 +276,6 @@ msgstr "Kampanja"
 #: model:ir.ui.menu,name:mass_mailing_sms.menu_email_campaigns
 msgid "Campaigns"
 msgstr "Kampanjat"
-
-#. module: mass_mailing_sms
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_sms_test_view_form
-msgid "Cancel"
-msgstr "Peruuta"
 
 #. module: mass_mailing_sms
 #: model:ir.model.fields,help:mass_mailing_sms.field_mailing_sms_test__numbers
@@ -306,6 +305,16 @@ msgstr ""
 #: model:ir.ui.menu,name:mass_mailing_sms.mass_mailing_sms_menu_configuration
 msgid "Configuration"
 msgstr "Asetukset"
+
+#. module: mass_mailing_sms
+#: model:ir.model.fields.selection,name:mass_mailing_sms.selection__mailing_trace__failure_type__sms_country_not_supported
+msgid "Country Not Supported"
+msgstr "Maa ei ole tuettu"
+
+#. module: mass_mailing_sms
+#: model:ir.model.fields.selection,name:mass_mailing_sms.selection__mailing_trace__failure_type__sms_registration_needed
+msgid "Country-specific Registration Required"
+msgstr "Maakohtainen rekisteröinti vaaditaan"
 
 #. module: mass_mailing_sms
 #: model_terms:ir.actions.act_window,help:mass_mailing_sms.mailing_list_action_sms
@@ -339,7 +348,22 @@ msgid "Date"
 msgstr "Päivämäärä"
 
 #. module: mass_mailing_sms
+#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_sms_test_view_form
+msgid "Discard"
+msgstr "Hylkää"
+
+#. module: mass_mailing_sms
+#: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_contact__display_name
+#: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_list__display_name
+#: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_mailing__display_name
 #: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_sms_test__display_name
+#: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_trace__display_name
+#: model:ir.model.fields,field_description:mass_mailing_sms.field_res_users__display_name
+#: model:ir.model.fields,field_description:mass_mailing_sms.field_sms_composer__display_name
+#: model:ir.model.fields,field_description:mass_mailing_sms.field_sms_sms__display_name
+#: model:ir.model.fields,field_description:mass_mailing_sms.field_sms_tracker__display_name
+#: model:ir.model.fields,field_description:mass_mailing_sms.field_utm_campaign__display_name
+#: model:ir.model.fields,field_description:mass_mailing_sms.field_utm_medium__display_name
 msgid "Display Name"
 msgstr "Näyttönimi"
 
@@ -350,8 +374,8 @@ msgid "Duplicate"
 msgstr "Kopioi"
 
 #. module: mass_mailing_sms
+#. odoo-python
 #: code:addons/mass_mailing_sms/models/res_users.py:0
-#, python-format
 msgid "Email Marketing"
 msgstr "Sähköpostimarkkinointi"
 
@@ -359,6 +383,11 @@ msgstr "Sähköpostimarkkinointi"
 #: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_contact_view_search
 msgid "Exclude Blacklisted Phone"
 msgstr "Sulje pois mustalle listalle joutunut puhelin"
+
+#. module: mass_mailing_sms
+#: model:ir.model.fields.selection,name:mass_mailing_sms.selection__mailing_trace__failure_type__sms_expired
+msgid "Expired"
+msgstr "Vanhentunut"
 
 #. module: mass_mailing_sms
 #: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_trace__failure_type
@@ -371,7 +400,7 @@ msgid ""
 "Field used to store sanitized phone number. Helps speeding up searches and "
 "comparisons."
 msgstr ""
-"Kenttä, jota käytetään puhdistetun puhelinnumeron tallentamiseen. Auttaa "
+"Kenttä, jota käytetään tarkistetun puhelinnumeron tallentamiseen. Auttaa "
 "nopeuttamaan hakuja ja vertailuja."
 
 #. module: mass_mailing_sms
@@ -390,7 +419,8 @@ msgid ""
 "For an Email, Subject your Recipients will see in their inbox.\n"
 "                    For an SMS Text Message, internal Title of the Message."
 msgstr ""
-"Sähköpostin aihe, jonka vastaanottajat näkevät saapuneessa postilaatikossaan.\n"
+"Sähköpostin aihe, jonka vastaanottajat näkevät saapuneessa "
+"postilaatikossaan.\n"
 "                    Tekstiviestin osalta viestin sisäinen otsikko."
 
 #. module: mass_mailing_sms
@@ -403,6 +433,11 @@ msgstr ""
 "Tekstiviestissä viestin sisäinen otsikko."
 
 #. module: mass_mailing_sms
+#: model:ir.model.fields.selection,name:mass_mailing_sms.selection__mailing_trace__failure_type__twilio_from_to
+msgid "From / To identic"
+msgstr "Identtinen lähettäjä/vastaanottaja"
+
+#. module: mass_mailing_sms
 #: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_contact__has_message
 msgid "Has Message"
 msgstr "Sisältää viestin"
@@ -413,7 +448,17 @@ msgid "Highest Click Rate"
 msgstr "Korkein klikkausprosentti"
 
 #. module: mass_mailing_sms
+#: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_contact__id
+#: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_list__id
+#: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_mailing__id
 #: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_sms_test__id
+#: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_trace__id
+#: model:ir.model.fields,field_description:mass_mailing_sms.field_res_users__id
+#: model:ir.model.fields,field_description:mass_mailing_sms.field_sms_composer__id
+#: model:ir.model.fields,field_description:mass_mailing_sms.field_sms_sms__id
+#: model:ir.model.fields,field_description:mass_mailing_sms.field_sms_tracker__id
+#: model:ir.model.fields,field_description:mass_mailing_sms.field_utm_campaign__id
+#: model:ir.model.fields,field_description:mass_mailing_sms.field_utm_medium__id
 msgid "ID"
 msgstr "ID"
 
@@ -431,17 +476,16 @@ msgstr "Jos valittu, joitakin viestejä ei ole toimitettu."
 #. module: mass_mailing_sms
 #: model:ir.model.fields,help:mass_mailing_sms.field_mailing_contact__phone_sanitized_blacklisted
 msgid ""
-"If the sanitized phone number is on the blacklist, the contact won't receive"
-" mass mailing sms anymore, from any list"
+"If the sanitized phone number is on the blacklist, the contact won't receive "
+"mass mailing sms anymore, from any list"
 msgstr ""
-"Jos puhdistettu puhelinnumero on mustalla listalla, yhteyshenkilö ei enää "
+"Jos tarkistettu puhelinnumero on mustalla listalla, yhteyshenkilö ei enää "
 "saa massatekstiviestejä miltään listalta"
 
 #. module: mass_mailing_sms
 #: model:ir.model.fields,help:mass_mailing_sms.field_mailing_mailing__sms_force_send
 msgid ""
-"Immediately send the SMS Mailing instead of queuing up. Use at your own "
-"risk."
+"Immediately send the SMS Mailing instead of queuing up. Use at your own risk."
 msgstr ""
 "Lähetä tekstiviestilähetys heti jonottamisen sijaan. Käytä omalla "
 "vastuullasi."
@@ -453,15 +497,9 @@ msgid "Include opt-out link"
 msgstr "Sisällytä opt-out-linkki"
 
 #. module: mass_mailing_sms
-#: model:ir.model.fields,help:mass_mailing_sms.field_mailing_contact__mobile_blacklisted
-msgid ""
-"Indicates if a blacklisted sanitized phone number is a mobile number. Helps "
-"distinguish which number is blacklisted             when there is both a "
-"mobile and phone field in a model."
-msgstr ""
-"Ilmaisee, onko mustalle listalle joutunut puhdistettu puhelinnumero "
-"matkapuhelinnumero. Auttaa erottamaan, mikä numero on mustalla listalla, kun"
-" mallissa on sekä matkapuhelin- että puhelinkenttä."
+#: model:ir.model.fields.selection,name:mass_mailing_sms.selection__mailing_trace__failure_type__twilio_callback
+msgid "Incorrect callback URL"
+msgstr "Virheellinen takaisinsoitto-URL"
 
 #. module: mass_mailing_sms
 #: model:ir.model.fields,help:mass_mailing_sms.field_mailing_contact__phone_blacklisted
@@ -470,7 +508,7 @@ msgid ""
 "distinguish which number is blacklisted             when there is both a "
 "mobile and phone field in a model."
 msgstr ""
-"Ilmaisee, onko mustalle listalle merkitty puhdistettu puhelinnumero "
+"Ilmaisee, onko mustalle listalle merkitty tarkistettu puhelinnumero "
 "puhelinnumero. Auttaa erottamaan, mikä numero on mustalla listalla, kun "
 "mallissa on sekä matkapuhelin- että puhelinkenttä."
 
@@ -490,14 +528,14 @@ msgid "Insufficient credits"
 msgstr "Liian vähän krediittejä"
 
 #. module: mass_mailing_sms
+#: model:ir.model.fields.selection,name:mass_mailing_sms.selection__mailing_trace__failure_type__sms_invalid_destination
+msgid "Invalid Destination"
+msgstr "Virheellinen määränpää"
+
+#. module: mass_mailing_sms
 #: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_contact__message_is_follower
 msgid "Is Follower"
 msgstr "On seuraaja"
-
-#. module: mass_mailing_sms
-#: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_sms_test____last_update
-msgid "Last Modified on"
-msgstr "Viimeksi muokattu"
 
 #. module: mass_mailing_sms
 #: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_sms_test__write_uid
@@ -508,6 +546,11 @@ msgstr "Viimeksi päivittänyt"
 #: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_sms_test__write_date
 msgid "Last Updated on"
 msgstr "Viimeksi päivitetty"
+
+#. module: mass_mailing_sms
+#: model:ir.model,name:mass_mailing_sms.model_sms_tracker
+msgid "Link SMS to mailing/sms tracking models"
+msgstr "Linkitä tekstiviestit postitus-/tekstiviestiseurantamalleihin"
 
 #. module: mass_mailing_sms
 #: model:ir.ui.menu,name:mass_mailing_sms.link_tracker_menu
@@ -550,6 +593,11 @@ msgid "Mailing Statistics"
 msgstr "Postitusstatistiikka"
 
 #. module: mass_mailing_sms
+#: model:ir.model.fields,field_description:mass_mailing_sms.field_sms_tracker__mailing_trace_id
+msgid "Mailing Trace"
+msgstr "Postitusjälki"
+
+#. module: mass_mailing_sms
 #: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_mailing__mailing_type
 msgid "Mailing Type"
 msgstr "Postituksen tyyppi"
@@ -562,11 +610,6 @@ msgid ""
 msgstr ""
 "Postitusyhteystietojen avulla voit erottaa markkinointiyleisösi "
 "yhteystietohakemistostasi."
-
-#. module: mass_mailing_sms
-#: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_contact__message_main_attachment_id
-msgid "Main Attachment"
-msgstr "Pääliitetiedosto"
 
 #. module: mass_mailing_sms
 #: model:ir.model.fields.selection,name:mass_mailing_sms.selection__utm_campaign__ab_testing_sms_winner_selection__manual
@@ -600,6 +643,11 @@ msgid "Messages"
 msgstr "Viestit"
 
 #. module: mass_mailing_sms
+#: model:ir.model.fields.selection,name:mass_mailing_sms.selection__mailing_trace__failure_type__twilio_from_missing
+msgid "Missing From Number"
+msgstr "Lähettäjän numero puuttuu"
+
+#. module: mass_mailing_sms
 #: model:ir.model.fields.selection,name:mass_mailing_sms.selection__mailing_trace__failure_type__sms_number_missing
 msgid "Missing Number"
 msgstr "Puuttuva numero"
@@ -612,7 +660,7 @@ msgstr "Matkapuhelin"
 #. module: mass_mailing_sms
 #: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_search_sms
 msgid "My SMS Marketing"
-msgstr "Oma SMS-markkinointi"
+msgstr "Tekstiviestimarkkinointini"
 
 #. module: mass_mailing_sms
 #: model_terms:ir.actions.act_window,help:mass_mailing_sms.mailing_trace_report_action_sms
@@ -622,23 +670,26 @@ msgstr "Ei vielä tietoja!"
 #. module: mass_mailing_sms
 #: model_terms:ir.actions.act_window,help:mass_mailing_sms.mailing_list_action_sms
 msgid ""
-"No need to import mailing lists, you can send SMS Text Messages to contacts "
-"saved in other Odoo apps."
+"No need to import mailing lists, you can send SMS to contacts saved in other "
+"Odoo apps."
 msgstr ""
 "Postituslistoja ei tarvitse tuoda, vaan voit lähettää tekstiviestejä muihin "
 "Odoo-sovelluksiin tallennettuihin yhteystietoihin."
 
 #. module: mass_mailing_sms
-#: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_trace__sms_number
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.blacklist_main
-msgid "Number"
-msgstr "Numero"
+#: model:ir.model.fields.selection,name:mass_mailing_sms.selection__mailing_trace__failure_type__sms_not_allowed
+msgid "Not Allowed"
+msgstr "Ei Sallittu"
 
 #. module: mass_mailing_sms
-#: code:addons/mass_mailing_sms/controllers/main.py:0
-#, python-format
-msgid "Number %s not found"
-msgstr "Numeroa %s ei löydy"
+#: model:ir.model.fields.selection,name:mass_mailing_sms.selection__mailing_trace__failure_type__sms_not_delivered
+msgid "Not Delivered"
+msgstr "Ei toimitettu"
+
+#. module: mass_mailing_sms
+#: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_trace__sms_number
+msgid "Number"
+msgstr "Numero"
 
 #. module: mass_mailing_sms
 #: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_contact__message_needaction_counter
@@ -671,6 +722,31 @@ msgid "Number(s)"
 msgstr "Numero(t)"
 
 #. module: mass_mailing_sms
+#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_form_sms
+msgid ""
+"Once you send these text messages, they'll be making a grand entrance in all "
+"pockets, creating quite the bzzzzz!"
+msgstr ""
+"Kun lähetät nämä tekstiviestit, ne tekevät suuren vaikutuksen ja aiheuttavat "
+"melkoisen pörinän!"
+
+#. module: mass_mailing_sms
+#. odoo-python
+#: code:addons/mass_mailing_sms/controllers/main.py:0
+msgid "Oops! Number not found"
+msgstr "Hups! Numeroa ei löytynyt"
+
+#. module: mass_mailing_sms
+#. odoo-python
+#: code:addons/mass_mailing_sms/controllers/main.py:0
+msgid ""
+"Oops! The phone number seems to be incorrect. Please make sure to include "
+"the country code."
+msgstr ""
+"Hups! Puhelinnumero vaikuttaa virheelliseltä. Varmistathan, että se sisältää "
+"maakoodin."
+
+#. module: mass_mailing_sms
 #: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_trace_view_tree_sms
 msgid "Open Recipient"
 msgstr "Avoin vastaanottaja"
@@ -678,7 +754,7 @@ msgstr "Avoin vastaanottaja"
 #. module: mass_mailing_sms
 #: model:ir.model.fields.selection,name:mass_mailing_sms.selection__mailing_trace__failure_type__sms_optout
 msgid "Opted Out"
-msgstr "Valittu pois"
+msgstr "Markkinointikiellon asettaneet"
 
 #. module: mass_mailing_sms
 #: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_form_sms
@@ -697,19 +773,29 @@ msgstr "Puhelin on markkinointikiellossa"
 
 #. module: mass_mailing_sms
 #: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_contact__phone_mobile_search
-msgid "Phone/Mobile"
-msgstr "Puhelin / matkapuhelin"
+msgid "Phone Number"
+msgstr "Puhelinnumero"
 
 #. module: mass_mailing_sms
 #: model_terms:ir.ui.view,arch_db:mass_mailing_sms.blacklist_main
-msgid "Please enter your phone number"
-msgstr "Kirjoita puhelinnumerosi"
+msgid "Please confirm your phone number to unsubscribe :"
+msgstr "Vahvista puhelinnumerosi peruuttaaksesi tilauksen:"
 
 #. module: mass_mailing_sms
+#. odoo-python
 #: code:addons/mass_mailing_sms/models/mailing_mailing.py:0
-#, python-format
 msgid "RECEIVED (%i)"
 msgstr "VASTAANOTETTU (%i)"
+
+#. module: mass_mailing_sms
+#: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_contact__rating_ids
+msgid "Ratings"
+msgstr "Arviointi"
+
+#. module: mass_mailing_sms
+#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_form_sms
+msgid "Ready to unleash your text messages?"
+msgstr "Valmiina lähettämään tekstiviestejä?"
 
 #. module: mass_mailing_sms
 #: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_tree_sms
@@ -718,8 +804,13 @@ msgid "Recipients"
 msgstr "Vastaanottajat"
 
 #. module: mass_mailing_sms
+#: model:ir.model.fields.selection,name:mass_mailing_sms.selection__mailing_trace__failure_type__sms_rejected
+msgid "Rejected"
+msgstr "Rechazado"
+
+#. module: mass_mailing_sms
+#. odoo-python
 #: code:addons/mass_mailing_sms/models/mailing_mailing.py:0
-#, python-format
 msgid "Report for %(expected)i %(mailing_type)s Sent"
 msgstr "Raportti %(expected)i %(mailing_type)s Lähetetty"
 
@@ -729,7 +820,7 @@ msgid "Reporting"
 msgstr "Raportointi"
 
 #. module: mass_mailing_sms
-#: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_trace__sms_sms_id
+#: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_trace__sms_id
 #: model:ir.model.fields.selection,name:mass_mailing_sms.selection__mailing_mailing__mailing_type__sms
 #: model:ir.model.fields.selection,name:mass_mailing_sms.selection__mailing_trace__trace_type__sms
 #: model_terms:ir.ui.view,arch_db:mass_mailing_sms.utm_campaign_view_form
@@ -740,7 +831,7 @@ msgstr "SMS"
 #. module: mass_mailing_sms
 #: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_mailing__body_plaintext
 msgid "SMS Body"
-msgstr "Tekstiviestin runko"
+msgstr "Tekstiviestin teksti"
 
 #. module: mass_mailing_sms
 #: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_list__contact_count_sms
@@ -758,23 +849,19 @@ msgid "SMS Delivery error"
 msgstr "Tekstiviestin toimitusvirhe"
 
 #. module: mass_mailing_sms
+#: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_trace__sms_id_int
 #: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_trace_view_form
 #: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_trace_view_form_sms
 msgid "SMS ID"
 msgstr "Tekstiviestin ID"
 
 #. module: mass_mailing_sms
-#: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_trace__sms_sms_id_int
-msgid "SMS ID (tech)"
-msgstr "Tekstiviestin tunnus (tekninen)"
-
-#. module: mass_mailing_sms
+#. odoo-python
 #: code:addons/mass_mailing_sms/models/res_users.py:0
 #: model:ir.actions.act_window,name:mass_mailing_sms.mailing_mailing_action_sms
 #: model:ir.ui.menu,name:mass_mailing_sms.mass_mailing_sms_menu_mass_sms
 #: model:ir.ui.menu,name:mass_mailing_sms.mass_mailing_sms_menu_root
 #: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_tree_sms
-#, python-format
 msgid "SMS Marketing"
 msgstr "Tekstiviestimarkkinointi"
 
@@ -784,7 +871,6 @@ msgid "SMS Marketing Analysis"
 msgstr "Tekstiviestinmarkkinoinnin analyysi"
 
 #. module: mass_mailing_sms
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.blacklist_main
 #: model_terms:ir.ui.view,arch_db:mass_mailing_sms.blacklist_number
 msgid "SMS Subscription"
 msgstr "Tekstiviestitilaus"
@@ -795,8 +881,8 @@ msgid "SMS Template"
 msgstr "SMS Malli"
 
 #. module: mass_mailing_sms
+#. odoo-python
 #: code:addons/mass_mailing_sms/models/mailing_mailing.py:0
-#, python-format
 msgid "SMS Text Message"
 msgstr "Tekstiviesti"
 
@@ -811,25 +897,29 @@ msgid "SMS Traces"
 msgstr "Tekstiviestien jäljet"
 
 #. module: mass_mailing_sms
+#: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_trace__sms_tracker_ids
+msgid "SMS Trackers"
+msgstr "Tekstiviestien seurannat"
+
+#. module: mass_mailing_sms
 #: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_mailing__ab_testing_sms_winner_selection
 #: model:ir.model.fields,field_description:mass_mailing_sms.field_utm_campaign__ab_testing_sms_winner_selection
 msgid "SMS Winner Selection"
 msgstr "Tekstiviestien voittajan valinta"
 
 #. module: mass_mailing_sms
+#. odoo-python
 #: code:addons/mass_mailing_sms/wizard/sms_composer.py:0
-#, python-format
-msgid "STOP SMS : %(unsubscribe_url)s"
-msgstr "STOP SMS : %(unsubscribe_url)s"
+msgid "STOP SMS: %(unsubscribe_url)s"
+msgstr "STOP SMS: %(unsubscribe_url)s"
 
 #. module: mass_mailing_sms
 #: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_contact__phone_sanitized
 msgid "Sanitized Number"
-msgstr "Puhdistettu numero"
+msgstr "Tarkistettu numero"
 
 #. module: mass_mailing_sms
 #: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_form_sms
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_sms_test_view_form
 msgid "Send"
 msgstr "Lähetä"
 
@@ -844,6 +934,7 @@ msgid "Send Now"
 msgstr "Lähetä heti"
 
 #. module: mass_mailing_sms
+#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_list_view_form
 #: model_terms:ir.ui.view,arch_db:mass_mailing_sms.utm_campaign_view_form
 msgid "Send SMS"
 msgstr "Lähetä tekstiviesti"
@@ -851,7 +942,12 @@ msgstr "Lähetä tekstiviesti"
 #. module: mass_mailing_sms
 #: model:ir.model,name:mass_mailing_sms.model_sms_composer
 msgid "Send SMS Wizard"
-msgstr "Lähetä tekstiviesti ohjatulla toiminnolla"
+msgstr "Ohjattu tekstiviestin lähettäminen"
+
+#. module: mass_mailing_sms
+#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_sms_test_view_form
+msgid "Send Test"
+msgstr "Lähetä testiviesti"
 
 #. module: mass_mailing_sms
 #: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_sms_test_view_form
@@ -860,12 +956,14 @@ msgstr "Lähetä esimerkkitekstiviesti"
 
 #. module: mass_mailing_sms
 #: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_sms_test_view_form
-msgid ""
-"Send a sample SMS for testing purpose to the numbers below (carriage-return-"
-"separated list)."
+msgid "Send a sample SMS for testing purpose to the numbers below."
 msgstr ""
-"Lähetä esimerkkitekstiviesti testausta varten alla oleviin numeroihin "
-"(rivinvaihdoilla eroteltu luettelo)."
+"Lähetä testaustarkoituksessa tekstiviestinäyte alla oleviin numeroihin."
+
+#. module: mass_mailing_sms
+#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_form_sms
+msgid "Send to all"
+msgstr "Lähetä kaikille"
 
 #. module: mass_mailing_sms
 #: model:ir.model.fields.selection,name:mass_mailing_sms.selection__mailing_trace__failure_type__sms_server
@@ -883,51 +981,60 @@ msgid "Status"
 msgstr "Tila"
 
 #. module: mass_mailing_sms
+#: model:ir.model,website_form_label:mass_mailing_sms.model_mailing_contact
+msgid "Subscribe to Newsletter"
+msgstr "Tilaa uutiskirje"
+
+#. module: mass_mailing_sms
+#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_trace_view_form_sms
+msgid "Test"
+msgstr "Testi"
+
+#. module: mass_mailing_sms
+#. odoo-python
+#: code:addons/mass_mailing_sms/models/mailing_mailing.py:0
+#: model:ir.actions.act_window,name:mass_mailing_sms.mailing_sms_test_action
+msgid "Test Mailing"
+msgstr "Postituksen testaus"
+
+#. module: mass_mailing_sms
 #: model:ir.model,name:mass_mailing_sms.model_mailing_sms_test
 msgid "Test SMS Mailing"
 msgstr "Testaa tekstiviestilähetys"
 
 #. module: mass_mailing_sms
-#: model:ir.actions.act_window,name:mass_mailing_sms.mailing_sms_test_action
-msgid "Test SMS Marketing"
-msgstr "Testaa tekstiviestimarkkinointia"
-
-#. module: mass_mailing_sms
+#. odoo-python
 #: code:addons/mass_mailing_sms/wizard/mailing_sms_test.py:0
-#, python-format
-msgid "Test SMS could not be sent to %s:<br>%s"
-msgstr "Testiviestiä ei voitu lähettää osoitteeseen %s:<br>%s"
+msgid "Test SMS could not be sent to %(destination)s: %(state)s"
+msgstr ""
+"Testitiedotetta ei voitu lähettää osoitteeseen %(destination)s: %(state)s"
 
 #. module: mass_mailing_sms
-#: code:addons/mass_mailing_sms/models/mailing_mailing.py:0
-#, python-format
-msgid "Test SMS marketing"
-msgstr "Testaa tekstiviestimarkkinointia"
-
-#. module: mass_mailing_sms
+#. odoo-python
 #: code:addons/mass_mailing_sms/wizard/mailing_sms_test.py:0
-#, python-format
+msgid "Test SMS skipped those numbers as they appear invalid: %(numbers)s"
+msgstr ""
+"Testitekstiviesti ohitti seuraavat numerot, koska ne vaikuttavat "
+"virheellisiltä: %(numbers)s"
+
+#. module: mass_mailing_sms
+#. odoo-python
+#: code:addons/mass_mailing_sms/wizard/mailing_sms_test.py:0
 msgid "Test SMS successfully sent to %s"
 msgstr "Testitekstiviesti onnistuneesti lähetetty osoitteeseen %s"
 
 #. module: mass_mailing_sms
+#. odoo-python
 #: code:addons/mass_mailing_sms/models/utm.py:0
-#, python-format
 msgid ""
 "The UTM medium '%s' cannot be deleted as it is used in some main functional "
 "flows, such as the SMS Marketing."
 msgstr ""
-"UTM-välinettä \"%s\" ei voi poistaa, koska sitä käytetään joissakin "
+"UTM-mediatyyppiä \"%s\" ei voi poistaa, koska sitä käytetään joissakin "
 "päätoiminnoissa, kuten tekstiviestimarkkinoinnissa."
 
 #. module: mass_mailing_sms
-#: code:addons/mass_mailing_sms/wizard/mailing_sms_test.py:0
-#, python-format
-msgid "The following numbers are not correctly encoded: %s"
-msgstr "Seuraavia numeroita ei ole koodattu oikein: %s"
-
-#. module: mass_mailing_sms
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.blacklist_number
+#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.blacklist_main
 msgid "There was an error when trying to unsubscribe"
 msgstr "Tilauksen peruuttamisessa tapahtui virhe"
 
@@ -938,21 +1045,6 @@ msgid ""
 msgstr ""
 "Tämä puhelinnumero on markkinointikieltolistalla tekstiviestimarkkinointia "
 "varten. Klikkaa poistaaksesi markkinointikiellon."
-
-#. module: mass_mailing_sms
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_form_sms
-msgid ""
-"This will send SMS to all recipients now. Do you still want to proceed ?"
-msgstr ""
-"Tämä lähettää nyt tekstiviestin kaikille vastaanottajille. Haluatko vielä "
-"jatkaa?"
-
-#. module: mass_mailing_sms
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_form_sms
-msgid "This will send SMS to all recipients. Do you still want to proceed ?"
-msgstr ""
-"Tämä lähettää tekstiviestin kaikille vastaanottajille. Haluatko vielä "
-"jatkaa?"
 
 #. module: mass_mailing_sms
 #: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_mailing__sms_subject
@@ -981,7 +1073,7 @@ msgstr "UTM-kampanja"
 #. module: mass_mailing_sms
 #: model:ir.model,name:mass_mailing_sms.model_utm_medium
 msgid "UTM Medium"
-msgstr "UTM-media"
+msgstr "UTM-mediatyyppi"
 
 #. module: mass_mailing_sms
 #: model:ir.model.fields.selection,name:mass_mailing_sms.selection__mailing_trace__failure_type__sms_acc
@@ -1000,12 +1092,12 @@ msgstr "Rekisteröimätön tili"
 
 #. module: mass_mailing_sms
 #: model_terms:ir.ui.view,arch_db:mass_mailing_sms.blacklist_main
-msgid "Unsubscribe me"
-msgstr "Poista minut tilauksesta"
+msgid "Unsubscribe"
+msgstr "Lopeta kanavan tilaus"
 
 #. module: mass_mailing_sms
+#. odoo-python
 #: code:addons/mass_mailing_sms/models/mailing_mailing.py:0
-#, python-format
 msgid "Unsupported %s for mass SMS"
 msgstr "Ei tuettu %s massatekstiviesteille"
 
@@ -1037,8 +1129,7 @@ msgstr "Voittajan valinta"
 #. module: mass_mailing_sms
 #: model_terms:ir.actions.act_window,help:mass_mailing_sms.mailing_mailing_action_sms
 msgid ""
-"Write an appealing SMS Text Message, define recipients and track its "
-"results."
+"Write an appealing SMS Text Message, define recipients and track its results."
 msgstr ""
 "Kirjoita houkutteleva tekstiviesti, määritä vastaanottajat ja seuraa sen "
 "tuloksia."
@@ -1049,9 +1140,9 @@ msgid "Wrong Number Format"
 msgstr "Väärä numeromuoto"
 
 #. module: mass_mailing_sms
-#: model:utm.campaign,title:mass_mailing_sms.utm_campaign_0
-msgid "XMas Promo"
-msgstr "XMas Promo"
+#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.blacklist_main
+msgid "e.g. \"+1 (555) 123-4567\""
+msgstr "esim. \"+1 (555) 123-4567\""
 
 #. module: mass_mailing_sms
 #: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_form_sms

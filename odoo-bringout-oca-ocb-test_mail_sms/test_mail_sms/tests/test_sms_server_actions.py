@@ -1,13 +1,14 @@
 # -*- coding: utf-8 -*-
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 
-from odoo.addons.test_mail_sms.tests.common import TestSMSCommon, TestSMSRecipients
+from odoo.addons.sms.tests.common import SMSCommon
+from odoo.addons.test_mail_sms.tests.common import TestSMSRecipients
 from odoo.tests import tagged
 from odoo.tools import mute_logger
 
 
 @tagged('ir_actions')
-class TestServerAction(TestSMSCommon, TestSMSRecipients):
+class TestServerAction(SMSCommon, TestSMSRecipients):
 
     @classmethod
     def setUpClass(cls):
@@ -29,7 +30,7 @@ class TestServerAction(TestSMSCommon, TestSMSRecipients):
             'state': 'sms',
             'sms_method': 'sms',
             'sms_template_id': cls.sms_template.id,
-            'groups_id': cls.env.ref('base.group_user'),
+            'group_ids': cls.env.ref('base.group_user'),
         })
 
     def test_action_sms(self):

@@ -7,7 +7,7 @@
     'description': """
 Design gorgeous mails
     """,
-    'version': '1.1',
+    'version': '1.2',
     'sequence': 110,
     'website': 'https://www.odoo.com/app/mailing',
     'category': 'Marketing/Email Marketing',
@@ -15,9 +15,11 @@ Design gorgeous mails
         'mass_mailing',
     ],
     'data': [
+        'data/ir_attachment_data.xml',
         'views/mass_mailing_themes_templates.xml'
     ],
     'installable': True,
     'auto_install': True,
+    'author': 'Odoo S.A.',
     'license': 'LGPL-3',
 }

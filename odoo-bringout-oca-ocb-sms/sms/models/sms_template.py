@@ -4,9 +4,9 @@
 from odoo import api, fields, models, _
 
 
-class SMSTemplate(models.Model):
+class SmsTemplate(models.Model):
     "Templates for sending SMS"
-    _name = "sms.template"
+    _name = 'sms.template'
     _inherit = ['mail.render.mixin', 'template.reset.mixin']
     _description = 'SMS Templates'
 
@@ -14,8 +14,8 @@ class SMSTemplate(models.Model):
 
     @api.model
     def default_get(self, fields):
-        res = super(SMSTemplate, self).default_get(fields)
-        if not fields or 'model_id' in fields and not res.get('model_id') and res.get('model'):
+        res = super().default_get(fields)
+        if 'model_id' in fields and not res.get('model_id') and res.get('model'):
             res['model_id'] = self.env['ir.model']._get(res['model']).id
         return res
 
@@ -41,15 +41,13 @@ class SMSTemplate(models.Model):
     # CRUD
     # ------------------------------------------------------------
 
-    @api.returns('self', lambda value: value.id)
-    def copy(self, default=None):
-        default = dict(default or {},
-                       name=_("%s (copy)", self.name))
-        return super(SMSTemplate, self).copy(default=default)
+    def copy_data(self, default=None):
+        vals_list = super().copy_data(default=default)
+        return [dict(vals, name=self.env._("%s (copy)", template.name)) for template, vals in zip(self, vals_list)]
 
     def unlink(self):
         self.sudo().mapped('sidebar_action_id').unlink()
-        return super(SMSTemplate, self).unlink()
+        return super().unlink()
 
     def action_create_sidebar_action(self):
         ActWindow = self.env['ir.actions.act_window']

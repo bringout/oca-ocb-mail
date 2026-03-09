@@ -6,6 +6,7 @@ from odoo.addons.project.tests.test_project_sharing import TestProjectSharingCom
 from odoo.addons.sms.tests.common import SMSCommon
 from odoo.tests import tagged
 
+
 class TestProjectSharingWithSms(TestProjectSharingCommon, SMSCommon):
     @classmethod
     def setUpClass(cls):
@@ -32,7 +33,7 @@ class TestProjectSharingWithSms(TestProjectSharingCommon, SMSCommon):
                 Command.create({'partner_id': cls.user_portal.partner_id.id}),
             ],
         })
-        cls.project_portal.partner_id.mobile = cls.random_numbers[0]
+        cls.project_portal.partner_id.phone = cls.random_numbers[0]
 
     def test_portal_user_can_change_stage_with_sms_template(self):
         """ Test user portal can change the stage of a task to a stage with a sms template
@@ -55,14 +56,14 @@ class TestProjectSharingWithSms(TestProjectSharingCommon, SMSCommon):
                 'stage_id': self.task_stage_with_sms.id,
             })
         self.assertEqual(self.task_portal.stage_id, self.task_stage_with_sms)
-        self.assertSMSIapSent([self.user_projectuser.partner_id.mobile])
+        self.assertSMSIapSent([self.user_projectuser.partner_id.phone])
 
         with self.mockSMSGateway():
             self.project_portal.write({
                 'stage_id': self.project_stage_with_sms.id,
             })
         self.assertEqual(self.project_portal.stage_id, self.project_stage_with_sms)
-        self.assertSMSIapSent([self.project_portal.partner_id.mobile])
+        self.assertSMSIapSent([self.project_portal.partner_id.phone])
 
     @tagged('post_install', '-at_install')
     def test_project_user_can_change_stage_with_sms_template(self):
@@ -76,12 +77,12 @@ class TestProjectSharingWithSms(TestProjectSharingCommon, SMSCommon):
         if not sale_manager_group:
             self.skipTest('`sale_sms` not installed')
         self.user_projectuser.write({
-            'groups_id': [
+            'group_ids': [
                 Command.link(project_user_group.id),
                 Command.link(sale_manager_group.id),
             ]
         })
-        self.assertTrue(self.task_cow.with_user(self.user_projectuser).check_access_rights('write'))
+        self.assertTrue(self.task_cow.with_user(self.user_projectuser).has_access('write'))
         with self.mockSMSGateway():
             self.task_cow.with_user(self.user_projectuser).write({
                 'stage_id': self.task_stage_with_sms.id,
@@ -98,4 +99,4 @@ class TestProjectSharingWithSms(TestProjectSharingCommon, SMSCommon):
                 'stage_id': self.task_stage_with_sms.id,
             })
         self.assertEqual(self.task_cow.stage_id, self.task_stage_with_sms)
-        self.assertSMSIapSent([self.user_portal.partner_id.mobile])
+        self.assertSMSIapSent([self.user_portal.partner_id.phone])

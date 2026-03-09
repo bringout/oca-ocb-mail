@@ -4,9 +4,8 @@
 from datetime import datetime, timedelta
 
 from odoo.addons.mass_mailing.tests.common import MassMailCommon
-from odoo.tests import users, tagged
+from odoo.tests import Form, users, tagged
 from odoo.tools import mute_logger
-from odoo.tests.common import Form
 from odoo import fields
 
 
@@ -54,7 +53,7 @@ class TestMailingABTesting(TestMailingABTestingCommon):
         self.ab_testing_mailing_2.mailing_trace_ids[:15].set_opened()
         self.ab_testing_mailing_ids.invalidate_recordset()
 
-        self.assertEqual(self.ab_testing_mailing_1.opened_ratio, 66)
+        self.assertEqual(self.ab_testing_mailing_1.opened_ratio, 66.67)
         self.assertEqual(self.ab_testing_mailing_2.opened_ratio, 50)
 
         with self.mock_mail_gateway():
@@ -86,10 +85,10 @@ class TestMailingABTesting(TestMailingABTestingCommon):
         self.ab_testing_mailing_2.mailing_trace_ids[:15].set_opened()
         self.ab_testing_mailing_ids.invalidate_recordset()
 
-        self.assertEqual(self.ab_testing_mailing_1.opened_ratio, 66)
+        self.assertEqual(self.ab_testing_mailing_1.opened_ratio, 66.67)
         self.assertEqual(self.ab_testing_mailing_2.opened_ratio, 50)
 
-        with self.mock_mail_gateway():
+        with self.mock_mail_gateway(), self.enter_registry_test_mode():
             self.env.ref('mass_mailing.ir_cron_mass_mailing_ab_testing').sudo().method_direct_trigger()
         self.ab_testing_mailing_ids.invalidate_recordset()
         winner_mailing = self.ab_testing_campaign.mailing_mail_ids.filtered(lambda mailing: mailing.ab_testing_pc == 100)
@@ -169,7 +168,7 @@ class TestMailingABTesting(TestMailingABTestingCommon):
         self.ab_testing_mailing_2.mailing_trace_ids[:15].set_opened()
         self.ab_testing_mailing_ids.invalidate_recordset()
 
-        self.assertEqual(self.ab_testing_mailing_1.opened_ratio, 66)
+        self.assertEqual(self.ab_testing_mailing_1.opened_ratio, 66.67)
         self.assertEqual(self.ab_testing_mailing_2.opened_ratio, 50)
 
         with self.mock_mail_gateway():

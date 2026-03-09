@@ -3,22 +3,22 @@
 
 import logging
 
-from urllib.parse import urljoin
-
 from odoo import api, fields, models, _
-from odoo.addons.link_tracker.models.link_tracker import LINK_TRACKER_MIN_CODE_LENGTH
 from odoo.exceptions import UserError
-from odoo.osv import expression
+from odoo.fields import Domain
+from odoo.tools.urls import urljoin
+
+from odoo.addons.link_tracker.models.link_tracker import LINK_TRACKER_MIN_CODE_LENGTH
 
 _logger = logging.getLogger(__name__)
 
 
-class Mailing(models.Model):
+class MailingMailing(models.Model):
     _inherit = 'mailing.mailing'
 
     @api.model
     def default_get(self, fields):
-        res = super(Mailing, self).default_get(fields)
+        res = super().default_get(fields)
         if fields is not None and 'keep_archives' in fields and res.get('mailing_type') == 'sms':
             res['keep_archives'] = True
         return res
@@ -55,15 +55,16 @@ class Mailing(models.Model):
     ab_testing_sms_winner_selection = fields.Selection(
         related="campaign_id.ab_testing_sms_winner_selection",
         default="clicks_ratio", readonly=False, copy=True)
+    ab_testing_mailings_sms_count = fields.Integer(related="campaign_id.ab_testing_mailings_sms_count")
 
     @api.depends('mailing_type')
     def _compute_medium_id(self):
-        super(Mailing, self)._compute_medium_id()
+        super()._compute_medium_id()
         for mailing in self:
-            if mailing.mailing_type == 'sms' and (not mailing.medium_id or mailing.medium_id == self.env.ref('utm.utm_medium_email')):
-                mailing.medium_id = self.env.ref('mass_mailing_sms.utm_medium_sms').id
-            elif mailing.mailing_type == 'mail' and (not mailing.medium_id or mailing.medium_id == self.env.ref('mass_mailing_sms.utm_medium_sms')):
-                mailing.medium_id = self.env.ref('utm.utm_medium_email').id
+            if mailing.mailing_type == 'sms' and (not mailing.medium_id or mailing.medium_id == self.env['utm.medium']._fetch_or_create_utm_medium('email')):
+                mailing.medium_id = self.env['utm.medium']._fetch_or_create_utm_medium("sms", module="mass_mailing_sms").id
+            elif mailing.mailing_type == 'mail' and (not mailing.medium_id or mailing.medium_id == self.env['utm.medium']._fetch_or_create_utm_medium("sms", module="mass_mailing_sms")):
+                mailing.medium_id = self.env['utm.medium']._fetch_or_create_utm_medium('email').id
 
     @api.depends('sms_template_id', 'mailing_type')
     def _compute_body_plaintext(self):
@@ -73,23 +74,18 @@ class Mailing(models.Model):
 
     @api.depends('mailing_trace_ids.failure_type')
     def _compute_sms_has_iap_failure(self):
-        failures = ['sms_acc', 'sms_credit']
-        if not self.ids:
-            self.sms_has_insufficient_credit = self.sms_has_unregistered_account = False
-        else:
-            traces = self.env['mailing.trace'].sudo().read_group([
-                        ('mass_mailing_id', 'in', self.ids),
-                        ('trace_type', '=', 'sms'),
-                        ('failure_type', 'in', failures)
-            ], ['mass_mailing_id', 'failure_type'], ['mass_mailing_id', 'failure_type'], lazy=False)
+        self.sms_has_insufficient_credit = self.sms_has_unregistered_account = False
+        traces = self.env['mailing.trace'].sudo()._read_group([
+                    ('mass_mailing_id', 'in', self.ids),
+                    ('trace_type', '=', 'sms'),
+                    ('failure_type', 'in', ['sms_acc', 'sms_credit'])
+        ], ['mass_mailing_id', 'failure_type'])
 
-            trace_dict = dict.fromkeys(self.ids, {key: False for key in failures})
-            for t in traces:
-                trace_dict[t['mass_mailing_id'][0]][t['failure_type']] = bool(t['__count'])
-
-            for mail in self:
-                mail.sms_has_insufficient_credit = trace_dict[mail.id]['sms_credit']
-                mail.sms_has_unregistered_account = trace_dict[mail.id]['sms_acc']
+        for mass_mailing, failure_type in traces:
+            if failure_type == 'sms_credit':
+                mass_mailing.sms_has_insufficient_credit = True
+            elif failure_type == 'sms_acc':
+                mass_mailing.sms_has_unregistered_account = True
 
     # --------------------------------------------------
     # ORM OVERRIDES
@@ -112,7 +108,7 @@ class Mailing(models.Model):
         mass_sms = self.filtered(lambda m: m.mailing_type == 'sms')
         if mass_sms:
             mass_sms.action_retry_failed_sms()
-        return super(Mailing, self - mass_sms).action_retry_failed()
+        return super(MailingMailing, self - mass_sms).action_retry_failed()
 
     def action_retry_failed_sms(self):
         failed_sms = self.env['sms.sms'].sudo().search([
@@ -125,21 +121,21 @@ class Mailing(models.Model):
 
     def action_test(self):
         if self.mailing_type == 'sms':
-            ctx = dict(self.env.context, default_mailing_id=self.id)
+            ctx = dict(self.env.context, default_mailing_id=self.id, dialog_size='medium')
             return {
-                'name': _('Test SMS marketing'),
+                'name': _('Test Mailing'),
                 'type': 'ir.actions.act_window',
                 'view_mode': 'form',
                 'res_model': 'mailing.sms.test',
                 'target': 'new',
                 'context': ctx,
             }
-        return super(Mailing, self).action_test()
+        return super().action_test()
 
     def _action_view_traces_filtered(self, view_filter):
-        action = super(Mailing, self)._action_view_traces_filtered(view_filter)
+        action = super()._action_view_traces_filtered(view_filter)
         if self.mailing_type == 'sms':
-            action['views'] = [(self.env.ref('mass_mailing_sms.mailing_trace_view_tree_sms').id, 'tree'),
+            action['views'] = [(self.env.ref('mass_mailing_sms.mailing_trace_view_tree_sms').id, 'list'),
                                (self.env.ref('mass_mailing_sms.mailing_trace_view_form_sms').id, 'form')]
         return action
 
@@ -158,7 +154,8 @@ class Mailing(models.Model):
         """ Give list of opt-outed records, depending on specific model-based
         computation if available.
 
-        :return list: opt-outed record IDs
+        :returns: opt-outed record IDs
+        :rtype: list
         """
         self.ensure_one()
         opt_out = []
@@ -178,18 +175,12 @@ class Mailing(models.Model):
         partner_fields = []
         if isinstance(target, self.pool['mail.thread.phone']):
             phone_fields = ['phone_sanitized']
-        elif isinstance(target, self.pool['mail.thread']):
+        else:
             phone_fields = [
-                fname for fname in target._sms_get_number_fields()
+                fname for fname in target._phone_get_number_fields()
                 if fname in target._fields and target._fields[fname].store
             ]
-            partner_fields = target._sms_get_partner_fields()
-        else:
-            phone_fields = []
-            if 'mobile' in target._fields and target._fields['mobile'].store:
-                phone_fields.append('mobile')
-            if 'phone' in target._fields and target._fields['phone'].store:
-                phone_fields.append('phone')
+            partner_fields = target._mail_get_partner_fields()
         partner_field = next(
             (fname for fname in partner_fields if target._fields[fname].store and target._fields[fname].type == 'many2one'),
             False
@@ -213,7 +204,7 @@ class Mailing(models.Model):
             join_add_query = ''
         else:
             # phone fields are checked on res.partner model
-            partner_phone_fields = ['mobile', 'phone']
+            partner_phone_fields = ['phone']
             select_query = 'target.id, ' + ', '.join('partner.%s' % fname for fname in partner_phone_fields)
             where_query = ' OR '.join('partner.%s IS NOT NULL' % fname for fname in partner_phone_fields)
             join_add_query = 'JOIN res_partner partner ON (target.%s = partner.id)' % partner_field
@@ -225,8 +216,8 @@ class Mailing(models.Model):
             'join_add_query': join_add_query,
         }
         params = {'mailing_id': self.id, 'target_model': self.mailing_model_real}
-        self._cr.execute(query, params)
-        query_res = self._cr.fetchall()
+        self.env.cr.execute(query, params)
+        query_res = self.env.cr.fetchall()
         seen_list = set(number for item in query_res for number in item[1:] if number)
         seen_ids = set(item[0] for item in query_res)
         _logger.info("Mass SMS %s targets %s: already reached %s SMS", self, target._name, len(seen_list))
@@ -245,13 +236,14 @@ class Mailing(models.Model):
             'mass_keep_log': self.keep_archives,
             'mass_force_send': self.sms_force_send,
             'mass_sms_allow_unsubscribe': self.sms_allow_unsubscribe,
+            'use_exclusion_list': self.use_exclusion_list,
         }
 
-    def action_send_mail(self, res_ids=None):
+    def _action_send_mail(self, res_ids=None):
         mass_sms = self.filtered(lambda m: m.mailing_type == 'sms')
         if mass_sms:
             mass_sms.action_send_sms(res_ids=res_ids)
-        return super(Mailing, self - mass_sms).action_send_mail(res_ids=res_ids)
+        return super(MailingMailing, self - mass_sms)._action_send_mail(res_ids=res_ids)
 
     def action_send_sms(self, res_ids=None):
         for mailing in self:
@@ -260,12 +252,6 @@ class Mailing(models.Model):
             if res_ids:
                 composer = self.env['sms.composer'].with_context(active_id=False).create(mailing._send_sms_get_composer_values(res_ids))
                 composer._action_send_sms()
-
-            mailing.write({
-                'state': 'done',
-                'sent_date': fields.Datetime.now(),
-                'kpi_mail_required': not mailing.sent_date,
-                })
         return True
 
     # ------------------------------------------------------
@@ -278,7 +264,7 @@ class Mailing(models.Model):
         Each item in the returned list will be displayed as a table, with a title and
         1, 2 or 3 columns.
         """
-        values = super(Mailing, self)._prepare_statistics_email_values()
+        values = super()._prepare_statistics_email_values()
         if self.mailing_type == 'sms':
             mailing_type = self._get_pretty_mailing_type()
             values['title'] = _('24H Stats of %(mailing_type)s "%(mailing_name)s"',
@@ -310,18 +296,11 @@ class Mailing(models.Model):
     def _get_pretty_mailing_type(self):
         if self.mailing_type == 'sms':
             return _('SMS Text Message')
-        return super(Mailing, self)._get_pretty_mailing_type()
+        return super()._get_pretty_mailing_type()
 
     # --------------------------------------------------
     # TOOLS
     # --------------------------------------------------
-
-    def _get_default_mailing_domain(self):
-        mailing_domain = super(Mailing, self)._get_default_mailing_domain()
-        if self.mailing_type == 'sms' and 'phone_sanitized_blacklisted' in self.env[self.mailing_model_name]._fields:
-            mailing_domain = expression.AND([mailing_domain, [('phone_sanitized_blacklisted', '=', False)]])
-
-        return mailing_domain
 
     def convert_links(self):
         sms_mailings = self.filtered(lambda m: m.mailing_type == 'sms')
@@ -330,22 +309,23 @@ class Mailing(models.Model):
             tracker_values = mailing._get_link_tracker_values()
             body = mailing._shorten_links_text(mailing.body_plaintext, tracker_values)
             res[mailing.id] = body
-        res.update(super(Mailing, self - sms_mailings).convert_links())
+        res.update(super(MailingMailing, self - sms_mailings).convert_links())
         return res
 
     def get_sms_link_replacements_placeholders(self):
         """Get placeholders for replaced links in sms widget for accurate computation of sms counts.
 
         Reminders and assumptions:
-          * Links wille be transformed to the format "[base_url]/r/[link_tracker_code]/s/[sms_id]".
-          * unsubscribe is formatted as: "\nSTOP SMS : [base_url]/sms/[mailing_id]/[trace_code]".
 
-        :return: Character counts used for links, formatted as `{link: str, unsubscribe: str}`.
+        * Links wille be transformed to the format ``"[base_url]/r/[link_tracker_code]/s/[sms_id]"``.
+        * unsubscribe is formatted as: ``"STOP SMS : [base_url]/sms/[mailing_id]/[trace_code]"``.
+
+        :returns: Character counts used for links, formatted as ``{link: str, unsubscribe: str}``.
         """
         if self:
             self.ensure_one()
 
-        self.check_access_rights('write')
+        self.check_access('write')
 
         max_sms = self.env['sms.sms'].sudo().search_read([], ['id'], order='id desc', limit=1)
         sms_id_length = max(len(str(max_sms[0]['id'])), 5) if max_sms else 5  # Assumes a mailing won't be more than 10⁵ sms at once
@@ -378,6 +358,7 @@ class Mailing(models.Model):
         values = super()._get_ab_testing_description_values()
         if self.mailing_type == 'sms':
             values.update({
+                'ab_testing_count': self.ab_testing_mailings_sms_count,
                 'ab_testing_winner_selection': self.ab_testing_sms_winner_selection,
             })
         return values

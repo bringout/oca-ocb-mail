@@ -4,11 +4,11 @@
 from odoo import api, fields, models
 
 
-class MailTestSMS(models.Model):
+class MailTestSms(models.Model):
     """ A model inheriting from mail.thread with some fields used for SMS
     gateway, like a partner, a specific mobile phone, ... """
-    _description = 'Chatter Model for SMS Gateway'
     _name = 'mail.test.sms'
+    _description = 'Chatter Model for SMS Gateway'
     _inherit = ['mail.thread']
     _mailing_enabled = True
     _order = 'name asc, id asc'
@@ -16,25 +16,24 @@ class MailTestSMS(models.Model):
     name = fields.Char()
     subject = fields.Char()
     email_from = fields.Char()
+    guest_ids = fields.Many2many('res.partner')
     phone_nbr = fields.Char()
     mobile_nbr = fields.Char()
     customer_id = fields.Many2one('res.partner', 'Customer')
+    country_id = fields.Many2one('res.country')
 
-    def _mail_get_partner_fields(self):
-        return ['customer_id']
-
-    def _sms_get_partner_fields(self):
-        return ['customer_id']
-
-    def _sms_get_number_fields(self):
+    def _phone_get_number_fields(self):
         return ['phone_nbr', 'mobile_nbr']
 
+    def _mail_get_partner_fields(self, introspect_fields=False):
+        return ['customer_id', 'guest_ids']
 
-class MailTestSMSBL(models.Model):
+
+class MailTestSmsBl(models.Model):
     """ A model inheriting from mail.thread.phone allowing to test auto formatting
     of phone numbers, blacklist, ... """
-    _description = 'SMS Mailing Blacklist Enabled'
     _name = 'mail.test.sms.bl'
+    _description = 'SMS Mailing Blacklist Enabled'
     _inherit = ['mail.thread.phone']
     _mailing_enabled = True
     _order = 'name asc, id asc'
@@ -43,34 +42,26 @@ class MailTestSMSBL(models.Model):
     subject = fields.Char()
     email_from = fields.Char()
     phone_nbr = fields.Char(compute='_compute_phone_nbr', readonly=False, store=True)
-    mobile_nbr = fields.Char(compute='_compute_mobile_nbr', readonly=False, store=True)
+    mobile_nbr = fields.Char()
     customer_id = fields.Many2one('res.partner', 'Customer')
-
-    @api.depends('customer_id')
-    def _compute_mobile_nbr(self):
-        for phone_record in self.filtered(lambda rec: not rec.mobile_nbr and rec.customer_id):
-            phone_record.mobile_nbr = phone_record.customer_id.mobile
 
     @api.depends('customer_id')
     def _compute_phone_nbr(self):
         for phone_record in self.filtered(lambda rec: not rec.phone_nbr and rec.customer_id):
             phone_record.phone_nbr = phone_record.customer_id.phone
 
-    def _mail_get_partner_fields(self):
-        return ['customer_id']
-
-    def _sms_get_partner_fields(self):
-        return ['customer_id']
-
     def _phone_get_number_fields(self):
         return ['phone_nbr', 'mobile_nbr']
 
+    def _mail_get_partner_fields(self, introspect_fields=False):
+        return ['customer_id']
 
-class MailTestSMSBLActivity(models.Model):
+
+class MailTestSmsBlActivity(models.Model):
     """ A model inheriting from mail.thread.phone allowing to test auto formatting
     of phone numbers, blacklist, ... as well as activities management. """
-    _description = 'SMS Mailing Blacklist Enabled with activities'
     _name = 'mail.test.sms.bl.activity'
+    _description = 'SMS Mailing Blacklist Enabled with activities'
     _inherit = [
         'mail.test.sms.bl',
         'mail.activity.mixin',
@@ -79,11 +70,11 @@ class MailTestSMSBLActivity(models.Model):
     _order = 'name asc, id asc'
 
 
-class MailTestSMSOptout(models.Model):
+class MailTestSmsBlOptout(models.Model):
     """ Model using blacklist mechanism and a hijacked opt-out mechanism for
     mass mailing features. """
-    _description = 'SMS Mailing Blacklist / Optout Enabled'
     _name = 'mail.test.sms.bl.optout'
+    _description = 'SMS Mailing Blacklist / Optout Enabled'
     _inherit = ['mail.thread.phone']
     _mailing_enabled = True
     _order = 'name asc, id asc'
@@ -96,7 +87,10 @@ class MailTestSMSOptout(models.Model):
     customer_id = fields.Many2one('res.partner', 'Customer')
     opt_out = fields.Boolean()
 
-    def _mail_get_partner_fields(self):
+    def _phone_get_number_fields(self):
+        return ['phone_nbr', 'mobile_nbr']
+
+    def _mail_get_partner_fields(self, introspect_fields=False):
         return ['customer_id']
 
     def _mailing_get_opt_out_list_sms(self, mailing):
@@ -106,19 +100,12 @@ class MailTestSMSOptout(models.Model):
             ('opt_out', '=', True)
         ]).ids
 
-    def _sms_get_partner_fields(self):
-        return ['customer_id']
 
-    def _sms_get_number_fields(self):
-        # TDE note: should override _phone_get_number_fields but ok as sms in dependencies
-        return ['phone_nbr', 'mobile_nbr']
-
-
-class MailTestSMSPartner(models.Model):
+class MailTestSmsPartner(models.Model):
     """ A model like sale order having only a customer, not specific phone
     or mobile fields. """
-    _description = 'Chatter Model for SMS Gateway (Partner only)'
     _name = 'mail.test.sms.partner'
+    _description = 'Chatter Model for SMS Gateway (Partner only)'
     _inherit = ['mail.thread']
     _mailing_enabled = True
 
@@ -126,7 +113,7 @@ class MailTestSMSPartner(models.Model):
     customer_id = fields.Many2one('res.partner', 'Customer')
     opt_out = fields.Boolean()
 
-    def _mail_get_partner_fields(self):
+    def _mail_get_partner_fields(self, introspect_fields=False):
         return ['customer_id']
 
     def _mailing_get_opt_out_list_sms(self, mailing):
@@ -136,14 +123,8 @@ class MailTestSMSPartner(models.Model):
             ('opt_out', '=', True)
         ]).ids
 
-    def _sms_get_partner_fields(self):
-        return ['customer_id']
 
-    def _sms_get_number_fields(self):
-        return []
-
-
-class MailTestSMSPartner2Many(models.Model):
+class MailTestSmsPartner2many(models.Model):
     """ A model like sale order having only a customer, not specific phone
     or mobile fields. """
     _description = 'Chatter Model for SMS Gateway (M2M Partners only)'
@@ -155,7 +136,7 @@ class MailTestSMSPartner2Many(models.Model):
     customer_ids = fields.Many2many('res.partner', string='Customers')
     opt_out = fields.Boolean()
 
-    def _mail_get_partner_fields(self):
+    def _mail_get_partner_fields(self, introspect_fields=False):
         return ['customer_ids']
 
     def _mailing_get_opt_out_list_sms(self, mailing):
@@ -164,12 +145,6 @@ class MailTestSMSPartner2Many(models.Model):
             ('id', 'in', res_ids),
             ('opt_out', '=', True)
         ]).ids
-
-    def _sms_get_partner_fields(self):
-        return ['customer_ids']
-
-    def _sms_get_number_fields(self):
-        return []
 
 # ------------------------------------------------------------
 # OTHER
@@ -185,5 +160,5 @@ class SMSTestNotMailThread(models.Model):
     company_id = fields.Many2one('res.company')
     customer_id = fields.Many2one('res.partner')
 
-    def _sms_get_partner_fields(self):
+    def _mail_get_partner_fields(self, introspect_fields=False):
         return ['customer_id']

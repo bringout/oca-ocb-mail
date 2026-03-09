@@ -18,24 +18,23 @@ class IrModel(models.Model):
         for model in self:
             if model.is_mail_thread:
                 ModelObject = self.env[model.model]
-                potential_fields = ModelObject._sms_get_number_fields() + ModelObject._sms_get_partner_fields()
+                potential_fields = ModelObject._phone_get_number_fields() + ModelObject._mail_get_partner_fields()
                 if any(fname in ModelObject._fields for fname in potential_fields):
                     model.is_mail_thread_sms = True
                     continue
             model.is_mail_thread_sms = False
 
     def _search_is_mail_thread_sms(self, operator, value):
+        if operator != 'in':
+            return NotImplemented
         thread_models = self.search([('is_mail_thread', '=', True)])
         valid_models = self.env['ir.model']
         for model in thread_models:
             if model.model not in self.env:
                 continue
             ModelObject = self.env[model.model]
-            potential_fields = ModelObject._sms_get_number_fields() + ModelObject._sms_get_partner_fields()
+            potential_fields = ModelObject._phone_get_number_fields() + ModelObject._mail_get_partner_fields()
             if any(fname in ModelObject._fields for fname in potential_fields):
                 valid_models |= model
 
-        search_sms = (operator == '=' and value) or (operator == '!=' and not value)
-        if search_sms:
-            return [('id', 'in', valid_models.ids)]
-        return [('id', 'not in', valid_models.ids)]
+        return [('id', 'in', valid_models.ids)]

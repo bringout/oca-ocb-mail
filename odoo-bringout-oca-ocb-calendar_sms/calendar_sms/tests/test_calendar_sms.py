@@ -3,24 +3,24 @@
 
 from datetime import datetime, timedelta
 from odoo import fields
-from odoo.addons.sms.tests.common import SMSCase
-from odoo.tests.common import TransactionCase
+from odoo.addons.sms.tests.common import SMSCommon
+from odoo.tests import tagged
 
 
-class TestCalendarSms(TransactionCase, SMSCase):
+@tagged('sms')
+class TestCalendarSms(SMSCommon):
 
     @classmethod
     def setUpClass(cls):
         super(TestCalendarSms, cls).setUpClass()
 
-        now = fields.datetime.now()
+        now = fields.Datetime.now()
 
         cls.partner_phone = cls.env['res.partner'].create({
             'name': 'Partner With Phone Number',
             'phone': '0477777777',
             'country_id': cls.env.ref('base.be').id,
         })
-
         cls.partner_phone_2 = cls.env['res.partner'].create({
             'name': 'Partner With Phone Number',
             'phone': '0488888888',
@@ -37,7 +37,16 @@ class TestCalendarSms(TransactionCase, SMSCase):
             'name': 'Partner With No Phone Number',
             'country_id': cls.env.ref('base.be').id,
         })
-
+        cls.event = cls.env['calendar.event'].create({
+            'alarm_ids': [(0, 0, {
+                'alarm_type': 'sms',
+                'name': 'SMS Reminder',
+            })],
+            'name': "Boostrap vs Foundation",
+            'partner_ids': [(6, 0, [cls.partner_phone.id, cls.partner_no_phone.id])],
+            'start': datetime(2022, 1, 1, 11, 11),
+            'stop': datetime(2022, 2, 2, 22, 22),
+        })
         cls.alarm_1h = cls.env['calendar.alarm'].create({
             'name': 'Reminder 1 Hour',
             'duration': 1,
@@ -53,26 +62,26 @@ class TestCalendarSms(TransactionCase, SMSCase):
 
         cls.event_1h = cls.env['calendar.event'].create({
             'name': 'Event in 1h',
-            'start': now + timedelta(hours=1),
-            'stop': now + timedelta(hours=2),
+            'start': now + timedelta(minutes=30),  # Start in 30 minutes
+            'stop': now + timedelta(hours=1, minutes=30),
             'alarm_ids': [(4, cls.alarm_1h.id), (4, cls.alarm_24h.id)],
-            'attendee_ids': [(0, 0, {'partner_id': cls.partner_phone.id})],
+            'partner_ids': [(6, 0, [cls.partner_phone.id])],
         })
 
-        cls.event_1h_dup = cls.env['calendar.event'].create({
-            'name': 'Event in 1h',
-            'start': now + timedelta(hours=1),
-            'stop': now + timedelta(hours=2),
+        cls.event_1h_dup = cls.event_1h.copy(default={
             'alarm_ids': [(4, cls.alarm_1h.id), (4, cls.alarm_24h.id)],
-            'attendee_ids': [(0, 0, {'partner_id': cls.partner_phone_3.id})],
+            'partner_ids': [(6, 0, [cls.partner_phone_3.id])],
         })
+        # for some reason the above is not sufficient
+        cls.event_1h_dup.partner_ids = cls.partner_phone_3
 
+        # Adjust event_24h so that the 24-hour alarm falls within the last hour
         cls.event_24h = cls.env['calendar.event'].create({
             'name': 'Event in 24h',
-            'start': now + timedelta(hours=24),
-            'stop': now + timedelta(hours=25),
+            'start': now + timedelta(hours=23, minutes=30),  # Start in 23 hours 30 minutes
+            'stop': now + timedelta(hours=24, minutes=30),
             'alarm_ids': [(4, cls.alarm_1h.id), (4, cls.alarm_24h.id)],
-            'attendee_ids': [(0, 0, {'partner_id': cls.partner_phone_2.id})],
+            'partner_ids': [(6, 0, [cls.partner_phone_2.id])],
         })
 
         cls.sms_template_1h = cls.env['sms.template'].create({
@@ -92,13 +101,9 @@ class TestCalendarSms(TransactionCase, SMSCase):
 
     def test_attendees_with_number(self):
         """Test if only partners with sanitized number are returned."""
-        attendees = self.env['calendar.event'].create({
-            'name': "Boostrap vs Foundation",
-            'start': datetime(2022, 1, 1, 11, 11),
-            'stop': datetime(2022, 2, 2, 22, 22),
-            'partner_ids': [(6, 0, [self.partner_phone.id, self.partner_no_phone.id])],
-        })._sms_get_default_partners()
-        self.assertEqual(len(attendees), 1, "There should be only one partner retrieved")
+        with self.mockSMSGateway():
+            self.event._do_sms_reminder(self.event.alarm_ids)
+        self.assertEqual(len(self._sms), 1, "There should be only one partner retrieved")
 
     def test_send_reminder_match_both_events(self):
         """
@@ -110,7 +115,9 @@ class TestCalendarSms(TransactionCase, SMSCase):
             self.env['calendar.alarm_manager'].with_context(lastcall=lastcall)._send_reminder()
 
         self.assertEqual(len(self._sms), 3)
-        self.assertSMS(self.partner_phone, self.partner_phone.phone_sanitized, 'sent',
+        self.assertSMS(self.partner_phone, self.partner_phone.phone_sanitized, 'pending',
                         content=self.sms_template_1h.body)
-        self.assertSMS(self.partner_phone_2, self.partner_phone_2.phone_sanitized, 'sent',
+        self.assertSMS(self.partner_phone_3, self.partner_phone_3.phone_sanitized, 'pending',
+                        content=self.sms_template_1h.body)
+        self.assertSMS(self.partner_phone_2, self.partner_phone_2.phone_sanitized, 'pending',
                         content=self.sms_template_24h.body)

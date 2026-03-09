@@ -1,109 +1,145 @@
-# -*- coding: utf-8 -*-
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 
-from odoo import http
+from odoo import fields, http
 from odoo.http import request
-from odoo.tools import get_lang, is_html_empty, plaintext2html
+from odoo.addons.mail.tools.discuss import add_guest_to_context, Store
 
 
 class LivechatChatbotScriptController(http.Controller):
-    @http.route('/chatbot/restart', type="json", auth="public", cors="*")
-    def chatbot_restart(self, channel_uuid, chatbot_script_id):
-        chatbot_language = self._get_chatbot_language()
-        mail_channel = request.env['mail.channel'].sudo().with_context(lang=chatbot_language).search([('uuid', '=', channel_uuid)], limit=1)
+    @http.route("/chatbot/restart", type="jsonrpc", auth="public")
+    @add_guest_to_context
+    def chatbot_restart(self, channel_id, chatbot_script_id):
+        discuss_channel = request.env["discuss.channel"].search([("id", "=", channel_id)])
         chatbot = request.env['chatbot.script'].browse(chatbot_script_id)
-        if not mail_channel or not chatbot.exists():
+        if not discuss_channel or not chatbot.exists():
             return None
+        chatbot_language = chatbot._get_chatbot_language()
+        message = discuss_channel.with_context(lang=chatbot_language)._chatbot_restart(chatbot)
+        return {
+            "message_id": message.id,
+            "store_data": Store().add(message).get_result(),
+        }
 
-        return mail_channel._chatbot_restart(chatbot).message_format()[0]
-
-    @http.route('/chatbot/post_welcome_steps', type="json", auth="public", cors="*")
-    def chatbot_post_welcome_steps(self, channel_uuid, chatbot_script_id):
-        mail_channel = request.env['mail.channel'].sudo().search([('uuid', '=', channel_uuid)], limit=1)
-        chatbot_language = self._get_chatbot_language()
-        chatbot = request.env['chatbot.script'].sudo().with_context(lang=chatbot_language).browse(chatbot_script_id)
-        if not mail_channel or not chatbot.exists():
-            return None
-
-        return chatbot._post_welcome_steps(mail_channel).message_format()
-
-    @http.route('/chatbot/answer/save', type="json", auth="public", cors="*")
-    def chatbot_save_answer(self, channel_uuid, message_id, selected_answer_id):
-        mail_channel = request.env['mail.channel'].sudo().search([('uuid', '=', channel_uuid)], limit=1)
+    @http.route("/chatbot/answer/save", type="jsonrpc", auth="public")
+    @add_guest_to_context
+    def chatbot_save_answer(self, channel_id, message_id, selected_answer_id):
+        discuss_channel = request.env["discuss.channel"].search([("id", "=", channel_id)])
         chatbot_message = request.env['chatbot.message'].sudo().search([
             ('mail_message_id', '=', message_id),
-            ('mail_channel_id', '=', mail_channel.id),
+            ('discuss_channel_id', '=', discuss_channel.id),
         ], limit=1)
         selected_answer = request.env['chatbot.script.answer'].sudo().browse(selected_answer_id)
 
-        if not mail_channel or not chatbot_message or not selected_answer.exists():
+        if not discuss_channel or not chatbot_message or not selected_answer.exists():
             return
 
         if selected_answer in chatbot_message.script_step_id.answer_ids:
             chatbot_message.write({'user_script_answer_id': selected_answer_id})
 
-    @http.route('/chatbot/step/trigger', type="json", auth="public", cors="*")
-    def chatbot_trigger_step(self, channel_uuid, chatbot_script_id=None):
-        chatbot_language = self._get_chatbot_language()
-        mail_channel = request.env['mail.channel'].sudo().with_context(lang=chatbot_language).search([('uuid', '=', channel_uuid)], limit=1)
-        if not mail_channel:
+    @http.route("/chatbot/step/trigger", type="jsonrpc", auth="public")
+    @add_guest_to_context
+    def chatbot_trigger_step(self, channel_id, chatbot_script_id=None, data_id=None):
+        chatbot_language = self.env["chatbot.script"]._get_chatbot_language()
+        discuss_channel = request.env["discuss.channel"].with_context(lang=chatbot_language).search([("id", "=", channel_id)])
+        if not discuss_channel:
             return None
 
         next_step = False
-        if mail_channel.chatbot_current_step_id:
-            chatbot = mail_channel.chatbot_current_step_id.chatbot_script_id
-            user_messages = mail_channel.message_ids.filtered(
-                lambda message: message.author_id != chatbot.operator_partner_id
-            )
-            user_answer = request.env['mail.message'].sudo()
-            if user_messages:
-                user_answer = user_messages.sorted(lambda message: message.id)[-1]
-            next_step = mail_channel.chatbot_current_step_id._process_answer(mail_channel, user_answer.body)
+        # sudo: chatbot.script.step - visitor can access current step of the script
+        if current_step := discuss_channel.sudo().chatbot_current_step_id:
+            if (
+                current_step.is_forward_operator
+                and discuss_channel.livechat_operator_id
+                != current_step.chatbot_script_id.operator_partner_id
+            ):
+                return None
+            chatbot = current_step.chatbot_script_id
+            domain = [
+                ("author_id", "!=", chatbot.operator_partner_id.id),
+                ("model", "=", "discuss.channel"),
+                ("res_id", "=", channel_id),
+            ]
+            # sudo: mail.message - accessing last message to process answer is allowed
+            user_answer = self.env["mail.message"].sudo().search(domain, order="id desc", limit=1)
+            next_step = current_step._process_answer(discuss_channel, user_answer.body)
         elif chatbot_script_id:  # when restarting, we don't have a "current step" -> set "next" as first step of the script
-            chatbot = request.env['chatbot.script'].sudo().with_context(lang=chatbot_language).browse(chatbot_script_id)
+            chatbot = request.env['chatbot.script'].sudo().browse(chatbot_script_id).with_context(lang=chatbot_language)
             if chatbot.exists():
                 next_step = chatbot.script_step_ids[:1]
-
+        partner, guest = self.env["res.partner"]._get_current_persona()
+        store = Store(bus_channel=partner or guest)
+        store.data_id = data_id
         if not next_step:
+            # sudo - discuss.channel: marking the channel as closed as part of the chat bot flow
+            discuss_channel.sudo().livechat_end_dt = fields.Datetime.now()
+            store.resolve_data_request()
+            store.bus_send()
             return None
-
-        posted_message = next_step._process_step(mail_channel)
-        return {
-            'chatbot_posted_message': posted_message.message_format()[0] if posted_message else None,
-            'chatbot_step': {
-                'chatbot_operator_found': next_step.step_type == 'forward_operator' and len(
-                    mail_channel.channel_member_ids) > 2,
-                'chatbot_script_step_id': next_step.id,
-                'chatbot_step_answers': [{
-                    'id': answer.id,
-                    'label': answer.name,
-                    'redirect_link': answer.redirect_link,
-                } for answer in next_step.answer_ids],
-                'chatbot_step_is_last': next_step._is_last_step(mail_channel),
-                'chatbot_step_message': plaintext2html(next_step.message) if not is_html_empty(next_step.message) else False,
-                'chatbot_step_type': next_step.step_type,
-            }
-        }
-
-    @http.route('/chatbot/step/validate_email', type="json", auth="public", cors="*")
-    def chatbot_validate_email(self, channel_uuid):
-        mail_channel = request.env['mail.channel'].sudo().search([('uuid', '=', channel_uuid)], limit=1)
-        if not mail_channel or not mail_channel.chatbot_current_step_id:
-            return None
-
-        chatbot = mail_channel.chatbot_current_step_id.chatbot_script_id
-        user_messages = mail_channel.message_ids.filtered(
-            lambda message: message.author_id != chatbot.operator_partner_id
+        # sudo: discuss.channel - updating current step on the channel is allowed
+        discuss_channel.sudo().chatbot_current_step_id = next_step.id
+        posted_message = next_step._process_step(discuss_channel)
+        store.add(posted_message).add(next_step)
+        store.resolve_data_request(
+            chatbot_step={"scriptStep": next_step.id, "message": posted_message.id}
         )
+        chatbot_next_step_id = (next_step.id, posted_message.id)
+        store.add_model_values(
+            "ChatbotStep",
+            {
+                "id": chatbot_next_step_id,
+                "isLast": next_step._is_last_step(discuss_channel),
+                "message": posted_message.id,
+                "operatorFound": next_step.is_forward_operator
+                and discuss_channel.livechat_operator_id != chatbot.operator_partner_id,
+                "scriptStep": next_step.id,
+            },
+        )
+        store.add_model_values(
+            "Chatbot",
+            {
+                "currentStep": {
+                    "id": chatbot_next_step_id,
+                    "scriptStep": next_step.id,
+                    "message": posted_message.id,
+                },
+                "id": (chatbot.id, discuss_channel.id),
+                "script": chatbot.id,
+                "thread": Store.One(discuss_channel, [], as_thread=True),
+                "steps": [("ADD", [{
+                    "scriptStep": chatbot_next_step_id[0],
+                    "message": chatbot_next_step_id[1]
+                }])],
+            },
+        )
+        store.bus_send()
 
-        if user_messages:
-            user_answer = user_messages.sorted(lambda message: message.id)[-1]
-            result = chatbot._validate_email(user_answer.body, mail_channel)
+    @http.route("/chatbot/step/validate_email", type="jsonrpc", auth="public")
+    @add_guest_to_context
+    def chatbot_validate_email(self, channel_id):
+        discuss_channel = (
+            request.env["discuss.channel"]
+            .search([("id", "=", channel_id)])
+            .with_context(lang=self.env["chatbot.script"]._get_chatbot_language())
+        )
+        if not discuss_channel or not discuss_channel.chatbot_current_step_id:
+            return None
 
-            if result['posted_message']:
-                result['posted_message'] = result['posted_message'].message_format()[0]
-
+        # sudo: chatbot.script - visitor can access chatbot script of their channel
+        chatbot = discuss_channel.sudo().chatbot_current_step_id.chatbot_script_id
+        domain = [
+            ("author_id", "!=", chatbot.operator_partner_id.id),
+            ("model", "=", "discuss.channel"),
+            ("res_id", "=", channel_id),
+        ]
+        # sudo: mail.message - accessing last message to validate email is allowed
+        last_user_message = self.env["mail.message"].sudo().search(domain, order="id desc", limit=1)
+        result = {}
+        if last_user_message:
+            result = chatbot._validate_email(last_user_message.body, discuss_channel)
+            if posted_message := result.pop("posted_message"):
+                store = Store().add(posted_message)
+                store.add(discuss_channel, {
+                    "messages": Store.Many(posted_message, mode="ADD")
+                })
+                result["data"] = store.get_result()
         return result
-
-    def _get_chatbot_language(self):
-        return request.httprequest.cookies.get('frontend_lang', request.env.user.lang or get_lang(request.env).code)

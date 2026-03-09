@@ -1,14 +1,14 @@
-# -*- coding: utf-8 -*-
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 
 from odoo.tests import common
 
 
-class ChatbotCase(common.TransactionCase):
+class ChatbotCase(common.HttpCase):
 
     @classmethod
     def setUpClass(cls):
         super(ChatbotCase, cls).setUpClass()
+        cls.maxDiff = None
 
         cls.chatbot_script = cls.env['chatbot.script'].create({
             'title': 'Testing Bot',
@@ -38,14 +38,18 @@ class ChatbotCase(common.TransactionCase):
             cls.step_dispatch_buy_software,
             cls.step_dispatch_pricing,
             cls.step_dispatch_operator,
+            cls.step_dispatch_documentation,
         ] = cls.env['chatbot.script.answer'].sudo().create([{
-            'name': 'I want to buy the software',
+            'name': 'I\'d like to buy the software',
             'script_step_id': cls.step_dispatch.id,
         }, {
             'name': 'Pricing Question',
             'script_step_id': cls.step_dispatch.id,
         }, {
             'name': "I want to speak with an operator",
+            'script_step_id': cls.step_dispatch.id,
+        }, {
+            'name': "Other & Documentation",
             'script_step_id': cls.step_dispatch.id,
         }])
 
@@ -56,6 +60,7 @@ class ChatbotCase(common.TransactionCase):
             cls.step_forward_operator,
             cls.step_no_one_available,
             cls.step_no_operator_dispatch,
+            cls.step_documentation_validated,
         ] = ChatbotScriptStep.create([{
             'step_type': 'text',
             'message': 'For any pricing question, feel free ton contact us at pricing@mycompany.com',
@@ -85,6 +90,11 @@ class ChatbotCase(common.TransactionCase):
             'step_type': 'question_selection',
             'message': 'So... What can I do to help you?',
             'triggering_answer_ids': [(4, cls.step_dispatch_operator.id)],
+            'chatbot_script_id': cls.chatbot_script.id,
+        }, {
+            'step_type': 'text',
+            'message': 'Please find documentation at https://www.odoo.com/documentation/latest/',
+            'triggering_answer_ids': [(4, cls.step_dispatch_documentation.id)],
             'chatbot_script_id': cls.chatbot_script.id,
         }])
 
@@ -133,13 +143,33 @@ class ChatbotCase(common.TransactionCase):
             })]
         })
 
-    @classmethod
-    def _post_answer_and_trigger_next_step(cls, mail_channel, answer, chatbot_script_answer=False):
-        mail_message = mail_channel.message_post(body=answer)
+    def _post_answer_and_trigger_next_step(
+        self, discuss_channel, body=None, email=None, chatbot_script_answer=None
+    ):
+        data = self.make_jsonrpc_request(
+            "/mail/message/post",
+            {
+                "thread_model": "discuss.channel",
+                "thread_id": discuss_channel.id,
+                "post_data": {
+                    "body": body or email or chatbot_script_answer.name,
+                    "message_type": "comment",
+                    "subtype_xmlid": "mail.mt_comment",
+                },
+            },
+        )
+        if email:
+            self.make_jsonrpc_request(
+                "/chatbot/step/validate_email", {"channel_id": discuss_channel.id}
+            )
         if chatbot_script_answer:
-            cls.env['chatbot.message'].search([
-                ('mail_message_id', '=', mail_message.id)
-            ], limit=1).user_script_answer_id = chatbot_script_answer.id
-        # sudo: chatbot.script.step - members of a channel can access the current chatbot step
-        next_step = mail_channel.chatbot_current_step_id.sudo()._process_answer(mail_channel, mail_message.body)
-        next_step._process_step(mail_channel)
+            message = self.env["mail.message"].browse(data["message_id"])
+            self.make_jsonrpc_request(
+                "/chatbot/answer/save",
+                {
+                    "channel_id": discuss_channel.id,
+                    "message_id": message.id,
+                    "selected_answer_id": chatbot_script_answer.id,
+                },
+            )
+        self.make_jsonrpc_request("/chatbot/step/trigger", {"channel_id": discuss_channel.id})
