@@ -17,7 +17,7 @@ msgstr ""
 
 #. module: im_livechat_mail_bot
 #. odoo-python
-#: code:addons/im_livechat_mail_bot/models/mail_bot.py
+#: code:addons/im_livechat_mail_bot/models/mail_bot.py:0
 #, python-format
 msgid ""
 "Good, you can customize canned responses in the live chat "
@@ -38,7 +38,7 @@ msgstr "Mali robotić"
 
 #. module: im_livechat_mail_bot
 #. odoo-python
-#: code:addons/im_livechat_mail_bot/models/mail_bot.py
+#: code:addons/im_livechat_mail_bot/models/mail_bot.py:0
 #, python-format
 msgid ""
 "Not sure what you are doing. Please, type <span "
@@ -70,7 +70,7 @@ msgstr "Korisnik"
 
 #. module: im_livechat_mail_bot
 #. odoo-python
-#: code:addons/im_livechat_mail_bot/models/mail_bot.py
+#: code:addons/im_livechat_mail_bot/models/mail_bot.py:0
 #, python-format
 msgid ""
 "Wonderful! 😇<br/>Try typing <span class=\"o_odoobot_command\">:</span> to "
