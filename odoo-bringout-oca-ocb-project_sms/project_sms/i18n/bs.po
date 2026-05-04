@@ -67,3 +67,48 @@ msgstr "Zadatak"
 #: model:ir.model,name:project_sms.model_project_task_type
 msgid "Task Stage"
 msgstr "Faza zadatka"
+
+#. module: project_sms
+#: model:ir.model,website_form_label:project_sms.model_project_task
+msgid "Create a Task"
+msgstr "Kreiraj zadatak"
+
+#. module: project_sms
+#: model:ir.model.fields,field_description:project_sms.field_project_project__display_name
+msgid "Display Name"
+msgstr "Naziv za prikaz"
+
+#. module: project_sms
+#: model:ir.model.fields,field_description:project_sms.field_project_project__id
+msgid "ID"
+msgstr "ID"
+
+#. module: project_sms
+#: model:ir.actions.act_window,name:project_sms.project_project_act_window_sms_composer
+msgid "Send SMS"
+msgstr "Pošalji SMS"
+
+#. module: project_sms
+#: model:ir.model.fields,help:project_sms.field_project_task__display_name
+msgid ""
+"Use these keywords in the title to set new tasks:\n"
+"\n"
+"        30h Allocate 30 hours to the task\n"
+"        #tags Set tags on the task\n"
+"        @user Assign the task to a user\n"
+"        ! Set the task a medium priority\n"
+"        !! Set the task a high priority\n"
+"        !!! Set the task a urgent priority\n"
+"\n"
+"        Make sure to use the right format and order e.g. Improve the configuration screen 5h #feature #v16 @Mitchell !"
+msgstr ""
+"Koristite ove ključne riječi u naslovu za postavljanje novih zadataka:\n"
+"\n"
+"        30h Dodijeli 30 sati zadatku\n"
+"        #tags Postavi oznake na zadatku\n"
+"        @user Dodijeli zadatak korisniku\n"
+"        ! Postavi zadatku srednji prioritet\n"
+"        !! Postavi zadatku visok prioritet\n"
+"        !!! Postavi zadatku hitan prioritet\n"
+"\n"
+"        Pazite da koristite ispravan format i redoslijed npr. Improve the configuration screen 5h #feature #v16 @Mitchell !"

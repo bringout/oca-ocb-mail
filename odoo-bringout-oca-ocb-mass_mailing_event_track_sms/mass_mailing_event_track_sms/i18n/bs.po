@@ -19,3 +19,13 @@ msgstr ""
 #: model:ir.model,name:mass_mailing_event_track_sms.model_event_event
 msgid "Event"
 msgstr "Dogadaj"
+
+#. module: mass_mailing_event_track_sms
+#: model:ir.model.fields,field_description:mass_mailing_event_track_sms.field_event_event__display_name
+msgid "Display Name"
+msgstr "Naziv za prikaz"
+
+#. module: mass_mailing_event_track_sms
+#: model:ir.model.fields,field_description:mass_mailing_event_track_sms.field_event_event__id
+msgid "ID"
+msgstr "ID"

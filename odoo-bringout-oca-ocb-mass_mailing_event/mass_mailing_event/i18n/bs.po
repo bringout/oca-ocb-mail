@@ -38,3 +38,18 @@ msgstr "<span class=\"o_stat_text\">Mail učesnici</span>"
 #: model_terms:ir.ui.view,arch_db:mass_mailing_event.event_event_view_form_inherit_mass_mailing
 msgid "Invite"
 msgstr "Pozovi"
+
+#. module: mass_mailing_event
+#: model:ir.model.fields,field_description:mass_mailing_event.field_event_event__display_name
+msgid "Display Name"
+msgstr "Naziv za prikaz"
+
+#. module: mass_mailing_event
+#: code:addons/mass_mailing_event/models/event_event.py:0
+msgid "Event: %s"
+msgstr "Događaj: %s"
+
+#. module: mass_mailing_event
+#: model:ir.model.fields,field_description:mass_mailing_event.field_event_event__id
+msgid "ID"
+msgstr "ID"

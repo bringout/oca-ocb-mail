@@ -17,7 +17,7 @@ msgstr ""
 
 #. module: mass_mailing
 #. odoo-python
-#: code:addons/mass_mailing/wizard/mailing_contact_import.py
+#: code:addons/mass_mailing/wizard/mailing_contact_import.py:0
 #, python-format
 msgid " %i duplicates have been ignored."
 msgstr " %i duplikata je zanemareno."
@@ -29,9 +29,6 @@ msgid ""
 "\"Rick Sanchez\" <rick_sanchez@example.com>\n"
 "victor_hugo@example.com"
 msgstr ""
-"\"Damien Roberts\" <d.roberts@example.com>\n"
-"\"Rick Sanchez\" <rick_sanchez@example.com>\n"
-"victor_hugo@example.com"
 
 #. module: mass_mailing
 #: model:ir.model.fields,field_description:mass_mailing.field_mailing_mailing__mailing_filter_count
@@ -70,7 +67,7 @@ msgstr "% Klikova (Ukupno)"
 
 #. module: mass_mailing
 #. odoo-python
-#: code:addons/mass_mailing/wizard/mailing_contact_import.py
+#: code:addons/mass_mailing/wizard/mailing_contact_import.py:0
 #, python-format
 msgid "%i Contacts have been imported."
 msgstr "%i kontakata je uvezeno."
@@ -78,14 +75,14 @@ msgstr "%i kontakata je uvezeno."
 # taken from hr.po
 #. module: mass_mailing
 #. odoo-python
-#: code:addons/mass_mailing/models/mailing_list.py
+#: code:addons/mass_mailing/models/mailing_list.py:0
 #, python-format
 msgid "%s (copy)"
 msgstr "%s (kopija)"
 
 #. module: mass_mailing
 #. odoo-python
-#: code:addons/mass_mailing/wizard/mailing_contact_to_list.py
+#: code:addons/mass_mailing/wizard/mailing_contact_to_list.py:0
 #, python-format
 msgid "%s Mailing Contacts have been added. "
 msgstr "%s kontakata za mailing je dodano. "
@@ -100,10 +97,10 @@ msgstr ""
 
 #. module: mass_mailing
 #. odoo-python
-#: code:addons/mass_mailing/models/ir_mail_server.py
+#: code:addons/mass_mailing/models/ir_mail_server.py:0
 #, python-format
 msgid "(scheduled for %s)"
-msgstr "(scheduled for %s)"
+msgstr ""
 
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.ab_testing_description
@@ -116,7 +113,7 @@ msgstr ""
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.s_hr_options
 msgid "100%"
-msgstr "100%"
+msgstr ""
 
 #. module: mass_mailing
 #: model:ir.model.fields,field_description:mass_mailing.field_res_config_settings__mass_mailing_reports
@@ -125,7 +122,7 @@ msgstr "24-satni statistički izvještaji o slanju pošte"
 
 #. module: mass_mailing
 #. odoo-python
-#: code:addons/mass_mailing/models/mailing.py
+#: code:addons/mass_mailing/models/mailing.py:0
 #, python-format
 msgid "24H Stats of %(mailing_type)s \"%(mailing_name)s\""
 msgstr "Statistike 24H %(mailing_type)s \"%(mailing_name)s\""
@@ -153,7 +150,7 @@ msgstr "75%"
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.snippet_options
 msgid "800px"
-msgstr "800px"
+msgstr ""
 
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.s_blockquote
@@ -234,8 +231,6 @@ msgid ""
 "<font class=\"text-o-color-2\"><span style=\"font-"
 "weight:bolder;\">-20%</span></font>"
 msgstr ""
-"<font class=\"text-o-color-2\"><span style=\"font-"
-"weight:bolder;\">-20%</span></font>"
 
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.s_alert
@@ -441,7 +436,7 @@ msgstr "<span class=\"o_stat_text\">Odjava</span>"
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.mailing_list_view_form
 msgid "<span class=\"o_stat_value\">%</span>"
-msgstr "<span class=\"o_stat_value\">%</span>"
+msgstr ""
 
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.mailing_list_view_kanban
@@ -530,17 +525,17 @@ msgstr ""
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.s_numbers
 msgid "<span style=\"font-size: 48px;\">12</span>"
-msgstr "<span style=\"font-size: 48px;\">12</span>"
+msgstr ""
 
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.s_numbers
 msgid "<span style=\"font-size: 48px;\">45</span>"
-msgstr "<span style=\"font-size: 48px;\">45</span>"
+msgstr ""
 
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.s_numbers
 msgid "<span style=\"font-size: 48px;\">8</span>"
-msgstr "<span style=\"font-size: 48px;\">8</span>"
+msgstr ""
 
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.s_call_to_action
@@ -561,7 +556,7 @@ msgstr "<span style=\"font-weight: bolder;\">UŠTEDI 20$</span>"
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.s_comparisons
 msgid "<span style=\"font-weight: bolder;\">PRO</span>"
-msgstr "<span style=\"font-weight: bolder;\">PRO</span>"
+msgstr ""
 
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.s_comparisons
@@ -616,11 +611,11 @@ msgstr "<span> puta</span>"
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.snippet_options
 msgid "<span>​</span>"
-msgstr "<span>​</span>"
+msgstr ""
 
 #. module: mass_mailing
 #. odoo-python
-#: code:addons/mass_mailing/models/mailing.py
+#: code:addons/mass_mailing/models/mailing.py:0
 #, python-format
 msgid "A campaign should be set when A/B test is enabled"
 msgstr "<strong>Otvoreno</strong>"
@@ -631,12 +626,12 @@ msgid "A color block"
 msgstr "<strong>Ovaj email nije mogao biti poslan.</strong>"
 
 #. module: mass_mailing
-#: model_terms:ir.ui.view,arch_db:mass_mailing.s_masonry_block_alternation_image_text_template
+#: code:addons/mass_mailing/static/src/builder/options/masonry_block_template_option.xml:0
 msgid "A great title"
 msgstr "Sjajan naslov"
 
 #. module: mass_mailing
-#: model:ir.model.constraint,message:mass_mailing.constraint_mailing_contact_list_rel_unique_contact_list
+#: model:ir.model.constraint,message:mass_mailing.constraint_mailing_subscription_unique_contact_list
 msgid ""
 "A mailing contact cannot subscribe to the same mailing list multiple times."
 msgstr ""
@@ -667,7 +662,7 @@ msgstr "Kratak opis"
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.utm_campaign_view_form
 msgid "A/B Test"
-msgstr "A/B Test"
+msgstr ""
 
 #. module: mass_mailing
 #: model:ir.model.fields,field_description:mass_mailing.field_mailing_mailing__ab_testing_mailings_count
@@ -681,10 +676,10 @@ msgstr "Pobjednik A/B testa"
 
 #. module: mass_mailing
 #. odoo-python
-#: code:addons/mass_mailing/models/mailing.py
+#: code:addons/mass_mailing/models/mailing.py:0
 #, python-format
 msgid "A/B Test: %s"
-msgstr "A/B Test: %s"
+msgstr ""
 
 #. module: mass_mailing
 #: model:ir.model.fields,field_description:mass_mailing.field_mailing_mailing__ab_testing_completed
@@ -704,7 +699,7 @@ msgstr "A/B postotak testiranja"
 
 #. module: mass_mailing
 #. odoo-python
-#: code:addons/mass_mailing/models/mailing.py
+#: code:addons/mass_mailing/models/mailing.py:0
 #, python-format
 msgid "A/B Tests"
 msgstr "A/B testovi"
@@ -716,7 +711,7 @@ msgstr "A/B testovi za pregled"
 
 #. module: mass_mailing
 #. odoo-python
-#: code:addons/mass_mailing/models/mailing.py
+#: code:addons/mass_mailing/models/mailing.py:0
 #, python-format
 msgid "A/B test option has not been enabled"
 msgstr "A/B test opcija nije bila omogućena"
@@ -731,7 +726,7 @@ msgstr "Potrebna akcija"
 #. module: mass_mailing
 #: model:ir.model.fields,field_description:mass_mailing.field_mailing_list__active
 msgid "Active"
-msgstr "Aktivan"
+msgstr "Aktivno"
 
 #. module: mass_mailing
 #: model:ir.model.fields,field_description:mass_mailing.field_ir_mail_server__active_mailing_ids
@@ -748,7 +743,7 @@ msgstr "Aktivnosti"
 #. module: mass_mailing
 #: model:ir.model.fields,field_description:mass_mailing.field_mailing_mailing__activity_exception_decoration
 msgid "Activity Exception Decoration"
-msgstr "Dekoracija iznimke aktivnosti"
+msgstr "Dekoracija izuzetka aktivnosti"
 
 # taken from hr.po
 #. module: mass_mailing
@@ -776,7 +771,7 @@ msgstr ""
 # taken from hr.po
 #. module: mass_mailing
 #. odoo-javascript
-#: code:addons/mass_mailing/static/src/xml/mailing_filter_widget.xml
+#: code:addons/mass_mailing/static/src/xml/mailing_filter_widget.xml:0
 #, python-format
 msgid "Add"
 msgstr "Dodaj"
@@ -818,7 +813,7 @@ msgstr "Dodaj u predloške"
 
 #. module: mass_mailing
 #. odoo-javascript
-#: code:addons/mass_mailing/static/src/xml/mailing_filter_widget.xml
+#: code:addons/mass_mailing/static/src/xml/mailing_filter_widget.xml:0
 #, python-format
 msgid "Add to favorite filters"
 msgstr "Dodaj u omiljene filtere"
@@ -866,7 +861,7 @@ msgid "Align Top"
 msgstr "Poravnaj vrh"
 
 #. module: mass_mailing
-#: model_terms:ir.ui.view,arch_db:mass_mailing.s_hr_options
+#: code:addons/mass_mailing/static/src/builder/options/alignment_option.xml:0
 msgid "Alignment"
 msgstr "Poravnanje"
 
@@ -931,12 +926,12 @@ msgstr ""
 " pretplate."
 
 #. module: mass_mailing
-#: model_terms:ir.ui.view,arch_db:mass_mailing.s_masonry_block_options
+#: code:addons/mass_mailing/static/src/builder/options/masonry_block_template_option.xml:0
 msgid "Alternate Image Text"
 msgstr "Alternativni tekst slike"
 
 #. module: mass_mailing
-#: model_terms:ir.ui.view,arch_db:mass_mailing.s_masonry_block_options
+#: code:addons/mass_mailing/static/src/builder/options/masonry_block_template_option.xml:0
 msgid "Alternate Text"
 msgstr ""
 "Dozvoli primaocu da sam upravljá svojim stanjem u crnoj listi preko stranice"
@@ -947,12 +942,12 @@ msgstr ""
 " pretplate."
 
 #. module: mass_mailing
-#: model_terms:ir.ui.view,arch_db:mass_mailing.s_masonry_block_options
+#: code:addons/mass_mailing/static/src/builder/options/masonry_block_template_option.xml:0
 msgid "Alternate Text Image"
 msgstr "Slika alternativnog teksta"
 
 #. module: mass_mailing
-#: model_terms:ir.ui.view,arch_db:mass_mailing.s_masonry_block_options
+#: code:addons/mass_mailing/static/src/builder/options/masonry_block_template_option.xml:0
 msgid "Alternate Text Image Text"
 msgstr "Tekst alternativne slike"
 
@@ -963,20 +958,20 @@ msgstr "Nevjerovatne stranice"
 
 #. module: mass_mailing
 #. odoo-javascript
-#: code:addons/mass_mailing/static/src/js/mailing_portal.js
+#: code:addons/mass_mailing/static/src/js/mailing_portal.js:0
 #, python-format
 msgid "An error occurred. Please try again later or contact us."
 msgstr "Dogodila se greška. Molimo pokušajte kasnije ili nas kontaktirajte."
 
 #. module: mass_mailing
 #. odoo-javascript
-#: code:addons/mass_mailing/static/src/js/mailing_portal.js
+#: code:addons/mass_mailing/static/src/js/mailing_portal.js:0
 #, python-format
 msgid "An error occurred. Your changes have not been saved, try again later."
 msgstr "Dogodila se greška. Vaše izmjene nisu sačuvane, pokušajte kasnije."
 
 #. module: mass_mailing
-#: model_terms:ir.ui.view,arch_db:mass_mailing.s_masonry_block_alternation_image_text_template
+#: code:addons/mass_mailing/static/src/builder/options/masonry_block_template_option.xml:0
 msgid "And a great subtitle"
 msgstr ""
 "Dogodila se greška. Molimo pokušajte ponovo kasnije ili nas kontaktirajte."
@@ -1010,14 +1005,14 @@ msgstr "Arhivirano"
 
 #. module: mass_mailing
 #. odoo-python
-#: code:addons/mass_mailing/controllers/main.py
+#: model_terms:ir.ui.view,arch_db:mass_mailing.page_mailing_confirm_unsubscribe
 #, python-format
 msgid "Are you sure you want to unsubscribe from our mailing list?"
 msgstr "Aplikacije koje vam pomažu da rastete vaš posao!"
 
 #. module: mass_mailing
 #. odoo-python
-#: code:addons/mass_mailing/controllers/main.py
+#: code:addons/mass_mailing/controllers/main.py:0
 #, python-format
 msgid ""
 "Are you sure you want to unsubscribe from the mailing list "
@@ -1028,7 +1023,7 @@ msgstr ""
 
 #. module: mass_mailing
 #. odoo-python
-#: code:addons/mass_mailing/models/mailing_list.py
+#: code:addons/mass_mailing/models/mailing_list.py:0
 #, python-format
 msgid ""
 "At least one of the mailing list you are trying to archive is used in an "
@@ -1047,7 +1042,7 @@ msgstr "Zakači datoteku"
 #. module: mass_mailing
 #: model:ir.model.fields,field_description:mass_mailing.field_mailing_contact__message_attachment_count
 msgid "Attachment Count"
-msgstr "Broj zakački"
+msgstr "Broj priloga"
 
 # taken from hr.po
 #. module: mass_mailing
@@ -1058,7 +1053,7 @@ msgstr "Prilozi"
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.snippet_options
 msgid "Auto"
-msgstr "Auto"
+msgstr ""
 
 # taken from hr.po
 #. module: mass_mailing
@@ -1093,7 +1088,7 @@ msgstr "Prosjek odgovorenih"
 
 # taken from hr.po
 #. module: mass_mailing
-#: model_terms:ir.ui.view,arch_db:mass_mailing.s_alert_options
+#: code:addons/mass_mailing/static/src/builder/options/alert_option.xml:0
 msgid "Background Color"
 msgstr "Boja pozadine"
 
@@ -1160,16 +1155,16 @@ msgstr "Email adrese na crnoj listi"
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
 msgid "Blockquote"
-msgstr "Blockquote"
+msgstr ""
 
 # taken from hr.po
 #. module: mass_mailing
-#: model:ir.model.fields,field_description:mass_mailing.field_mailing_mailing__body_arch
+#: code:addons/mass_mailing/static/src/builder/plugins/design_tab_plugin.js:0
 msgid "Body"
 msgstr "Tijelo poruke"
 
 #. module: mass_mailing
-#: model_terms:ir.ui.view,arch_db:mass_mailing.snippet_options
+#: code:addons/mass_mailing/static/src/builder/tabs/design_tab.xml:0
 msgid "Body Width"
 msgstr "Širina sadržaja"
 
@@ -1190,7 +1185,7 @@ msgid "Books"
 msgstr "Knjige"
 
 #. module: mass_mailing
-#: model_terms:ir.ui.view,arch_db:mass_mailing.s_hr_options
+#: code:addons/mass_mailing/static/src/builder/options/border_options.xml:0
 msgid "Border"
 msgstr "Okvir"
 
@@ -1207,7 +1202,7 @@ msgstr "Vraćeno (%)"
 
 #. module: mass_mailing
 #. odoo-python
-#: code:addons/mass_mailing/models/mailing.py
+#: code:addons/mass_mailing/models/mailing.py:0
 #, python-format
 msgid ""
 "Bounce happens when a mailing cannot be delivered (fake address, server "
@@ -1235,7 +1230,7 @@ msgstr "Omjer odbijenog"
 
 #. module: mass_mailing
 #. odoo-python
-#: code:addons/mass_mailing/models/mailing.py
+#: code:addons/mass_mailing/models/mailing.py:0
 #, python-format
 msgid "Business Benefits on %(expected)i %(mailing_type)s Sent"
 msgstr "Poslovne prednosti na %(expected)i %(mailing_type)s poslatih"
@@ -1248,7 +1243,7 @@ msgstr "Labela tipke"
 
 #. module: mass_mailing
 #. odoo-javascript
-#: code:addons/mass_mailing/static/src/js/tours/mass_mailing_tour.js
+#: code:addons/mass_mailing/static/src/js/tours/mass_mailing_tour.js:0
 #, python-format
 msgid "By using the <b>Breadcrumb</b>, you can navigate back to the overview."
 msgstr "Koristeći <b>navigaciju</b>, možete se vratiti na pregled."
@@ -1323,7 +1318,7 @@ msgstr ""
 
 # taken from hr.po
 #. module: mass_mailing
-#: model_terms:ir.ui.view,arch_db:mass_mailing.s_hr_options
+#: code:addons/mass_mailing/static/src/builder/options/alignment_option.xml:0
 msgid "Center"
 msgstr "Centar"
 
@@ -1370,40 +1365,40 @@ msgstr "Pogledate sav naš namještaj"
 
 #. module: mass_mailing
 #. odoo-javascript
-#: code:addons/mass_mailing/static/src/js/tours/mass_mailing_tour.js
+#: code:addons/mass_mailing/static/src/js/tours/mass_mailing_tour.js:0
 #, python-format
 msgid "Check the email address and click send."
 msgstr "Proverite e-mail adresu i kliknite pošalji."
 
 #. module: mass_mailing
 #. odoo-javascript
-#: code:addons/mass_mailing/static/src/js/tours/mass_mailing_tour.js
+#: code:addons/mass_mailing/static/src/js/tours/mass_mailing_tour.js:0
 #, python-format
 msgid "Choose this <b>theme</b>."
 msgstr "Izaberite ovu <b>temu</b>."
 
 #. module: mass_mailing
-#: model_terms:ir.ui.view,arch_db:mass_mailing.unsubscribe
+#: code:addons/mass_mailing/static/src/xml/mailing_portal_subscription_form.xml:0
 msgid "Choose your mailing subscriptions"
 msgstr "Pogledajte ovo!"
 
 #. module: mass_mailing
 #. odoo-javascript
-#: code:addons/mass_mailing/static/src/xml/mass_mailing.xml
+#: code:addons/mass_mailing/static/src/xml/mass_mailing.xml:0
 #, python-format
 msgid "Click on the ⭐ next to the subject to save this mailing as a"
 msgstr "Kliknite na ⭐ pored teme da sačuvate ovaj mailing kao"
 
 #. module: mass_mailing
 #. odoo-javascript
-#: code:addons/mass_mailing/static/src/js/tours/mass_mailing_tour.js
+#: code:addons/mass_mailing/static/src/js/tours/mass_mailing_tour.js:0
 #, python-format
 msgid "Click on this button to add this mailing to your templates."
 msgstr "Kliknite na ovo dugme da dodate ovaj mailing u vaše predloške."
 
 #. module: mass_mailing
 #. odoo-javascript
-#: code:addons/mass_mailing/static/src/js/tours/mass_mailing_tour.js
+#: code:addons/mass_mailing/static/src/js/tours/mass_mailing_tour.js:0
 #, python-format
 msgid "Click on this paragraph to edit it."
 msgstr "Kliknite na ovaj pasus da ga uredite."
@@ -1461,13 +1456,13 @@ msgid "Columns"
 msgstr "Kolone"
 
 #. module: mass_mailing
-#: model_terms:ir.ui.view,arch_db:mass_mailing.unsubscribe
+#: model_terms:ir.ui.view,arch_db:mass_mailing.unsubscribe_form
 msgid "Come Back"
 msgstr "Boja"
 
 #. module: mass_mailing
 #. odoo-python
-#: code:addons/mass_mailing/models/mailing.py
+#: code:addons/mass_mailing/models/mailing.py:0
 #, python-format
 msgid ""
 "Come back once your mailing has been sent to track who opened your mailing."
@@ -1511,7 +1506,7 @@ msgstr "Konfigurišite servere za odlaznu poštu"
 
 #. module: mass_mailing
 #. odoo-javascript
-#: code:addons/mass_mailing/static/src/js/tours/mass_mailing_tour.js
+#: model_terms:web_tour.tour,rainbow_man_message:mass_mailing.mass_mailing_tour
 #, python-format
 msgid "Congratulations, I love your first mailing. :)"
 msgstr "Čestitamo, volim vaš prvi mailing. :)"
@@ -1564,7 +1559,7 @@ msgstr "Nastavi čitanje <i class=\"fa fa-long-arrow-right align-middle ms-1\"/>
 
 #. module: mass_mailing
 #. odoo-python
-#: code:addons/mass_mailing/models/mailing.py
+#: code:addons/mass_mailing/models/mailing.py:0
 #, python-format
 msgid "Could not retrieve URL: %s"
 msgstr "Nije moguće dohvatiti URL: %s"
@@ -1631,7 +1626,7 @@ msgstr "Kreirao"
 #. module: mass_mailing
 #: model:ir.model.fields,field_description:mass_mailing.field_mailing_contact__create_date
 msgid "Created on"
-msgstr "Kampanja masovnog slanja"
+msgstr "Kreirano"
 
 # taken from hr.po
 #. module: mass_mailing
@@ -1646,13 +1641,13 @@ msgstr "Kreiraj novog primaoca"
 
 # taken from hr.po
 #. module: mass_mailing
-#: model_terms:ir.ui.view,arch_db:mass_mailing.s_rating_options
+#: model_terms:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
 msgid "Custom"
 msgstr "Prilagođen"
 
 #. module: mass_mailing
 #. odoo-javascript
-#: code:addons/mass_mailing/static/src/js/mass_mailing_html_field.js
+#: code:addons/mass_mailing/static/src/builder/plugins/mass_mailing_setup_plugin.js:0
 #, python-format
 msgid "DRAG BUILDING BLOCKS HERE"
 msgstr ""
@@ -1660,7 +1655,7 @@ msgstr ""
 "                                Diskusija će ispitati kako da razvije nove norme i integriše ih u EU"
 
 #. module: mass_mailing
-#: model_terms:ir.ui.view,arch_db:mass_mailing.snippet_options
+#: code:addons/mass_mailing/static/src/builder/tabs/design_tab.xml:0
 msgid "Dashed"
 msgstr "Kiberbezbednost"
 
@@ -1668,7 +1663,7 @@ msgstr "Kiberbezbednost"
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.utm_campaign_view_form
 msgid "Date"
-msgstr "DEFAULT"
+msgstr "Datum"
 
 #. module: mass_mailing
 #: model:ir.model.fields,help:mass_mailing.field_mailing_mailing__calendar_date
@@ -1689,12 +1684,12 @@ msgstr "Namjenski poslužitelj"
 
 # taken from hr.po
 #. module: mass_mailing
-#: model_terms:ir.ui.view,arch_db:mass_mailing.s_masonry_block_options
+#: code:addons/mass_mailing/static/src/builder/options/image_tool_option.xml:0
 msgid "Default"
 msgstr "Zadano"
 
 #. module: mass_mailing
-#: model_terms:ir.ui.view,arch_db:mass_mailing.s_masonry_block_options
+#: code:addons/mass_mailing/static/src/builder/options/masonry_block_template_option.xml:0
 msgid "Default Reversed"
 msgstr "Podrazumijevano obrnuto"
 
@@ -1742,7 +1737,7 @@ msgstr "Dostavljeno do"
 
 #. module: mass_mailing
 #. odoo-javascript
-#: code:addons/mass_mailing/static/src/js/snippets.editor.js
+#: code:addons/mass_mailing/static/src/js/snippets.editor.js:0
 #, python-format
 msgid "Design Options"
 msgstr "Opcije dizajna"
@@ -1756,14 +1751,14 @@ msgstr ""
 
 #. module: mass_mailing
 #. odoo-python
-#: code:addons/mass_mailing/models/mailing.py
+#: code:addons/mass_mailing/models/mailing.py:0
 #, python-format
 msgid "Design added to the %s Templates!"
-msgstr "Design added to the %s Templates!"
+msgstr ""
 
 #. module: mass_mailing
 #. odoo-python
-#: code:addons/mass_mailing/models/mailing.py
+#: code:addons/mass_mailing/models/mailing.py:0
 #, python-format
 msgid "Design removed from the %s Templates!"
 msgstr "Dizajn uklonjen iz %s predložaka!"
@@ -1802,9 +1797,9 @@ msgstr "Prikaži u liniji"
 
 # taken from hr.po
 #. module: mass_mailing
-#: model:ir.model.fields,field_description:mass_mailing.field_mailing_contact__display_name
+#: model:ir.model.fields,field_description:mass_mailing.field_ir_http__display_name
 msgid "Display Name"
-msgstr "Prikazani naziv"
+msgstr "Naziv za prikaz"
 
 # taken from hr.po
 #. module: mass_mailing
@@ -1820,7 +1815,7 @@ msgstr "Model dokumenta"
 
 # taken from hr.po
 #. module: mass_mailing
-#: model:ir.model.fields,field_description:mass_mailing.field_mailing_mailing__mailing_domain
+#: code:addons/mass_mailing/static/src/builder/options/snippet_visibility_option.xml:0
 msgid "Domain"
 msgstr "Domen"
 
@@ -1831,18 +1826,18 @@ msgstr "Ne zaboravite poslati vašu omiljenu verziju"
 
 #. module: mass_mailing
 #. odoo-javascript
-#: code:addons/mass_mailing/static/src/js/tours/mass_mailing_tour.js
+#: code:addons/mass_mailing/static/src/js/tours/mass_mailing_tour.js:0
 #, python-format
 msgid "Don't worry, the mailing contact we created is an internal user."
 msgstr "Ne brinite, kontakt za mailing koji smo kreirali je interni korisnik."
 
 #. module: mass_mailing
-#: model_terms:ir.ui.view,arch_db:mass_mailing.snippet_options
+#: code:addons/mass_mailing/static/src/builder/tabs/design_tab.xml:0
 msgid "Dotted"
 msgstr "Punktirano"
 
 #. module: mass_mailing
-#: model_terms:ir.ui.view,arch_db:mass_mailing.snippet_options
+#: code:addons/mass_mailing/static/src/builder/tabs/design_tab.xml:0
 msgid "Double"
 msgstr "Duplo"
 
@@ -1855,7 +1850,7 @@ msgstr "Dvostruko kliknite ikonu da je zamenite onom po vašem izboru."
 #. module: mass_mailing
 #: model:ir.model.fields.selection,name:mass_mailing.selection__mailing_mailing__state__draft
 msgid "Draft"
-msgstr "U pripremi"
+msgstr "Nacrt"
 
 # taken from hr.po
 #. module: mass_mailing
@@ -1892,7 +1887,7 @@ msgstr "Uredi stilove"
 # taken from hr.po
 #. module: mass_mailing
 #. odoo-javascript
-#: code:addons/mass_mailing/static/src/js/mass_mailing_html_field.js
+#: model:ir.model.fields,field_description:mass_mailing.field_mailing_contact__email
 #, python-format
 msgid "Email"
 msgstr "E-Mail"
@@ -1910,15 +1905,13 @@ msgstr "Sadržaj e-maila"
 #. module: mass_mailing
 #. odoo-python
 #: code:addons/mass_mailing/models/res_users.py:0
-#: model:ir.ui.menu,name:mass_mailing.mass_mailing_menu_root
-#: model_terms:ir.ui.view,arch_db:mass_mailing.res_config_settings_view_form
 #, python-format
 msgid "Email Marketing"
-msgstr "Email Marketing"
+msgstr "Email marketing"
 
 #. module: mass_mailing
 #. odoo-python
-#: code:addons/mass_mailing/models/ir_mail_server.py
+#: code:addons/mass_mailing/models/ir_mail_server.py:0
 #, python-format
 msgid ""
 "Email Marketing uses it as its default mail server to send mass mailings"
@@ -1941,7 +1934,7 @@ msgstr "Čarobnjak sastavljanja email-a"
 # taken from hr.po
 #. module: mass_mailing
 #. odoo-python
-#: code:addons/mass_mailing/models/mailing.py
+#: code:addons/mass_mailing/models/mailing.py:0
 #, python-format
 msgid "Emails"
 msgstr "E-mailovi"
@@ -1954,7 +1947,7 @@ msgstr "E-mail statistike"
 
 #. module: mass_mailing
 #. odoo-python
-#: code:addons/mass_mailing/models/mailing.py
+#: code:addons/mass_mailing/models/mailing.py:0
 #, python-format
 msgid "Engagement on %(expected)i %(mailing_type)s Sent"
 msgstr "Angažovanje na %(expected)i %(mailing_type)s poslatih"
@@ -2008,7 +2001,7 @@ msgstr "Napredni filteri..."
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.social_links
 msgid "Facebook"
-msgstr "Facebook"
+msgstr ""
 
 # taken from hr.po
 #. module: mass_mailing
@@ -2078,7 +2071,7 @@ msgstr "Mreža funkcija"
 
 #. module: mass_mailing
 #. odoo-python
-#: code:addons/mass_mailing/controllers/main.py
+#: code:addons/mass_mailing/controllers/main.py:0
 #, python-format
 msgid "Feedback from %(email)s: %(feedback)s"
 msgstr "Povratne informacije od %(email)s: %(feedback)s"
@@ -2086,7 +2079,7 @@ msgstr "Povratne informacije od %(email)s: %(feedback)s"
 # taken from hr.po
 #. module: mass_mailing
 #. odoo-python
-#: code:addons/mass_mailing/models/mailing.py
+#: code:addons/mass_mailing/models/mailing.py:0
 #, python-format
 msgid "File size exceeds configured maximum (%s bytes)"
 msgstr "Datoteka prekoračuje definirani maksimum (%s bajtova)"
@@ -2112,7 +2105,7 @@ msgstr "Naziv filtera"
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.mailing_filter_view_search
 msgid "Filters saved by me"
-msgstr "Filters saved by me"
+msgstr ""
 
 # taken from hr.po
 #. module: mass_mailing
@@ -2145,7 +2138,7 @@ msgstr "Pratioci"
 #. module: mass_mailing
 #: model:ir.model.fields,field_description:mass_mailing.field_mailing_contact__message_partner_ids
 msgid "Followers (Partners)"
-msgstr "Pratioci (Partneri)"
+msgstr "Pratioci (partneri)"
 
 # taken from hr.po
 #. module: mass_mailing
@@ -2192,7 +2185,7 @@ msgstr "Puno"
 
 # taken from hr.po
 #. module: mass_mailing
-#: model_terms:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+#: code:addons/mass_mailing/static/src/builder/mass_mailing_builder.xml:0
 msgid "Fullscreen"
 msgstr "Puni zaslon"
 
@@ -2249,17 +2242,17 @@ msgid "Headers"
 msgstr "Zaglavlja"
 
 #. module: mass_mailing
-#: model_terms:ir.ui.view,arch_db:mass_mailing.snippet_options
+#: code:addons/mass_mailing/static/src/builder/tabs/design_tab.xml:0
 msgid "Heading 1"
 msgstr "Naslov 1"
 
 #. module: mass_mailing
-#: model_terms:ir.ui.view,arch_db:mass_mailing.snippet_options
+#: code:addons/mass_mailing/static/src/builder/tabs/design_tab.xml:0
 msgid "Heading 2"
 msgstr "Naslov 2"
 
 #. module: mass_mailing
-#: model_terms:ir.ui.view,arch_db:mass_mailing.snippet_options
+#: code:addons/mass_mailing/static/src/builder/tabs/design_tab.xml:0
 msgid "Heading 3"
 msgstr "Naslov 3"
 
@@ -2290,18 +2283,7 @@ msgid "Highest Reply Rate"
 msgstr "Najviša stopa odgovora"
 
 #. module: mass_mailing
-#: model:ir.model.fields,field_description:mass_mailing.field_mailing_contact__id
-#: model:ir.model.fields,field_description:mass_mailing.field_mailing_contact_import__id
-#: model:ir.model.fields,field_description:mass_mailing.field_mailing_contact_subscription__id
-#: model:ir.model.fields,field_description:mass_mailing.field_mailing_contact_to_list__id
-#: model:ir.model.fields,field_description:mass_mailing.field_mailing_filter__id
-#: model:ir.model.fields,field_description:mass_mailing.field_mailing_list__id
-#: model:ir.model.fields,field_description:mass_mailing.field_mailing_list_merge__id
-#: model:ir.model.fields,field_description:mass_mailing.field_mailing_mailing__id
-#: model:ir.model.fields,field_description:mass_mailing.field_mailing_mailing_schedule_date__id
-#: model:ir.model.fields,field_description:mass_mailing.field_mailing_mailing_test__id
-#: model:ir.model.fields,field_description:mass_mailing.field_mailing_trace__id
-#: model:ir.model.fields,field_description:mass_mailing.field_mailing_trace_report__id
+#: model:ir.model.fields,field_description:mass_mailing.field_ir_http__id
 msgid "ID"
 msgstr "ID"
 
@@ -2326,13 +2308,13 @@ msgstr "Ikona"
 #. module: mass_mailing
 #: model:ir.model.fields,help:mass_mailing.field_mailing_mailing__activity_exception_icon
 msgid "Icon to indicate an exception activity."
-msgstr "Ikona za prikaz iznimki."
+msgstr "Ikona za označavanje izuzetne aktivnosti."
 
 # taken from hr.po
 #. module: mass_mailing
 #: model:ir.model.fields,help:mass_mailing.field_mailing_contact__message_needaction
 msgid "If checked, new messages require your attention."
-msgstr "Ako je zakačeno, nove poruke će zahtjevati vašu pažnju"
+msgstr "Ako je označeno, nove poruke zahtijevaju vašu pažnju."
 
 #. module: mass_mailing
 #: model:ir.model.fields,help:mass_mailing.field_mailing_mailing__ab_testing_enabled
@@ -2350,10 +2332,10 @@ msgstr ""
 #. module: mass_mailing
 #: model:ir.model.fields,help:mass_mailing.field_mailing_contact__message_has_error
 msgid "If checked, some messages have a delivery error."
-msgstr "Lista email adresa odvojenih zarezom."
+msgstr "Ako je označeno, neke poruke imaju grešku pri dostavi."
 
 #. module: mass_mailing
-#: model:ir.model.fields,help:mass_mailing.field_account_invoice_send__mass_mailing_name
+#: model:ir.model.fields,help:mass_mailing.field_mail_compose_message__mass_mailing_name
 msgid ""
 "If set, a mass mailing will be created so that you can track its results in "
 "the Email Marketing app."
@@ -2382,13 +2364,13 @@ msgid "Image - Text"
 msgstr "Slika - Tekst"
 
 #. module: mass_mailing
-#: model_terms:ir.ui.view,arch_db:mass_mailing.s_masonry_block_options
+#: code:addons/mass_mailing/static/src/builder/options/masonry_block_template_option.xml:0
 msgid "Image Text Image"
 msgstr "Slika Tekst Slika"
 
 #. module: mass_mailing
 #. odoo-python
-#: code:addons/mass_mailing/models/mailing.py
+#: code:addons/mass_mailing/models/mailing.py:0
 #, python-format
 msgid ""
 "Image size excessive, imported images must be smaller than 42 million pixel"
@@ -2398,34 +2380,34 @@ msgstr ""
 
 # taken from hr.po
 #. module: mass_mailing
-#: model_terms:ir.ui.view,arch_db:mass_mailing.s_masonry_block_options
+#: code:addons/mass_mailing/static/src/builder/options/masonry_block_template_option.xml:0
 msgid "Images"
 msgstr "Slike"
 
 # taken from hr.po
 #. module: mass_mailing
 #. odoo-javascript
-#: code:addons/mass_mailing/static/src/views/mass_mailing_views.xml
+#: model_terms:ir.ui.view,arch_db:mass_mailing.mailing_contact_import_view_form
 #, python-format
 msgid "Import"
 msgstr "Uvoz"
 
 # taken from hr.po
 #. module: mass_mailing
-#: model_terms:ir.ui.view,arch_db:mass_mailing.mailing_list_view_kanban
+#: model_terms:ir.ui.view,arch_db:mass_mailing.mailing_list_view_form
 msgid "Import Contacts"
 msgstr "Uvoz kontakata"
 
 #. module: mass_mailing
 #. odoo-python
-#: code:addons/mass_mailing/wizard/mailing_contact_import.py
+#: code:addons/mass_mailing/wizard/mailing_contact_import.py:0
 #, python-format
 msgid "Import Mailing Contacts"
 msgstr "Uvoz kontakata za slanje pošte"
 
 #. module: mass_mailing
 #. odoo-python
-#: code:addons/mass_mailing/models/mailing_contact.py
+#: code:addons/mass_mailing/models/mailing_contact.py:0
 #, python-format
 msgid "Import Template for Mailing List Contacts"
 msgstr "Uvezi predložak za kontakte mailing liste"
@@ -2449,7 +2431,7 @@ msgstr "Unutrašnji sadržaj"
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.social_links
 msgid "Instagram"
-msgstr "Instagram"
+msgstr ""
 
 # taken from hr.po
 #. module: mass_mailing
@@ -2460,7 +2442,7 @@ msgstr "Nepostojeća email adresa"
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.s_company_team
 msgid "Iris Joe, CFO"
-msgstr "Iris Joe, CFO"
+msgstr ""
 
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.s_company_team
@@ -2492,7 +2474,7 @@ msgstr "Je li kampanja slanja pošte aktivirana"
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.snippet_options
 msgid "Italic"
-msgstr "Italic"
+msgstr ""
 
 # taken from hr.po
 #. module: mass_mailing
@@ -2531,7 +2513,7 @@ msgstr "Jezik"
 
 # taken from hr.po
 #. module: mass_mailing
-#: model_terms:ir.ui.view,arch_db:mass_mailing.s_alert_options
+#: code:addons/mass_mailing/static/src/builder/options/alert_option.xml:0
 msgid "Large"
 msgstr ""
 "Pridružite se našem marketing biltenu i dobijte <strong>ovaj beli papir "
@@ -2546,7 +2528,7 @@ msgstr "Posljednja funkcija"
 #. module: mass_mailing
 #: model:ir.model.fields,field_description:mass_mailing.field_mailing_contact____last_update
 msgid "Last Modified on"
-msgstr "Jeste email valjan"
+msgstr "Zadnja izmjena"
 
 # taken from hr.po
 #. module: mass_mailing
@@ -2568,7 +2550,7 @@ msgstr "Zadnje ažurirano"
 
 # taken from hr.po
 #. module: mass_mailing
-#: model_terms:ir.ui.view,arch_db:mass_mailing.s_hr_options
+#: code:addons/mass_mailing/static/src/builder/options/alignment_option.xml:0
 msgid "Left"
 msgstr "Lijevo"
 
@@ -2584,7 +2566,7 @@ msgstr "Lijevi tekst"
 
 #. module: mass_mailing
 #. odoo-javascript
-#: code:addons/mass_mailing/static/src/js/tours/mass_mailing_tour.js
+#: code:addons/mass_mailing/static/src/js/tours/mass_mailing_tour.js:0
 #, python-format
 msgid "Let's try the Email Marketing app."
 msgstr "Pokušajmo aplikaciju Email Marketing."
@@ -2602,7 +2584,7 @@ msgstr "Klik na praćenje linka"
 
 #. module: mass_mailing
 #. odoo-python
-#: code:addons/mass_mailing/models/mailing.py
+#: code:addons/mass_mailing/models/mailing.py:0
 #, python-format
 msgid ""
 "Link Trackers will measure how many times each link is clicked as well as "
@@ -2614,11 +2596,11 @@ msgstr ""
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.social_links
 msgid "LinkedIn"
-msgstr "LinkedIn"
+msgstr ""
 
 # taken from hr.po
 #. module: mass_mailing
-#: model_terms:ir.ui.view,arch_db:mass_mailing.snippet_options
+#: code:addons/mass_mailing/static/src/builder/tabs/design_tab.xml:0
 msgid "Links"
 msgstr "Linkovi"
 
@@ -2640,9 +2622,8 @@ msgstr "London, Ujedinjeno Kraljevstvo"
 
 #. module: mass_mailing
 #: model:ir.model.fields,field_description:mass_mailing.field_mailing_trace__mail_mail_id
-#: model:ir.model.fields.selection,name:mass_mailing.selection__mailing_trace_report__mailing_type__mail
 msgid "Mail"
-msgstr "Mail"
+msgstr "Email"
 
 # taken from hr.po
 #. module: mass_mailing
@@ -2653,12 +2634,12 @@ msgstr "Sadržaj maila"
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.mailing_mailing_view_form_full_width
 msgid "Mail Debug"
-msgstr "Mail Debug"
+msgstr ""
 
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.mailing_trace_view_form
 msgid "Mail ID"
-msgstr "Mail ID"
+msgstr ""
 
 # taken from hr.po
 #. module: mass_mailing
@@ -2683,10 +2664,8 @@ msgstr "Email statistike"
 
 #. module: mass_mailing
 #: model:ir.model,name:mass_mailing.model_ir_mail_server
-#: model:ir.model.fields,field_description:mass_mailing.field_mailing_mailing__mail_server_id
-#: model:ir.model.fields,field_description:mass_mailing.field_res_config_settings__mass_mailing_mail_server_id
 msgid "Mail Server"
-msgstr "Mail Server"
+msgstr "Mail server"
 
 #. module: mass_mailing
 #: model:ir.model.fields,field_description:mass_mailing.field_mailing_mailing__mail_server_available
@@ -2721,7 +2700,7 @@ msgid "Mailing Campaigns"
 msgstr "Kampanje slanja pošte"
 
 #. module: mass_mailing
-#: model:ir.model,name:mass_mailing.model_mailing_contact
+#: code:addons/mass_mailing/models/mailing_subscription.py:0
 msgid "Mailing Contact"
 msgstr "Faza kampanje masovnog slanja"
 
@@ -2757,12 +2736,12 @@ msgid "Mailing List Contacts"
 msgstr "Kontakti mailing liste"
 
 #. module: mass_mailing
-#: model_terms:ir.ui.view,arch_db:mass_mailing.mailing_contact_subscription_view_form
+#: model:ir.model,name:mass_mailing.model_mailing_subscription
 msgid "Mailing List Subscription"
 msgstr "Pretplata na mailing listu"
 
 #. module: mass_mailing
-#: model_terms:ir.ui.view,arch_db:mass_mailing.mailing_contact_subscription_view_search
+#: model_terms:ir.ui.view,arch_db:mass_mailing.mailing_subscription_view_graph
 msgid "Mailing List Subscriptions"
 msgstr "Pretplate na mailing liste"
 
@@ -2793,7 +2772,7 @@ msgstr "Statistika slanja pošte"
 
 # taken from hr.po
 #. module: mass_mailing
-#: model_terms:ir.ui.view,arch_db:mass_mailing.unsubscribe
+#: model_terms:ir.ui.view,arch_db:mass_mailing.unsubscribe_form
 msgid "Mailing Subscriptions"
 msgstr "Pretplate na slanje pošte"
 
@@ -2820,7 +2799,7 @@ msgstr "Opis vrste slanja pošte"
 
 #. module: mass_mailing
 #. odoo-python
-#: code:addons/mass_mailing/wizard/mailing_mailing_test.py
+#: code:addons/mass_mailing/wizard/mailing_mailing_test.py:0
 #, python-format
 msgid "Mailing addresses incorrect: %s"
 msgstr "Mailing adrese neispravne: %s"
@@ -2854,7 +2833,7 @@ msgstr "Mailinzi koji su dodijeljeni meni"
 #. module: mass_mailing
 #: model:ir.model.fields,field_description:mass_mailing.field_mailing_contact__message_main_attachment_id
 msgid "Main Attachment"
-msgstr "Glavna zakačka"
+msgstr "Glavni prilog"
 
 # taken from hr.po
 #. module: mass_mailing
@@ -2876,7 +2855,7 @@ msgstr "Ručno"
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.mailing_trace_view_form
 msgid "Marketing"
-msgstr "Marketing"
+msgstr ""
 
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
@@ -2886,7 +2865,7 @@ msgstr "Upravljajte kampanjama masovnih email-ova sa fazama procesa"
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
 msgid "Masonry"
-msgstr "Masonry"
+msgstr ""
 
 # taken from hr.po
 #. module: mass_mailing
@@ -2902,7 +2881,7 @@ msgstr "Masovno slanje pošte"
 
 #. module: mass_mailing
 #. odoo-python
-#: code:addons/mass_mailing/models/ir_mail_server.py
+#: code:addons/mass_mailing/models/ir_mail_server.py:0
 #, python-format
 msgid "Mass Mailing \"%s\""
 msgstr "Masovni mailing \"%s\""
@@ -2915,12 +2894,12 @@ msgstr "Analiza masovne pošte"
 
 # taken from hr.po
 #. module: mass_mailing
-#: model:ir.model.fields,field_description:mass_mailing.field_account_invoice_send__campaign_id
+#: model:ir.model.fields,field_description:mass_mailing.field_mail_compose_message__campaign_id
 msgid "Mass Mailing Campaign"
 msgstr "Kampanja masovne pošte"
 
 #. module: mass_mailing
-#: model:ir.model.fields,field_description:mass_mailing.field_account_invoice_send__mass_mailing_name
+#: model:ir.model.fields,field_description:mass_mailing.field_mail_compose_message__mass_mailing_name
 msgid "Mass Mailing Name"
 msgstr "Naziv masovnog slanja pošte"
 
@@ -2963,7 +2942,7 @@ msgstr "Naslov medija"
 
 # taken from hr.po
 #. module: mass_mailing
-#: model:ir.model.fields,field_description:mass_mailing.field_mailing_mailing__medium_id
+#: code:addons/mass_mailing/static/src/builder/options/alert_option.xml:0
 msgid "Medium"
 msgstr "Medijum"
 
@@ -2997,7 +2976,7 @@ msgstr "Spoji u postojeću mailing listu"
 #. module: mass_mailing
 #: model:ir.model.fields,field_description:mass_mailing.field_mailing_contact__message_has_error
 msgid "Message Delivery error"
-msgstr "Greška pri isporuci poruke"
+msgstr "Greška dostave poruke"
 
 # taken from hr.po
 #. module: mass_mailing
@@ -3047,7 +3026,7 @@ msgstr "Nedostaje e-mail adresa"
 
 #. module: mass_mailing
 #. odoo-javascript
-#: code:addons/mass_mailing/static/src/js/mass_mailing_html_field.js
+#: code:addons/mass_mailing/static/src/js/mass_mailing_html_field.js:0
 #, python-format
 msgid "Mobile Preview"
 msgstr "Mobilni pregled"
@@ -3072,13 +3051,13 @@ msgstr "Više detalja"
 # taken from hr.po
 #. module: mass_mailing
 #. odoo-python
-#: code:addons/mass_mailing/models/mailing.py
+#: code:addons/mass_mailing/models/mailing.py:0
 #, python-format
 msgid "More Info"
 msgstr "Više informacija"
 
 #. module: mass_mailing
-#: model_terms:ir.ui.view,arch_db:mass_mailing.s_masonry_block_options
+#: code:addons/mass_mailing/static/src/builder/options/masonry_block_template_option.xml:0
 msgid "Mosaic"
 msgstr "Mozaik"
 
@@ -3086,7 +3065,7 @@ msgstr "Mozaik"
 #. module: mass_mailing
 #: model:ir.model.fields,field_description:mass_mailing.field_mailing_mailing__my_activity_date_deadline
 msgid "My Activity Deadline"
-msgstr "Rok za moju aktivnost"
+msgstr "Rok moje aktivnosti"
 
 # taken from hr.po
 #. module: mass_mailing
@@ -3102,13 +3081,13 @@ msgstr "Moji filteri"
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_search
 msgid "My Mailings"
-msgstr "My Mailings"
+msgstr "Moje pošiljke"
 
 # taken from hr.po
 #. module: mass_mailing
 #: model:ir.model.fields,field_description:mass_mailing.field_mailing_contact__name
 msgid "Name"
-msgstr "Naziv:"
+msgstr "Naziv"
 
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.mailing_contact_view_search
@@ -3122,7 +3101,7 @@ msgstr "Novi naziv mailing liste"
 
 #. module: mass_mailing
 #. odoo-python
-#: code:addons/mass_mailing/wizard/mailing_contact_import.py
+#: code:addons/mass_mailing/wizard/mailing_contact_import.py:0
 #, python-format
 msgid "New contacts imported"
 msgstr "Novi contacts imported"
@@ -3131,7 +3110,7 @@ msgstr "Novi contacts imported"
 #. module: mass_mailing
 #: model:utm.campaign,title:mass_mailing.mass_mail_campaign_1
 msgid "Newsletter"
-msgstr "Newsletter"
+msgstr ""
 
 # taken from hr.po
 #. module: mass_mailing
@@ -3143,7 +3122,7 @@ msgstr "Događaj sljedećeg kalendara aktivnosti"
 #. module: mass_mailing
 #: model:ir.model.fields,field_description:mass_mailing.field_mailing_mailing__activity_date_deadline
 msgid "Next Activity Deadline"
-msgstr "Krajnji rok slijedeće aktivnosti"
+msgstr "Rok sljedeće aktivnosti"
 
 # taken from hr.po
 #. module: mass_mailing
@@ -3159,42 +3138,42 @@ msgstr "Tip sljedeće aktivnosti"
 
 #. module: mass_mailing
 #. odoo-python
-#: code:addons/mass_mailing/models/mailing.py
+#: code:addons/mass_mailing/models/mailing.py:0
 #, python-format
 msgid "No %s address bounced yet!"
 msgstr "Još nije odbačena ni jedna %s adresa!"
 
 #. module: mass_mailing
 #. odoo-python
-#: code:addons/mass_mailing/models/mailing.py
+#: code:addons/mass_mailing/models/mailing.py:0
 #, python-format
 msgid "No %s clicked your mailing yet!"
 msgstr "Nijedan %s još nije kliknuo na vašu pošiljku!"
 
 #. module: mass_mailing
 #. odoo-python
-#: code:addons/mass_mailing/models/mailing.py
+#: code:addons/mass_mailing/models/mailing.py:0
 #, python-format
 msgid "No %s opened your mailing yet!"
 msgstr "Nijedan %s još nije otvorio vašu pošiljku!"
 
 #. module: mass_mailing
 #. odoo-python
-#: code:addons/mass_mailing/models/mailing.py
+#: code:addons/mass_mailing/models/mailing.py:0
 #, python-format
 msgid "No %s received your mailing yet!"
 msgstr "Nijedan %s još nije primio vašu pošiljku!"
 
 #. module: mass_mailing
 #. odoo-python
-#: code:addons/mass_mailing/models/mailing.py
+#: code:addons/mass_mailing/models/mailing.py:0
 #, python-format
 msgid "No %s replied to your mailing yet!"
 msgstr "Nijedan %s još nije odgovorio na vašu pošiljku!"
 
 #. module: mass_mailing
 #. odoo-python
-#: code:addons/mass_mailing/wizard/mailing_contact_import.py
+#: code:addons/mass_mailing/wizard/mailing_contact_import.py:0
 #, python-format
 msgid ""
 "No contacts were imported. All email addresses are already in the mailing "
@@ -3216,14 +3195,14 @@ msgstr "Nema još podataka!"
 
 #. module: mass_mailing
 #. odoo-python
-#: code:addons/mass_mailing/models/mailing.py
+#: code:addons/mass_mailing/models/mailing.py:0
 #, python-format
 msgid "No mailing campaign has been found"
 msgstr "Nije pronađena nijedna kampanja slanja"
 
 #. module: mass_mailing
 #. odoo-python
-#: code:addons/mass_mailing/models/mailing.py
+#: code:addons/mass_mailing/models/mailing.py:0
 #, python-format
 msgid ""
 "No mailing for this A/B testing campaign has been sent yet! Send one first "
@@ -3254,7 +3233,7 @@ msgstr "Bez podrške"
 
 #. module: mass_mailing
 #. odoo-python
-#: code:addons/mass_mailing/wizard/mailing_contact_import.py
+#: code:addons/mass_mailing/wizard/mailing_contact_import.py:0
 #, python-format
 msgid "No valid email address found."
 msgstr "Nije pronađena nijedna važeća email adresa."
@@ -3323,12 +3302,12 @@ msgstr "Broj odjavljenih"
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.mailing_list_merge_view_form
 msgid "Number of Recipients"
-msgstr "Number of Recipients"
+msgstr "Broj primalaca"
 
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.mailing_contact_view_kanban
 msgid "Number of bounced email."
-msgstr "Number of bounced email."
+msgstr "Broj odbačenih emailova."
 
 # taken from hr.po
 #. module: mass_mailing
@@ -3340,13 +3319,13 @@ msgstr "Broj grešaka"
 #. module: mass_mailing
 #: model:ir.model.fields,help:mass_mailing.field_mailing_contact__message_needaction_counter
 msgid "Number of messages requiring action"
-msgstr "Broj poruka koje zahtijevaju aktivnost"
+msgstr "Broj poruka koje zahtijevaju akciju"
 
 # taken from hr.po
 #. module: mass_mailing
 #: model:ir.model.fields,help:mass_mailing.field_mailing_contact__message_has_error_counter
 msgid "Number of messages with delivery error"
-msgstr "Broj poruka sa greškama pri isporuci"
+msgstr "Broj poruka sa greškom pri dostavi"
 
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
@@ -3360,7 +3339,7 @@ msgstr "NA VAŠU SLJEDEĆU NARUDŽBU!"
 
 #. module: mass_mailing
 #. odoo-python
-#: code:addons/mass_mailing/models/mailing.py
+#: code:addons/mass_mailing/models/mailing.py:0
 #, python-format
 msgid "OPENED (%i)"
 msgstr "OTVORENO (%i)"
@@ -3473,14 +3452,14 @@ msgid "Outgoing Mails"
 msgstr "Odlazni mailovi"
 
 #. module: mass_mailing
-#: model_terms:ir.ui.view,arch_db:mass_mailing.snippet_options
+#: code:addons/mass_mailing/static/src/builder/options/padding_option.xml:0
 msgid "Padding ↕"
-msgstr "Padding ↕"
+msgstr ""
 
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.snippet_options
 msgid "Padding ⭤"
-msgstr "Padding ⭤"
+msgstr ""
 
 #. module: mass_mailing
 #: model:ir.model.fields,field_description:mass_mailing.field_mailing_list__contact_pct_blacklisted
@@ -3513,7 +3492,7 @@ msgstr "Odaberite namjenski odlazni mail server za vaše masovne pošiljke"
 
 #. module: mass_mailing
 #. odoo-javascript
-#: code:addons/mass_mailing/static/src/js/tours/mass_mailing_tour.js
+#: code:addons/mass_mailing/static/src/js/tours/mass_mailing_tour.js:0
 #, python-format
 msgid "Pick the <b>email subject</b>."
 msgstr "PRO"
@@ -3525,13 +3504,13 @@ msgid "Picture"
 msgstr "Slika"
 
 #. module: mass_mailing
-#: model_terms:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+#: model_terms:ir.ui.view,arch_db:mass_mailing.email_designer_themes
 msgid "Plain Text"
 msgstr "Običan tekst"
 
 #. module: mass_mailing
 #. odoo-javascript
-#: code:addons/mass_mailing/static/src/js/mailing_m2o_filter.js
+#: code:addons/mass_mailing/static/src/js/mailing_m2o_filter.js:0
 #, python-format
 msgid "Please provide a name for the filter"
 msgstr "Molimo navedite naziv za filter"
@@ -3581,14 +3560,14 @@ msgstr "Kvaliteta"
 
 #. module: mass_mailing
 #. odoo-python
-#: code:addons/mass_mailing/models/mailing.py
+#: code:addons/mass_mailing/models/mailing.py:0
 #, python-format
 msgid "RECEIVED (%i)"
 msgstr "PRIMLJENO (%i)"
 
 #. module: mass_mailing
 #. odoo-python
-#: code:addons/mass_mailing/models/mailing.py
+#: code:addons/mass_mailing/models/mailing.py:0
 #, python-format
 msgid "REPLIED (%i)"
 msgstr "ODGOVORENO (%i)"
@@ -3601,13 +3580,13 @@ msgstr "Ocjena"
 
 # taken from hr.po
 #. module: mass_mailing
-#: model_terms:ir.ui.view,arch_db:mass_mailing.s_image_text
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_text_product_showcase
 msgid "Read More"
 msgstr "Pročitaj više"
 
 #. module: mass_mailing
 #. odoo-javascript
-#: code:addons/mass_mailing/static/src/js/tours/mass_mailing_tour.js
+#: code:addons/mass_mailing/static/src/js/tours/mass_mailing_tour.js:0
 #, python-format
 msgid "Ready for take-off!"
 msgstr "Spreman for take-off!"
@@ -3695,14 +3674,14 @@ msgstr "Učitaj ponovo omiljeni filter"
 # taken from hr.po
 #. module: mass_mailing
 #. odoo-javascript
-#: code:addons/mass_mailing/static/src/xml/mailing_filter_widget.xml
+#: code:addons/mass_mailing/static/src/xml/mailing_filter_widget.xml:0
 #, python-format
 msgid "Remove from Favorites"
 msgstr "Ukloni iz omiljenih"
 
 #. module: mass_mailing
 #. odoo-javascript
-#: code:addons/mass_mailing/static/src/xml/mass_mailing.xml
+#: code:addons/mass_mailing/static/src/themes/theme_selector/theme_selector.xml:0
 #, python-format
 msgid "Remove from Templates"
 msgstr "Povezano slanje(a)"
@@ -3790,7 +3769,7 @@ msgstr "Odgovoran"
 #. module: mass_mailing
 #: model:ir.model.fields,field_description:mass_mailing.field_mailing_mailing__activity_user_id
 msgid "Responsible User"
-msgstr "Odgovorna osoba"
+msgstr "Odgovorni korisnik"
 
 # taken from hr.po
 #. module: mass_mailing
@@ -3806,7 +3785,7 @@ msgstr "Pokušaj ponovo"
 
 # taken from hr.po
 #. module: mass_mailing
-#: model_terms:ir.ui.view,arch_db:mass_mailing.s_hr_options
+#: code:addons/mass_mailing/static/src/builder/options/alignment_option.xml:0
 msgid "Right"
 msgstr "Desno"
 
@@ -3833,7 +3812,7 @@ msgstr "Čarobnjak za uzorak pošte"
 
 #. module: mass_mailing
 #. odoo-javascript
-#: code:addons/mass_mailing/static/src/xml/mailing_filter_widget.xml
+#: code:addons/mass_mailing/static/src/xml/mailing_filter_widget.xml:0
 #, python-format
 msgid "Save as Favorite Filter"
 msgstr "Sačuvaj as Favorite Filter"
@@ -3900,7 +3879,7 @@ msgstr "Rezultat"
 
 #. module: mass_mailing
 #. odoo-python
-#: code:addons/mass_mailing/models/ir_model.py
+#: code:addons/mass_mailing/models/ir_model.py:0
 #, python-format
 msgid ""
 "Searching Mailing Enabled models supports only direct search using '='' or "
@@ -3959,7 +3938,7 @@ msgstr "Odabir za određivanje pobjedničke pošiljke koja će biti poslana."
 
 # taken from hr.po
 #. module: mass_mailing
-#: model_terms:ir.ui.view,arch_db:mass_mailing.unsubscribe
+#: model_terms:ir.ui.view,arch_db:mass_mailing.unsubscribe_form
 msgid "Send"
 msgstr "Pošalji"
 
@@ -3974,7 +3953,7 @@ msgid "Send From"
 msgstr "Pošalji iz"
 
 #. module: mass_mailing
-#: model_terms:ir.ui.view,arch_db:mass_mailing.mailing_list_view_kanban
+#: model_terms:ir.ui.view,arch_db:mass_mailing.mailing_list_view_form
 msgid "Send Mailing"
 msgstr "Pošalji pošiljku"
 
@@ -4040,7 +4019,7 @@ msgstr "Datum slanja"
 
 #. module: mass_mailing
 #. odoo-python
-#: code:addons/mass_mailing/models/mailing.py
+#: code:addons/mass_mailing/models/mailing.py:0
 #, python-format
 msgid "Sent Mailings"
 msgstr ""
@@ -4063,12 +4042,12 @@ msgid "Sent on #{record.sent_date.value}"
 msgstr "Pošalji novo slanje"
 
 #. module: mass_mailing
-#: model_terms:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+#: code:addons/mass_mailing/static/src/builder/plugins/design_tab_plugin.js:0
 msgid "Separator"
 msgstr "Razdjelnik"
 
 #. module: mass_mailing
-#: model_terms:ir.ui.view,arch_db:mass_mailing.snippet_options
+#: code:addons/mass_mailing/static/src/builder/tabs/design_tab.xml:0
 msgid "Separators"
 msgstr "Razdjelnici"
 
@@ -4091,11 +4070,11 @@ msgstr "Prikaži u postavkama"
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
 msgid "Showcase"
-msgstr "Showcase"
+msgstr ""
 
 # taken from hr.po
 #. module: mass_mailing
-#: model_terms:ir.ui.view,arch_db:mass_mailing.theme_default_template
+#: model_terms:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
 msgid "Signature"
 msgstr "Potpis"
 
@@ -4110,18 +4089,18 @@ msgstr ""
 
 # taken from hr.po
 #. module: mass_mailing
-#: model_terms:ir.ui.view,arch_db:mass_mailing.s_alert_options
+#: code:addons/mass_mailing/static/src/builder/options/alert_option.xml:0
 msgid "Size"
 msgstr "Veličina"
 
 # taken from hr.po
 #. module: mass_mailing
-#: model_terms:ir.ui.view,arch_db:mass_mailing.s_alert_options
+#: code:addons/mass_mailing/static/src/builder/options/alert_option.xml:0
 msgid "Small"
 msgstr "Malo"
 
 #. module: mass_mailing
-#: model_terms:ir.ui.view,arch_db:mass_mailing.snippet_options
+#: code:addons/mass_mailing/static/src/builder/tabs/design_tab.xml:0
 msgid "Solid"
 msgstr "Puna"
 
@@ -4151,13 +4130,13 @@ msgstr ""
 " za odjavu."
 
 #. module: mass_mailing
-#: model_terms:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+#: model_terms:ir.ui.view,arch_db:mass_mailing.email_designer_themes
 msgid "Start From Scratch"
 msgstr "Započni od početka"
 
 #. module: mass_mailing
 #. odoo-javascript
-#: code:addons/mass_mailing/static/src/js/tours/mass_mailing_tour.js
+#: code:addons/mass_mailing/static/src/js/tours/mass_mailing_tour.js:0
 #, python-format
 msgid "Start by creating your first <b>Mailing</b>."
 msgstr "Započnite kreiranjem vaše prve <b>Pošiljke</b>."
@@ -4176,12 +4155,8 @@ msgstr "Statistika"
 
 #. module: mass_mailing
 #: model:ir.model.fields,field_description:mass_mailing.field_mailing_mailing__state
-#: model:ir.model.fields,field_description:mass_mailing.field_mailing_trace__trace_status
-#: model:ir.model.fields,field_description:mass_mailing.field_mailing_trace_report__state
-#: model_terms:ir.ui.view,arch_db:mass_mailing.mailing_trace_view_form
-#: model_terms:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_search
 msgid "Status"
-msgstr "Status"
+msgstr ""
 
 # taken from hr.po
 #. module: mass_mailing
@@ -4192,8 +4167,8 @@ msgid ""
 "Today: Activity date is today\n"
 "Planned: Future activities."
 msgstr ""
-"Status baziran na aktivnostima\n"
-"Zakašnjelo: Rok je već prošao\n"
+"Status na osnovu aktivnosti\n"
+"Isteklo: Rok je već prošao\n"
 "Danas: Datum aktivnosti je danas\n"
 "Planirano: Buduće aktivnosti."
 
@@ -4214,7 +4189,7 @@ msgid "Subject"
 msgstr "Tema"
 
 #. module: mass_mailing
-#: model:ir.model.fields,field_description:mass_mailing.field_mailing_contact__subscription_list_ids
+#: model:ir.model.fields,field_description:mass_mailing.field_mailing_contact__subscription_ids
 msgid "Subscription Information"
 msgstr "Informacije o pretplati"
 
@@ -4251,40 +4226,40 @@ msgstr "Navedite koja je vrijednost ove funkcionalnosti za kupca."
 
 # taken from hr.po
 #. module: mass_mailing
-#: model_terms:ir.ui.view,arch_db:mass_mailing.s_masonry_block_options
+#: code:addons/mass_mailing/static/src/builder/options/masonry_block_template_option.xml:0
 msgid "Template"
 msgstr "Predložak"
 
 #. module: mass_mailing
-#: model_terms:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_form
+#: model_terms:ir.ui.view,arch_db:mass_mailing.mailing_trace_view_form
 msgid "Test"
-msgstr "Test"
+msgstr ""
 
 # taken from hr.po
 #. module: mass_mailing
 #. odoo-python
-#: code:addons/mass_mailing/models/mailing.py
+#: code:addons/mass_mailing/models/mailing.py:0
 #, python-format
 msgid "Test Mailing"
 msgstr "Testno slanje pošte"
 
 #. module: mass_mailing
 #. odoo-python
-#: code:addons/mass_mailing/wizard/mailing_mailing_test.py
+#: code:addons/mass_mailing/wizard/mailing_mailing_test.py:0
 #, python-format
 msgid "Test mailing could not be sent to %s:<br>%s"
 msgstr "Testna pošiljka nije mogla biti poslata na %s:<br>%s"
 
 #. module: mass_mailing
 #. odoo-python
-#: code:addons/mass_mailing/wizard/mailing_mailing_test.py
+#: code:addons/mass_mailing/wizard/mailing_mailing_test.py:0
 #, python-format
 msgid "Test mailing successfully sent to %s"
 msgstr "Testna pošiljka uspješno poslata na %s"
 
 #. module: mass_mailing
 #. odoo-javascript
-#: code:addons/mass_mailing/static/src/js/tours/mass_mailing_tour.js
+#: code:addons/mass_mailing/static/src/js/tours/mass_mailing_tour.js:0
 #, python-format
 msgid "Test this mailing by sending a copy to yourself."
 msgstr "Testirajte ovu pošiljku slanjem kopije sebi."
@@ -4297,7 +4272,7 @@ msgstr "Testirano"
 
 # taken from hr.po
 #. module: mass_mailing
-#: model_terms:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+#: code:addons/mass_mailing/static/src/builder/tabs/design_tab.xml:0
 msgid "Text"
 msgstr "Tekst"
 
@@ -4312,7 +4287,7 @@ msgid "Text Highlight"
 msgstr "Označavanje teksta"
 
 #. module: mass_mailing
-#: model_terms:ir.ui.view,arch_db:mass_mailing.s_masonry_block_options
+#: code:addons/mass_mailing/static/src/builder/options/masonry_block_template_option.xml:0
 msgid "Text Image Text"
 msgstr "Tekst slika tekst"
 
@@ -4347,13 +4322,13 @@ msgstr "Stvarni"
 
 # taken from hr.po
 #. module: mass_mailing
-#: model:ir.model.fields,help:mass_mailing.field_mailing_contact_subscription__opt_out
+#: model:ir.model.fields,help:mass_mailing.field_mailing_subscription__opt_out
 msgid "The contact has chosen not to receive mails anymore from this list"
 msgstr "Kontakt je odlučio ne primati više e-mailove s ove liste"
 
 #. module: mass_mailing
 #. odoo-python
-#: code:addons/mass_mailing/models/mailing_filter.py
+#: code:addons/mass_mailing/models/mailing_filter.py:0
 #, python-format
 msgid "The filter domain is not valid for this recipients."
 msgstr "Domen filtera nije važeći za ove primaoce."
@@ -4396,14 +4371,14 @@ msgstr "The recipient <strong>subscribed to %s</strong> mailing list(s)"
 
 #. module: mass_mailing
 #. odoo-python
-#: code:addons/mass_mailing/models/mailing.py
+#: code:addons/mass_mailing/models/mailing.py:0
 #, python-format
 msgid "The recipient <strong>unsubscribed from %s</strong> mailing list(s)"
-msgstr "The recipient <strong>unsubscribed from %s</strong> mailing list(s)"
+msgstr ""
 
 #. module: mass_mailing
 #. odoo-python
-#: code:addons/mass_mailing/models/mailing.py
+#: code:addons/mass_mailing/models/mailing.py:0
 #, python-format
 msgid ""
 "The saved filter targets different recipients and is incompatible with this "
@@ -4413,7 +4388,7 @@ msgstr ""
 
 #. module: mass_mailing
 #. odoo-python
-#: code:addons/mass_mailing/models/utm_campaign.py
+#: code:addons/mass_mailing/models/utm_campaign.py:0
 #, python-format
 msgid ""
 "The total percentage for an A/B testing campaign should be less than 100%"
@@ -4435,7 +4410,7 @@ msgstr "Zatim na"
 
 #. module: mass_mailing
 #. odoo-python
-#: code:addons/mass_mailing/models/mailing.py
+#: code:addons/mass_mailing/models/mailing.py:0
 #, python-format
 msgid "There are no recipients selected."
 msgstr "Nije odabran nijedan primalac."
@@ -4454,7 +4429,7 @@ msgstr "Ovaj"
 
 #. module: mass_mailing
 #. odoo-python
-#: code:addons/mass_mailing/models/mailing.py
+#: code:addons/mass_mailing/models/mailing.py:0
 #, python-format
 msgid ""
 "This email from can not be used with this mail server.\n"
@@ -4524,7 +4499,7 @@ msgstr ""
 
 # taken from hr.po
 #. module: mass_mailing
-#: model:ir.model.fields,field_description:mass_mailing.field_mailing_contact__title_id
+#: model_terms:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
 msgid "Title"
 msgstr "Naslov"
 
@@ -4541,7 +4516,7 @@ msgstr ""
 
 #. module: mass_mailing
 #. odoo-python
-#: code:addons/mass_mailing/models/mailing.py
+#: code:addons/mass_mailing/models/mailing.py:0
 #, python-format
 msgid ""
 "To send the winner mailing the campaign should not have been completed."
@@ -4550,7 +4525,7 @@ msgstr ""
 
 #. module: mass_mailing
 #. odoo-python
-#: code:addons/mass_mailing/models/mailing.py
+#: code:addons/mass_mailing/models/mailing.py:0
 #, python-format
 msgid ""
 "To send the winner mailing the same campaign should be used by the mailings"
@@ -4560,7 +4535,7 @@ msgstr ""
 
 #. module: mass_mailing
 #. odoo-python
-#: code:addons/mass_mailing/models/mailing.py
+#: code:addons/mass_mailing/models/mailing.py:0
 #, python-format
 msgid ""
 "To track how many replies this mailing gets, make sure its reply-to address "
@@ -4572,7 +4547,7 @@ msgstr ""
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.s_company_team
 msgid "Tony Fred, CEO"
-msgstr "Tony Fred, CEO"
+msgstr ""
 
 # taken from hr.po
 #. module: mass_mailing
@@ -4621,19 +4596,19 @@ msgstr "Pretvorite svaku funkciju u korist za vašeg čitaoca."
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.social_links
 msgid "Twitter"
-msgstr "Twitter"
+msgstr ""
 
 # taken from hr.po
 #. module: mass_mailing
 #: model:ir.model.fields,field_description:mass_mailing.field_mailing_trace__trace_type
 msgid "Type"
-msgstr "Vrsta"
+msgstr "Tip"
 
 # taken from hr.po
 #. module: mass_mailing
 #: model:ir.model.fields,help:mass_mailing.field_mailing_mailing__activity_exception_decoration
 msgid "Type of the exception activity on record."
-msgstr "Vrsta aktivnosti iznimke na zapisu."
+msgstr "Tip izuzetne aktivnosti na zapisu."
 
 # taken from hr.po
 #. module: mass_mailing
@@ -4671,7 +4646,7 @@ msgstr "Nepoznata greška"
 # taken from hr.po
 #. module: mass_mailing
 #. odoo-python
-#: code:addons/mass_mailing/controllers/main.py
+#: model_terms:ir.ui.view,arch_db:mass_mailing.page_mailing_confirm_unsubscribe
 #, python-format
 msgid "Unsubscribe"
 msgstr "Odjavi pretplatu"
@@ -4684,7 +4659,7 @@ msgstr "Odjavljen"
 
 # taken from hr.po
 #. module: mass_mailing
-#: model:ir.model.fields,field_description:mass_mailing.field_mailing_contact_subscription__unsubscription_date
+#: model:ir.model.fields,field_description:mass_mailing.field_mailing_subscription__opt_out_datetime
 msgid "Unsubscription Date"
 msgstr "Datum odjave pretplate"
 
@@ -4780,7 +4755,7 @@ msgstr "Prikaz Na mreži"
 
 #. module: mass_mailing
 #. odoo-python
-#: code:addons/mass_mailing/models/mailing.py
+#: code:addons/mass_mailing/models/mailing.py:0
 #, python-format
 msgid ""
 "Wait until your mailing has been sent to check how many recipients you "
@@ -4836,17 +4811,17 @@ msgstr ""
 #. module: mass_mailing
 #: model:ir.model.fields,field_description:mass_mailing.field_mailing_contact__website_message_ids
 msgid "Website Messages"
-msgstr "Poruke sa website-a"
+msgstr "Poruke web stranice"
 
 # taken from hr.po
 #. module: mass_mailing
 #: model:ir.model.fields,help:mass_mailing.field_mailing_contact__website_message_ids
 msgid "Website communication history"
-msgstr "Povijest komunikacije Web stranice"
+msgstr "Historija komunikacije web stranice"
 
 # taken from hr.po
 #. module: mass_mailing
-#: model_terms:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+#: model_terms:ir.ui.view,arch_db:mass_mailing.email_designer_themes
 msgid "Welcome Message"
 msgstr "Poruka dobrodošlice"
 
@@ -4882,7 +4857,7 @@ msgstr ""
 
 # taken from hr.po
 #. module: mass_mailing
-#: model_terms:ir.ui.view,arch_db:mass_mailing.s_hr_options
+#: code:addons/mass_mailing/static/src/builder/tabs/design_tab.xml:0
 msgid "Width"
 msgstr ""
 "Želimo da iskoristimo ovu priliku da vas dobrodošlice u našu sve veću "
@@ -4943,14 +4918,14 @@ msgstr ""
 
 #. module: mass_mailing
 #. odoo-javascript
-#: code:addons/mass_mailing/static/src/js/mailing_portal.js
+#: code:addons/mass_mailing/static/src/js/mailing_portal.js:0
 #, python-format
 msgid "You are not authorized to do this!"
 msgstr "Niste ovlašteni za ovu radnju!"
 
 # taken from hr.po
 #. module: mass_mailing
-#: model_terms:ir.ui.view,arch_db:mass_mailing.unsubscribe
+#: model_terms:ir.ui.view,arch_db:mass_mailing.unsubscribe_form
 msgid "You are not subscribed to any of our mailing list."
 msgstr ""
 "Napišite jedan pasus opisujući vaš proizvod,\n"
@@ -4964,14 +4939,14 @@ msgstr "Možete uređivati boje i pozadine kako biste istaknuli značajke."
 
 #. module: mass_mailing
 #. odoo-python
-#: code:addons/mass_mailing/wizard/mailing_list_merge.py
+#: code:addons/mass_mailing/wizard/mailing_list_merge.py:0
 #, python-format
 msgid "You can only apply this action from Mailing Lists."
 msgstr "Ovu radnju možete primijeniti samo iz Mailing lista."
 
 #. module: mass_mailing
 #. odoo-python
-#: code:addons/mass_mailing/models/utm_medium.py
+#: code:addons/mass_mailing/models/utm_medium.py:0
 #, python-format
 msgid ""
 "You cannot delete these UTM Mediums as they are linked to the following mailings in Mass Mailing:\n"
@@ -4982,7 +4957,7 @@ msgstr ""
 
 #. module: mass_mailing
 #. odoo-python
-#: code:addons/mass_mailing/models/utm_source.py
+#: code:addons/mass_mailing/models/utm_source.py:0
 #, python-format
 msgid ""
 "You cannot delete these UTM Sources as they are linked to the following mailings in Mass Mailing:\n"
@@ -5002,21 +4977,21 @@ msgstr ""
 
 #. module: mass_mailing
 #. odoo-javascript
-#: code:addons/mass_mailing/static/src/js/mailing_portal.js
+#: code:addons/mass_mailing/static/src/js/mailing_portal.js:0
 #, python-format
 msgid "You have been <strong>successfully unsubscribed from %s</strong>."
 msgstr "Uspješno ste <strong>odjavljeni sa %s</strong>."
 
 #. module: mass_mailing
 #. odoo-javascript
-#: code:addons/mass_mailing/static/src/js/mailing_portal.js
+#: code:addons/mass_mailing/static/src/js/mailing_portal.js:0
 #, python-format
 msgid "You have been <strong>successfully unsubscribed</strong>."
 msgstr "Uspješno ste <strong>odjavljeni</strong>."
 
 #. module: mass_mailing
 #. odoo-javascript
-#: code:addons/mass_mailing/static/src/js/mailing_portal.js
+#: code:addons/mass_mailing/static/src/js/mailing_portal.js:0
 #, python-format
 msgid ""
 "You have been successfully <strong>added to our blacklist</strong>. You will"
@@ -5027,7 +5002,7 @@ msgstr ""
 
 #. module: mass_mailing
 #. odoo-javascript
-#: code:addons/mass_mailing/static/src/js/mailing_portal.js
+#: code:addons/mass_mailing/static/src/js/mailing_portal.js:0
 #, python-format
 msgid ""
 "You have been successfully <strong>removed from our blacklist</strong>. You "
@@ -5043,14 +5018,14 @@ msgstr "Uspešno ste se <strong>odjavili sa </strong>."
 
 #. module: mass_mailing
 #. odoo-python
-#: code:addons/mass_mailing/wizard/mailing_contact_import.py
+#: code:addons/mass_mailing/wizard/mailing_contact_import.py:0
 #, python-format
 msgid "You have to much emails, please upload a file."
 msgstr "Imate previše e-mailova, molimo prenesite datoteku."
 
 #. module: mass_mailing
 #. odoo-python
-#: code:addons/mass_mailing/models/mailing_contact.py
+#: code:addons/mass_mailing/models/mailing_contact.py:0
 #, python-format
 msgid ""
 "You should give either list_ids, either subscription_list_ids to create new "
@@ -5069,21 +5044,21 @@ msgstr ""
 "vijesti od njih:"
 
 #. module: mass_mailing
-#: model_terms:ir.ui.view,arch_db:mass_mailing.s_title
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_hr_title
 msgid "Your Title"
 msgstr "Vaš naslov"
 
 # taken from hr.po
 #. module: mass_mailing
 #. odoo-javascript
-#: code:addons/mass_mailing/static/src/js/mailing_portal.js
+#: code:addons/mass_mailing/static/src/js/mailing_portal.js:0
 #, python-format
 msgid "Your changes have been saved."
 msgstr "Vaša banner slika"
 
 #. module: mass_mailing
 #. odoo-javascript
-#: code:addons/mass_mailing/static/src/xml/mailing_filter_widget.xml
+#: code:addons/mass_mailing/static/src/xml/mailing_filter_widget.xml:0
 #, python-format
 msgid "e.g. \"VIP Customers\""
 msgstr "npr. \"VIP Kupci\""
@@ -5117,8 +5092,6 @@ msgid ""
 "email1@example.com\n"
 "email2@example.com"
 msgstr ""
-"email1@example.com\n"
-"email2@example.com"
 
 #. module: mass_mailing
 #: model_terms:ir.ui.view,arch_db:mass_mailing.ab_testing_description
@@ -5156,7 +5129,7 @@ msgstr "zakažite slanje pošte"
 
 #. module: mass_mailing
 #. odoo-javascript
-#: code:addons/mass_mailing/static/src/xml/mass_mailing.xml
+#: code:addons/mass_mailing/static/src/xml/mass_mailing.xml:0
 #, python-format
 msgid "template"
 msgstr "predložak"
@@ -5195,3 +5168,3096 @@ msgstr "⌙ Aktivno"
 #: model_terms:ir.ui.view,arch_db:mass_mailing.s_rating_options
 msgid "⌙ Inactive"
 msgstr "⌙ Neaktivno"
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/models/mailing.py:0
+msgid " %(subject)s (final)"
+msgstr " %(subject)s (finalno)"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_reviews_wall
+msgid ""
+"\"Engaging with this team was effortless from start to end. Their "
+"proficiency and meticulous approach greatly enhanced our project. I couldn't"
+" be happier with the final product!\""
+msgstr ""
+"\"Saradnja s ovim timom bila je jednostavna od početka do kraja. Njihova "
+"stručnost i pažljiv pristup značajno su unaprijedili naš projekat. Ne mogu "
+"biti sretniji s krajnjim proizvodom!\""
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_reviews_wall
+msgid ""
+"\"Exceptional service and great communication throughout the entire process."
+" They went above and beyond to ensure our project was a complete success.\""
+msgstr ""
+"\"Izuzetna usluga i odlična komunikacija tokom cijelog procesa. Otišli su "
+"iznad i izvan da osiguraju potpun uspjeh našeg projekta.\""
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_reviews_wall
+msgid ""
+"\"From the first meeting, it was clear we were in good hands. They took our "
+"vision and turned it into something even better than we had imagined. Highly"
+" recommend!\""
+msgstr ""
+"\"Od prvog sastanka bilo je jasno da smo u dobrim rukama. Uzeli su našu "
+"viziju i pretvorili je u nešto čak i bolje nego što smo zamišljali. Izričito"
+" preporučujem!\""
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_customer_quote
+msgid ""
+"\"This company transformed our business. Their solutions are innovative and "
+"reliable\""
+msgstr ""
+"\"Ova kompanija je transformisala naš biznis. Njihova rješenja su inovativna"
+" i pouzdana\""
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_reviews_wall
+msgid ""
+"\"Working with this team was smooth and efficient at every stage. Their "
+"skills and commitment to quality had a major impact on our project. I am "
+"thrilled with the final results!\""
+msgstr ""
+"\"Rad s ovim timom bio je gladak i efikasan u svakoj fazi. Njihove vještine "
+"i posvećenost kvalitetu imale su veliki utjecaj na naš projekat. Oduševljen "
+"sam krajnjim rezultatima!\""
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_pricelist_boxed
+msgid "$12.00"
+msgstr "$12.00"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_pricelist_boxed
+msgid "$13.00"
+msgstr "$13.00"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_pricelist_boxed
+msgid "$13.50"
+msgstr "$13.50"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_pricelist_boxed
+msgid "$14.50"
+msgstr "$14.50"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_pricelist_boxed
+msgid "$15.00"
+msgstr "$15.00"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_pricelist_boxed
+msgid "$16.00"
+msgstr "$16.00"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.mailing_list_view_form
+msgid "% Blacklist"
+msgstr "% Crna lista"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.mailing_list_view_form
+msgid "% Bounce"
+msgstr "% Odbijanja"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.mailing_list_view_form
+msgid "% Opt-out"
+msgstr "% Odjava"
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/models/mailing_list.py:0
+msgid "%(contact_name)s subscribed to the following mailing list(s)"
+msgstr "%(contact_name)s pretplaćen na sljedeću mailing listu(e)"
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/models/mailing_list.py:0
+msgid "%(contact_name)s unsubscribed from the following mailing list(s)"
+msgstr "%(contact_name)s otkazao pretplatu na sljedeću mailing listu(e)"
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/static/src/builder/options/image_tool_option.xml:0
+msgid "1X"
+msgstr "1X"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_text_describing_benefits
+msgid "24/7 Support"
+msgstr "Podrška 24/7"
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/static/src/builder/options/image_tool_option.xml:0
+msgid "2X"
+msgstr "2X"
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/static/src/builder/options/image_tool_option.xml:0
+msgid "2X Size"
+msgstr "2X veličina"
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/static/src/builder/options/image_tool_option.xml:0
+msgid "3X"
+msgstr "3X"
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/static/src/builder/options/image_tool_option.xml:0
+msgid "3X Size"
+msgstr "3X veličina"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_reviews_wall
+msgid "4 out of 5 stars"
+msgstr "4 od 5 zvjezdica"
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/static/src/builder/options/image_tool_option.xml:0
+msgid "4X"
+msgstr "4X"
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/static/src/builder/options/image_tool_option.xml:0
+msgid "4X Size"
+msgstr "4X veličina"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_link_list
+msgid "5 Color Mistakes That Are Ruining Your Home's Vibe"
+msgstr "5 grešaka u boji koje uništavaju atmosferu vašeg doma"
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/static/src/builder/options/image_tool_option.xml:0
+msgid "5X"
+msgstr "5X"
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/static/src/builder/options/image_tool_option.xml:0
+msgid "5X Size"
+msgstr "5X veličina"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_link_list
+msgid "7 Design Secrets of the World's Most Beautiful Homes"
+msgstr "7 tajni dizajna najljepših domova na svijetu"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_text_contact
+msgid "8.00am - 12.00am"
+msgstr "08:00 - 00:00"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_text_contact
+msgid "8.00am - 12.00pm"
+msgstr "08:00 - 12:00"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_text_contact
+msgid "8.00am - 6.00pm"
+msgstr "08:00 - 18:00"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_image_text
+msgid ""
+"<a href=\"https://www.example.com\" class=\"btn btn-secondary "
+"o_translate_inline\">Learn more</a>"
+msgstr ""
+"<a href=\"https://www.example.com\" class=\"btn btn-secondary "
+"o_translate_inline\">Saznajte više</a>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.mailing_list_view_kanban
+msgid ""
+"<br/>\n"
+"                                    <span class=\"text-muted\">\n"
+"                                        <i class=\"fa fa-envelope-o\"/> Contacts\n"
+"                                    </span>"
+msgstr ""
+"<br/>\n"
+"                                    <span class=\"text-muted\">\n"
+"                                        <i class=\"fa fa-envelope-o\"/> Kontakti\n"
+"                                    </span>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.mailing_list_view_kanban
+msgid ""
+"<br/>\n"
+"                                    <span class=\"text-muted\">Blacklist</span>"
+msgstr ""
+"<br/>\n"
+"                                    <span class=\"text-muted\">Crna lista</span>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.mailing_list_view_kanban
+msgid ""
+"<br/>\n"
+"                                    <span class=\"text-muted\">Bounce</span>"
+msgstr ""
+"<br/>\n"
+"                                    <span class=\"text-muted\">Odbijanja</span>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.mailing_list_view_kanban
+msgid ""
+"<br/>\n"
+"                                    <span class=\"text-muted\">Mailings</span>"
+msgstr ""
+"<br/>\n"
+"                                    <span class=\"text-muted\">Mailovi</span>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.mailing_list_view_kanban
+msgid ""
+"<br/>\n"
+"                                    <span class=\"text-muted\">Opt-Out</span>"
+msgstr ""
+"<br/>\n"
+"                                    <span class=\"text-muted\">Odjava</span>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_text_signature
+msgid "<em>Customer Service</em>"
+msgstr "<em>Korisnička podrška</em>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_company_team
+msgid "<font class=\"h5-fs\">Aline Turner</font>"
+msgstr "<font class=\"h5-fs\">Aline Turner</font>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_company_team
+msgid "<font class=\"h5-fs\">Iris Joe</font>"
+msgstr "<font class=\"h5-fs\">Iris Joe</font>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_company_team
+msgid "<font class=\"h5-fs\">Mich Stark</font>"
+msgstr "<font class=\"h5-fs\">Mich Stark</font>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_company_team
+msgid "<font class=\"h5-fs\">Tony Fred</font>"
+msgstr "<font class=\"h5-fs\">Tony Fred</font>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_text_highlight
+msgid "<font class=\"text-white\">Put the focus on what you have to say!</font>"
+msgstr ""
+"<font class=\"text-white\">Stavite fokus na ono što imate da kažete!</font>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_content_card_5
+msgid "<font class=\"text-white\">Reaching new heights together</font>"
+msgstr "<font class=\"text-white\">Zajedno dosežemo nove visine</font>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_text_highlight
+msgid "<font class=\"text-white\">Text Highlight</font>"
+msgstr "<font class=\"text-white\">Isticanje teksta</font>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_content_card_5
+msgid "<font class=\"text-white\">Where ideas come to life</font>"
+msgstr "<font class=\"text-white\">Gdje ideje oživljavaju</font>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_cover
+msgid ""
+"<font class=\"text-white\">Write one or two paragraphs describing your "
+"product, services or a specific feature.<br/> To be successful your content "
+"needs to be useful to your readers.</font>"
+msgstr ""
+"<font class=\"text-white\">Napišite jedan ili dva pasusa koji opisuju vaš "
+"proizvod, usluge ili specifičnu funkciju.<br/> Da biste bili uspješni, vaš "
+"sadržaj mora biti koristan vašim čitaocima.</font>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_author
+msgid ""
+"<font style=\"color: white\"><strong>If you're ready to transform your "
+"website into a high-converting asset</strong>, <em>hit reply and let's work "
+"together.</em></font>"
+msgstr ""
+"<font style=\"color: white\"><strong>Ako ste spremni transformirati svoju "
+"web stranicu u visoko-konvertirajuće sredstvo</strong>, <em>odgovorite i "
+"radimo zajedno.</em></font>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_masonry_block_alternation_image_text_template
+msgid "<font style=\"color: white\">A great title</font>"
+msgstr "<font style=\"color: white\">Odličan naslov</font>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_masonry_block_alternation_image_text_template
+msgid "<font style=\"color: white\">And a great subtitle</font>"
+msgstr "<font style=\"color: white\">I odličan podnaslov</font>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_blog_post_card
+msgid "<font style=\"color: white\">Head of Design</font>"
+msgstr "<font style=\"color: white\">Šef dizajna</font>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_author
+msgid ""
+"<font style=\"color: white\">Hi there, I'm <strong>John Doe</strong>, a "
+"design expert specializing in responsive web and mobile app interfaces. "
+"<strong>For over 13 years</strong>, I've focused on creating elegant, user-"
+"centric designs that are both scalable and easy to maintain.</font>"
+msgstr ""
+"<font style=\"color: white\">Pozdrav, ja sam <strong>John Doe</strong>, "
+"stručnjak za dizajn specijaliziran za responzivne web i mobilne sučelja. "
+"<strong>Više od 13 godina</strong> fokusiran sam na stvaranje elegantnih, "
+"korisnički orijentiranih dizajna koji su skalabilni i lako održivi.</font>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_blog_post_card
+msgid "<font style=\"color: white\">Julian Thorne</font>"
+msgstr "<font style=\"color: white\">Julian Thorne</font>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_call_to_action
+msgid ""
+"<font style=\"color: white;\"><strong>50,000+ companies</strong> run "
+"Odoo.</font>"
+msgstr ""
+"<font style=\"color: white;\"><strong>50.000+ kompanija</strong> koristi "
+"Odoo.</font>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_numbers
+msgid "<font style=\"color: white;\">Beautiful snippets</font>"
+msgstr "<font style=\"color: white;\">Lijepi snippeti</font>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_call_to_action
+msgid ""
+"<font style=\"color: white;\">Join us and make your company a better "
+"place.</font>"
+msgstr ""
+"<font style=\"color: white;\">Pridružite nam se i učinite svoju kompaniju "
+"boljim mjestom.</font>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_color_blocks_2
+msgid "<font style=\"color:white;\"><span class=\"h3-fs\">A color block</span></font>"
+msgstr "<font style=\"color:white;\"><span class=\"h3-fs\">Blok boje</span></font>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_color_blocks_2
+msgid ""
+"<font style=\"color:white;\"><span class=\"h3-fs\">Another color "
+"block</span></font>"
+msgstr ""
+"<font style=\"color:white;\"><span class=\"h3-fs\">Drugi blok "
+"boje</span></font>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_color_blocks_2
+msgid ""
+"<font style=\"color:white;\">Color blocks are a simple and effective way to "
+"<strong>present and highlight your content</strong>. Choose an image or a "
+"color for the background. You can even resize and duplicate the blocks to "
+"create your own layout. Add images or icons to customize the blocks.</font>"
+msgstr ""
+"<font style=\"color:white;\">Blokovi boja su jednostavan i efikasan način da"
+" <strong>predstavite i istaknete svoj sadržaj</strong>. Odaberite sliku ili "
+"boju za pozadinu. Možete čak promijeniti veličinu i duplicirati blokove da "
+"kreirate vlastiti raspored. Dodajte slike ili ikone da prilagodite "
+"blokove.</font>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_color_blocks_2
+msgid "<font style=\"color:white;\">More Details</font>"
+msgstr "<font style=\"color:white;\">Više detalja</font>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_picture
+msgid "<font style=\"font-size: 12px;\">Where innovation meets performance</font>"
+msgstr ""
+"<font style=\"font-size: 12px;\">Gdje se inovacija susreće s "
+"performansama</font>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_kanban
+msgid "<i class=\"fa fa-bullseye me-2\" role=\"img\" aria-label=\"Lead/Opportunity\"/>"
+msgstr "<i class=\"fa fa-bullseye me-2\" role=\"img\" aria-label=\"Lead/Opportunity\"/>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_form
+msgid ""
+"<i class=\"fa fa-envelope\"/><span name=\"ab_test_auto\">\n"
+"                                                    Send Winner Now\n"
+"                                                </span>"
+msgstr ""
+"<i class=\"fa fa-envelope\"/><span name=\"ab_test_auto\">\n"
+"                                                    Pošalji pobjednika sada\n"
+"                                                </span>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.ab_testing_description
+msgid ""
+"<i class=\"fa fa-exclamation-triangle text-danger\" aria-hidden=\"true\"/>\n"
+"                        The sum of all percentages for this A/B campaign totals"
+msgstr ""
+"<i class=\"fa fa-exclamation-triangle text-danger\" aria-hidden=\"true\"/>\n"
+"                        Zbir svih procenata za ovu A/B kampanju iznosi"
+
+#. module: mass_mailing
+#: model_terms:ir.actions.act_window,help:mass_mailing.mailing_subscription_action_report_optout
+msgid "<i class=\"oi oi-arrow-right\"></i> Configure Opt-out Reasons"
+msgstr "<i class=\"oi oi-arrow-right\"></i> Konfiguriši razloge odjave"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_form
+msgid ""
+"<small class=\"oe_edit_only text-muted mb-2\" style=\"font-size:74%\" invisible=\"reply_to_mode == 'update' or mailing_model_name in ['mailing.contact', 'res.partner', 'mailing.list']\">\n"
+"                                                    To track replies, this address must belong to this database.\n"
+"                                                </small>"
+msgstr ""
+"<small class=\"oe_edit_only text-muted mb-2\" style=\"font-size:74%\" invisible=\"reply_to_mode == 'update' or mailing_model_name in ['mailing.contact', 'res.partner', 'mailing.list']\">\n"
+"                                                    Za praćenje odgovora, ova adresa mora pripadati ovoj bazi podataka.\n"
+"                                                </small>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_text_describing_benefits
+msgid "<span class=\"display-3-fs\">Discover our main three benefits</span>"
+msgstr "<span class=\"display-3-fs\">Otkrijte naše tri glavne pogodnosti</span>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_text_describing_benefits
+msgid "<span class=\"display-4-fs\">1</span>"
+msgstr "<span class=\"display-4-fs\">1</span>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_text_describing_benefits
+msgid "<span class=\"display-4-fs\">2</span>"
+msgstr "<span class=\"display-4-fs\">2</span>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_text_describing_benefits
+msgid "<span class=\"display-4-fs\">3</span>"
+msgstr "<span class=\"display-4-fs\">3</span>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_text_describing_benefits
+msgid "<span class=\"fa fa-asterisk me-2\" contenteditable=\"false\"/>What We Offer"
+msgstr "<span class=\"fa fa-asterisk me-2\" contenteditable=\"false\"/>Šta nudimo"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_mailing_list_advertisement
+msgid ""
+"<span class=\"fa fa-check text-o-color-1\" role=\"img\"/>  Curated Industry "
+"Insights"
+msgstr ""
+"<span class=\"fa fa-check text-o-color-1\" role=\"img\"/>  Odabrani uvidi iz"
+" industrije"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_mailing_list_advertisement
+msgid ""
+"<span class=\"fa fa-check text-o-color-1\" role=\"img\"/>  Expert Tips &amp;"
+" How-Tos"
+msgstr ""
+"<span class=\"fa fa-check text-o-color-1\" role=\"img\"/>  Stručni savjeti i"
+" upute"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_mailing_list_advertisement
+msgid ""
+"<span class=\"fa fa-check text-o-color-1\" role=\"img\"/>  Guides &amp; "
+"Resources"
+msgstr "<span class=\"fa fa-check text-o-color-1\" role=\"img\"/>  Vodiči i resursi"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_comparisons
+msgid "<span class=\"fa fa-check text-success\" role=\"img\"/>  Access all modules"
+msgstr ""
+"<span class=\"fa fa-check text-success\" role=\"img\"/>  Pristup svim "
+"modulima"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_comparisons
+msgid "<span class=\"fa fa-check text-success\" role=\"img\"/>  Account management"
+msgstr "<span class=\"fa fa-check text-success\" role=\"img\"/>  Upravljanje računom"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_comparisons
+msgid ""
+"<span class=\"fa fa-check text-success\" role=\"img\"/>  Complete CRM for "
+"any team"
+msgstr ""
+"<span class=\"fa fa-check text-success\" role=\"img\"/>  Kompletan CRM za "
+"bilo koji tim"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_comparisons
+msgid "<span class=\"fa fa-check text-success\" role=\"img\"/>  Email support"
+msgstr "<span class=\"fa fa-check text-success\" role=\"img\"/>  Email podrška"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_comparisons
+msgid "<span class=\"fa fa-check text-success\" role=\"img\"/>  Limited customization"
+msgstr ""
+"<span class=\"fa fa-check text-success\" role=\"img\"/>  Ograničena "
+"prilagodba"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_comparisons
+msgid ""
+"<span class=\"fa fa-check text-success\" role=\"img\"/>  Sales &amp; "
+"marketing for 2"
+msgstr ""
+"<span class=\"fa fa-check text-success\" role=\"img\"/>  Prodaja i marketing"
+" za 2"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_badge
+msgid "<span class=\"fa fa-fw fa-folder\"/>Category"
+msgstr "<span class=\"fa fa-fw fa-folder\"/>Kategorija"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_cta_badge
+msgid ""
+"<span class=\"fa fa-fw fa-info-circle\" role=\"img\"/>  What do you want to "
+"promote&amp;nbsp;?"
+msgstr ""
+"<span class=\"fa fa-fw fa-info-circle\" role=\"img\"/>  Šta želite "
+"promovisati&amp;nbsp;?"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_centered_cta_badge
+msgid ""
+"<span class=\"fa fa-fw fa-shopping-cart\" contenteditable=\"false\"/>  Huge "
+"holiday sale savings. Don't miss out."
+msgstr ""
+"<span class=\"fa fa-fw fa-shopping-cart\" "
+"contenteditable=\"false\"/>  Velike praznične uštede u prodaji. Ne "
+"propustite."
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_special_offer_cta
+msgid ""
+"<span class=\"fa fa-fw fa-tag\" contenteditable=\"false\"/>  <strong>Special"
+" Offers</strong>. Complimentary care packs included with every sofa."
+msgstr ""
+"<span class=\"fa fa-fw fa-tag\" "
+"contenteditable=\"false\"/>  <strong>Specijalne ponude</strong>. Besplatni "
+"paketi za njegu uključeni uz svaku sofu."
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_kanban
+msgid ""
+"<span class=\"fa fa-hourglass-o me-2 small my-auto\" aria-label=\"Scheduled date\"/>\n"
+"                                        <span>Next Batch</span>"
+msgstr ""
+"<span class=\"fa fa-hourglass-o me-2 small my-auto\" aria-label=\"Scheduled date\"/>\n"
+"                                        <span>Sljedeća serija</span>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_kanban
+msgid ""
+"<span class=\"fa fa-paper-plane me-2 small my-auto\" aria-label=\"Sent "
+"date\"/>"
+msgstr ""
+"<span class=\"fa fa-paper-plane me-2 small my-auto\" aria-label=\"Sent "
+"date\"/>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_comparisons
+msgid "<span class=\"fa fa-times text-danger\" role=\"img\"/>  No customization"
+msgstr "<span class=\"fa fa-times text-danger\" role=\"img\"/>  Bez prilagodbe"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_comparisons
+msgid "<span class=\"fa fa-times text-danger\" role=\"img\"/>  No support"
+msgstr "<span class=\"fa fa-times text-danger\" role=\"img\"/>  Bez podrške"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_mail_block_header_logo_and_button
+msgid ""
+"<span class=\"fa fa-user me-2\" contenteditable=\"false\"/>My Account<span "
+"class=\"fa fa-chevron-right ms-2\" contenteditable=\"false\"/>"
+msgstr ""
+"<span class=\"fa fa-user me-2\" contenteditable=\"false\"/>Moj račun<span "
+"class=\"fa fa-chevron-right ms-2\" contenteditable=\"false\"/>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_comparisons
+msgid ""
+"<span class=\"h2-fs\"><strong>$ 15.00</strong></span>\n"
+"                                    <span class=\"o_small-fs\">/ month</span>"
+msgstr ""
+"<span class=\"h2-fs\"><strong>$ 15.00</strong></span>\n"
+"                                    <span class=\"o_small-fs\">/ mjesec</span>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_comparisons
+msgid ""
+"<span class=\"h2-fs\"><strong>$ 25.00</strong></span>\n"
+"                                    <span class=\"o_small-fs\">/ month</span>"
+msgstr ""
+"<span class=\"h2-fs\"><strong>$ 25.00</strong></span>\n"
+"                                    <span class=\"o_small-fs\">/ mjesec</span>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_product_list
+msgid "<span class=\"h3-fs\">Our finest selection</span>"
+msgstr "<span class=\"h3-fs\">Naš najbolji izbor</span>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_company_team_shapes
+msgid "<span class=\"h5-fs\">Aline Turner</span>"
+msgstr "<span class=\"h5-fs\">Aline Turner</span>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_product_list
+msgid "<span class=\"h5-fs\">Balanced</span>"
+msgstr "<span class=\"h5-fs\">Uravnoteženo</span>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_product_list
+msgid "<span class=\"h5-fs\">Elegant</span>"
+msgstr "<span class=\"h5-fs\">Elegantno</span>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_company_team_shapes
+msgid "<span class=\"h5-fs\">Iris Joe</span>"
+msgstr "<span class=\"h5-fs\">Iris Joe</span>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_company_team_shapes
+msgid "<span class=\"h5-fs\">Mich Stark</span>"
+msgstr "<span class=\"h5-fs\">Mich Stark</span>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_company_team_shapes
+msgid "<span class=\"h5-fs\">Pete Bluestork</span>"
+msgstr "<span class=\"h5-fs\">Pete Bluestork</span>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_product_list
+msgid "<span class=\"h5-fs\">Simple</span>"
+msgstr "<span class=\"h5-fs\">Jednostavno</span>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_company_team_shapes
+msgid "<span class=\"h5-fs\">Sophia Langston</span>"
+msgstr "<span class=\"h5-fs\">Sophia Langston</span>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_company_team_shapes
+msgid "<span class=\"h5-fs\">Tony Fred</span>"
+msgstr "<span class=\"h5-fs\">Tony Fred</span>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_comparisons
+msgid "<span class=\"o_small-fs\">Instant setup, satisfied or reimbursed.</span>"
+msgstr ""
+"<span class=\"o_small-fs\">Instant podešavanje, zadovoljstvo ili povrat "
+"novca.</span>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.mailing_trace_view_form
+msgid "<span class=\"o_stat_text\">Open Recipient</span>"
+msgstr "<span class=\"o_stat_text\">Otvori primaoca</span>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.mailing_contact_view_form_split_name
+msgid "<span class=\"opacity-50\" invisible=\"name\">e.g. \"John Smith\"</span>"
+msgstr "<span class=\"opacity-50\" invisible=\"name\">npr. \"John Smith\"</span>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_kanban
+msgid "<span invisible=\"not mailing_on_mailing_list\">Mailing Contact</span>"
+msgstr "<span invisible=\"not mailing_on_mailing_list\">Mailing kontakt</span>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_form
+msgid ""
+"<span name=\"canceled_text\">emails have been cancelled and will not be "
+"sent.</span>"
+msgstr ""
+"<span name=\"canceled_text\">emailovi su otkazani i neće biti "
+"poslani.</span>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_form
+msgid ""
+"<span name=\"mailing_schedule_type_now_text\">This mailing will be sent as "
+"soon as possible.</span>"
+msgstr ""
+"<span name=\"mailing_schedule_type_now_text\">Ovaj mailing će biti poslan "
+"što je prije moguće.</span>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_form
+msgid "<span name=\"process_text\">emails are being processed.</span>"
+msgstr "<span name=\"process_text\">emailovi se obrađuju.</span>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_form
+msgid ""
+"<span name=\"refresh_text\">This mailing will be sent as soon as "
+"possible.</span>"
+msgstr ""
+"<span name=\"refresh_text\">Ovaj mailing će biti poslan što je prije "
+"moguće.</span>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.digest_mail_main
+msgid "<span style=\"color: #878d97;\">Turn off Mailing Reports</span>"
+msgstr "<span style=\"color: #878d97;\">Isključi mailing izvještaje</span>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_event
+msgid "<span style=\"font-size: 18px\">Event Two</span>"
+msgstr "<span style=\"font-size: 18px\">Događaj dva</span>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_event
+msgid "<span style=\"font-size: 18px;\">Event One</span>"
+msgstr "<span style=\"font-size: 18px;\">Događaj jedan</span>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_cover
+msgid ""
+"<span style=\"font-size: 62px;\"><strong><font class=\"text-white\">Your "
+"journey starts here</font></strong></span>"
+msgstr ""
+"<span style=\"font-size: 62px;\"><strong><font class=\"text-white\">Vaše "
+"putovanje počinje ovdje</font></strong></span>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_coupon_code
+msgid "<span><font style=\"font-weight: bolder;\">GET $20 OFF</font></span>"
+msgstr "<span><font style=\"font-weight: bolder;\">UŠTEDITE $20</font></span>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.ab_testing_description
+msgid "<span>There wasn't enough recipients left for this mailing</span>"
+msgstr "<span>Nije ostalo dovoljno primalaca za ovaj mailing</span>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_form
+msgid ""
+"<strong class=\"d-block\" invisible=\"mailing_type == 'mail' or not ab_testing_enabled or state != 'done' or sent != 0 or failed != 0 or canceled != 0\">\n"
+"                                <span name=\"ab_test_text\">There wasn't enough recipients given to this mailing. </span>\n"
+"                            </strong>"
+msgstr ""
+"<strong class=\"d-block\" invisible=\"mailing_type == 'mail' or not ab_testing_enabled or state != 'done' or sent != 0 or failed != 0 or canceled != 0\">\n"
+"                                <span name=\"ab_test_text\">Nije bilo dovoljno primalaca za ovaj mailing. </span>\n"
+"                            </strong>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_schedule
+msgid "<strong>18h30:</strong>"
+msgstr "<strong>18:30:</strong>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_schedule
+msgid "<strong>19h00:</strong>"
+msgstr "<strong>19:00:</strong>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_schedule
+msgid "<strong>19h30: </strong>"
+msgstr "<strong>19:30: </strong>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_schedule
+msgid "<strong>8h:</strong>"
+msgstr "<strong>8:00:</strong>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_content_card_5
+msgid "<strong><font class=\"text-white\">Innovation Hub</font></strong>"
+msgstr "<strong><font class=\"text-white\">Centar inovacija</font></strong>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_content_card_5
+msgid "<strong><font class=\"text-white\">Key Milestone</font></strong>"
+msgstr "<strong><font class=\"text-white\">Ključna prekretnica</font></strong>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_numbers
+msgid "<strong><font style=\"font-size: 48px; color: white;\">45</font></strong>"
+msgstr "<strong><font style=\"font-size: 48px; color: white;\">45</font></strong>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_numbers
+msgid "<strong><font style=\"font-size: 48px;\">12</font></strong>"
+msgstr "<strong><font style=\"font-size: 48px;\">12</font></strong>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_numbers
+msgid "<strong><font style=\"font-size: 48px;\">8</font></strong>"
+msgstr "<strong><font style=\"font-size: 48px;\">8</font></strong>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_content_card_4
+msgid "<strong>A Breath of Fresh Air</strong>"
+msgstr "<strong>Dašak svježeg zraka</strong>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_content_card_6
+msgid "<strong>About our product line</strong>"
+msgstr "<strong>O našoj liniji proizvoda</strong>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_attributes_horizontal
+msgid "<strong>Easy returns</strong>"
+msgstr "<strong>Jednostavni povrati</strong>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_reviews_wall
+msgid ""
+"<strong>Emil Foster</strong><br/>\n"
+"                                    <span class=\"text-muted\">Creative Director</span>"
+msgstr ""
+"<strong>Emil Foster</strong><br/>\n"
+"                                    <span class=\"text-muted\">Kreativni direktor</span>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_attributes_horizontal
+msgid "<strong>Free shipping</strong>"
+msgstr "<strong>Besplatna dostava</strong>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_reviews_wall
+msgid ""
+"<strong>James Carter</strong><br/>\n"
+"                                    <span class=\"text-muted\">Chief Technical Officer</span>"
+msgstr ""
+"<strong>James Carter</strong><br/>\n"
+"                                    <span class=\"text-muted\">Glavni tehnički direktor</span>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_customer_quote
+msgid "<strong>Jane DOE</strong><br/>CEO of MyCompany"
+msgstr "<strong>Jane DOE</strong><br/>Direktorica MyCompany"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_reviews_wall
+msgid ""
+"<strong>Jody Roberts</strong><br/>\n"
+"                                    <span class=\"text-muted\">Chief Financial Officer</span>"
+msgstr ""
+"<strong>Jody Roberts</strong><br/>\n"
+"                                    <span class=\"text-muted\">Glavni finansijski direktor</span>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_content_card_4
+msgid "<strong>John DOE</strong><br/>"
+msgstr "<strong>John DOE</strong><br/>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_blockquote
+msgid ""
+"<strong>John DOE</strong><br/><span class=\"h6-fs\"><font "
+"class=\"text-600\">CEO of MyCompany</font></span>"
+msgstr ""
+"<strong>John DOE</strong><br/><span class=\"h6-fs\"><font "
+"class=\"text-600\">Direktor MyCompany</font></span>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_schedule
+msgid "<strong>Networking: Walking Dinner &amp; Drinks</strong>"
+msgstr "<strong>Umrežavanje: Šetnja, večera i pića</strong>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_reviews_wall
+msgid "<strong>Rating</strong>"
+msgstr "<strong>Ocjena</strong>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_text_product_description
+msgid ""
+"<strong>Replace this block with the authentic, singular story of your "
+"product.</strong> Focus on the unique spark that gave it personality. "
+"<strong>Be short, be specific, and let your brand's voice shine</strong> "
+"through unique work choices. This explains the <em>soul</em> behind the "
+"product, inspiring a deeper connection beyond simple features."
+msgstr ""
+"<strong>Zamijenite ovaj blok autentičnom, jedinstvenom pričom o vašem "
+"proizvodu.</strong> Fokusirajte se na jedinstvenu iskru koja mu je dala "
+"ličnost. <strong>Budite kratki, budite specifični i pustite glas vašeg "
+"brenda da zasja</strong> kroz jedinstvene izbore. Ovo objašnjava "
+"<em>dušu</em> iza proizvoda, inspirišući dublju vezu izvan jednostavnih "
+"karakteristika."
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_attributes_horizontal
+msgid "<strong>Secure payment</strong>"
+msgstr "<strong>Sigurno plaćanje</strong>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_mailing_list_advertisement
+msgid "<strong>Stay Ahead with weekly insights &amp; updates</strong>"
+msgstr "<strong>Ostanite ispred sa sedmičnim uvidima i ažuriranjima</strong>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_content_card_7
+msgid "<strong>Stay in the Loop !<br/>Get the latest updates</strong>"
+msgstr "<strong>Ostanite u toku !<br/>Primajte najnovija ažuriranja</strong>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_picture
+msgid "<strong>Step Up Your Game</strong>"
+msgstr "<strong>Podignite svoju igru na viši nivo</strong>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_reviews_wall
+msgid ""
+"<strong>Sullivan Mitchell</strong><br/>\n"
+"                                    <span class=\"text-muted\">Marketing Director</span>"
+msgstr ""
+"<strong>Sullivan Mitchell</strong><br/>\n"
+"                                    <span class=\"text-muted\">Direktor marketinga</span>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_schedule
+msgid "<strong>Table Ronde</strong>"
+msgstr "<strong>Okrugli sto</strong>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_content_card_2
+msgid "<strong>The Innovation Behind Our Product</strong>"
+msgstr "<strong>Inovacija iza našeg proizvoda</strong>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_content_card_3
+msgid "<strong>Timeless Design</strong>"
+msgstr "<strong>Bezvremeni dizajn</strong>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_content_card_1
+msgid "<strong>Unveil Our Exclusive Collections</strong>"
+msgstr "<strong>Otkrijte naše ekskluzivne kolekcije</strong>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_schedule
+msgid "<strong>Welcome</strong>"
+msgstr "<strong>Dobrodošli</strong>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_text_card
+msgid ""
+"<strong>Why settle for a generic solution?</strong><br/>We don't just offer "
+"tools; we provide a competitive advantage. Our platform is engineered to "
+"streamline your workflow, eliminate bottlenecks, and help you scale faster "
+"than ever before."
+msgstr ""
+"<strong>Zašto se zadovoljiti generičkim rješenjem?</strong><br/>Mi ne nudimo"
+" samo alate; pružamo konkurentsku prednost. Naša platforma je dizajnirana da"
+" pojednostavi vaš tok rada, eliminiše uska grla i pomogne vam da se "
+"skalirate brže nego ikada prije."
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_schedule
+msgid "<strong>[speaker] &amp; [speaker]'s conference</strong>"
+msgstr "<strong>[speaker] i [speaker] konferencija</strong>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_text_contact
+msgid "<u>Friday</u>"
+msgstr "<u>Petak</u>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_text_contact
+msgid "<u>Monday</u>"
+msgstr "<u>Ponedjeljak</u>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_form
+msgid "<u>Refresh <i class=\"fa fa-refresh ms-1\"/></u>"
+msgstr "<u>Osvježi <i class=\"fa fa-refresh ms-1\"/></u>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_text_contact
+msgid "<u>Saturday</u>"
+msgstr "<u>Subota</u>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_text_contact
+msgid "<u>Sunday</u>"
+msgstr "<u>Nedjelja</u>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_text_contact
+msgid "<u>Thursday</u>"
+msgstr "<u>Četvrtak</u>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_text_contact
+msgid "<u>Tuesday</u>"
+msgstr "<u>Utorak</u>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_text_contact
+msgid "<u>Wednesday</u>"
+msgstr "<u>Srijeda</u>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_content_card_4
+msgid "A Breath of Fresh Air"
+msgstr "Dašak svježeg zraka"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_pricelist_boxed
+msgid ""
+"A delicious mix of four toppings: mushrooms, artichokes, ham, and olives, "
+"all on a bed of mozzarella and tomato sauce."
+msgstr ""
+"Ukusna mješavina četiri dodatka: pečurke, artičoke, šunka i masline, sve na "
+"podlozi od mocarele i tomato sosa."
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_features_showcase
+msgid ""
+"A feature section allows you to clearly showcase the main benefits and "
+"unique aspects of your product."
+msgstr ""
+"Dio za karakteristike omogućuje vam da jasno predstavite glavne pogodnosti i"
+" jedinstvene aspekte vašeg proizvoda."
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_features_showcase
+msgid ""
+"A features section highlights your product's key attributes, engaging "
+"visitors and boosting conversions."
+msgstr ""
+"Dio s karakteristikama ističe ključne atribute vašeg proizvoda, angažuje "
+"posjetioce i povećava konverzije."
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_text_product_description
+msgid "A great product"
+msgstr "Odličan proizvod"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_blog_post_card
+msgid "A love letter to the space you call your own."
+msgstr "Ljubavno pismo prostoru koji nazivate svojim."
+
+#. module: mass_mailing
+#: model:ir.model.fields,field_description:mass_mailing.field_utm_campaign__ab_testing_winner_mailing_id
+msgid "A/B Campaign Winner Mailing"
+msgstr "Pobjednički mailing A/B kampanje"
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/static/src/builder/options/options_container.xml:0
+msgid "ACCESS OPTIONS ANYWAY"
+msgstr "PRISTUPI OPCIJAMA SVEJEDNO"
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/static/src/builder/plugins/schedule_option_plugin.js:0
+msgid "Add Activity"
+msgstr "Dodaj aktivnost"
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/static/src/builder/options/snippet_visibility_option.xml:0
+msgid "Add Conditions"
+msgstr "Dodaj uslove"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.mailing_subscription_optout_view_tree
+msgid "Allow Feedback"
+msgstr "Dozvoli povratnu informaciju"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.res_config_settings_view_form
+msgid ""
+"Allow the recipient to manage themselves their state in the blacklist via "
+"the unsubscription page. If the option is active, the 'Blacklist Me' button "
+"is hidden on the unsubscription page. The 'come Back' button will always be "
+"visible in any case to allow leads and partners to re-subscribe."
+msgstr ""
+"Dozvolite primaocu da sam upravlja svojim statusom na crnoj listi putem "
+"stranice za odjavu. Ako je opcija aktivna, dugme 'Blacklist Me' je skriveno "
+"na stranici za odjavu. Dugme 'come Back' će uvijek biti vidljivo kako bi se "
+"omogućilo lidovima i partnerima da se ponovo prijave."
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/static/src/builder/options/snippet_visibility_option.xml:0
+msgid "Always Visible"
+msgstr "Uvijek vidljivo"
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/static/src/xml/mailing_portal_subscription_feedback.xml:0
+msgid "An error occurred. Please retry later or contact us."
+msgstr "Došlo je do greške. Molimo pokušajte kasnije ili nas kontaktirajte."
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/static/src/xml/mailing_portal_subscription_blocklist.xml:0
+msgid "An error occurred. Please retry later."
+msgstr "Došlo je do greške. Molimo pokušajte kasnije."
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_section_mobile
+msgid "App Store"
+msgstr "App Store"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.unsubscribe_form
+msgid "Apply changes"
+msgstr "Primijeni promjene"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.page_mailing_confirm_unsubscribe
+msgid "Are you sure you want to unsubscribe from the mailing list \""
+msgstr "Jeste li sigurni da se želite odjaviti s mailing liste \""
+
+#. module: mass_mailing
+#: model:ir.model.fields,field_description:mass_mailing.field_mailing_subscription_optout__is_feedback
+msgid "Ask For Feedback"
+msgstr "Zatraži povratnu informaciju"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+msgid "Author"
+msgstr "Autor"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_text_card
+msgid "Automate your daily tasks."
+msgstr "Automatizujte svoje svakodnevne zadatke."
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_section_mobile
+msgid "Available for iOS and Android."
+msgstr "Dostupno za iOS i Android."
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_membership_advertisement
+msgid "Award-winning collection"
+msgstr "Nagrađivana kolekcija"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+msgid "Badge"
+msgstr "Bedž"
+
+#. module: mass_mailing
+#: model:ir.model.fields,field_description:mass_mailing.field_mailing_mailing__mailing_on_mailing_list
+msgid "Based on Mailing Lists"
+msgstr "Bazirano na mailing listama"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_content_card_7
+msgid "Be the first to find out all the latest new, products and trends."
+msgstr ""
+"Budite prvi koji će saznati sve najnovije vijesti, proizvode i trendove."
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_membership_advertisement
+msgid "Become a Member"
+msgstr "Postanite član"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_comparisons
+msgid "Beginner"
+msgstr "Početnik"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_text_describing_benefits
+msgid ""
+"Benefit from tax-free shopping, simplifying your purchase and enhancing your"
+" savings without any extra costs."
+msgstr ""
+"Iskoristite kupovinu bez poreza, pojednostavljujući svoju kupovinu i "
+"povećavajući uštede bez dodatnih troškova."
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+msgid "Benefits"
+msgstr "Pogodnosti"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_schedule
+msgid "Best practices to digitize your company"
+msgstr "Najbolje prakse za digitalizaciju vaše kompanije"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_text_signature
+msgid "Best,"
+msgstr "Pozdrav,"
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/controllers/main.py:0
+msgid "Blocklist removal request from portal"
+msgstr "Zahtjev za uklanjanje sa liste blokiranih sa portala"
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/controllers/main.py:0
+msgid ""
+"Blocklist removal request from portal of mailing %(mailing_link)s (document "
+"%(record_link)s)"
+msgstr ""
+"Zahtjev za uklanjanje sa liste blokiranih sa portala mailinga "
+"%(mailing_link)s (dokument %(record_link)s)"
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/controllers/main.py:0
+msgid "Blocklist request from portal"
+msgstr "Zahtjev za blokiranje sa portala"
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/controllers/main.py:0
+msgid ""
+"Blocklist request from portal of mailing %(mailing_link)s (document "
+"%(record_link)s)"
+msgstr ""
+"Zahtjev za blokiranje sa portala mailinga %(mailing_link)s (dokument "
+"%(record_link)s)"
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/controllers/main.py:0
+msgid ""
+"Blocklist request from unsubscribe link of mailing %(mailing_link)s (direct "
+"link usage)"
+msgstr ""
+"Zahtjev za blokiranje preko linka za odjavu mailinga %(mailing_link)s "
+"(direktno korištenje linka)"
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/controllers/main.py:0
+msgid ""
+"Blocklist request from unsubscribe link of mailing %(mailing_link)s "
+"(document %(record_link)s)"
+msgstr ""
+"Zahtjev za blokiranje preko linka za odjavu mailinga %(mailing_link)s "
+"(dokument %(record_link)s)"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+msgid "Blog Title"
+msgstr "Naslov bloga"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_features_showcase
+msgid "Boosts Conversions"
+msgstr "Povećava konverzije"
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/static/src/builder/options/padding_option.xml:0
+msgid "Bottom"
+msgstr "Dno"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_text_card
+msgid "Browse our documentation"
+msgstr "Pregledajte našu dokumentaciju"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_text_product_showcase
+msgid "Built to Last: The Beauty of Choosing Quality Materials"
+msgstr "Napravljeno da traje: Ljepota odabira kvalitetnih materijala"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_schedule
+msgid "Business Case"
+msgstr "Poslovni slučaj"
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/static/src/builder/plugins/design_tab_plugin.js:0
+msgid "Button"
+msgstr "Dugme"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_text_left_cta
+msgid "Buy Now"
+msgstr "Kupi odmah"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_blog_title
+msgid "By John Doe"
+msgstr "Autor John Doe"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+msgid "CTA Badge"
+msgstr "CTA oznaka"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+msgid "Call To Action"
+msgstr "Poziv na akciju"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+msgid "Call To Action Card"
+msgstr "Kartica poziva na akciju"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+msgid "Call To Action Text (center)"
+msgstr "Tekst poziva na akciju (centar)"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+msgid "Call To Action Text (left)"
+msgstr "Tekst poziva na akciju (lijevo)"
+
+#. module: mass_mailing
+#: model:ir.model.fields.selection,name:mass_mailing.selection__mailing_trace__trace_status__cancel
+msgid "Cancelled"
+msgstr "Otkazano"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+msgid "Categories"
+msgstr "Kategorije"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+msgid "Centered CTA"
+msgstr "Centrirani CTA"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_company_team
+msgid "Chief Commercial Officer"
+msgstr "Glavni komercijalni direktor"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_company_team
+msgid "Chief Executive Officer"
+msgstr "Glavni izvršni direktor"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_company_team
+msgid "Chief Financial Officer"
+msgstr "Glavni finansijski direktor"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_company_team
+msgid "Chief Technical Officer"
+msgstr "Glavni tehnički direktor"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.mailing_mailing_schedule_date_view_form
+msgid "Choose a date"
+msgstr "Odaberite datum"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_pricelist_boxed
+msgid ""
+"Classic pizza with fresh mozzarella, San Marzano tomatoes, and basil leaves,"
+" drizzled with extra virgin olive oil."
+msgstr ""
+"Klasična pizza sa svježom mocarelom, San Marzano paradajzom i listićima "
+"bosiljka, prelivena ekstra djevičanskim maslinovim uljem."
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_schedule
+msgid "Client Testimonials"
+msgstr "Preporuke klijenata"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_text_contact
+msgid "Closed"
+msgstr "Zatvoreno"
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/static/src/builder/mass_mailing_builder.xml:0
+msgid "Code View"
+msgstr "Prikaz koda"
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/static/src/builder/options/image_tool_option.xml:0
+msgid "Color"
+msgstr "Boja"
+
+#. module: mass_mailing
+#: model_terms:ir.actions.act_window,help:mass_mailing.mailing_subscription_action_report_optout
+msgid "Come back later to discover why contacts unsubscribe.<br>"
+msgstr "Vratite se kasnije da otkrijete zašto se kontakti odjavljuju.<br>"
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/models/mailing.py:0
+msgid ""
+"Come back once your mailing has been sent to track who clicked on the "
+"embedded links."
+msgstr ""
+"Vratite se kada vaš mailing bude poslan da pratite ko je kliknuo na ugrađene"
+" linkove."
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_comparisons
+msgid ""
+"Comprehensive tools for growing businesses. Optimize your processes and "
+"productivity across your team."
+msgstr ""
+"Sveobuhvatni alati za rastuća preduzeća. Optimizujte svoje procese i "
+"produktivnost u cijelom timu."
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/static/src/builder/options/snippet_visibility_option.xml:0
+msgid "Conditionally"
+msgstr "Uslovno"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_features_column
+msgid ""
+"Consistent performance and uptime ensure efficient, reliable service with "
+"minimal interruptions and quick response times."
+msgstr ""
+"Konzistentne performanse i dostupnost osiguravaju efikasnu, pouzdanu uslugu "
+"sa minimalnim prekidima i brzim odzivom."
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.res_config_settings_view_form
+msgid "Contact Naming"
+msgstr "Imenovanje kontakata"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_mail_block_header_logo_and_inline_menu
+msgid "Contact Us"
+msgstr "Kontaktirajte nas"
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/wizard/mailing_contact_import.py:0
+msgid ""
+"Contacts successfully imported. Number of contacts imported: "
+"%(imported_count)s"
+msgstr ""
+"Kontakti su uspješno uvezeni. Broj uvezenih kontakata: %(imported_count)s"
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/wizard/mailing_contact_import.py:0
+msgid ""
+"Contacts successfully imported. Number of contacts imported: "
+"%(imported_count)s. Number of duplicates ignored: %(duplicate_count)s"
+msgstr ""
+"Kontakti su uspješno uvezeni. Broj uvezenih kontakata: %(imported_count)s. "
+"Broj ignorisanih duplikata: %(duplicate_count)s"
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/static/src/builder/tabs/design_tab.xml:0
+msgid "Content Background"
+msgstr "Pozadina sadržaja"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+msgid "Content Card"
+msgstr "Kartica sadržaja"
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/static/src/builder/options/company_team_options.xml:0
+msgid "Content Width"
+msgstr "Širina sadržaja"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_media_list
+msgid ""
+"Continue reading <span class=\"fa fa-long-arrow-right align-middle ms-1\"/>"
+msgstr ""
+"Nastavite čitati <span class=\"fa fa-long-arrow-right align-middle ms-1\"/>"
+
+#. module: mass_mailing
+#: model:ir.model,website_form_label:mass_mailing.model_res_partner
+msgid "Create a Customer"
+msgstr "Kreiraj kupca"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+msgid "Customer Quote"
+msgstr "Citat kupca"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+msgid "Customer testimonials"
+msgstr "Preporuke kupaca"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_reviews_wall
+msgid "Customers testimonials"
+msgstr "Preporuke kupaca"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_company_team
+msgid "Dedicated professionals driving our success"
+msgstr "Posvećeni profesionalci koji pokreću naš uspjeh"
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/static/src/iframe/mass_mailing_iframe.js:0
+msgid "Design"
+msgstr "Dizajn"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_text_product_showcase
+msgid ""
+"Design for the Soul: Why Your Home Should Be a Reflection of Your Best Self"
+msgstr "Dizajn za dušu: Zašto vaš dom treba biti odraz vašeg najboljeg ja"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_text_cta_card
+msgid "Designed for You"
+msgstr "Dizajnirano za vas"
+
+#. module: mass_mailing
+#: model:ir.model.fields.selection,name:mass_mailing.selection__mailing_trace__failure_type__mail_spam
+msgid "Detected As Spam"
+msgstr "Otkriveno kao spam"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_pricelist_boxed
+msgid "Diavola"
+msgstr "Diavola"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_image_text
+msgid "Discover New <strong>Opportunities</strong>"
+msgstr "Otkrijte nove <strong>mogućnosti</strong>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_features_showcase
+msgid "Discover all features"
+msgstr "Otkrijte sve funkcionalnosti"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_media_list
+msgid "Discover more <span class=\"fa fa-long-arrow-right align-middle ms-1\"/>"
+msgstr "Otkrijte više <span class=\"fa fa-long-arrow-right align-middle ms-1\"/>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_content_card_4
+msgid ""
+"Discover the thrill of a home that truly reflects your soul. It's more than "
+"just decor; it's about creating a space so vibrant and curated that "
+"<strong>you'll beam with pride</strong> every time you step inside."
+msgstr ""
+"Otkrijte uzbuđenje doma koji istinski odražava vašu dušu. To je više od "
+"dekoracije; radi se o kreiranju prostora toliko živog i pažljivo uređenog da"
+" ćete <strong>blistati od ponosa</strong> svaki put kada uđete."
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/static/src/js/mailing_m2o_filter.js:0
+msgid "Domain field"
+msgstr "Polje domene"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_text_left_cta
+msgid ""
+"Don't settle for the ordinary. Our artisans obsess over every detail to "
+"create the perfection your home demands. Own a masterpiece today."
+msgstr ""
+"Ne zadovoljavajte se običnim. Naši zanatlije opsesivno paze na svaki detalj "
+"kako bi stvorili savršenstvo koje vaš dom zaslužuje. Posjedujte remek-djelo "
+"danas."
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_membership_advertisement
+msgid ""
+"Each piece is more than just furniture; it's a recognized masterpiece of "
+"craftsmanship and style."
+msgstr ""
+"Svaki komad je više od običnog namještaja; to je priznato remek-djelo "
+"zanatstva i stila."
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/static/src/builder/options/blockquote_option.xml:0
+msgid "Edge Spacing"
+msgstr "Razmak ivica"
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/static/src/builder/options/snippet_visibility_option.xml:0
+msgid "Edit Conditions"
+msgstr "Uredi uslove"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_content_card_4
+msgid "Elegance That Inspires"
+msgstr "Elegancija koja inspiriše"
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/static/src/xml/mailing_portal_subscription_blocklist.xml:0
+msgid "Email added to our blocklist"
+msgstr "Email je dodan na našu listu blokiranih"
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/static/src/xml/mailing_portal_subscription_blocklist.xml:0
+msgid "Email removed from our blocklist"
+msgstr "Email je uklonjen sa naše liste blokiranih"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_features_showcase
+msgid "Engages Visitors"
+msgstr "Uključuje posjetioce"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_text_image
+msgid "Enhance Your <strong>Experience</strong>"
+msgstr "Unaprijedite svoje <strong>iskustvo</strong>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_content_card_6
+msgid ""
+"Enhance your experience with our user-focused designs, ensuring you get the "
+"best value."
+msgstr ""
+"Unaprijedite svoje iskustvo sa našim korisnički orijentisanim dizajnima, "
+"osiguravajući najbolju vrijednost."
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.unsubscribe_form
+msgid "Exclude Me"
+msgstr "Isključi me"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_content_card_3
+msgid ""
+"Experience the perfect harmony of form and function. Each piece is "
+"meticulously designed with <strong>premium materials</strong>, ensuring that"
+" your interior reflects a sophisticated yet inviting atmosphere."
+msgstr ""
+"Doživite savršenu harmoniju forme i funkcije. Svaki komad je pažljivo "
+"dizajniran sa <strong>premium materijalima</strong>, osiguravajući da vaš "
+"enterijer odražava sofisticiranu, ali pozivajuću atmosferu."
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_picture
+msgid ""
+"Experience unparalleled comfort, cutting-edge design, and performance-"
+"enhancing<br/>technology with this latest innovation, crafted to elevate "
+"every athlete's journey."
+msgstr ""
+"Doživite nenadmašnu udobnost, vrhunski dizajn i tehnologiju koja unapređuje "
+"performanse<br/>uz ovu najnoviju inovaciju, izrađenu da uzdigne putovanje "
+"svakog sportiste."
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_alert
+msgid ""
+"Explain the benefits you offer. <br/>Don't write about products or services "
+"here, write about solutions."
+msgstr ""
+"Objasnite prednosti koje nudite. <br/>Ne pišite o proizvodima ili uslugama "
+"ovdje, pišite o rješenjima."
+
+#. module: mass_mailing
+#: model:ir.model.fields,field_description:mass_mailing.field_mailing_trace__failure_reason
+msgid "Failure reason"
+msgstr "Razlog neuspjeha"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_text_describing_benefits
+msgid "Fair pricing"
+msgstr "Fer cijene"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+msgid "Features Column"
+msgstr "Kolona funkcionalnosti"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+msgid "Features Showcase"
+msgstr "Prikaz funkcionalnosti"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_features_showcase
+msgid "Features showcase"
+msgstr "Prikaz funkcionalnosti"
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/controllers/main.py:0
+msgid "Feedback from %(author_name)s"
+msgstr "Povratna informacija od %(author_name)s"
+
+#. module: mass_mailing
+#: model:ir.model.fields,field_description:mass_mailing.field_mailing_contact__first_name
+msgid "First Name"
+msgstr "Ime"
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/static/src/builder/tabs/design_tab.xml:0
+msgid "Font Family"
+msgstr "Porodica fonta"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_company_team
+msgid ""
+"Founder and chief visionary, Tony is the driving force behind the company. He loves\n"
+"                                to keep his hands full by participating in the development of the software,\n"
+"                                marketing, and customer experience strategies."
+msgstr ""
+"Osnivač i glavni vizionar, Tony je pokretačka snaga kompanije. Voli\n"
+"                                imati pune ruke posla učestvujući u razvoju softvera,\n"
+"                                marketinga i strategija korisničkog iskustva."
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_text_card
+msgid "Gain real-time insights."
+msgstr "Dobijte uvide u realnom vremenu."
+
+#. module: mass_mailing
+#: model:ir.model.fields,field_description:mass_mailing.field_mailing_trace__is_test_trace
+msgid "Generated for testing"
+msgstr "Generisano za testiranje"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_section_mobile
+msgid "Google Play Store"
+msgstr "Google Play Store"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_text_product_showcase
+msgid ""
+"Great design is about more than just filling a room; it is about creating a "
+"lifestyle that feels both luxurious and meaningful. Our pieces are carefully"
+" made to bring soul to your space, blending modern ideas with the warmth of "
+"traditional craftsmanship. Every detail is a deliberate choice, intended to "
+"turn your house into a personal gallery where you can truly relax in style."
+msgstr ""
+"Veliki dizajn je više od pukog popunjavanja prostorije; radi se o stvaranju "
+"životnog stila koji djeluje luksuzno i smisleno. Naši komadi su pažljivo "
+"izrađeni da donesu dušu u vaš prostor, spajajući moderne ideje sa toplinom "
+"tradicionalnog zanatstva. Svaki detalj je promišljen izbor, namijenjen da "
+"pretvori vašu kuću u ličnu galeriju u kojoj se možete istinski opustiti sa "
+"stilom."
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_text_block
+msgid ""
+"Great stories are <strong>for everyone</strong> even when only written "
+"<strong>for just one person</strong>. If you try to write with a wide, "
+"general audience in mind, your story will sound fake and lack emotion. No "
+"one will be interested. Write for one person. If it's genuine for the one, "
+"it's genuine for the rest."
+msgstr ""
+"Velike priče su <strong>za sve</strong> čak i kada su pisane <strong>samo za"
+" jednu osobu</strong>. Ako pokušate pisati za široku, opštu publiku, vaša "
+"priča će zvučati lažno i bez emocija. Niko neće biti zainteresovan. Pišite "
+"za jednu osobu. Ako je iskreno za jednu, iskreno je za sve."
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_text_block
+msgid ""
+"Great stories have a <strong>personality</strong>. Consider telling a great "
+"story that provides personality. Writing a story with personality for "
+"potential clients will assist with making a relationship connection. This "
+"shows up in small quirks like word choices or phrases. Write from your point"
+" of view, not from someone else's experience."
+msgstr ""
+"Velike priče imaju <strong>osobnost</strong>. Razmislite o pričanju velike "
+"priče koja nosi osobnost. Pisanje priče s osobnošću za potencijalne klijente"
+" pomoći će u stvaranju veze. To se pokazuje u sitnim posebnostima poput "
+"izbora riječi ili fraza. Pišite iz vlastitog ugla, ne iz tuđeg iskustva."
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_features_column
+msgid ""
+"Growth capability is a system's ability to scale and adapt, meeting "
+"increasing demands and evolving needs for long-term success."
+msgstr ""
+"Sposobnost rasta je sposobnost sistema da se skalira i prilagodi, "
+"ispunjavajući rastuće zahtjeve i razvijajuće potrebe za dugoročan uspjeh."
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/static/src/builder/plugins/design_tab_plugin.js:0
+msgid "Heading"
+msgstr "Naslov"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_features_showcase
+msgid "Highlights Key Attributes"
+msgstr "Ističe ključne atribute"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+msgid "Horizontal Attributes"
+msgstr "Horizontalni atributi"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_text_need_help
+msgid "How is your data secured?"
+msgstr "Kako su vaši podaci osigurani?"
+
+#. module: mass_mailing
+#: model:mailing.subscription.optout,name:mass_mailing.mailing_subscription_optout_data_1
+msgid "I changed my mind"
+msgstr "Predomislio sam se"
+
+#. module: mass_mailing
+#: model:mailing.subscription.optout,name:mass_mailing.mailing_subscription_optout_data_0
+msgid "I never subscribed to this list"
+msgstr "Nikada se nisam pretplatio na ovu listu"
+
+#. module: mass_mailing
+#: model:mailing.subscription.optout,name:mass_mailing.mailing_subscription_optout_data_2
+msgid "I receive too many emails from this list"
+msgstr "Primam previše emailova sa ove liste"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_comparisons
+msgid ""
+"Ideal for newcomers. Essential features to kickstart sales and marketing. "
+"Perfect for small teams."
+msgstr ""
+"Idealno za početnike. Osnovne funkcionalnosti za pokretanje prodaje i "
+"marketinga. Savršeno za male timove."
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+msgid "Image"
+msgstr "Slika"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_text_product_showcase
+msgid ""
+"In a fast-paced world, your home should be your ultimate escape—a private "
+"place that brings you a sense of calm and clarity. Our collection focuses on"
+" clean lines and comfortable shapes, providing a sophisticated backdrop for "
+"your most important moments. We believe your surroundings should be a "
+"testament to your taste, offering the perfect l ease you need to unwind."
+msgstr ""
+"U brzom svijetu, vaš dom treba biti vaš krajnji bijeg — privatno mjesto koje"
+" vam donosi osjećaj mira i jasnoće. Naša kolekcija se fokusira na čiste "
+"linije i udobne oblike, pružajući sofisticiranu pozadinu za vaše najvažnije "
+"trenutke. Vjerujemo da vaše okruženje treba biti svjedočanstvo vašeg ukusa, "
+"nudeći savršen odmor koji vam treba."
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_text_need_help
+msgid "In this section, you can address common questions efficiently."
+msgstr "U ovom dijelu možete efikasno odgovoriti na česta pitanja."
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_text_card
+msgid "Integrate with your favorite apps."
+msgstr "Integrišite sa svojim omiljenim aplikacijama."
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_schedule
+msgid "Interactive Odoo demo"
+msgstr "Interaktivni Odoo demo"
+
+#. module: mass_mailing
+#: model:ir.model.fields.selection,name:mass_mailing.selection__mailing_trace__failure_type__mail_from_invalid
+msgid "Invalid from address"
+msgstr "Neispravna adresa pošiljaoca"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_text_center_cta
+msgid "Invest in the Future"
+msgstr "Investirajte u budućnost"
+
+#. module: mass_mailing
+#: model:ir.model.fields,field_description:mass_mailing.field_mailing_mailing__is_ab_test_sent
+msgid "Is Ab Test Sent"
+msgstr "Da li je AB test poslan"
+
+#. module: mass_mailing
+#: model:ir.model.fields,field_description:mass_mailing.field_mailing_mailing__ab_testing_is_winner_mailing
+msgid "Is the Winner of its Campaign"
+msgstr "Da li je pobjednik svoje kampanje"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_text_need_help
+msgid "Is the website user-friendly?"
+msgstr "Da li je web stranica laka za korištenje?"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_mail_block_header_logo_col
+msgid "Issue<br/><strong>#42</strong>"
+msgstr "Izdanje<br/><strong>#42</strong>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_features_showcase
+msgid ""
+"It captures your visitors' attention and helps them quickly understand the "
+"value of your product."
+msgstr ""
+"Privlači pažnju vaših posjetilaca i pomaže im da brzo razumiju vrijednost "
+"vašeg proizvoda."
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_membership_advertisement
+msgid ""
+"Join our inner circle to enjoy exclusive privileges and turn every curated "
+"choice into a journey of refined inspiration."
+msgstr ""
+"Pridružite se našem užem krugu kako biste uživali u ekskluzivnim "
+"privilegijama i svaki pažljivo odabran izbor pretvorili u putovanje "
+"rafinirane inspiracije."
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_mailing_list_advertisement
+msgid ""
+"Join our mailing list to receive carefully curated resources, tips, and "
+"updates straight to your inbox."
+msgstr ""
+"Pridružite se našoj mailing listi da biste primali pažljivo odabrane "
+"resurse, savjete i ažuriranja direktno u svoj inbox."
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_pricelist_boxed
+msgid "Lasagna al Forno"
+msgstr "Lasagna al Forno"
+
+#. module: mass_mailing
+#: model:ir.model.fields,field_description:mass_mailing.field_mailing_contact__last_name
+msgid "Last Name"
+msgstr "Prezime"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_pricelist_boxed
+msgid ""
+"Layers of pasta, rich meat ragu, béchamel sauce, and melted mozzarella, "
+"baked to perfection."
+msgstr ""
+"Slojevi tjestenine, bogat ragu sa mesom, béchamel umak i otopljena mocarela,"
+" pečeno do savršenstva."
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_content_card_2
+msgid "Learn More"
+msgstr "Saznajte više"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_text_image
+msgid "Learn more"
+msgstr "Saznajte više"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_text_contact
+msgid "Let's get in touch"
+msgstr "Kontaktirajmo se"
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/static/src/builder/plugins/design_tab_plugin.js:0
+msgid "Link"
+msgstr "Link"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_form
+msgid "Link Trackers"
+msgstr "Praćenje linkova"
+
+#. module: mass_mailing
+#: model:ir.model.fields,field_description:mass_mailing.field_mailing_mailing__link_trackers_count
+msgid "Link Trackers Count"
+msgstr "Broj praćenja linkova"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+msgid "Links List"
+msgstr "Lista linkova"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+msgid "Logo + Button"
+msgstr "Logo + Dugme"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+msgid "Logo + Inline Menu"
+msgstr "Logo + Linijski meni"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+msgid "Logo + Stacked Menu"
+msgstr "Logo + Složeni meni"
+
+#. module: mass_mailing
+#: model:ir.model,name:mass_mailing.model_mail_blacklist
+msgid "Mail Blacklist"
+msgstr "Lista blokiranih emailova"
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/static/src/builder/tabs/design_tab.xml:0
+msgid "Mailing Background"
+msgstr "Pozadina mailinga"
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/models/mailing_subscription.py:0
+msgid "Mailing Contacts"
+msgstr "Mailing kontakti"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.unsubscribe_form
+msgid "Mailing List #"
+msgstr "Mailing lista #"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_form
+msgid "Mailing Lists:"
+msgstr "Mailing liste:"
+
+#. module: mass_mailing
+#: model:ir.model,name:mass_mailing.model_mailing_subscription_optout
+msgid "Mailing Subscription Reason"
+msgstr "Razlog pretplate na mailing"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.page_mailing_has_unsubscribed
+msgid "Manage Subscriptions"
+msgstr "Upravljaj pretplatama"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_pricelist_boxed
+msgid "Margherita"
+msgstr "Margherita"
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/static/src/builder/tabs/design_tab.xml:0
+msgid "Margin"
+msgstr "Margina"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_company_team
+msgid "Meet our team"
+msgstr "Upoznajte naš tim"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+msgid "Membership"
+msgstr "Članstvo"
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/static/src/xml/mailing_portal_subscription_form.xml:0
+msgid "Membership updated"
+msgstr "Članstvo je ažurirano"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+msgid "Menu"
+msgstr "Meni"
+
+#. module: mass_mailing
+#: model:ir.model.fields.selection,name:mass_mailing.selection__mailing_trace__failure_type__mail_from_missing
+msgid "Missing from address"
+msgstr "Nedostaje adresa pošiljaoca"
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/static/src/js/mailing_m2o_filter.js:0
+msgid "Model field"
+msgstr "Polje modela"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+msgid "Name + Button"
+msgstr "Ime + Dugme"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+msgid "Name + Inline Menu"
+msgstr "Ime + Linijski meni"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+msgid "Name + Social"
+msgstr "Ime + Društvene mreže"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+msgid "Need help?"
+msgstr "Trebate pomoć?"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_blog_post_card
+msgid "New Blog post"
+msgstr "Nova objava na blogu"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_mail_block_header_logo_and_inline_menu
+msgid "News"
+msgstr "Novosti"
+
+#. module: mass_mailing
+#: model:ir.model.fields,field_description:mass_mailing.field_mailing_mailing__next_departure_is_past
+msgid "Next Departure Is Past"
+msgstr "Sljedeći polazak je prošao"
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/models/mailing.py:0
+msgid "No Link Tracker for that mailing!"
+msgstr "Nema praćenja linkova za taj mailing!"
+
+#. module: mass_mailing
+#: model_terms:ir.actions.act_window,help:mass_mailing.mailing_trace_report_action_mail
+msgid "No Mailing Data yet!"
+msgstr "Još nema podataka o mailingu!"
+
+#. module: mass_mailing
+#: model_terms:ir.actions.act_window,help:mass_mailing.mailing_subscription_action_report_optout
+msgid "No data yet."
+msgstr "Još nema podataka."
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/static/src/xml/mailing_portal_subscription_form.xml:0
+msgid "Not subscribed"
+msgstr "Nije pretplaćen"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.mailing_view_generic
+msgid "Nothing to see yet!"
+msgstr "Još ništa za prikaz!"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_section_mobile
+msgid "Odoo Mobile"
+msgstr "Odoo Mobile"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_form
+msgid ""
+"Once you send these emails, they'll be making a grand entrance in all the "
+"inboxes, creating quite the buzz!"
+msgstr ""
+"Kada pošaljete ove emailove, oni će napraviti veliki ulazak u sve inbokse, "
+"stvarajući pravu buku!"
+
+#. module: mass_mailing
+#: model:ir.actions.act_window,name:mass_mailing.mailing_subscription_action_report_optout
+msgid "Opt-Out Report"
+msgstr "Izvještaj o odjavama"
+
+#. module: mass_mailing
+#: model:ir.model.fields,field_description:mass_mailing.field_mail_blacklist__opt_out_reason_id
+msgid "Opt-out Reason"
+msgstr "Razlog odjave"
+
+#. module: mass_mailing
+#: model:ir.model.fields,help:mass_mailing.field_mailing_mailing__lang
+msgid ""
+"Optional translation language (ISO code) to select when sending out an "
+"email. If not set, the main partner's language will be used. This should "
+"usually be a placeholder expression that provides the appropriate language, "
+"e.g. {{ object.partner_id.lang }}."
+msgstr ""
+"Opcionalni jezik prijevoda (ISO kod) za izbor pri slanju e-pošte. Ako nije "
+"postavljen, koristit će se jezik glavnog partnera. Obično to treba biti "
+"placeholder izraz koji daje odgovarajući jezik, npr. {{ "
+"object.partner_id.lang }}."
+
+#. module: mass_mailing
+#: model:ir.actions.act_window,name:mass_mailing.mailing_subscription_optout_action
+msgid "Optout Reasons"
+msgstr "Razlozi odjave"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_features_showcase
+msgid ""
+"Organizing and presenting key information effectively increases the "
+"likelihood of turning your visitors into customers."
+msgstr ""
+"Organizovanje i efikasno predstavljanje ključnih informacija povećava "
+"vjerovatnoću pretvaranja posjetilaca u kupce."
+
+#. module: mass_mailing
+#: model:mailing.subscription.optout,name:mass_mailing.mailing_subscription_optout_data_4
+msgid "Other"
+msgstr "Ostalo"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_pricelist_boxed
+msgid "Our Menu"
+msgstr "Naš meni"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_content_card_6
+msgid ""
+"Our product line offers a range of innovative solutions designed to meet "
+"your needs. Each product is crafted for quality and reliability."
+msgstr ""
+"Naša linija proizvoda nudi niz inovativnih rješenja dizajniranih da "
+"zadovolje vaše potrebe. Svaki proizvod je izrađen za kvalitet i pouzdanost."
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_text_describing_benefits
+msgid ""
+"Our support team is available 24/7 to assist with any inquiries or issues, "
+"ensuring you get help whenever you need it."
+msgstr ""
+"Naš tim za podršku dostupan je 24/7 za pomoć oko svih upita ili problema, "
+"osiguravajući da dobijete pomoć kad god vam zatreba."
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_company_team_shapes
+msgid "Our talented crew"
+msgstr "Naš talentovani tim"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_text_need_help
+msgid ""
+"Our website is designed for easy navigation, allowing you to find the "
+"information you need quickly and efficiently."
+msgstr ""
+"Naša web stranica je dizajnirana za laku navigaciju, omogućavajući vam da "
+"brzo i efikasno pronađete potrebne informacije."
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/static/src/builder/tabs/design_tab.xml:0
+msgid "Padding"
+msgstr "Unutrašnji razmak"
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/static/src/builder/options/padding_option.xml:0
+msgid "Padding ↔"
+msgstr "Unutrašnji razmak ↔"
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/static/src/builder/plugins/design_tab_plugin.js:0
+msgid "Paragraph"
+msgstr "Paragraf"
+
+#. module: mass_mailing
+#: model:ir.model.fields,field_description:mass_mailing.field_mailing_mailing__pending
+msgid "Pending"
+msgstr "Na čekanju"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_pricelist_boxed
+msgid "Penne all'Arrabbiata"
+msgstr "Penne all'Arrabbiata"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_pricelist_boxed
+msgid ""
+"Penne pasta tossed in a spicy tomato and garlic sauce with a hint of chili "
+"peppers, finished with fresh parsley."
+msgstr ""
+"Penne tjestenina u ljutom umaku od paradajza i češnjaka sa nijansom čili "
+"papričica, posuta svježim peršunom."
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+msgid "People"
+msgstr "Ljudi"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_features_column
+msgid "Performance"
+msgstr "Performanse"
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/static/src/interactions/subscribe.js:0
+msgid "Please let us know why you updated your subscription."
+msgstr "Javite nam zašto ste ažurirali svoju pretplatu."
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/static/src/interactions/subscribe.js:0
+msgid "Please let us know why you want to be in our block list."
+msgstr "Javite nam zašto želite biti na našoj listi blokiranih."
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_link_list
+msgid "Popular Links"
+msgstr "Popularni linkovi"
+
+#. module: mass_mailing
+#: model:ir.model.fields,help:mass_mailing.field_mailing_mailing__use_exclusion_list
+msgid ""
+"Prevent sending messages to blacklisted contacts. Disable only when "
+"absolutely necessary."
+msgstr ""
+"Spriječite slanje poruka blokiranim kontaktima. Onemogućite samo kada je "
+"apsolutno neophodno."
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+msgid "Pricelist Boxed"
+msgstr "Cjenovnik u okviru"
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/static/src/builder/tabs/design_tab.xml:0
+msgid "Primary Button"
+msgstr "Primarno dugme"
+
+#. module: mass_mailing
+#: model:ir.model.fields,field_description:mass_mailing.field_mailing_mailing__process
+msgid "Process"
+msgstr "Proces"
+
+#. module: mass_mailing
+#: model:ir.model.fields,field_description:mass_mailing.field_mailing_trace_report__processing
+msgid "Processing"
+msgstr "Obrada"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+msgid "Product Description"
+msgstr "Opis proizvoda"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+msgid "Product Showcase"
+msgstr "Prikaz proizvoda"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_comparisons
+msgid "Professional"
+msgstr "Profesionalno"
+
+#. module: mass_mailing
+#: model:ir.model.fields,field_description:mass_mailing.field_mailing_contact__properties
+msgid "Properties"
+msgstr "Svojstva"
+
+#. module: mass_mailing
+#: model:ir.model.fields,field_description:mass_mailing.field_mailing_contact__properties_base_definition_id
+msgid "Properties Base Definition"
+msgstr "Definicija osnovnih svojstava"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_pricelist_boxed
+msgid "Quattro Stagioni"
+msgstr "Quattro Stagioni"
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/static/src/builder/options/options_container.xml:0
+msgid "REPLACE BY NEW VERSION"
+msgstr "ZAMIJENI NOVOM VERZIJOM"
+
+#. module: mass_mailing
+#: model:ir.model.fields,field_description:mass_mailing.field_mailing_contact__rating_ids
+msgid "Ratings"
+msgstr "Ocjene"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_blog_post_card
+msgid "Read Now"
+msgstr "Pročitaj sada"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_form
+msgid "Ready to unleash emails?"
+msgstr "Spremni za slanje emailova?"
+
+#. module: mass_mailing
+#: model:ir.model.fields,field_description:mass_mailing.field_mailing_subscription__opt_out_reason_id
+msgid "Reason"
+msgstr "Razlog"
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/wizard/mail_compose_message.py:0
+msgid "Received the mailing <b>{mailing_name}</b>"
+msgstr "Primljen mailing <b>{mailing_name}</b>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_content_card_4
+msgid ""
+"Redefine your daily rituals with interiors that inspire. From the moment you"
+" walk through the door, our pieces evoke a sense of <strong>pure "
+"delight</strong>, turning every corner of your home into a sanctuary of "
+"happiness and ease."
+msgstr ""
+"Redefinišite svoje dnevne rituale enterijerima koji inspirišu. Od trenutka "
+"kada uđete kroz vrata, naši komadi izazivaju osjećaj <strong>čistog "
+"zadovoljstva</strong>, pretvarajući svaki ugao vašeg doma u utočište sreće i"
+" lakoće."
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_features_column
+msgid "Reliability"
+msgstr "Pouzdanost"
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/static/src/builder/tabs/design_tab.xml:0
+msgid "Resize Full"
+msgstr "Promijeni veličinu na puno"
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/static/src/builder/tabs/design_tab.xml:0
+msgid "Resize Half"
+msgstr "Promijeni veličinu na pola"
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/static/src/builder/tabs/design_tab.xml:0
+msgid "Resize Quarter"
+msgstr "Promijeni veličinu na četvrtinu"
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/static/src/builder/tabs/design_tab.xml:0
+msgid "Resize Three Quarters"
+msgstr "Promijeni veličinu na tri četvrtine"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_pricelist_boxed
+msgid ""
+"Savor our fresh, local cuisine with a modern twist.<br/>Deliciously crafted "
+"for every taste!"
+msgstr ""
+"Uživajte u našoj svježoj, lokalnoj kuhinji sa modernim štihom.<br/>Ukusno "
+"pripremljeno za svaki ukus!"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_features_column
+msgid "Scalability"
+msgstr "Skalabilnost"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_kanban
+msgid "Scheduled on {{0}}"
+msgstr "Zakazano za {{0}}"
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/static/src/builder/tabs/design_tab.xml:0
+msgid "Secondary Button"
+msgstr "Sekundarno dugme"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+msgid "Section Mobile"
+msgstr "Sekcija Mobile"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_text_card
+msgid "See how"
+msgstr "Pogledajte kako"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_special_offer_cta
+msgid "See more"
+msgstr "Vidi više"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_cta_badge
+msgid "See more <span class=\"fa fa-long-arrow-right\" role=\"img\"/>"
+msgstr "Vidi više <span class=\"fa fa-long-arrow-right\" role=\"img\"/>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.mailing_filter_view_form
+msgid "Select a Target Model..."
+msgstr "Odaberite ciljni model..."
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_form
+msgid "Select recipients..."
+msgstr "Odaberite primaoce..."
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.mailing_view_generic
+msgid "Send a test version of your mailing to preview its design"
+msgstr "Pošaljite testnu verziju vašeg mailinga za pregled dizajna"
+
+#. module: mass_mailing
+#: model:ir.model,website_form_label:mass_mailing.model_mail_mail
+msgid "Send an E-mail"
+msgstr "Pošalji email"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_test_form
+msgid "Send test"
+msgstr "Pošalji test"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_form
+msgid "Send to all"
+msgstr "Pošalji svima"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.view_mail_mass_mailing_kanban
+msgid "Sent on {{0}}"
+msgstr "Poslano {{0}}"
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/static/src/xml/mailing_portal_subscription_feedback.xml:0
+msgid "Sent. Thanks you for your feedback!"
+msgstr "Poslano. Hvala vam na povratnoj informaciji!"
+
+#. module: mass_mailing
+#: model:ir.model.fields,help:mass_mailing.field_res_config_settings__mass_mailing_split_contact_name
+msgid "Separate Mailing Contact Names into two fields"
+msgstr "Razdvoji imena mailing kontakata u dva polja"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+msgid "Separator Title"
+msgstr "Naslov razdjelnika"
+
+#. module: mass_mailing
+#: model:ir.model.fields,field_description:mass_mailing.field_mailing_subscription_optout__sequence
+msgid "Sequence"
+msgstr "Redoslijed"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_mail_block_header_logo_and_inline_menu
+msgid "Shop"
+msgstr "Prodavnica"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_centered_cta_badge
+msgid "Shop Now"
+msgstr "Kupuj odmah"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_content_card_3
+msgid "Shop now"
+msgstr "Kupuj odmah"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+msgid "Social + Footer"
+msgstr "Društvene mreže + Podnožje"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+msgid "Social + Footer + Separator"
+msgstr "Društvene mreže + Podnožje + Razdjelnik"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+msgid "Social + Logo"
+msgstr "Društvene mreže + Logo"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_pricelist_boxed
+msgid "Spaghetti Carbonara"
+msgstr "Spaghetti Carbonara"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+msgid "Special Offer CTA"
+msgstr "CTA specijalne ponude"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_features_column
+msgid ""
+"Speed and efficiency ensure tasks are completed quickly and resources are "
+"used optimally, enhancing productivity and satisfaction."
+msgstr ""
+"Brzina i efikasnost osiguravaju da se zadaci završe brzo i da se resursi "
+"optimalno koriste, povećavajući produktivnost i zadovoljstvo."
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_pricelist_boxed
+msgid ""
+"Spicy pepperoni paired with fiery chili flakes, mozzarella, and tomato sauce"
+" for a flavorful kick."
+msgstr ""
+"Ljuta pepperoni u kombinaciji sa vatrenim čili pahuljicama, mocarelom i "
+"umakom od paradajza za ukusan udar."
+
+#. module: mass_mailing
+#: model:ir.model.fields,field_description:mass_mailing.field_res_config_settings__mass_mailing_split_contact_name
+msgid "Split First and Last Name"
+msgstr "Razdvoji ime i prezime"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_comparisons
+msgid "Start Now"
+msgstr "Počnite sada"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_content_card_2
+msgid "Start with the customer - find out what they want and give it to them."
+msgstr "Počnite od kupca - saznajte šta žele i dajte im to."
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_text_product_description
+msgid "Starting from $29.99"
+msgstr "Od $29.99"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_content_card_7
+msgid "Subscribe"
+msgstr "Prijavi se"
+
+#. module: mass_mailing
+#: model:ir.model,website_form_label:mass_mailing.model_mailing_contact
+msgid "Subscribe to Newsletter"
+msgstr "Prijavi se na newsletter"
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/static/src/xml/mailing_portal_subscription_form.xml:0
+msgid "Subscribed"
+msgstr "Pretplaćen"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.mailing_contact_view_form
+msgid "Subscription Date"
+msgstr "Datum pretplate"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.mailing_contact_view_form
+msgid "Subscriptions"
+msgstr "Pretplate"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+msgid "Subtitle"
+msgstr "Podnaslov"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.unsubscribe_form
+msgid "Successfully Unsubscribed"
+msgstr "Uspješno odjavljen"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.page_mailing_has_unsubscribed
+msgid "Successfully unsubscribed!"
+msgstr "Uspješno odjavljen!"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_text_describing_benefits
+msgid "Tax free"
+msgstr "Bez poreza"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+msgid "Team shapes"
+msgstr "Oblici tima"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.mailing_trace_view_search
+msgid "Test Traces"
+msgstr "Test tragovi"
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/wizard/mailing_mailing_test.py:0
+msgid "Test mailing could not be sent to %s:"
+msgstr "Testni mailing nije mogao biti poslan na %s:"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+msgid "Text Card"
+msgstr "Tekstualna kartica"
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/static/src/builder/tabs/design_tab.xml:0
+msgid "Text Color"
+msgstr "Boja teksta"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_text_product_showcase
+msgid "The Art of the Escape: Creating a Quiet Sanctuary in a Busy World"
+msgstr "Umjetnost bijega: Stvaranje tihog utočišta u užurbanom svijetu"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_link_list
+msgid "The Essential Guide to Timeless Furniture Investing"
+msgstr "Osnovni vodič za investiranje u bezvremenski namještaj"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_link_list
+msgid "The Interior Trend You Can't Afford to Miss"
+msgstr "Trend enterijera koji ne smijete propustiti"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_blog_post_card
+msgid "The Joy of Coming Home"
+msgstr "Radost povratka kući"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_text_left_cta
+msgid "The Mastery of Making"
+msgstr "Majstorstvo izrade"
+
+#. module: mass_mailing
+#: model:mailing.subscription.optout,name:mass_mailing.mailing_subscription_optout_data_3
+msgid "The content of these emails is not relevant to me"
+msgstr "Sadržaj ovih emailova mi nije relevantan"
+
+#. module: mass_mailing
+#: model:ir.model.fields,help:mass_mailing.field_mailing_list__is_public
+msgid ""
+"The mailing list can be accessible by recipients in the subscription "
+"management page to allow them to update their preferences."
+msgstr ""
+"Mailing lista može biti dostupna primaocima na stranici za upravljanje "
+"pretplatama kako bi mogli ažurirati svoje preferencije."
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_blockquote
+msgid ""
+"There is a certain magic in a room that just feels right. It's that "
+"effortless click when a sleek silhouette meets a soft, lived-in texture, "
+"turning a house into a haven that truly moves you..."
+msgstr ""
+"Postoji određena magija u prostoriji koja jednostavno djeluje pravo. To je "
+"onaj prirodni klik kada elegantna silueta sretne meku, prijatnu teksturu, "
+"pretvarajući kuću u utočište koje vas istinski dirne..."
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/static/src/builder/options/options_container.xml:0
+msgid "This block is outdated."
+msgstr "Ovaj blok je zastario."
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/models/mail_thread.py:0
+msgid ""
+"This email has been automatically added in blocklist because of too much "
+"bounced."
+msgstr ""
+"Ovaj email je automatski dodan na listu blokiranih zbog previše vraćenih "
+"poruka."
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.mailing_subscription_view_form
+msgid "This email is blacklisted for mass mailings"
+msgstr "Ovaj email je na listi blokiranih za masovni mailing"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.social_links
+msgid "TikTok"
+msgstr "TikTok"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+msgid "Title + Side Text"
+msgstr "Naslov + Bočni tekst"
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/static/src/builder/options/padding_option.xml:0
+msgid "Top"
+msgstr "Vrh"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_pricelist_boxed
+msgid ""
+"Traditional Roman dish with creamy egg, crispy pancetta, and Pecorino "
+"Romano, topped with black pepper."
+msgstr ""
+"Tradicionalno rimsko jelo sa kremastim jajetom, hrskavom pancettom i "
+"Pecorino Romano sirom, posuto crnim biberom."
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_text_product_showcase
+msgid ""
+"True elegance is something you can feel, rooted in high-quality materials "
+"that only get better with time. By using the finest woods and textiles, we "
+"create furniture that doesn't just sit in a room—it grows with it. These "
+"pieces are designed to be your home's future heirlooms, crafted with such "
+"care that they will remain as beautiful and relevant years from now as they "
+"are today."
+msgstr ""
+"Istinska elegancija je nešto što možete osjetiti, ukorijenjeno u "
+"visokokvalitetnim materijalima koji samo postaju bolji s vremenom. Koristeći"
+" najkvalitetnije drvo i tekstil, kreiramo namještaj koji ne samo da stoji u "
+"prostoriji — on raste s njom. Ovi komadi su dizajnirani da budu nasljedstvo "
+"vašeg doma u budućnosti, izrađeni s takvom pažnjom da će ostati lijepi i "
+"relevantni godinama unaprijed kao što su danas."
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_text_center_cta
+msgid ""
+"True luxury is measured in decades.<br/>We blend heritage craft with the "
+"finest materials.<br/>Discover pieces that age beautifully."
+msgstr ""
+"Pravi luksuz se mjeri decenijama.<br/>Spajamo tradicionalni zanat sa "
+"najboljim materijalima.<br/>Otkrijte komade koji lijepo stare."
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_text_cta_card
+msgid ""
+"True luxury is more rewarding as a member.<br/>Join our inner circle for "
+"exclusive benefits and early access.<br/>Elevate your home today."
+msgstr ""
+"Pravi luksuz je još vrijedniji kao član.<br/>Pridružite se našem užem krugu "
+"za ekskluzivne pogodnosti i rani pristup.<br/>Uzdignite svoj dom danas."
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_text_card
+msgid "Unlock your full potential"
+msgstr "Otključajte svoj puni potencijal"
+
+#. module: mass_mailing
+#: model:ir.model.fields,field_description:mass_mailing.field_mailing_mailing__use_exclusion_list
+msgid "Use Exclusion List"
+msgstr "Koristi listu isključenja"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.ab_testing_description
+msgid "Use alternative versions to be able to select the winner."
+msgstr "Koristite alternativne verzije kako biste mogli odabrati pobjednika."
+
+#. module: mass_mailing
+#: model_terms:ir.actions.act_window,help:mass_mailing.mailing_trace_report_action_mail
+msgid ""
+"Use this menu to keep track of the results of your mailings.<br>\n"
+"                    From here, you'll be able to overview the rate of replies, clicks, bounces..."
+msgstr ""
+"Koristite ovaj meni za praćenje rezultata vaših mailinga.<br>\n"
+"                    Odavde možete pregledati stope odgovora, klikova, vraćanja..."
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_media_list
+msgid ""
+"Use this snippet to build various types of components that feature a left- or right-aligned image alongside textual content. Duplicate the element to create a list that fits your needs.\n"
+"                            <br/>"
+msgstr ""
+"Koristite ovaj snippet za izradu raznih komponenti koje sadrže lijevo ili desno poravnatu sliku uz tekstualni sadržaj. Duplicirajte element za izradu liste koja odgovara vašim potrebama.\n"
+"                            <br/>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+msgid "Video"
+msgstr "Video"
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/static/src/builder/options/snippet_visibility_option.xml:0
+msgid "Visibility"
+msgstr "Vidljivost"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_text_need_help
+msgid ""
+"We deliver personalized solutions, ensuring that every customer receives "
+"top-tier service tailored to their needs."
+msgstr ""
+"Pružamo personalizovana rješenja, osiguravajući da svaki kupac primi "
+"vrhunsku uslugu prilagođenu svojim potrebama."
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_text_need_help
+msgid ""
+"We provide 24/7 support through various channels, including live chat, "
+"email, and phone, to assist with any queries."
+msgstr ""
+"Pružamo podršku 24/7 putem raznih kanala, uključujući live chat, email i "
+"telefon, kako bismo pomogli sa svim upitima."
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_text_describing_benefits
+msgid ""
+"We provide transparent pricing that offers great value, ensuring you always "
+"get the best deal without hidden costs."
+msgstr ""
+"Pružamo transparentne cijene koje nude odličnu vrijednost, osiguravajući da "
+"uvijek dobijete najbolju ponudu bez skrivenih troškova."
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.email_designer_snippets
+msgid "Website"
+msgstr "Web stranica"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_reviews_wall
+msgid "What our customers are saying about us."
+msgstr "Šta naši kupci govore o nama."
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_text_need_help
+msgid "What sets us apart?"
+msgstr "Šta nas izdvaja?"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_text_need_help
+msgid "What support do we offer?"
+msgstr "Kakvu podršku nudimo?"
+
+#. module: mass_mailing
+#: model_terms:ir.actions.act_window,help:mass_mailing.mailing_filter_action
+msgid ""
+"While designing the mailing, you can define the rules to filter recipients.\n"
+"                To save the same criteria for future use, you can add it to the favorite list\n"
+"                by clicking on <i class=\"fa fa-floppy-o text-warning\"></i> icon next to \"Recipients\"."
+msgstr ""
+"Tokom dizajniranja mailinga možete definisati pravila za filtriranje primalaca.\n"
+"                Da biste sačuvali iste kriterije za buduću upotrebu, možete ih dodati na listu favorita\n"
+"                klikom na ikonu <i class=\"fa fa-floppy-o text-warning\"></i> pored \"Primaoci\"."
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_link_list
+msgid "Why Your Living Room Feels Unfinished (And How to Fix It)"
+msgstr "Zašto vaš dnevni boravak djeluje nedovršeno (i kako to popraviti)"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_image_text
+msgid ""
+"Write one or two paragraphs describing your product or services. To be "
+"successful your content needs to be useful to your readers."
+msgstr ""
+"Napišite jedan ili dva paragrafa koji opisuju vaš proizvod ili usluge. Da "
+"biste bili uspješni, vaš sadržaj mora biti koristan vašim čitaocima."
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_content_card_1
+msgid ""
+"Write one or two paragraphs describing your product or services. To be "
+"successful, your content needs to be useful to your readers."
+msgstr ""
+"Napišite jedan ili dva paragrafa koji opisuju vaš proizvod ili usluge. Da "
+"biste bili uspješni, vaš sadržaj mora biti koristan vašim čitaocima."
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/static/src/builder/tabs/design_tab.xml:0
+msgid "X"
+msgstr "X"
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/static/src/builder/tabs/design_tab.xml:0
+msgid "Y"
+msgstr "Y"
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/controllers/main.py:0
+msgid "You are no longer part of our mailing list(s)."
+msgstr "Više niste dio naših mailing lista."
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/controllers/main.py:0
+msgid ""
+"You are no longer part of our services and will not be contacted again."
+msgstr "Više niste dio naših usluga i nećete biti ponovo kontaktirani."
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/controllers/main.py:0
+msgid "You are no longer part of the %(mailing_name)s mailing list."
+msgstr "Više niste dio mailing liste %(mailing_name)s."
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/controllers/main.py:0
+msgid "You are no longer part of the %(mailing_names)s mailing list."
+msgstr "Više niste dio mailing liste %(mailing_names)s."
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/static/src/builder/options/options_container.xml:0
+msgid "You can still access the block options but it might be ineffective."
+msgstr ""
+"Još uvijek možete pristupiti opcijama bloka, ali to možda neće biti "
+"efikasno."
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/static/src/xml/mailing_portal_subscription_form.xml:0
+msgid "You may also be interested in"
+msgstr "Možda vas još zanima"
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/static/src/builder/options/options_container.xml:0
+msgid "You might not be able to customize it anymore."
+msgstr "Možda ga više nećete moći prilagoditi."
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/models/mailing_contact.py:0
+msgid ""
+"You should give either list_ids, either subscription_ids to create new "
+"contacts."
+msgstr ""
+"Trebate proslijediti ili list_ids, ili subscription_ids za kreiranje novih "
+"kontakata."
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/static/src/xml/mailing_portal_subscription_form.xml:0
+msgid "You will not hear from us anymore."
+msgstr "Više nećete čuti od nas."
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/static/src/xml/mailing_portal_subscription_form.xml:0
+msgid ""
+"You will not receive any news from those mailing lists you are a member of:"
+msgstr "Nećete primati nikakve vijesti sa mailing lista čiji ste član:"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_mail_block_footer_one_liner
+msgid ""
+"You're seeing this because you've shopped with us or joined our mailing "
+"list."
+msgstr ""
+"Ovo vidite jer ste kupovali kod nas ili ste se pridružili našoj mailing "
+"listi."
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_subtitle
+msgid "Your Subtitle"
+msgstr "Vaš podnaslov"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_blog_title
+msgid "Your Super Article Title"
+msgstr "Vaš sjajni naslov članka"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_text_need_help
+msgid ""
+"Your data is protected by advanced encryption and security protocols, "
+"keeping your personal information safe."
+msgstr ""
+"Vaši podaci su zaštićeni naprednim enkripcijskim i sigurnosnim protokolima, "
+"čuvajući vaše lične informacije sigurnim."
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/static/src/xml/mailing_portal_subscription_form.xml:0
+msgid "Your email is currently"
+msgstr "Vaš email je trenutno"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.unsubscribe_form
+msgid "Your email is currently <strong>in our block list</strong>."
+msgstr "Vaš email je trenutno <strong>na našoj listi blokiranih</strong>."
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/wizard/mailing_mailing_test.py:0
+msgid "[TEST] %(mailing_subject)s"
+msgstr "[TEST] %(mailing_subject)s"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.mailing_filter_view_form
+msgid "e.g. \"B2B Canadian Customers\""
+msgstr "npr. \"B2B kanadski kupci\""
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.mailing_contact_view_form_split_name
+msgid "e.g. \"John\""
+msgstr "npr. \"Mirza\""
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.mailing_contact_view_form_split_name
+msgid "e.g. \"Smith\""
+msgstr "npr. \"Hadžić\""
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.mailing_contact_view_form
+msgid "e.g. \"VIP\", \"Roadshow\", ..."
+msgstr "npr. \"VIP\", \"Roadshow\", ..."
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.mail_blacklist_view_form
+msgid "e.g. I received too many emails"
+msgstr "npr. Primio sam previše emailova"
+
+#. module: mass_mailing
+#: model:ir.model.constraint,message:mass_mailing.constraint_mailing_mailing_email_from
+msgid "email from is required for mailing"
+msgstr "email pošiljaoca je obavezan za mailing"
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/models/mailing_subscription.py:0
+msgid "id"
+msgstr "id"
+
+#. module: mass_mailing
+#: code:addons/mass_mailing/static/src/xml/mailing_portal_subscription_form.xml:0
+msgid "in our block list"
+msgstr "na našoj listi blokiranih"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.ab_testing_description
+msgid ""
+"of all potential recipients.<br/>\n"
+"                        <b class=\"text-danger\">Some of the mailings will not be sent</b>, as only 1 email will be sent for each unique recipient in this campaign."
+msgstr ""
+"od svih potencijalnih primalaca.<br/>\n"
+"                        <b class=\"text-danger\">Neki mailinzi neće biti poslani</b>, jer će se poslati samo 1 email po jedinstvenom primaocu u ovoj kampanji."
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.ab_testing_description
+msgid "to the remaining recipients."
+msgstr "preostalim primaocima."
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.ab_testing_description
+msgid "will receive this version."
+msgstr "će primiti ovu verziju."
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.ab_testing_description
+msgid "will receive this version.<br/>"
+msgstr "će primiti ovu verziju.<br/>"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_pricelist_boxed
+msgid "✽  Pastas"
+msgstr "✽  Tjestenine"
+
+#. module: mass_mailing
+#: model_terms:ir.ui.view,arch_db:mass_mailing.s_pricelist_boxed
+msgid "✽  Pizzas"
+msgstr "✽  Pizze"

@@ -30,7 +30,17 @@ msgstr "Tečaj"
 # taken from hr.po
 #. module: mass_mailing_slides
 #. odoo-python
-#: code:addons/mass_mailing_slides/models/slide_channel.py
+#: code:addons/mass_mailing_slides/models/slide_channel.py:0
 #, python-format
 msgid "Mass Mail Course Members"
 msgstr "Masovna poruka sudionicima tečaja"
+
+#. module: mass_mailing_slides
+#: model:ir.model.fields,field_description:mass_mailing_slides.field_slide_channel__display_name
+msgid "Display Name"
+msgstr "Naziv za prikaz"
+
+#. module: mass_mailing_slides
+#: model:ir.model.fields,field_description:mass_mailing_slides.field_slide_channel__id
+msgid "ID"
+msgstr "ID"

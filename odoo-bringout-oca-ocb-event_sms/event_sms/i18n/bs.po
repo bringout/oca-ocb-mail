@@ -57,7 +57,7 @@ msgid "Registration Mail Scheduler"
 msgstr "Planer pošte registracije"
 
 #. module: event_sms
-#: model:ir.model.fields.selection,name:event_sms.selection__event_mail__notification_type__sms
+#: code:addons/event_sms/static/src/template_reference_field/field_event_mail_template_reference.xml:0
 msgid "SMS"
 msgstr "SMS"
 
@@ -82,3 +82,27 @@ msgstr ""
 "{{ object.event_id.organizer_id.name or object.event_id.company_id.name or "
 "user.env.company.name }}: Drago nam je da potvrdimo vašu registraciju za "
 "događaj {{ object.event_id.name }}."
+
+#. module: event_sms
+#: model:ir.model.fields,field_description:event_sms.field_event_mail__display_name
+msgid "Display Name"
+msgstr "Naziv za prikaz"
+
+#. module: event_sms
+#: model:ir.model.fields,field_description:event_sms.field_event_mail__id
+msgid "ID"
+msgstr "ID"
+
+#. module: event_sms
+#: model:sms.template,body:event_sms.sms_template_data_event_reminder
+msgid ""
+"Ready for \"{{ object.event_id.name }}\" {{ object.event_date_range }}?\n"
+"{{ 'It starts at %s' % format_time(time=object.event_begin_date, tz=object.event_id.date_tz, time_format='short', lang_code=object.partner_id.lang) + (', at %s' % object.event_id.address_inline if object.event_id.address_inline else '') + '.\\nSee you there!' if object.event_id.address_inline or 'website_published' not in object.event_id._fields else 'Join us on %s/event/%i!' % (object.get_base_url(), object.event_id.id) }}"
+msgstr ""
+"Spremni za \"{{ object.event_id.name }}\" {{ object.event_date_range }}?\n"
+"{{ 'Počinje u %s' % format_time(time=object.event_begin_date, tz=object.event_id.date_tz, time_format='short', lang_code=object.partner_id.lang) + (', u %s' % object.event_id.address_inline if object.event_id.address_inline else '') + '.\\nVidimo se tamo!' if object.event_id.address_inline or 'website_published' not in object.event_id._fields else 'Pridružite nam se na %s/event/%i!' % (object.get_base_url(), object.event_id.id) }}"
+
+#. module: event_sms
+#: model:ir.model.fields,field_description:event_sms.field_event_mail__template_ref
+msgid "Template"
+msgstr "Predložak"

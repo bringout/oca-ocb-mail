@@ -21,57 +21,57 @@ msgid "$100 OFF"
 msgstr "100$ POPUSTA"
 
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_tech_template
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_blogging_template
 msgid "&amp;nbsp; &amp;nbsp;"
-msgstr "&amp;nbsp; &amp;nbsp;"
+msgstr ""
 
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_tech_template
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_blogging_template
 msgid "&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;"
-msgstr "&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;"
+msgstr ""
 
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_vip_template
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_coupon_template
 msgid "*But hurry! Offer ends on"
 msgstr "*Ali požurite! Ponuda završava"
 
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_solar_template
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_promotion_template
 msgid "*For orders over $39."
 msgstr "*Za narudžbe iznad 39%."
 
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_solar_template
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_promotion_template
 msgid "24/7 <br/>Customer Service"
 msgstr "24/7 <br/>Korisnička podrška"
 
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_tech_template
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_blogging_template
 msgid "5 Ways Drones Can Better Your Live Events"
 msgstr "1958 Royal"
 
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_bold_template
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_magazine_template
 msgid "<font style=\"background-color: rgb(231, 148, 57);\">TRAVEL</font>"
 msgstr "20%"
 
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_bold_template
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_magazine_template
 msgid "<font style=\"background-color: rgb(231, 99, 99);\">LIFESTYLE</font>"
 msgstr "21 jul"
 
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_bold_template
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_magazine_template
 msgid "<font style=\"background-color: rgb(57, 123, 33);\">FOOD</font>"
 msgstr "<font style=\"background-color: rgb(57, 123, 33);\">HRANA</font>"
 
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_tech_template
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_blogging_template
 msgid "<font style=\"color: rgb(173, 173, 173);\">Unsubscribe</font>"
 msgstr "<font style=\"color: rgb(173, 173, 173);\">Odjava</font>"
 
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_event_template
 msgid ""
 "<font style=\"color: rgb(255, 255, 255);\">And it won't cost you a "
 "thing!</font>"
@@ -79,7 +79,7 @@ msgstr ""
 "<font style=\"color: rgb(255, 255, 255);\">I neće vas koštati ništa!</font>"
 
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_vip_template
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_coupon_template
 msgid ""
 "<font style=\"color: rgb(255, 255, 255);\">EXCLUSIVE</font>\n"
 "                        <br/><span style=\"font-weight: bolder\"><font style=\"color: rgb(255, 255, 255);\">DEALS</font></span>"
@@ -88,7 +88,7 @@ msgstr ""
 "<br/><span style=\"font-weight: bolder\"> <font style=\"color: rgb(255, 255, 255);\">PONUDE</font></span>"
 
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_vip_template
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_coupon_template
 msgid ""
 "<font style=\"color: rgb(255, 255, 255);\">FREE</font>\n"
 "                        <br/><span style=\"font-weight: bolder\"><font style=\"color: rgb(255, 255, 255);\">SHIPPING</font></span>"
@@ -97,12 +97,12 @@ msgstr ""
 "                        <br/><span style=\"font-weight: bolder\"><font style=\"color: rgb(255, 255, 255);\">SHIPPING</font></span>"
 
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_event_template
 msgid "<font style=\"color: rgb(255, 255, 255);\">Hi there!</font>"
 msgstr "<font style=\"color: rgb(255, 255, 255);\">Pozdrav!</font>"
 
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_event_template
 msgid ""
 "<font style=\"color: rgb(255, 255, 255);\">The next edition of <span style=\"font-weight: bolder;\">Odoo Experience Online</span> is coming soon!\n"
 "                    <br/>To stir up your curiosity, have a look at all the great talks scheduled and highlighted in our agenda!</font>"
@@ -111,7 +111,7 @@ msgstr ""
 "<br/>Da bismo potaknuli vašu znatiželju, pogledajte sve sjajne govore zakazane i istaknute u našem rasporedu!</font>"
 
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_event_template
 msgid ""
 "<font style=\"color: rgb(255, 255, 255);\">Zero, zilch, nada! Odoo "
 "Experience is free for everyone!</font>"
@@ -136,8 +136,6 @@ msgid ""
 "<i class=\"fa fa-2x fa-ticket\" style=\"color: rgb(36, 37, 48) "
 "!important;\"/>​"
 msgstr ""
-"<i class=\"fa fa-2x fa-ticket\" style=\"color: rgb(36, 37, 48) "
-"!important;\"/>​"
 
 #. module: mass_mailing_themes
 #: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_tech_template
@@ -145,8 +143,6 @@ msgid ""
 "<span class=\"fa fa-facebook\" style=\"color: rgb(54, 166, 210) !important; "
 "font-size: 18px;\"/>​"
 msgstr ""
-"<span class=\"fa fa-facebook\" style=\"color: rgb(54, 166, 210) !important; "
-"font-size: 18px;\"/>​"
 
 #. module: mass_mailing_themes
 #: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_tech_template
@@ -154,11 +150,9 @@ msgid ""
 "<span class=\"fa fa-linkedin\" style=\"color: rgb(54, 166, 210) !important; "
 "font-size: 18px;\"/>​"
 msgstr ""
-"<span class=\"fa fa-linkedin\" style=\"color: rgb(54, 166, 210) !important; "
-"font-size: 18px;\"/>​"
 
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_tech_template
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_blogging_template
 msgid "<span class=\"fa fa-play\"/>&amp;nbsp;&amp;nbsp;WATCH VIDEO"
 msgstr "<small>Korak 2:</small>"
 
@@ -168,11 +162,9 @@ msgid ""
 "<span class=\"fa fa-twitter\" style=\"color: rgb(54, 166, 210) !important; "
 "font-size: 18px;\"/>​"
 msgstr ""
-"<span class=\"fa fa-twitter\" style=\"color: rgb(54, 166, 210) !important; "
-"font-size: 18px;\"/>​"
 
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_solar_template
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_promotion_template
 msgid ""
 "<span style=\"font-size: 32px;\"><font style=\"font-weight: bolder; color: "
 "rgb(255, 255, 255); background-color: rgb(255, 187, "
@@ -185,10 +177,10 @@ msgstr ""
 #. module: mass_mailing_themes
 #: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_vip_template
 msgid "<span style=\"font-weight: bolder; color: white;\">VIP10</span>"
-msgstr "<span style=\"font-weight: bolder; color: white;\">VIP10</span>"
+msgstr ""
 
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_solar_template
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_promotion_template
 msgid ""
 "<span style=\"font-weight: bolder;\">\n"
 "                                <font style=\"background-color: rgb(255, 255, 255); color: rgb(255, 187, 0);\">SOLAR</font>\n"
@@ -199,7 +191,7 @@ msgstr ""
 "</span>"
 
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_solar_template
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_promotion_template
 msgid ""
 "<span style=\"font-weight: bolder;\">View online</span>&amp;nbsp;<span "
 "class=\"fa fa-external-link\"/>"
@@ -222,7 +214,7 @@ msgstr ""
 "<br/>i sveobuhvatno iskustvo"
 
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_tech_template
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_blogging_template
 msgid ""
 "Anyone with an ounce of business acumen knows that any business that wants "
 "to succeed needs a website."
@@ -236,12 +228,12 @@ msgid "BEGINNING"
 msgstr "POČETAK"
 
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.email_designer_snippets
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.email_designer_themes
 msgid "Big News"
 msgstr "Velike vijesti"
 
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_bold_template
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_magazine_template
 msgid ""
 "Bitten by the travel bug but looking to travel consciously? Eco-travel is "
 "the way forward."
@@ -250,12 +242,12 @@ msgstr ""
 "put naprijed."
 
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.email_designer_snippets
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.email_designer_themes
 msgid "Blogging"
 msgstr "Bloganje"
 
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_tech_template
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_blogging_template
 msgid ""
 "Breaking IT news\n"
 "                            <br/>and Analysis"
@@ -265,13 +257,13 @@ msgstr ""
 
 # taken from hr.po
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.email_designer_snippets
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.email_designer_themes
 msgid "Coupon Code"
 msgstr "Kapetanova salata"
 
 # taken from hr.po
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_vip_template
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_coupon_template
 msgid "Cover"
 msgstr "Proverite vrhunske brendove električnih gitara i njihove modele!"
 
@@ -281,7 +273,7 @@ msgid "Cover image"
 msgstr "Naslovna slika"
 
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_event_template
 msgid ""
 "Create your very own chat room or join an existing one that sparks your "
 "interest."
@@ -291,17 +283,17 @@ msgstr ""
 
 # taken from hr.po
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_solar_template
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_promotion_template
 msgid "Customer Service"
 msgstr "Služba za korisnike"
 
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_bold_template
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_magazine_template
 msgid "Delicious recipes from around the world"
 msgstr "Ukusni recepti iz cijelog svijeta"
 
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_bold_template
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_magazine_template
 msgid ""
 "Delicious recipes from around the world&amp;nbsp;\n"
 "                                <span class=\"fa fa-angle-right\"/>"
@@ -310,14 +302,14 @@ msgstr ""
 "<span class=\"fa fa-angle-right\"/>"
 
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_bold_template
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_magazine_template
 msgid "Destinations for an eco-holiday"
 msgstr ""
 "Cyber-pretnje nastavljaju da rastu.<br/>\n"
 "                                    Diskusija će ispitati kako da razvije nove norme i integriše ih u EU"
 
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_bold_template
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_magazine_template
 msgid ""
 "Destinations for an eco-holiday&amp;nbsp;\n"
 "                                <span class=\"fa fa-angle-right\"/>"
@@ -326,22 +318,22 @@ msgstr ""
 "<span class=\"fa fa-angle-right\"/>"
 
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_solar_template
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_promotion_template
 msgid "ENDOFSUMMER20"
 msgstr "KRAJ LETA20"
 
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_solar_template
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_promotion_template
 msgid "Easy Returns"
 msgstr "Jednostavan povrat"
 
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.email_designer_snippets
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.email_designer_themes
 msgid "Event Promo"
 msgstr "Promocija događaja"
 
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_event_template
 msgid ""
 "Experience everything from a virtual exhibitor's hall to multiple "
 "interactive presentations and demos."
@@ -350,32 +342,32 @@ msgstr ""
 "prezentacija i demonstracija."
 
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_tech_template
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_blogging_template
 msgid "Facebook"
 msgstr "Uživajte!"
 
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_event_template
 msgid "Find out more"
 msgstr "Saznajte više"
 
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_bold_template
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_magazine_template
 msgid "Find out more&amp;nbsp;<span class=\"fa fa-angle-right\"/>"
 msgstr "Saznajte više&amp;nbsp;<span class=\"fa fa-angle-right\"/>"
 
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_solar_template
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_promotion_template
 msgid "Free Delivery"
 msgstr "OD VAŠE SLEDEĆE NARUDŽBE!"
 
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_solar_template
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_promotion_template
 msgid "Free delivery*"
 msgstr "Besplatna dostava*"
 
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_solar_template
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_promotion_template
 msgid "GET 10%&amp;nbsp;OFF"
 msgstr "DOBIVATE 10%&amp;nbsp;POPUSTA"
 
@@ -389,7 +381,7 @@ msgstr ""
 "<br/>u samo 2 dana"
 
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_event_template
 msgid "Go to the chatrooms"
 msgstr "Idite u sobe za razgovor"
 
@@ -399,17 +391,17 @@ msgid "Here's your coupon code* :"
 msgstr "Evo vašeg kupon koda* :"
 
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_tech_template
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_blogging_template
 msgid "How to Code a Website Without Experience"
 msgstr "Google Plus"
 
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_bold_template
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_magazine_template
 msgid "IN THIS ISSUE"
 msgstr "Odlično odgovara bilo kojoj potrebi"
 
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_bold_template
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_magazine_template
 msgid ""
 "Imagine waking up with more energy, more flexibility, with less stress and "
 "fewer instances of anxiously rushing out the door."
@@ -418,12 +410,12 @@ msgstr ""
 "i manje slučajeva tjeskobnog izjurivanja kroz vrata."
 
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_tech_template
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_blogging_template
 msgid "Instagram"
-msgstr "Instagram"
+msgstr ""
 
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_bold_template
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_magazine_template
 msgid ""
 "Interview with Janet James&amp;nbsp;\n"
 "                                <span class=\"fa fa-angle-right\"/>"
@@ -432,7 +424,7 @@ msgstr ""
 "<span class=\"fa fa-angle-right\"/>"
 
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_bold_template
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_magazine_template
 msgid ""
 "Issue\n"
 "                            <br/><span style=\"font-weight: bolder;\">#42</span>"
@@ -449,12 +441,12 @@ msgstr ""
 " popuste i još mnogo toga!"
 
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_vip_template
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_coupon_template
 msgid "Join us"
 msgstr "Pridružite nam se"
 
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_event_template
 msgid ""
 "Learn through workshops, product demos, and inspiring talks from Odoo "
 "Experts and Partners."
@@ -463,12 +455,12 @@ msgstr ""
 "stručnjaka i partnera."
 
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_tech_template
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_blogging_template
 msgid "LinkedIn"
-msgstr "LinkedIn"
+msgstr ""
 
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_bold_template
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_magazine_template
 msgid "Man on a rock looking at mountains in the distance"
 msgstr "Čovjek na stijeni gleda planine u daljini"
 
@@ -491,7 +483,7 @@ msgstr ""
 "<span style=\"font-size: 12px; font-weight: bolder;\">Korisnička služba</span>"
 
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_tech_template
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_blogging_template
 msgid ""
 "Modern smartphones have all the built-in tech equal to a majority of the "
 "current professional cameras."
@@ -501,12 +493,12 @@ msgstr ""
 
 # taken from hr.po
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.email_designer_snippets
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.email_designer_themes
 msgid "Newsletter"
 msgstr "Bilten"
 
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_tech_template
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_blogging_template
 msgid ""
 "One clever use of drones is for delivering gifts — but another that's "
 "becoming popular for event safety purposes."
@@ -515,7 +507,7 @@ msgstr ""
 "postaje popularna u svrhe sigurnosti događaja."
 
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_tech_template
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_blogging_template
 msgid ""
 "Our roundup of the most popular and latest tech related videos from last "
 "week.<br/>"
@@ -524,7 +516,7 @@ msgstr ""
 "od prošlog tjedna.<br/>"
 
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.email_designer_snippets
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.email_designer_themes
 msgid "Promotion Program"
 msgstr "Promotivni program"
 
@@ -534,7 +526,7 @@ msgid "READ MORE"
 msgstr "Precizno inženjerski"
 
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_bold_template
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_magazine_template
 msgid ""
 "Rainy day ideas&amp;nbsp;\n"
 "                                <span class=\"fa fa-angle-right\"/>"
@@ -543,22 +535,22 @@ msgstr ""
 "<span class=\"fa fa-angle-right\"/>"
 
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_bold_template
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_magazine_template
 msgid "Read More&amp;nbsp;<span class=\"fa fa-angle-right\"/>"
 msgstr "Puccini tegla"
 
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_vip_template
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_coupon_template
 msgid "Redeem it now"
 msgstr "Iskoristite ga sada"
 
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_event_template
 msgid "Register now!"
 msgstr "Čitaj više..."
 
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_event_template
 msgid "See what we've got planned"
 msgstr "Pogledajte što smo isplanirali"
 
@@ -574,7 +566,7 @@ msgid "Signature"
 msgstr "Potpis"
 
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_bold_template
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_magazine_template
 msgid "THE DAILY"
 msgstr "DNEVNO"
 
@@ -584,19 +576,19 @@ msgid "Thank you for being one of our most loyal customers."
 msgstr "Sony BDVE210"
 
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_tech_template
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_blogging_template
 msgid "The future of smartphone video production"
 msgstr "Budućnost video produkcije pametnim telefonima"
 
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_bold_template
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_magazine_template
 msgid "Top 5 energy-boosting morning routines"
 msgstr ""
 "Oni sede za terminalima na Holloman vazduhoplovnoj bazi, gledajući mutljive "
 "slike iz drone video prenosa."
 
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_bold_template
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_magazine_template
 msgid ""
 "Top 5 energy-boosting morning routines&amp;nbsp;\n"
 "                                <span class=\"fa fa-angle-right\"/>"
@@ -605,7 +597,7 @@ msgstr ""
 "<span class=\"fa fa-angle-right\"/>"
 
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_bold_template
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_magazine_template
 msgid ""
 "Travel without leaving your kitchen with these international recipes. From "
 "Canada to Australia, Mexico to Sweden, and everywhere in between."
@@ -630,17 +622,17 @@ msgid "VIP members only"
 msgstr "Dvosočivni telefoni"
 
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_tech_template
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_blogging_template
 msgid "VISIT OUR WEBSITE"
 msgstr "POSJETITE NAŠU WEB STRANICU"
 
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_solar_template
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_promotion_template
 msgid "Valid on all sales prices in our webshop."
 msgstr "Koristite ovaj promo kod PRE 1. avgusta"
 
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_solar_template
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_promotion_template
 msgid "Visit the website"
 msgstr "Posjetite web stranicu"
 
@@ -661,12 +653,1221 @@ msgstr ""
 "<br/>što će nam omogućiti da ponudimo još veći izbor proizvoda i usluga."
 
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_bold_template
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_magazine_template
 msgid "Woman having breakfast in bed"
 msgstr "Žena doručkuje u krevetu"
 
 # taken from hr.po
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_coffeebreak_template
 msgid "Your Logo"
 msgstr "RADIONICE"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_coffeebreak_template
+msgid "&amp;nbsp;&amp;nbsp;"
+msgstr "&amp;nbsp;&amp;nbsp;"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid "&amp;nbsp;&amp;nbsp;Comment on this post&amp;nbsp;&amp;nbsp;"
+msgstr "&amp;nbsp;&amp;nbsp;Komentariši ovu objavu&amp;nbsp;&amp;nbsp;"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid ""
+". I put it on hold for 6 years, waiting for the right moment to use it. I "
+"thought it would take 3 years to deprecate a 77 billion dollars company just"
+" because open source is so cool. Sometimes it's better for your self-"
+"motivation not to face reality..."
+msgstr ""
+". Stavio sam ga na čekanje 6 godina, čekajući pravi trenutak da ga "
+"upotrijebim. Mislio sam da će trebati 3 godine da se ukine kompanija od 77 "
+"milijardi dolara samo zato što je otvoreni kod tako kul. Ponekad je za "
+"vlastitu motivaciju bolje ne suočavati se sa stvarnošću..."
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_coffeebreak_template
+msgid "10 Books To Read in 2022"
+msgstr "10 knjiga za pročitati u 2022."
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid ""
+"2011 was a complex year. We did not meet our expectations: we only achieved "
+"70% of the forecasted sales budget. Our management meetings were tense. We "
+"under-performed. We were not satisfied with ourselves. We had a constant "
+"feeling that we were missing something. It's a strange feeling to build "
+"extraordinary things but to not be proud of ourselves."
+msgstr ""
+"2011. je bila složena godina. Nismo ispunili naša očekivanja: postigli smo "
+"samo 70% predviđenog prodajnog budžeta. Naši menadžment sastanci bili su "
+"napeti. Slabo smo radili. Nismo bili zadovoljni sobom. Imali smo stalan "
+"osjećaj da nam nešto nedostaje. Čudan je osjećaj graditi izvanredne stvari, "
+"a ne biti ponosan na sebe."
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_coffeebreak_template
+msgid "28 Jan 2022"
+msgstr "28. januar 2022."
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid ""
+"60 new modules are released every month (we became the wikipedia of the "
+"management software thanks to our strong community)"
+msgstr ""
+"60 novih modula se objavljuje svakog mjeseca (postali smo wikipedia softvera"
+" za upravljanje zahvaljujući našoj jakoj zajednici)"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_coffeebreak_template
+msgid "7 Unexpected Signs You're Good At Your Job"
+msgstr "7 neočekivanih znakova da ste dobri u svom poslu"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_coffeebreak_template
+msgid "7 Ways to Nurture Creativity"
+msgstr "7 načina za njegovanje kreativnosti"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid ""
+"<br/>\n"
+"                <span style=\"font-size: 12px;\"><font style=\"color: rgb(183, 191, 199);\">To unsubscribe, </font></span>"
+msgstr ""
+"<br/>\n"
+"                <span style=\"font-size: 12px;\"><font style=\"color: rgb(183, 191, 199);\">Za odjavu, </font></span>"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_coupon_template
+msgid "<font class=\"text-white\">$100 OFF</font>"
+msgstr "<font class=\"text-white\">$100 POPUSTA</font>"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_coupon_template
+msgid "<font class=\"text-white\">Here's your coupon code*:</font>"
+msgstr "<font class=\"text-white\">Evo vašeg kupon koda*:</font>"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_coupon_template
+msgid "<font class=\"text-white\">VIP members only</font>"
+msgstr "<font class=\"text-white\">Samo za VIP članove</font>"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_coupon_template
+msgid ""
+"<font style=\"color: rgb(255, 255, 255);\">Join the community to see our "
+"latest news, events, discounts and much more!</font>"
+msgstr ""
+"<font style=\"color: rgb(255, 255, 255);\">Pridružite se zajednici da vidite"
+" naše najnovije vijesti, događaje, popuste i još mnogo toga!</font>"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_coupon_template
+msgid ""
+"<font style=\"color: rgb(255, 255, 255);\">Thank you for being one of our "
+"most loyal customers.</font>"
+msgstr ""
+"<font style=\"color: rgb(255, 255, 255);\">Hvala vam što ste jedan od naših "
+"najlojalnijih kupaca.</font>"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_training_template
+msgid ""
+"<font style=\"font-size: 24px; background-color: rgb(20, 102, 184);\" "
+"class=\"text-o-color-4\">A+</font> <font style=\"color: rgb(20, 102, 184); "
+"font-size: 24px;\"><span style=\"font-weight: "
+"normal\">Training</span></font>"
+msgstr ""
+"<font style=\"font-size: 24px; background-color: rgb(20, 102, 184);\" "
+"class=\"text-o-color-4\">A+</font> <font style=\"color: rgb(20, 102, 184); "
+"font-size: 24px;\"><span style=\"font-weight: normal\">Trening</span></font>"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_promotion_template
+msgid ""
+"<font style=\"font-size: 62px; background-color: rgb(255, 255, 255);\">&amp;nbsp;10% OFF&amp;nbsp;</font>\n"
+"                    <br/>\n"
+"                    <font style=\"font-size: 62px; background-color: rgb(255, 255, 255);\">&amp;nbsp;SALES&amp;nbsp;</font>"
+msgstr ""
+"<font style=\"font-size: 62px; background-color: rgb(255, 255, 255);\">&amp;nbsp;10% POPUSTA&amp;nbsp;</font>\n"
+"                    <br/>\n"
+"                    <font style=\"font-size: 62px; background-color: rgb(255, 255, 255);\">&amp;nbsp;SNIŽENJA&amp;nbsp;</font>"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_training_template
+msgid ""
+"<i class=\"fa fa-map-marker\" contenteditable=\"false\"/> London, United "
+"Kingdom"
+msgstr ""
+"<i class=\"fa fa-map-marker\" contenteditable=\"false\"/> London, Ujedinjeno"
+" Kraljevstvo"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_roadshow1_template
+msgid ""
+"<span class=\"font-weight: bolder\">\n"
+"                        <font style=\"color: rgb(206, 0, 0); font-weight: normal;\">(only 195 tickets left)</font>\n"
+"                    </span>"
+msgstr ""
+"<span class=\"font-weight: bolder\">\n"
+"                        <font style=\"color: rgb(206, 0, 0); font-weight: normal;\">(preostalo samo 195 ulaznica)</font>\n"
+"                    </span>"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_roadshow1_template
+msgid "<span class=\"font-weight: bolder\">18h30:</span>"
+msgstr "<span class=\"font-weight: bolder\">18:30:</span>"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_roadshow1_template
+msgid "<span class=\"font-weight: bolder\">19h00:</span>"
+msgstr "<span class=\"font-weight: bolder\">19:00:</span>"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_roadshow1_template
+msgid "<span class=\"font-weight: bolder\">19h30: </span>"
+msgstr "<span class=\"font-weight: bolder\">19:30: </span>"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_roadshow1_template
+msgid "<span class=\"font-weight: bolder\">8h:</span>"
+msgstr "<span class=\"font-weight: bolder\">8h:</span>"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_roadshow1_template
+msgid ""
+"<span class=\"font-weight: bolder\">Networking: Walking Dinner &amp; "
+"Drinks</span>"
+msgstr ""
+"<span class=\"font-weight: bolder\">Networking: Stojeća večera i pića</span>"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_roadshow1_template
+msgid "<span class=\"font-weight: bolder\">Table Ronde</span>"
+msgstr "<span class=\"font-weight: bolder\">Okrugli sto</span>"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_roadshow1_template
+msgid "<span class=\"font-weight: bolder\">Welcome</span>"
+msgstr "<span class=\"font-weight: bolder\">Dobrodošli</span>"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_roadshow1_template
+msgid ""
+"<span class=\"font-weight: bolder\">[speaker] &amp; [speaker]'s "
+"conference</span>"
+msgstr ""
+"<span class=\"font-weight: bolder\">Konferencija [speaker] &amp; "
+"[speaker]</span>"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_training_template
+msgid ""
+"<span style=\"font-size: 10px;\">\n"
+"                            © 2022 All Rights Reserved\n"
+"                        </span>"
+msgstr ""
+"<span style=\"font-size: 10px;\">\n"
+"                            © 2022 Sva prava zadržana\n"
+"                        </span>"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_training_template
+msgid ""
+"<span style=\"font-size: 10px;\">\n"
+"                        <font style=\"color: rgb(112, 157, 225);\">You are receiving this email because you showed an interest in our previous events\n"
+"                        </font>\n"
+"                    </span>"
+msgstr ""
+"<span style=\"font-size: 10px;\">\n"
+"                        <font style=\"color: rgb(112, 157, 225);\">Primate ovaj email jer ste pokazali interes za naše prethodne događaje\n"
+"                        </font>\n"
+"                    </span>"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_coffeebreak_template
+msgid ""
+"<span style=\"font-size: 12px; font-style: normal; font-weight: bolder;\">- "
+"Lee Brown</span>"
+msgstr ""
+"<span style=\"font-size: 12px; font-style: normal; font-weight: bolder;\">- "
+"Lee Brown</span>"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid ""
+"<span style=\"font-size: 12px;\"><font style=\"color: rgb(183, 191, "
+"199);\">.</font></span>"
+msgstr ""
+"<span style=\"font-size: 12px;\"><font style=\"color: rgb(183, 191, "
+"199);\">.</font></span>"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid ""
+"<span style=\"font-size: 12px;\"><font style=\"color: rgb(183, 191, 199);\">8000 Marina Blvd, Suite 300</font></span>\n"
+"                <br/>\n"
+"                <span style=\"font-size: 12px;\"><font style=\"color: rgb(183, 191, 199);\">Brisbane, California 94005</font></span>\n"
+"                <br/>\n"
+"                <span style=\"font-size: 12px;\"><font style=\"color: rgb(183, 191, 199);\">You received this email from </font></span>"
+msgstr ""
+"<span style=\"font-size: 12px;\"><font style=\"color: rgb(183, 191, 199);\">8000 Marina Blvd, Suite 300</font></span>\n"
+"                <br/>\n"
+"                <span style=\"font-size: 12px;\"><font style=\"color: rgb(183, 191, 199);\">Brisbane, California 94005</font></span>\n"
+"                <br/>\n"
+"                <span style=\"font-size: 12px;\"><font style=\"color: rgb(183, 191, 199);\">Primili ste ovaj email od </font></span>"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid ""
+"<span style=\"font-size: 12px;\"><font style=\"color: rgb(183, 191, "
+"199);\">click here</font></span>"
+msgstr ""
+"<span style=\"font-size: 12px;\"><font style=\"color: rgb(183, 191, "
+"199);\">kliknite ovdje</font></span>"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid ""
+"<span style=\"font-size: 12px;\"><font style=\"color: rgb(183, 191, "
+"199);\">hello@musingsoftheweek.com</font></span>"
+msgstr ""
+"<span style=\"font-size: 12px;\"><font style=\"color: rgb(183, 191, "
+"199);\">hello@musingsoftheweek.com</font></span>"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_roadshow1_template
+msgid ""
+"<span style=\"font-style: italic;\"><font class=\"text-600\">The first 20 "
+"participants will get a free copy of our business game \"Scale-"
+"Up\".</font></span>"
+msgstr ""
+"<span style=\"font-style: italic;\"><font class=\"text-600\">Prvih 20 "
+"učesnika dobit će besplatnu kopiju naše poslovne igre \"Scale-"
+"Up\".</font></span>"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_training_template
+msgid "<span style=\"font-weight: bolder;\">25 September 2022 - 4:30 PM</span>"
+msgstr "<span style=\"font-weight: bolder;\">25. septembar 2022. - 16:30</span>"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_coupon_template
+msgid ""
+"<span style=\"font-weight: bolder;\"><font class=\"text-"
+"white\">VIP10</font></span>"
+msgstr ""
+"<span style=\"font-weight: bolder;\"><font class=\"text-"
+"white\">VIP10</font></span>"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_training_template
+msgid ""
+"<span style=\"font-weight: bolder;\">And what better field to upskill in "
+"than software development?</span> Jobs have been steadily booming for years,"
+" and will continue to do so. By taking some of these free courses, you can "
+"make your CV more competitive and your portfolio more interesting."
+msgstr ""
+"<span style=\"font-weight: bolder;\">A koje je bolje područje za "
+"usavršavanje od razvoja softvera?</span> Poslova je u stalnom porastu već "
+"godinama i tako će se nastaviti. Pohađanjem nekih od ovih besplatnih kurseva"
+" možete učiniti svoj CV konkurentnijim, a svoj portfolio zanimljivijim."
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_coffeebreak_template
+msgid ""
+"<span style=\"font-weight: bolder;\">Mark</span> will be helping our beloved"
+" HR team, he'll be taking care of your payroll, so be nice!"
+msgstr ""
+"<span style=\"font-weight: bolder;\">Mark</span> će pomagati našem voljenom "
+"HR timu, brinut će se o vašoj plati, pa budite ljubazni!"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_coffeebreak_template
+msgid ""
+"<span style=\"font-weight: bolder;\">Martin</span> is currently doing his "
+"onboarding in our remote office but you'll be seeing him in the R&amp;D "
+"department very soon."
+msgstr ""
+"<span style=\"font-weight: bolder;\">Martin</span> trenutno prolazi "
+"onboarding u našem udaljenom uredu, ali ćete ga uskoro vidjeti u R&amp;D "
+"odjelu."
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_training_template
+msgid "<span style=\"font-weight: bolder;\">Register now</span>"
+msgstr "<span style=\"font-weight: bolder;\">Registrujte se odmah</span>"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_coffeebreak_template
+msgid "<strong>Give them a warm welcome!</strong>"
+msgstr "<strong>Dočekajte ih toplo!</strong>"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid "@fpodoo"
+msgstr "@fpodoo"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid ""
+"After a few months of pitching investors, I got roughly 10 LOI from "
+"different VCs. We chose Sofinnova Partners, the biggest European VC, and "
+"Xavier Niel the founder of Iliad, the only company in France funded in the "
+"past 10 years to have reached the 1 billion EUR valuation."
+msgstr ""
+"Nakon nekoliko mjeseci predstavljanja investitorima, dobio sam otprilike 10 "
+"pisma namjere od različitih VC-ova. Odabrali smo Sofinnova Partners, "
+"najvećeg evropskog VC-a, i Xaviera Niela, osnivača Iliada, jedine kompanije "
+"u Francuskoj finansirane u posljednjih 10 godina koja je dostigla procjenu "
+"od 1 milijardu EUR."
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid ""
+"After having disrupted the ERP market, OpenERP moved far beyond the "
+"boundaries of traditional ERP players. The integration of business "
+"activities is no longer restricted to sales, accounting, inventory and "
+"procurements. In June 2014, we released version 8 with awesome CMS &amp; "
+"eCommerce, a Point of Sale, an integrated Business Intelligence engine and "
+"much more (3000+ modules)."
+msgstr ""
+"Nakon što je poremetio ERP tržište, OpenERP je otišao daleko izvan granica "
+"tradicionalnih ERP igrača. Integracija poslovnih aktivnosti više nije "
+"ograničena na prodaju, računovodstvo, zalihe i nabavu. U junu 2014. godine "
+"objavili smo verziju 8 sa odličnim CMS i eCommerce, kasom (POS), "
+"integrisanim Business Intelligence motorom i još mnogo toga (3000+ modula)."
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid ""
+"After years of rapid growth, we achieved another amazing goal - we secured a"
+" new round of 10 Million USD of financing, jointly provided by leading "
+"venture capital firms XAnge (France), SRIW (Belgium), Sofinnova (France), "
+"and the management team."
+msgstr ""
+"Nakon godina brzog rasta, postigli smo još jedan nevjerovatan cilj - "
+"osigurali smo novi krug finansiranja od 10 miliona USD, zajednički "
+"obezbijeđen od strane vodećih VC firmi XAnge (Francuska), SRIW (Belgija), "
+"Sofinnova (Francuska) i menadžment tima."
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_event_template
+msgid "An interactive, fun<br/>and comprehensive experience"
+msgstr "Interaktivno, zabavno<br/>i sveobuhvatno iskustvo"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid "Analysts from Big 4 started to prefer OpenERP over SAP"
+msgstr "Analitičari iz Big 4 počeli su preferirati OpenERP u odnosu na SAP"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid "And a new story just started..."
+msgstr "A nova priča je upravo počela..."
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid ""
+"As usual, I should have listened to my wife. She is way more lucid than I "
+"am. Every week I complained to her \"It's not good enough, we should grow "
+"faster, what am I missing?\" and she used to reply: \"But you already are "
+"the fastest growing company in Belgium!\" (Deloitte awarded us as"
+msgstr ""
+"Kao i obično, trebao sam slušati svoju ženu. Ona je daleko luciднija od "
+"mene. Svake sedmice sam joj se žalio \"Nije dovoljno dobro, trebali bismo "
+"brže rasti, šta mi nedostaje?\" a ona bi odgovorila: \"Ali vi ste već "
+"najbrže rastuća kompanija u Belgiji!\" (Deloitte nas je nagradio kao"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid ""
+"As we worked hard, things started to evolve. We were developing dozens of "
+"modules for OpenERP, the open source community was growing and I was even "
+"able to pay all employees' salaries at the end of the month without fear "
+"(which was a situation I struggled with for 4 years)."
+msgstr ""
+"Kako smo naporno radili, stvari su počele evoluirati. Razvijali smo desetine"
+" modula za OpenERP, zajednica otvorenog koda je rasla, i konačno sam mogao "
+"isplatiti plate svim zaposlenima krajem mjeseca bez straha (situacija s "
+"kojom sam se borio 4 godine)."
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid "Being a Mature Company"
+msgstr "Biti zrela kompanija"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_roadshow1_template
+msgid "Best practices to digitize your company"
+msgstr "Najbolje prakse za digitalizaciju vaše kompanije"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_roadshow1_template
+msgid "Business Case"
+msgstr "Poslovni slučaj"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid ""
+"But one day, someone (I don't remember who, I have a goldfish memory) made a"
+" graph of the monthly turnover of the past 2 years. It was like waking up "
+"from a nightmare. In fact, it was not that bad, we had multiplied the "
+"monthly turnover by 10 over the span of roughly two years! This is when we "
+"understood that OpenERP is a marathon, not a sprint. Only 100% growth a year"
+" is ok... if you can keep the rhythm for several years."
+msgstr ""
+"Ali jednog dana, neko (ne sjećam se ko, imam pamćenje zlatne ribice) "
+"napravio je grafikon mjesečnog prometa proteklih 2 godine. Bilo je to kao "
+"buđenje iz noćne more. Zapravo, nije bilo tako loše, pomnožili smo mjesečni "
+"promet 10 puta u rasponu od otprilike dvije godine! Tada smo shvatili da je "
+"OpenERP maraton, a ne sprint. Samo 100% rasta godišnje je u redu... ako "
+"možete održati ritam nekoliko godina."
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid "Changing the World"
+msgstr "Mijenjanje svijeta"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_roadshow1_template
+msgid "Client Testimonials"
+msgstr "Preporuke klijenata"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.email_designer_themes
+msgid "Coffee break"
+msgstr "Pauza za kafu"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_coffeebreak_template
+msgid "Communication is the key to success in any business."
+msgstr "Komunikacija je ključ uspjeha u svakom poslu."
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_coffeebreak_template
+msgid "Company News"
+msgstr "Vijesti kompanije"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_coffeebreak_template
+msgid "Contact"
+msgstr "Kontakt"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_coffeebreak_template
+msgid "DON'T MISS THIS"
+msgstr "NE PROPUSTITE OVO"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_roadshow1_template
+msgid ""
+"Discover Odoo, the all-in-one management platform, and its apps designed to "
+"improve employees' daily tasks. From sales and deliveries, to logistics, "
+"marketing and accounting ; learn what are the best available options to "
+"digitize your company."
+msgstr ""
+"Otkrijte Odoo, sve-u-jednom platformu za upravljanje, i njene aplikacije "
+"dizajnirane za unapređenje svakodnevnih zadataka zaposlenih. Od prodaje i "
+"isporuke, do logistike, marketinga i računovodstva; saznajte koje su "
+"najbolje dostupne opcije za digitalizaciju vaše kompanije."
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_roadshow2_template
+msgid "Do you wish to become a partner?"
+msgstr "Želite postati partner?"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_roadshow2_template
+msgid "Do you wish to use Odoo?"
+msgstr "Želite koristiti Odoo?"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_roadshow2_template
+msgid "Don't hesitate to send us more!"
+msgstr "Ne ustručavajte se poslati nam još!"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_coffeebreak_template
+msgid "Find Out Who's Employee Of The Month"
+msgstr "Saznajte ko je radnik mjeseca"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_roadshow1_template
+msgid "For more information, check the event page :"
+msgstr "Za više informacija, posjetite stranicu događaja:"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_event_template
+msgid "Get 6-months' worth of knowledge<br/>in just 2 days"
+msgstr "Steknite 6 mjeseci znanja<br/>za samo 2 dana"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_training_template
+msgid ""
+"Getting practical experience can be as likely as getting struck by lightning"
+" – <span style=\"font-style: italic;\">thank you, coronavirus</span> – but, "
+"you can take things into your own hands and use your free time to upskill."
+msgstr ""
+"Sticanje praktičnog iskustva može biti vjerovatno kao i biti pogođen munjom "
+"– <span style=\"font-style: italic;\">hvala, koronavirusu</span> – ali "
+"možete uzeti stvari u svoje ruke i iskoristiti svoje slobodno vrijeme za "
+"usavršavanje."
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_roadshow2_template
+msgid "Here are some photos taken during the event:"
+msgstr "Evo nekoliko fotografija snimljenih tokom događaja:"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_roadshow2_template
+msgid "Here are the links to our sponsors' websites if you wish to meet them:"
+msgstr ""
+"Evo linkova ka web stranicama naših sponzora ukoliko želite da ih upoznate:"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid ""
+"I needed to change the world. I wanted to... You know how it is when you are"
+" young; you have big dreams, a lot of energy and naive stupidity. My dream "
+"was to lead the enterprise management market with a fully open source "
+"software (I also wanted to get 100 employees before 30 years old with a "
+"self-financed company but I failed this one by only a few months)."
+msgstr ""
+"Trebao sam promijeniti svijet. Želio sam... Znate kako je kad ste mladi; "
+"imate velike snove, puno energije i naivne gluposti. Moj san je bio voditi "
+"tržište poslovnog upravljanja sa potpuno open source softverom (također sam "
+"želio imati 100 zaposlenih prije navršene 30. godine sa samofinansirajućom "
+"kompanijom, ali sam u tome promašio za samo nekoliko mjeseci)."
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid ""
+"I signed the LOI. I didn't realize that this contract could have turned me "
+"into a homeless person. (I already had a dog, all I needed was to lose a lot"
+" of money to become homeless). The fundraising was based on a company "
+"valuation but there was a financial mechanism to re-evaluate the company up "
+"by 9.8 m€ depending on the turnover of the next 4 years. I should have "
+"received warrants convertible into shares if we achieved the turnover "
+"targeted in the business plan."
+msgstr ""
+"Potpisao sam pismo namjere. Nisam shvatio da me ovaj ugovor mogao pretvoriti"
+" u beskućnika. (Već sam imao psa, sve što mi je trebalo bilo je da izgubim "
+"mnogo novca da bih postao beskućnik). Prikupljanje sredstava bazirano je na "
+"procjeni kompanije, ali postojao je finansijski mehanizam za ponovnu "
+"procjenu kompanije za 9,8 miliona € u zavisnosti od prometa narednih 4 "
+"godine. Trebao sam primiti warrante zamjenjive za dionice ako bismo postigli"
+" ciljani promet u poslovnom planu."
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid ""
+"If current open source players have a real technical challenge to follow us,"
+" we also have a huge marketing challenge. Wordpress has 22% of all internet "
+"websites. We were the leader in management software, but we start with 0% of"
+" the website market."
+msgstr ""
+"Ako trenutni igrači open source-a imaju stvaran tehnički izazov da nas "
+"prate, imamo i ogroman marketinški izazov. Wordpress ima 22% svih internet "
+"stranica. Bili smo lider u softveru za upravljanje, ali počinjemo sa 0% "
+"tržišta web stranica."
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_coffeebreak_template
+msgid ""
+"If you didn't gather round the coffee machine or water-tank with your colleagues this week,\n"
+"                        you've probably missed some key information."
+msgstr ""
+"Ako se ove sedmice niste okupili oko aparata za kafu ili vodokotlića sa kolegama,\n"
+"                        vjerovatno ste propustili neke ključne informacije."
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_roadshow2_template
+msgid ""
+"If you wish to become a partner and offer your services in [country], take a"
+" look at"
+msgstr ""
+"Ako želite postati partner i ponuditi svoje usluge u [country], pogledajte"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_roadshow2_template
+msgid ""
+"If you wish to evaluate Odoo while taking into account your company's "
+"specific needs, you can book a free appointment with one of our"
+msgstr ""
+"Ako želite procijeniti Odoo uzimajući u obzir specifične potrebe vaše "
+"kompanije, možete zakazati besplatan termin sa jednim od naših"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid ""
+"In 2010, we had a 100+ employees selling services on OpenERP and a powerful "
+"but ugly product. This is what happens when delivering services to customers"
+" distracts you from building an exceptional product. It was time to do a "
+"pivot in the business model."
+msgstr ""
+"U 2010. godini imali smo više od 100 zaposlenih koji su prodavali usluge na "
+"OpenERP-u i moćan, ali ružan proizvod. To se događa kada vas pružanje usluga"
+" kupcima odvraća od izgradnje izuzetnog proizvoda. Bilo je vrijeme za "
+"zaokret u poslovnom modelu."
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid "In 2013, we had 2,000,000 users worldwide"
+msgstr "U 2013. godini imali smo 2.000.000 korisnika širom svijeta"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid "In May 2014, we renamed the company and product to Odoo."
+msgstr "U maju 2014. preimenovali smo kompaniju i proizvod u Odoo."
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_coffeebreak_template
+msgid "Infographic: Our Company Throughout The Generations"
+msgstr "Infografika: Naša kompanija kroz generacije"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_roadshow1_template
+msgid "Interactive Odoo demo"
+msgstr "Interaktivni Odoo demo"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_roadshow2_template
+msgid "Learn more about our pricing"
+msgstr "Saznajte više o našim cijenama"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_roadshow2_template
+msgid "Link 1"
+msgstr "Link 1"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_roadshow2_template
+msgid "Link 2"
+msgstr "Link 2"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_roadshow2_template
+msgid "Link 3"
+msgstr "Link 3"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_roadshow2_template
+msgid "Link 4"
+msgstr "Link 4"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.email_designer_themes
+msgid "Magazine"
+msgstr "Magazin"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid "Making companies a better place, one app at a time"
+msgstr "Činimo kompanije boljim mjestom, jednu po jednu aplikaciju"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_event_template
+msgid "Meet (other) awesome members<br/>of the community"
+msgstr "Upoznajte (druge) sjajne članove<br/>zajednice"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid "Musings on the week from"
+msgstr "Razmišljanja o sedmici od"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_coffeebreak_template
+msgid "NEW PEOPLE"
+msgstr "NOVI LJUDI"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid "New Financing in 2014"
+msgstr "Novo finansiranje u 2014."
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_roadshow2_template
+msgid "Odoo Experts"
+msgstr "Odoo eksperti"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_roadshow1_template
+msgid ""
+"Odoo invites you on <span class=\"font-weight: bolder\">[date]</span> at "
+"<span class=\"font-weight: bolder\">[time]</span> for their infamous "
+"roadshow in <span class=\"font-weight: bolder\">[city]</span>: an event that"
+" combines learning and networking in a casual afterwork-like atmosphere."
+msgstr ""
+"Odoo vas poziva <span class=\"font-weight: bolder\">[date]</span> u <span "
+"class=\"font-weight: bolder\">[time]</span> na njihov čuveni roadshow u "
+"<span class=\"font-weight: bolder\">[city]</span>: događaj koji kombinuje "
+"učenje i umrežavanje u opuštenoj afterwork atmosferi."
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid ""
+"OpenERP is now a compulsory subject for the baccalaureate in France like "
+"Word, Excel and PowerPoint"
+msgstr ""
+"OpenERP je sada obavezan predmet za maturu u Francuskoj kao Word, Excel i "
+"PowerPoint"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid ""
+"Our exceptional technology allowed us to move to newer markets (CMS &amp; "
+"eCommerce) and propose a product that disrupts existing open source players "
+"(Wordpress, Magento, etc). The OpenERP CMS is so good that even top "
+"competitors admitted it publicly when we released the beta version."
+msgstr ""
+"Naša izvanredna tehnologija omogućila nam je da pređemo na novija tržišta "
+"(CMS i eCommerce) i ponudimo proizvod koji remeti postojeće open source "
+"igrače (Wordpress, Magento, itd). OpenERP CMS je toliko dobar da su čak i "
+"vodeći konkurenti to javno priznali kada smo objavili beta verziju."
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_roadshow1_template
+msgid "Registration is free, but mandatory:"
+msgstr "Registracija je besplatna, ali obavezna:"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.email_designer_themes
+msgid "Roadshow Follow-up"
+msgstr "Roadshow follow-up"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.email_designer_themes
+msgid "Roadshow Schedule"
+msgstr "Raspored roadshow-a"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_roadshow1_template
+msgid "Save your seat now"
+msgstr "Rezervišite svoje mjesto odmah"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_roadshow1_template
+msgid "Schedule"
+msgstr "Raspored"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_training_template
+msgid "See you soon !"
+msgstr "Vidimo se uskoro!"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_roadshow1_template
+msgid "See you soon."
+msgstr "Vidimo se uskoro."
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid ""
+"So in 2005, I started to develop the TinyERP product, the software that (at "
+"least in my mind) would change the enterprise world. While preparing for the"
+" \"day of the fight\" in 2006, I"
+msgstr ""
+"Tako sam 2005. godine počeo razvijati TinyERP proizvod, softver koji bi "
+"(barem u mojoj glavi) promijenio poslovni svijet. Dok sam se pripremao za "
+"\"dan borbe\" 2006. godine, ja"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_training_template
+msgid ""
+"Software developer training can be expensive, so we've compiled a list of "
+"free courses that are perfect for non-Computer Science graduates who want to"
+" upskill and learn to code."
+msgstr ""
+"Obuka za razvoj softvera može biti skupa, pa smo sastavili listu besplatnih "
+"kurseva koji su savršeni za one koji nisu diplomirali računarske nauke, a "
+"žele se usavršiti i naučiti programirati."
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_training_template
+msgid "Software development training"
+msgstr "Obuka za razvoj softvera"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid "Something is happening... And it's big!"
+msgstr "Nešto se događa... I to nešto veliko!"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_roadshow2_template
+msgid "Thank you, once again, for your attendance at yesterday's event."
+msgstr "Hvala vam, još jednom, na prisustvu na jučerašnjem događaju."
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid "The Pivot"
+msgstr "Zaokret"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid "The Rise of Odoo"
+msgstr "Uspon Odoo-a"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid ""
+"The new financing will support the acceleration of the outstanding growth "
+"the company has seen over the last years, enabling the doubling of the "
+"commercial force and increased R&amp;D staff - already 100+ people strong."
+msgstr ""
+"Novo finansiranje će podržati ubrzanje izvanrednog rasta koji je kompanija "
+"vidjela posljednjih godina, omogućavajući udvostručenje komercijalne snage i"
+" povećanje R&amp;D osoblja - koje već broji preko 100 ljudi."
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid ""
+"The night before receiving the warrants in front of the notary, my wife "
+"checked the contracts. She asked me what would be the taxation on these "
+"warrants. I rang the lawyer and guess what? Belgium is probably the only "
+"country in the world where you have to pay taxes on warrants when you "
+"receive them, even if you never reach the conditions to convert them into "
+"shares. If I had accepted these warrants, I would have had to pay a 12.5% "
+"tax on 9.8 m€; resulting in a tax of 1.2m€ to pay in 18 months! So, my wife "
+"is worth 1.2 million EUR. I would have ended up a homeless person without "
+"her, as I still did not have a salary at that time."
+msgstr ""
+"Noć prije primanja warranta kod notara, moja žena je pregledala ugovore. "
+"Pitala me šta bi bilo oporezivanje ovih warranta. Nazvao sam advokata i "
+"pogodite šta? Belgija je vjerovatno jedina zemlja na svijetu gdje morate "
+"platiti porez na warrante kada ih primite, čak i ako nikada ne ispunite "
+"uslove za njihovu konverziju u dionice. Da sam prihvatio te warrante, morao "
+"bih platiti 12,5% poreza na 9,8 miliona €; što rezultira porezom od 1,2 "
+"miliona € za platiti u 18 mjeseci! Dakle, moja žena vrijedi 1,2 miliona EUR."
+" Završio bih kao beskućnik bez nje, jer u to vrijeme još nisam imao platu."
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid "The story of Odoo"
+msgstr "Priča o Odoo-u"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid ""
+"Then the dream started to become reality. We started to get clues that what "
+"we did would change the world:"
+msgstr ""
+"Tada je san počeo postajati stvarnost. Počeli smo dobivati naznake da će ono"
+" što radimo promijeniti svijet:"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid ""
+"Then, things became different. You know, tedious things like handling human "
+"resources, board meetings, dealing with big customer contracts, traveling to"
+" launch international subsidiaries. We did boring stuff like budgets, career"
+" paths, management meetings, etc."
+msgstr ""
+"Tada su stvari postale drugačije. Znate, dosadne stvari poput upravljanja "
+"ljudskim resursima, sastanaka odbora, rada na velikim kupskim ugovorima, "
+"putovanja za pokretanje međunarodnih ogranaka. Radili smo dosadne stvari "
+"poput budžeta, karijernih puteva, menadžment sastanaka, itd."
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid ""
+"Three years later, I discovered you can't change the world if you are "
+"\"tiny\". Especially if the United States is part of this world, where it's "
+"better to be a BigERP, rather than a TinyERP. Can you imagine how small you "
+"feel"
+msgstr ""
+"Tri godine kasnije, otkrio sam da ne možete promijeniti svijet ako ste "
+"\"sitan\". Posebno ako su Sjedinjene Države dio tog svijeta, gdje je bolje "
+"biti BigERP nego TinyERP. Možete li zamisliti koliko se sitnim osjećate"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_blogging_template
+msgid "TikTok"
+msgstr "TikTok"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid ""
+"To fuel my motivation, I had to pick someone to fight against. In business, "
+"it's like a playground. When you arrive in a new school, if you want to "
+"quickly become the leader, you must choose the class bully, the older guy "
+"who terrorizes small boys, and kick his butt in front of everyone. That was "
+"my strategy with SAP, the enterprise software giant."
+msgstr ""
+"Da bih potpirio svoju motivaciju, morao sam odabrati nekoga protiv koga ću "
+"se boriti. U biznisu, to je kao igralište. Kada dođete u novu školu, ako "
+"želite brzo postati vođa, morate odabrati nasilnika u razredu, starijeg "
+"dečka koji terorira male dečake, i istući ga pred svima. To je bila moja "
+"strategija sa SAP-om, gigantom poslovnog softvera."
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid ""
+"To make things happen, I worked hard, very hard. I worked 13 hours a day, 7 "
+"days a week, with no vacation for 7 years. I lost friendships and broke up "
+"with my girlfriend in the process."
+msgstr ""
+"Da bih nešto postigao, radio sam naporno, vrlo naporno. Radio sam 13 sati "
+"dnevno, 7 dana u sedmici, bez odmora 7 godina. U tom procesu sam izgubio "
+"prijateljstva i raskinuo sa djevojkom."
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid ""
+"To move forward, we raised 10 million USD in May 2014 in order to boost "
+"marketing and sales activities. In order to support our vision, we had to "
+"change the name that is not restricted to ERPs functions. We needed a name "
+"that allowed us to support our ambitions; build business solutions like CMS,"
+" eCommerce, Business Intelligence and, who knows, even sky rockets or "
+"driverless cars in the future..."
+msgstr ""
+"Da bismo napredovali, prikupili smo 10 miliona USD u maju 2014. kako bismo "
+"pojačali marketing i prodajne aktivnosti. Kako bismo podržali našu viziju, "
+"morali smo promijeniti naziv koji nije ograničen na ERP funkcije. Trebao nam"
+" je naziv koji bi nam omogućio da podržimo naše ambicije; gradimo poslovna "
+"rješenja kao CMS, eCommerce, Business Intelligence i, ko zna, čak i rakete "
+"ili automobile bez vozača u budućnosti..."
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_training_template
+msgid "Train with the best developers"
+msgstr "Trenirajte sa najboljim developerima"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.email_designer_themes
+msgid "Training"
+msgstr "Obuka"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_training_template
+msgid "Type \"/\" for commands"
+msgstr "Ukucajte \"/\" za komande"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_training_template
+msgid ""
+"Universities may give us a shiny degrees, but it does not give us the <span "
+"style=\"font-weight: bolder;\">practical skills we need to start an "
+"innovative career in tech</span>."
+msgstr ""
+"Univerziteti nam mogu dati blistave diplome, ali nam ne daju <span "
+"style=\"font-weight: bolder;\">praktične vještine koje su nam potrebne za "
+"pokretanje inovativne karijere u tehnologiji</span>."
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid "View Online"
+msgstr "Pregledaj online"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid ""
+"We changed the deal and I got the 3 million EUR. It allowed me to recruit a "
+"rocking management team."
+msgstr ""
+"Promijenili smo dogovor i dobio sam 3 miliona EUR. To mi je omogućilo da "
+"regrutiram odličan menadžment tim."
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid ""
+"We wanted to switch from a service company to a software publisher company. "
+"This would allow us to increase our efforts in our research and development "
+"activities. As a result,"
+msgstr ""
+"Željeli smo prijeći iz uslužne kompanije u kompaniju izdavača softvera. To "
+"bi nam omogućilo da povećamo napore u našim istraživačko-razvojnim "
+"aktivnostima. Kao rezultat,"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_roadshow1_template
+msgid "We're almost there!"
+msgstr "Skoro smo tamo!"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_coffeebreak_template
+msgid "We're here to make sure you miss none of the gossip."
+msgstr "Tu smo da osiguramo da ne propustite nijedan trač."
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_roadshow1_template
+msgid ""
+"We're on the starting blocks to prepare an incredible event for you!\n"
+"                    <br/>We hope to see you there."
+msgstr ""
+"Spremni smo da vam pripremimo nevjerovatan događaj!\n"
+"                    <br/>Nadamo se da ćemo vas vidjeti tamo."
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_coffeebreak_template
+msgid ""
+"We're super excited to present our three new members, freshly arrived this "
+"week in our offices."
+msgstr ""
+"Veoma smo uzbuđeni što vam predstavljamo naša tri nova člana, koji su ove "
+"sedmice stigli u naše urede."
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid "Weekly Musings"
+msgstr "Sedmična razmišljanja"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_coffeebreak_template
+msgid "Why You Need Two Types of Content Strategists"
+msgstr "Zašto su vam potrebne dvije vrste content stratega"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid ""
+"With 1000 installations per day, we became the most installed management "
+"software in the world"
+msgstr ""
+"Sa 1000 instalacija dnevno, postali smo najinstaliraniji softver za "
+"upravljanje na svijetu"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid ""
+"With this money in our bank account, we boosted two departments: R&amp;D and"
+" Sales. We burned 2 million EUR in 18 months, mostly in salaries. The "
+"company started to grow even faster. We developed a partner network of 500 "
+"partners in 100 countries and we started to sign contracts with 6 zeros."
+msgstr ""
+"S ovim novcem na našem bankovnom računu, ojačali smo dva odjela: R&amp;D i "
+"Prodaju. Potrošili smo 2 miliona EUR u 18 mjeseci, uglavnom na plate. "
+"Kompanija je počela rasti još brže. Razvili smo mrežu od 500 partnera u 100 "
+"zemalja i počeli potpisivati ugovore sa 6 nula."
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_blogging_template
+msgid "X"
+msgstr "X"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_roadshow2_template
+msgid "Yesterday's event at [venue] in [city] was incredible!"
+msgstr "Jučerašnji događaj u [venue] u [city] bio je nevjerovatan!"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_roadshow2_template
+msgid ""
+"You had the chance to discover Odoo during a full 3 hours, how great is that?\n"
+"                    <br/>Now that you've seen Odoo in action and asked some questions, you likely need more information to move forward in your project and to work with us. You'll find additional points just below."
+msgstr ""
+"Imali ste priliku otkriti Odoo tokom punih 3 sata, zar to nije sjajno?\n"
+"                    <br/>Sada kada ste vidjeli Odoo u akciji i postavili neka pitanja, vjerovatno trebate više informacija da napredujete u svom projektu i sarađujete s nama. Dodatne tačke možete pronaći u nastavku."
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_roadshow2_template
+msgid "You may test Odoo for free by clicking"
+msgstr "Možete besplatno isprobati Odoo klikom"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_roadshow1_template
+msgid ""
+"You may then take part in round table discussions with experts who will give"
+" you their tips and tricks to help digitize companies. We'll wrap up the "
+"event with a networking session including a walking dinner."
+msgstr ""
+"Zatim možete učestvovati u diskusijama za okruglim stolom sa stručnjacima "
+"koji će vam dati savjete i trikove za digitalizaciju kompanija. Događaj ćemo"
+" zaključiti networking sesijom uključujući stojeću večeru."
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_coffeebreak_template
+msgid ""
+"You'll be seeing <span style=\"font-weight: bolder;\">Armando</span> around "
+"the kitchen since he's our new <span style=\"font-weight: bolder;\">chef's "
+"assistant</span>!"
+msgstr ""
+"Vidjećete <span style=\"font-weight: bolder;\">Armanda</span> u kuhinji jer "
+"je on naš novi <span style=\"font-weight: bolder;\">pomoćnik kuhara</span>!"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_roadshow1_template
+msgid "[link]"
+msgstr "[link]"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_roadshow1_template
+msgid "[speaker] &amp; [speaker]"
+msgstr "[speaker] &amp; [speaker]"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_roadshow1_template
+msgid ""
+"[speaker] and [speaker] will rely on a unique demo concept in which YOU lead"
+" the demo and choose what you wish to see. They'll show how to tackle the "
+"challenge using the best tools, live. You will be amazed!"
+msgstr ""
+"[speaker] i [speaker] će se osloniti na jedinstven koncept demo prezentacije"
+" u kojem VI vodite demo i birate šta želite vidjeti. Pokazat će kako se "
+"nositi s izazovom koristeći najbolje alate, uživo. Bićete oduševljeni!"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid ""
+"and decided to stop our services for customers and focus on building a "
+"strong partner network and maintenance offer. This would cost money, so I "
+"had to raise a few million euros."
+msgstr ""
+"i odlučili smo prekinuti naše usluge za kupce i fokusirati se na izgradnju "
+"jake mreže partnera i ponude održavanja. To bi koštalo novca, pa sam morao "
+"prikupiti nekoliko miliona eura."
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid ""
+"asking; \"But why should we pay millions of dollars for a tiny software?\" "
+"So, we renamed TinyERP to OpenERP."
+msgstr ""
+"pitajući; \"Ali zašto bismo plaćali milione dolara za sićušni softver?\" "
+"Dakle, preimenovali smo TinyERP u OpenERP."
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid "bought the SorrySAP.com domain name"
+msgstr "kupili smo domenu SorrySAP.com"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_roadshow2_template
+msgid "here"
+msgstr "ovdje"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid "in front of Danone's directors"
+msgstr "pred direktorima Danonea"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_roadshow2_template
+msgid "or"
+msgstr "ili"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid "the fastest growing company of Belgium"
+msgstr "najbrže rastuća kompanija Belgije"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_roadshow2_template
+msgid "this page"
+msgstr "ova stranica"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_roadshow2_template
+msgid "watch our videos about the product"
+msgstr "pogledajte naše video zapise o proizvodu"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid "we changed our business model"
+msgstr "promijenili smo naš poslovni model"
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid "with 1549% growth of the turnover between 2007 and 2011)."
+msgstr "sa rastom prometa od 1549% između 2007. i 2011.)."

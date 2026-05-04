@@ -18,35 +18,35 @@ msgstr ""
 # taken from hr.po
 #. module: spreadsheet_dashboard_im_livechat
 #. odoo-javascript
-#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
 #, python-format
 msgid "Average Rating"
 msgstr "Prosječna ocjena"
 
 #. module: spreadsheet_dashboard_im_livechat
 #. odoo-javascript
-#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
 #, python-format
 msgid "Avg. Session Duration"
 msgstr "Prosječno trajanje sesije"
 
 #. module: spreadsheet_dashboard_im_livechat
 #. odoo-javascript
-#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
 #, python-format
 msgid "Avg. Time to Answer"
 msgstr "Prosječno vrijeme odgovora"
 
 #. module: spreadsheet_dashboard_im_livechat
 #. odoo-javascript
-#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
 #, python-format
 msgid "Avg. session duration"
 msgstr "Prosječno trajanje sesije"
 
 #. module: spreadsheet_dashboard_im_livechat
 #. odoo-javascript
-#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
 #, python-format
 msgid "Avg. time to answer"
 msgstr "Prosječno vrijeme odgovora"
@@ -54,50 +54,50 @@ msgstr "Prosječno vrijeme odgovora"
 # taken from hr.po
 #. module: spreadsheet_dashboard_im_livechat
 #. odoo-javascript
-#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
 #, python-format
 msgid "Current"
 msgstr "Trenutno"
 
 #. module: spreadsheet_dashboard_im_livechat
 #. odoo-javascript
-#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
 #, python-format
 msgid "Daily Sessions"
 msgstr "Dnevne sesije"
 
 #. module: spreadsheet_dashboard_im_livechat
 #. odoo-javascript
-#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
 #, python-format
 msgid "KPI"
 msgstr "KPI"
 
 #. module: spreadsheet_dashboard_im_livechat
 #. odoo-javascript
-#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
 #, python-format
 msgid "Livechat Support Statistics by Operator"
 msgstr "Statistike podrške uživo po operateru"
 
 #. module: spreadsheet_dashboard_im_livechat
 #. odoo-javascript
-#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
 #, python-format
 msgid "Operator"
 msgstr "Operater"
 
 #. module: spreadsheet_dashboard_im_livechat
 #. odoo-javascript
-#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
 #, python-format
 msgid "Period"
-msgstr "Period"
+msgstr ""
 
 # taken from hr.po
 #. module: spreadsheet_dashboard_im_livechat
 #. odoo-javascript
-#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
 #, python-format
 msgid "Previous"
 msgstr "Prethodni"
@@ -105,7 +105,7 @@ msgstr "Prethodni"
 # taken from hr.po
 #. module: spreadsheet_dashboard_im_livechat
 #. odoo-javascript
-#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
 #, python-format
 msgid "Rating"
 msgstr "Ocjena"
@@ -113,63 +113,318 @@ msgstr "Ocjena"
 # taken from hr.po
 #. module: spreadsheet_dashboard_im_livechat
 #. odoo-javascript
-#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
 #, python-format
 msgid "Sessions"
 msgstr "Smjene"
 
 #. module: spreadsheet_dashboard_im_livechat
 #. odoo-javascript
-#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
 #, python-format
 msgid "Sessions by Operator"
 msgstr "Sesije po operateru"
 
 #. module: spreadsheet_dashboard_im_livechat
 #. odoo-javascript
-#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
 #, python-format
 msgid "Top Operators"
 msgstr "Najbolji operateri"
 
 #. module: spreadsheet_dashboard_im_livechat
 #. odoo-javascript
-#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
 #, python-format
 msgid "last period"
 msgstr "prošli period"
 
 #. module: spreadsheet_dashboard_im_livechat
 #. odoo-javascript
-#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
 #, python-format
 msgid "sessions count - current"
 msgstr "broj sesija - trenutni"
 
 #. module: spreadsheet_dashboard_im_livechat
 #. odoo-javascript
-#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
 #, python-format
 msgid "sessions count - previous"
 msgstr "broj sesija - prethodni"
 
 #. module: spreadsheet_dashboard_im_livechat
 #. odoo-javascript
-#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
 #, python-format
 msgid "since last period"
 msgstr "od prošlog perioda"
 
 #. module: spreadsheet_dashboard_im_livechat
 #. odoo-javascript
-#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
 #, python-format
 msgid "stats 2 - current"
 msgstr "statistike 2 - trenutne"
 
 #. module: spreadsheet_dashboard_im_livechat
 #. odoo-javascript
-#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
 #, python-format
 msgid "stats 2 - previous"
 msgstr "statistike 2 - prethodne"
+
+#. module: spreadsheet_dashboard_im_livechat
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
+msgid "Agent"
+msgstr "Agent"
+
+#. module: spreadsheet_dashboard_im_livechat
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
+msgid "Agents"
+msgstr "Agenti"
+
+#. module: spreadsheet_dashboard_im_livechat
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
+msgid "Avg. Rating"
+msgstr "Prosj. ocjena"
+
+#. module: spreadsheet_dashboard_im_livechat
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
+msgid "Avg. number of messages"
+msgstr "Prosj. broj poruka"
+
+#. module: spreadsheet_dashboard_im_livechat
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
+msgid "Avg. time to respond"
+msgstr "Prosj. vrijeme za odgovor"
+
+#. module: spreadsheet_dashboard_im_livechat
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_sample_ongoing_dashboard.json:0
+msgid "Call"
+msgstr "Poziv"
+
+#. module: spreadsheet_dashboard_im_livechat
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
+msgid "Call Duration"
+msgstr "Trajanje poziva"
+
+#. module: spreadsheet_dashboard_im_livechat
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_ongoing_dashboard.json:0
+msgid "Calls"
+msgstr "Pozivi"
+
+#. module: spreadsheet_dashboard_im_livechat
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
+msgid "Calls by Agents"
+msgstr "Pozivi po agentima"
+
+#. module: spreadsheet_dashboard_im_livechat
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
+msgid "Channels"
+msgstr "Kanali"
+
+#. module: spreadsheet_dashboard_im_livechat
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
+msgid "Chatbot Answer"
+msgstr "Odgovor chatbota"
+
+#. module: spreadsheet_dashboard_im_livechat
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
+msgid "Countries"
+msgstr "Države"
+
+#. module: spreadsheet_dashboard_im_livechat
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
+msgid "Country"
+msgstr "Država"
+
+#. module: spreadsheet_dashboard_im_livechat
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
+msgid "Escalated"
+msgstr "Eskalirano"
+
+#. module: spreadsheet_dashboard_im_livechat
+#: model:ir.ui.menu,name:spreadsheet_dashboard_im_livechat.ongoing_sessions_escalated_menu
+msgid "Escalated Sessions"
+msgstr "Eskalirane sesije"
+
+#. module: spreadsheet_dashboard_im_livechat
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
+msgid "Expertise"
+msgstr "Ekspertiza"
+
+#. module: spreadsheet_dashboard_im_livechat
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
+msgid "Expertises"
+msgstr "Ekspertize"
+
+#. module: spreadsheet_dashboard_im_livechat
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
+msgid "Handled by Agent"
+msgstr "Obrađeno od strane agenta"
+
+#. module: spreadsheet_dashboard_im_livechat
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
+msgid "Handled by Bot"
+msgstr "Obrađeno od strane bota"
+
+#. module: spreadsheet_dashboard_im_livechat
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
+msgid "Language"
+msgstr "Jezik"
+
+#. module: spreadsheet_dashboard_im_livechat
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
+msgid "Languages"
+msgstr "Jezici"
+
+#. module: spreadsheet_dashboard_im_livechat
+#: model:spreadsheet.dashboard,name:spreadsheet_dashboard_im_livechat.spreadsheet_dashboard_livechat
+msgid "Live Chat"
+msgstr "Live Chat"
+
+#. module: spreadsheet_dashboard_im_livechat
+#: model:spreadsheet.dashboard,name:spreadsheet_dashboard_im_livechat.spreadsheet_dashboard_livechat_ongoing
+msgid "Live Chat - Ongoing Sessions"
+msgstr "Live Chat - Aktivne sesije"
+
+#. module: spreadsheet_dashboard_im_livechat
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
+msgid "Messages per Session"
+msgstr "Poruka po sesiji"
+
+#. module: spreadsheet_dashboard_im_livechat
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
+msgid "Messages per session"
+msgstr "Poruka po sesiji"
+
+#. module: spreadsheet_dashboard_im_livechat
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_ongoing_dashboard.json:0
+msgid "Minutes"
+msgstr "Minute"
+
+#. module: spreadsheet_dashboard_im_livechat
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
+msgid "No One Available"
+msgstr "Niko nije dostupan"
+
+#. module: spreadsheet_dashboard_im_livechat
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
+msgid "Not Answered"
+msgstr "Nije odgovoreno"
+
+#. module: spreadsheet_dashboard_im_livechat
+#: model:ir.ui.menu,name:spreadsheet_dashboard_im_livechat.ongoing_sessions_agents_in_call_menu
+msgid "Ongoing Call Sessions"
+msgstr "Aktivne sesije poziva"
+
+#. module: spreadsheet_dashboard_im_livechat
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_ongoing_dashboard.json:0
+msgid "Ongoing Sessions"
+msgstr "Aktivne sesije"
+
+#. module: spreadsheet_dashboard_im_livechat
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
+msgid "Rating (%)"
+msgstr "Ocjena (%)"
+
+#. module: spreadsheet_dashboard_im_livechat
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_sample_ongoing_dashboard.json:0
+msgid "Response Time (sec)"
+msgstr "Vrijeme odgovora (sek)"
+
+#. module: spreadsheet_dashboard_im_livechat
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
+msgid "Session Duration"
+msgstr "Trajanje sesije"
+
+#. module: spreadsheet_dashboard_im_livechat
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
+msgid "Session Duration (min)"
+msgstr "Trajanje sesije (min)"
+
+#. module: spreadsheet_dashboard_im_livechat
+#: model:ir.ui.menu,name:spreadsheet_dashboard_im_livechat.ongoing_sessions_handle_by_agent_menu
+msgid "Sessions Handled by Agent"
+msgstr "Sesije koje obrađuje agent"
+
+#. module: spreadsheet_dashboard_im_livechat
+#: model:ir.ui.menu,name:spreadsheet_dashboard_im_livechat.ongoing_sessions_handle_by_bot_menu
+msgid "Sessions Handled by Bot"
+msgstr "Sesije koje obrađuje bot"
+
+#. module: spreadsheet_dashboard_im_livechat
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
+msgid "Sessions by Agent"
+msgstr "Sesije po agentu"
+
+#. module: spreadsheet_dashboard_im_livechat
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
+msgid "Sessions by Day"
+msgstr "Sesije po danu"
+
+#. module: spreadsheet_dashboard_im_livechat
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
+msgid "Sessions by Day of Week"
+msgstr "Sesije po danu u sedmici"
+
+#. module: spreadsheet_dashboard_im_livechat
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
+msgid "Sessions by Hour of Day"
+msgstr "Sesije po satu u danu"
+
+#. module: spreadsheet_dashboard_im_livechat
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_ongoing_dashboard.json:0
+msgid "Sessions by Minute"
+msgstr "Sesije po minuti"
+
+#. module: spreadsheet_dashboard_im_livechat
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
+msgid "Sessions with Calls (#)"
+msgstr "Sesije s pozivima (#)"
+
+#. module: spreadsheet_dashboard_im_livechat
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
+msgid "Sessions with Calls (%)"
+msgstr "Sesije s pozivima (%)"
+
+#. module: spreadsheet_dashboard_im_livechat
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
+msgid "Time to Respond"
+msgstr "Vrijeme za odgovor"
+
+#. module: spreadsheet_dashboard_im_livechat
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
+msgid "Time to Respond (sec)"
+msgstr "Vrijeme za odgovor (sek)"
+
+#. module: spreadsheet_dashboard_im_livechat
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
+msgid "Top Agents"
+msgstr "Najbolji agenti"
+
+#. module: spreadsheet_dashboard_im_livechat
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
+msgid "Top Chatbot Answers"
+msgstr "Najbolji odgovori chatbota"
+
+#. module: spreadsheet_dashboard_im_livechat
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
+msgid "Top Countries"
+msgstr "Najbolje države"
+
+#. module: spreadsheet_dashboard_im_livechat
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_ongoing_dashboard.json:0
+msgid "Top Expertise"
+msgstr "Najbolja stručnost"
+
+#. module: spreadsheet_dashboard_im_livechat
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
+msgid "Top Expertises"
+msgstr "Najbolje stručnosti"
+
+#. module: spreadsheet_dashboard_im_livechat
+#: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_dashboard.json:0
+msgid "Top Languages"
+msgstr "Najbolji jezici"
