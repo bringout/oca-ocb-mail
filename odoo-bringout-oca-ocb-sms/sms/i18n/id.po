@@ -13,11 +13,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0beta\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-10 18:39+0000\n"
-"PO-Revision-Date: 2026-01-06 10:37+0000\n"
+"POT-Creation-Date: 2026-03-12 18:37+0000\n"
+"PO-Revision-Date: 2026-02-14 12:16+0000\n"
 "Last-Translator: \"Abe Manyo (abem)\" <abem@odoo.com>\n"
-"Language-Team: Indonesian <https://translate.odoo.com/projects/odoo-19/sms/"
-"id/>\n"
+"Language-Team: Indonesian <https://translate.odoo.com/projects/odoo-s19-1/"
+"sms/id/>\n"
 "Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -56,6 +56,11 @@ msgstr "%s (salin)"
 #: code:addons/sms/wizard/sms_composer.py:0
 msgid "%s invalid recipients"
 msgstr "%s penerima tidak valid"
+
+#. module: sms
+#: model_terms:ir.ui.view,arch_db:sms.sms_account_phone_view_form
+msgid "+1 555-555-555"
+msgstr "+1 555-555-555"
 
 #. module: sms
 #: model_terms:ir.ui.view,arch_db:sms.iap_account_view_form
@@ -206,6 +211,12 @@ msgstr ""
 "dengan templat ini"
 
 #. module: sms
+#: model:ir.model.fields.selection,name:sms.selection__sms_composer__sms_type__alert
+#: model:ir.model.fields.selection,name:sms.selection__sms_sms__sms_type__alert
+msgid "Alert"
+msgstr "Peringatan"
+
+#. module: sms
 #: model:ir.model.fields,help:sms.field_sms_sms__uuid
 msgid "Alternate way to identify a SMS record, used for delivery reports"
 msgstr ""
@@ -279,10 +290,7 @@ msgid "Buy credits."
 msgstr "Beli kredit."
 
 #. module: sms
-#: model_terms:ir.ui.view,arch_db:sms.sms_account_code_view_form
-#: model_terms:ir.ui.view,arch_db:sms.sms_account_phone_view_form
 #: model_terms:ir.ui.view,arch_db:sms.sms_sms_view_tree
-#: model_terms:ir.ui.view,arch_db:sms.sms_template_reset_view_form
 #: model_terms:ir.ui.view,arch_db:sms.sms_tsms_view_form
 msgid "Cancel"
 msgstr "Batal"
@@ -317,7 +325,7 @@ msgstr "Pilih nama pengirim Anda"
 
 #. module: sms
 #: model:ir.model,name:sms.model_res_company
-msgid "Companies"
+msgid "Company"
 msgstr "Perusahaan"
 
 #. module: sms
@@ -409,12 +417,6 @@ msgid "Delivered"
 msgstr "Dikirim"
 
 #. module: sms
-#: model_terms:ir.ui.view,arch_db:sms.sms_composer_view_form
-#: model_terms:ir.ui.view,arch_db:sms.sms_template_preview_form
-msgid "Discard"
-msgstr "Buang"
-
-#. module: sms
 #: model:ir.model.fields,field_description:sms.field_iap_account__display_name
 #: model:ir.model.fields,field_description:sms.field_ir_actions_server__display_name
 #: model:ir.model.fields,field_description:sms.field_ir_model__display_name
@@ -437,7 +439,7 @@ msgstr "Nama Tampilan"
 
 #. module: sms
 #: model:ir.model,name:sms.model_mail_followers
-msgid "Document Followers"
+msgid "Document Follower"
 msgstr "Pengikut Dokumen"
 
 #. module: sms
@@ -567,9 +569,9 @@ msgstr "ID"
 #: model:ir.model.fields,help:sms.field_mail_blacklist__message_has_sms_error
 #: model:ir.model.fields,help:sms.field_mail_thread__message_has_sms_error
 #: model:ir.model.fields,help:sms.field_mail_thread_blacklist__message_has_sms_error
-#: model:ir.model.fields,help:sms.field_mail_thread_cc__message_has_sms_error
 #: model:ir.model.fields,help:sms.field_mail_thread_main_attachment__message_has_sms_error
 #: model:ir.model.fields,help:sms.field_mail_thread_phone__message_has_sms_error
+#: model:ir.model.fields,help:sms.field_mail_thread_subject_suggested__message_has_sms_error
 #: model:ir.model.fields,help:sms.field_mail_tracking_duration_mixin__message_has_sms_error
 #: model:ir.model.fields,help:sms.field_maintenance_equipment__message_has_sms_error
 #: model:ir.model.fields,help:sms.field_maintenance_request__message_has_sms_error
@@ -620,8 +622,8 @@ msgstr "Tujuan Tidak Valid"
 #. odoo-python
 #: code:addons/sms/tools/sms_api.py:0
 msgid ""
-"Invalid phone number. Please make sure to follow the international format, "
-"i.e. a plus sign (+), then country code, city code, and local phone number. "
+"Invalid phone number. Please make sure to follow the international format, i."
+"e. a plus sign (+), then country code, city code, and local phone number. "
 "For example: +1 555-555-555"
 msgstr ""
 "Nomor telepon tidak valid. Pastikan Anda mengikuti format internasional, "
@@ -701,6 +703,12 @@ msgid "Marked for deletion"
 msgstr "Ditandai untuk dihapus"
 
 #. module: sms
+#: model:ir.model.fields.selection,name:sms.selection__sms_composer__sms_type__marketing
+#: model:ir.model.fields.selection,name:sms.selection__sms_sms__sms_type__marketing
+msgid "Marketing"
+msgstr "Marketing"
+
+#. module: sms
 #: model:ir.model,name:sms.model_mail_message
 #: model:ir.model.fields,field_description:sms.field_sms_composer__body
 #: model_terms:ir.ui.view,arch_db:sms.sms_tsms_view_form
@@ -709,7 +717,7 @@ msgstr "Pesan"
 
 #. module: sms
 #: model:ir.model,name:sms.model_mail_notification
-msgid "Message Notifications"
+msgid "Message Notification"
 msgstr "Notifikasi Pesan"
 
 #. module: sms
@@ -722,7 +730,7 @@ msgstr "Nomor Hilang"
 
 #. module: sms
 #: model:ir.model,name:sms.model_ir_model
-msgid "Models"
+msgid "Model"
 msgstr "Model"
 
 #. module: sms
@@ -946,7 +954,7 @@ msgstr "Ulangi"
 
 #. module: sms
 #. odoo-javascript
-#: code:addons/sms/static/src/components/sms_button/sms_button.xml:0
+#: code:addons/sms/static/src/components/phone_field/phone_field.js:0
 #: code:addons/sms/static/src/core/notification_model_patch.js:0
 #: model:ir.actions.act_window,name:sms.sms_sms_action
 #: model:ir.model.fields,field_description:sms.field_mail_notification__sms_id
@@ -1014,9 +1022,9 @@ msgstr "Wizard Kode Verifikasi Akun SMS"
 #: model:ir.model.fields,field_description:sms.field_mail_blacklist__message_has_sms_error
 #: model:ir.model.fields,field_description:sms.field_mail_thread__message_has_sms_error
 #: model:ir.model.fields,field_description:sms.field_mail_thread_blacklist__message_has_sms_error
-#: model:ir.model.fields,field_description:sms.field_mail_thread_cc__message_has_sms_error
 #: model:ir.model.fields,field_description:sms.field_mail_thread_main_attachment__message_has_sms_error
 #: model:ir.model.fields,field_description:sms.field_mail_thread_phone__message_has_sms_error
+#: model:ir.model.fields,field_description:sms.field_mail_thread_subject_suggested__message_has_sms_error
 #: model:ir.model.fields,field_description:sms.field_mail_tracking_duration_mixin__message_has_sms_error
 #: model:ir.model.fields,field_description:sms.field_maintenance_equipment__message_has_sms_error
 #: model:ir.model.fields,field_description:sms.field_maintenance_request__message_has_sms_error
@@ -1163,7 +1171,7 @@ msgstr "Kirim Sekarang"
 
 #. module: sms
 #. odoo-javascript
-#: code:addons/sms/static/src/components/sms_button/sms_button.js:0
+#: code:addons/sms/static/src/components/phone_field/phone_field.js:0
 #: model:ir.actions.act_window,name:sms.res_partner_act_window_sms_composer_multi
 #: model:ir.actions.act_window,name:sms.res_partner_act_window_sms_composer_single
 #: model:ir.actions.act_window,name:sms.sms_composer_action_form
@@ -1288,6 +1296,12 @@ msgstr "Lewati untuk sekarang"
 #: model:ir.model.fields,field_description:sms.field_sms_template_preview__sms_template_id
 msgid "Sms Template"
 msgstr "Templat SMS"
+
+#. module: sms
+#: model:ir.model.fields,field_description:sms.field_sms_composer__sms_type
+#: model:ir.model.fields,field_description:sms.field_sms_sms__sms_type
+msgid "Sms Type"
+msgstr "Tipe SMS"
 
 #. module: sms
 #: model:ir.model.fields,field_description:sms.field_sms_composer__recipient_single_number
@@ -1667,123 +1681,3 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:sms.sms_template_preview_form
 msgid "record:"
 msgstr "data:"
-
-#~ msgid "+1 555-555-555"
-#~ msgstr "+1 555-555-555"
-
-#~ msgid "Action Needed"
-#~ msgstr "Perlu Tindakan"
-
-#~ msgid "Action To Do"
-#~ msgstr "Tindakan yang Akan DIlakukan"
-
-#~ msgid "Attachment Count"
-#~ msgstr "Hitungan Lampiran"
-
-#~ msgid "Canceled"
-#~ msgstr "Dibatalkan"
-
-#~ msgid "Close"
-#~ msgstr "Tutup"
-
-#~ msgid "Error Message"
-#~ msgstr "Pesan Kesalahan"
-
-#~ msgid "Followers"
-#~ msgstr "Follower"
-
-#~ msgid "Followers (Partners)"
-#~ msgstr "Follower (Mitra)"
-
-#~ msgid "Has Message"
-#~ msgstr "Memiliki Pesan"
-
-#~ msgid "If checked, new messages require your attention."
-#~ msgstr ""
-#~ "Jika dicentang, pesan baru memerlukan penanganan dan perhatian Anda."
-
-#~ msgid "Is Follower"
-#~ msgstr "Pengikut"
-
-#~ msgid "Message Delivery error"
-#~ msgstr "Kesalahan Pengiriman Pesan"
-
-#~ msgid ""
-#~ "Message type: email for email message, notification for system message, "
-#~ "comment for other messages such as user replies"
-#~ msgstr ""
-#~ "Jenis pesan: email untuk pesan email, pemberitahuan untuk pesan sistem, "
-#~ "komentar untuk pesan lain seperti balasan pengguna"
-
-#~ msgid "Messages"
-#~ msgstr "Pesan"
-
-#~ msgid "Notification"
-#~ msgstr "Notifikasi"
-
-#~ msgid "Number of Actions"
-#~ msgstr "Jumlah Tindakan"
-
-#~ msgid "Number of errors"
-#~ msgstr "Jumlah kesalahan"
-
-#~ msgid "Number of messages which requires an action"
-#~ msgstr "Jumlah pesan yang butuh tindakan"
-
-#~ msgid "Number of messages with delivery error"
-#~ msgstr "Jumlah dari pesan dengan kesalahan pengiriman"
-
-#~ msgid ""
-#~ "Optional translation language (ISO code) to select when sending out an "
-#~ "email. If not set, the english version will be used. This should usually "
-#~ "be a placeholder expression that provides the appropriate language, e.g. "
-#~ "{{ object.partner_id.lang }}."
-#~ msgstr ""
-#~ "Bahasa terjemahan opsional (kode ISO) yang dipilih ketika mengirim email. "
-#~ "Bila tidak diatur, versi Bahasa Inggris akan digunakan. Ini seharusnya "
-#~ "merupakan expression placeholder yang menyediakan bahasa yang sesuai, "
-#~ "misalnya {{ object.partner_id.lang }}."
-
-#~ msgid "Partner"
-#~ msgstr "Rekanan"
-
-#~ msgid "Reason"
-#~ msgstr "Alasan"
-
-#~ msgid "Recipient"
-#~ msgstr "Penerima"
-
-#~ msgid "Recipients"
-#~ msgstr "Penerima"
-
-#~ msgid "Send SMS Text Message"
-#~ msgstr "Kirim Pesan Teks SMS"
-
-#~ msgid ""
-#~ "Type of server action. The following values are available:\n"
-#~ "- 'Execute Python Code': a block of python code that will be executed\n"
-#~ "- 'Create a new Record': create a new record with new values\n"
-#~ "- 'Update a Record': update the values of a record\n"
-#~ "- 'Execute several actions': define an action that triggers several other "
-#~ "server actions\n"
-#~ "- 'Send Email': post a message, a note or send an email (Discuss)\n"
-#~ "- 'Add Followers': add followers to a record (Discuss)\n"
-#~ "- 'Create Next Activity': create an activity (Discuss)\n"
-#~ "- 'Send SMS Text Message': send SMS, log them on documents (SMS)"
-#~ msgstr ""
-#~ "Tipe tindakan server. Value berikut tersedia:\n"
-#~ "- 'Execute Kode Python': satu blok kode python akan dilaksanakan\n"
-#~ "- 'Buat Record baru': buat record baru dengan value baru\n"
-#~ "- 'Update Record': update value dari record\n"
-#~ "- 'Execute beberapa tindakan': definisikan tindakan yang akan memicu "
-#~ "beberapa tindakan server\n"
-#~ "- 'Kirim Email': post pesan, catatan atau kirim email (Diskusi)\n"
-#~ "- 'Tambahkan Follower': menambahkan follower ke record (Diskusi)\n"
-#~ "- 'Buat Aktivitas Berikutnya': buat aktivitas (Diskusi)\n"
-#~ "- 'Buat Pesan Teks SMS': kirim SMS, catat mereka di dokumen (SMS)"
-
-#~ msgid "Website Messages"
-#~ msgstr "Pesan situs"
-
-#~ msgid "Website communication history"
-#~ msgstr "Sejarah komunikasi situs"

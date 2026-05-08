@@ -12,25 +12,19 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 15.5alpha1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-10 18:40+0000\n"
-"PO-Revision-Date: 2026-04-24 07:45+0000\n"
+"POT-Creation-Date: 2026-01-04 18:37+0000\n"
+"PO-Revision-Date: 2026-01-13 11:16+0000\n"
 "Last-Translator: Bren Driesen <brdri@odoo.com>\n"
-"Language-Team: Dutch <https://translate.odoo.com/projects/odoo-19/"
+"Language-Team: Dutch <https://translate.odoo.com/projects/odoo-s19-1/"
 "mass_mailing_themes/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.17\n"
+"X-Generator: Weblate 5.14.3\n"
 
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_blogging_template
-msgid "&amp;nbsp; &amp;nbsp;"
-msgstr "&amp;nbsp; &amp;nbsp;"
-
-#. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_coffeebreak_template
 #: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
 msgid "&amp;nbsp;&amp;nbsp;"
 msgstr "&amp;nbsp;&amp;nbsp;"
@@ -260,14 +254,14 @@ msgstr ""
 #. module: mass_mailing_themes
 #: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_promotion_template
 msgid ""
-"<font style=\"font-size: 62px; background-color: rgb(255, 255, 255);"
-"\">&amp;nbsp;10% OFF&amp;nbsp;</font>\n"
+"<font style=\"font-size: 62px; background-color: rgb(255, 255, 255);\">&amp;"
+"nbsp;10% OFF&amp;nbsp;</font>\n"
 "                    <br/>\n"
 "                    <font style=\"font-size: 62px; background-color: "
 "rgb(255, 255, 255);\">&amp;nbsp;SALES&amp;nbsp;</font>"
 msgstr ""
-"<font style=\"font-size: 62px; background-color: rgb(255, 255, 255);"
-"\">&amp;nbsp;10% KORTING&amp;nbsp;</font>\n"
+"<font style=\"font-size: 62px; background-color: rgb(255, 255, 255);\">&amp;"
+"nbsp;10% KORTING&amp;nbsp;</font>\n"
 "                    <br/>\n"
 "                    <font style=\"font-size: 62px; background-color: "
 "rgb(255, 255, 255);\">&amp;nbsp;SOLDEN&amp;nbsp;</font>"
@@ -856,10 +850,7 @@ msgstr ""
 "presentaties en demo's."
 
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_blogging_template
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_coffeebreak_template
 #: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_training_template
 msgid "Facebook"
 msgstr "Facebook"
 
@@ -1056,10 +1047,7 @@ msgid "Infographic: Our Company Throughout The Generations"
 msgstr "Infografiek: Ons bedrijf door de generaties heen"
 
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_blogging_template
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_coffeebreak_template
 #: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_training_template
 msgid "Instagram"
 msgstr "Instagram"
 
@@ -1126,12 +1114,6 @@ msgstr "Link 3"
 #: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_roadshow2_template
 msgid "Link 4"
 msgstr "Link 4"
-
-#. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_blogging_template
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_training_template
-msgid "LinkedIn"
-msgstr "LinkedIn"
 
 #. module: mass_mailing_themes
 #: model_terms:ir.ui.view,arch_db:mass_mailing_themes.email_designer_themes
@@ -1473,11 +1455,6 @@ msgstr ""
 "voorstellen hoe klein je je voelt"
 
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_blogging_template
-msgid "TikTok"
-msgstr "TikTok"
-
-#. module: mass_mailing_themes
 #: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
 msgid ""
 "To fuel my motivation, I had to pick someone to fight against. In business, "
@@ -1712,14 +1689,6 @@ msgid "Woman having breakfast in bed"
 msgstr "Vrouw aan het ontbijt op bed"
 
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_blogging_template
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_coffeebreak_template
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_training_template
-msgid "X"
-msgstr "X"
-
-#. module: mass_mailing_themes
 #: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_roadshow2_template
 msgid "Yesterday's event at [venue] in [city] was incredible!"
 msgstr "Het evenement van gisteren in [plaats] in [stad] was ongelofelijk!"
@@ -1860,87 +1829,3 @@ msgstr "veranderden we ons business model"
 #: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
 msgid "with 1549% growth of the turnover between 2007 and 2011)."
 msgstr "met een omzetgroei van 1549% tussen 2007 en 2011)."
-
-#~ msgid ""
-#~ "<font style=\"font-size: 62px; background-color: rgb(255, 255, 255);"
-#~ "\">&amp;nbsp;10% OFF&amp;nbsp;</font>\n"
-#~ "                    <br/>\n"
-#~ "                        <font style=\"font-size: 62px; background-color: "
-#~ "rgb(255, 255, 255);\">&amp;nbsp;SALES&amp;nbsp;</font>"
-#~ msgstr ""
-#~ "<font style=\"font-size: 62px; background-color: rgb(255, 255, 255);"
-#~ "\">&amp;nbsp;10% KORTING&amp;nbsp;</font>\n"
-#~ "                    <br/>\n"
-#~ "                        <font style=\"font-size: 62px; background-color: "
-#~ "rgb(255, 255, 255);\">&amp;nbsp;SALES&amp;nbsp;</font>"
-
-#~ msgid "$100 OFF"
-#~ msgstr "$ 100 KORTING"
-
-#~ msgid ""
-#~ "<i class=\"fa fa-2x fa-ticket\" style=\"color: rgb(36, 37, 48) !important;"
-#~ "\"/>​"
-#~ msgstr ""
-#~ "<i class=\"fa fa-2x fa-ticket\" style=\"color: rgb(36, 37, 48) !important;"
-#~ "\"/>​"
-
-#~ msgid ""
-#~ "<span class=\"fa fa-facebook\" style=\"color: rgb(54, 166, 210) !"
-#~ "important; font-size: 18px;\"/>​"
-#~ msgstr ""
-#~ "<span class=\"fa fa-facebook\" style=\"color: rgb(54, 166, 210) !"
-#~ "important; font-size: 18px;\"/>​"
-
-#~ msgid ""
-#~ "<span class=\"fa fa-linkedin\" style=\"color: rgb(54, 166, 210) !"
-#~ "important; font-size: 18px;\"/>​"
-#~ msgstr ""
-#~ "<span class=\"fa fa-linkedin\" style=\"color: rgb(54, 166, 210) !"
-#~ "important; font-size: 18px;\"/>​"
-
-#~ msgid ""
-#~ "<span class=\"fa fa-twitter\" style=\"color: rgb(54, 166, 210) !"
-#~ "important; font-size: 18px;\"/>​"
-#~ msgstr ""
-#~ "<span class=\"fa fa-twitter\" style=\"color: rgb(54, 166, 210) !"
-#~ "important; font-size: 18px;\"/>​"
-
-#~ msgid "<span style=\"font-weight: bolder;\">VIP10</span>"
-#~ msgstr "<span style=\"font-weight: bolder;\">VIP10</span>"
-
-#~ msgid ""
-#~ "An interactive, fun\n"
-#~ "                                    <br/>and comprehensive experience"
-#~ msgstr ""
-#~ "Een interactief, leuk\n"
-#~ "                                    <br/>en uitgebreide ervaring"
-
-#~ msgid ""
-#~ "Get 6-months' worth of knowledge\n"
-#~ "                                    <br/>in just 2 days"
-#~ msgstr ""
-#~ "Krijg 6 maanden aan kennis\n"
-#~ "                                    <br/>in slechts 2 dagen"
-
-#~ msgid ""
-#~ "Join the community to see our latest news, events, discounts and much "
-#~ "more!"
-#~ msgstr ""
-#~ "Word lid van de community om ons laatste nieuws, evenementen, kortingen "
-#~ "en nog veel meer te zien!"
-
-#~ msgid ""
-#~ "Meet (other) awesome members\n"
-#~ "                                    <br/>of the community"
-#~ msgstr ""
-#~ "Ontmoet (andere) geweldige leden\n"
-#~ "                                    <br/>van de community"
-
-#~ msgid "Thank you for being one of our most loyal customers."
-#~ msgstr "Bedankt dat je een van onze trouwste klanten bent."
-
-#~ msgid "Twitter"
-#~ msgstr "Twitter"
-
-#~ msgid "VIP members only"
-#~ msgstr "Alleen VIP-leden"

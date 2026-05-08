@@ -1,4 +1,4 @@
-import { AND, fields, Record } from "@mail/core/common/record";
+import { AND, fields, Record } from "@mail/model/export";
 import { createDocumentFragmentFromContent } from "@web/core/utils/html";
 
 export class ChatbotStep extends Record {
@@ -39,7 +39,7 @@ export class ChatbotStep extends Record {
             case "question_phone":
                 return createDocumentFragmentFromContent(this.rawAnswer).body.textContent;
             case "question_selection":
-                return this.selectedAnswer?.label;
+                return this.selectedAnswer?.name;
             default:
                 return "";
         }

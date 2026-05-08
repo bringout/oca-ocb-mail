@@ -1,5 +1,6 @@
+import { useLayoutEffect, useState } from "@web/owl2/utils";
 import { isValidEmail } from "@im_livechat/core/common/misc";
-import { Component, onWillUpdateProps, useEffect, useState } from "@odoo/owl";
+import { Component, onWillUpdateProps } from "@odoo/owl";
 import { rpc } from "@web/core/network/rpc";
 import { useService } from "@web/core/utils/hooks";
 
@@ -22,17 +23,17 @@ export class TranscriptSender extends Component {
     setup() {
         this.isValidEmail = isValidEmail;
         this.state = useState({
-            email: this.props.thread.livechatVisitorMember?.persona.email,
+            email: this.props.thread.channel?.livechatVisitorMember?.persona.email,
             status: this.STATUS.IDLE,
         });
         this.store = useService("mail.store");
         onWillUpdateProps((newProps) => {
             if (this.props.thread?.notEq(newProps.thread)) {
-                this.state.email = newProps.thread.livechatVisitorMember?.persona.email;
+                this.state.email = newProps.thread.channel?.livechatVisitorMember?.persona.email;
                 this.state.status = this.STATUS.IDLE;
             }
         });
-        useEffect(
+        useLayoutEffect(
             () => {
                 this.state.status = this.STATUS.IDLE;
             },
@@ -49,7 +50,7 @@ export class TranscriptSender extends Component {
 
     get isInputDisabled() {
         return (
-            !(this.store.self_partner?.main_user_id?.share === false) ||
+            !(this.store.self_user?.share === false) ||
             this.state.status === this.STATUS.SENDING ||
             (this.props.disableOnSend && this.state.status === this.STATUS.SENT)
         );

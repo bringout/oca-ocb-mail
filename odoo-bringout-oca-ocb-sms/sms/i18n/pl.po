@@ -30,10 +30,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0beta\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-10 18:39+0000\n"
-"PO-Revision-Date: 2026-04-01 09:33+0000\n"
+"POT-Creation-Date: 2026-03-12 18:37+0000\n"
+"PO-Revision-Date: 2026-02-14 12:17+0000\n"
 "Last-Translator: \"Marta (wacm)\" <wacm@odoo.com>\n"
-"Language-Team: Polish <https://translate.odoo.com/projects/odoo-19/sms/pl/>\n"
+"Language-Team: Polish <https://translate.odoo.com/projects/odoo-s19-1/sms/pl/"
+">\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -41,17 +42,17 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && "
 "(n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && "
 "n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
-"X-Generator: Weblate 5.16.2\n"
+"X-Generator: Weblate 5.14.3\n"
 
 #. module: sms
 #: model:ir.model.fields,field_description:sms.field_sms_composer__recipient_invalid_count
 msgid "# Invalid recipients"
-msgstr "# Nieprawidłowi odbiorcy"
+msgstr "# Niepoprawni odbiorcy"
 
 #. module: sms
 #: model:ir.model.fields,field_description:sms.field_sms_composer__recipient_valid_count
 msgid "# Valid recipients"
-msgstr "# Prawidłowi odbiorcy"
+msgstr "# Poprawni odbiorcy"
 
 #. module: sms
 #. odoo-python
@@ -60,20 +61,25 @@ msgid ""
 "%(count)s out of the %(total)s selected SMS Text Messages have successfully "
 "been resent."
 msgstr ""
-"%(count)s spośród %(total)s wybranych wiadomości tekstowych SMS zostało "
+"%(count)sz pośród %(total)s wybranych wiadomości tekstowych SMS zostało "
 "pomyślnie wysłanych ponownie."
 
 #. module: sms
 #. odoo-python
 #: code:addons/sms/models/sms_template.py:0
 msgid "%s (copy)"
-msgstr "%s (kopia)"
+msgstr "%s (kopiuj)"
 
 #. module: sms
 #. odoo-python
 #: code:addons/sms/wizard/sms_composer.py:0
 msgid "%s invalid recipients"
-msgstr "%s nieprawidłowi odbiorcy"
+msgstr "%s niepoprawni odbiorcy"
+
+#. module: sms
+#: model_terms:ir.ui.view,arch_db:sms.sms_account_phone_view_form
+msgid "+1 555-555-555"
+msgstr "+1 555-555-555"
 
 #. module: sms
 #: model_terms:ir.ui.view,arch_db:sms.iap_account_view_form
@@ -81,8 +87,8 @@ msgid ""
 "<i class=\"fa fa-warning\"/> An error occurred with your account. Please "
 "contact the support for more information..."
 msgstr ""
-"<i class=\"fa fa-warning\"/> Wystąpił błąd z Twoim kontem. Skontaktuj się ze "
-"wsparciem, aby uzyskać więcej informacji..."
+"<i class=\"fa fa-warning\"/> Wystąpił błąd z Twoim kontem. Prosimy "
+"skontaktować się ze wsparciem po więcej informacji..."
 
 #. module: sms
 #: model_terms:ir.ui.view,arch_db:sms.iap_account_view_form
@@ -119,7 +125,7 @@ msgid ""
 "span>"
 msgstr ""
 "<span class=\"o_stat_text\">Dodaj</span>\n"
-"<span class=\"o_stat_text\">Akcja kontekstowa</span>"
+"<span class=\"o_stat_text\">Akcja kontekstu</span>"
 
 #. module: sms
 #: model_terms:ir.ui.view,arch_db:sms.sms_template_view_form
@@ -134,8 +140,8 @@ msgid ""
 "span>"
 msgstr ""
 "<span class=\"o_stat_text\">Usuń</span>\n"
-"                                <span class=\"o_stat_text\">Akcja "
-"kontekstowa</span>"
+"                                <span class=\"o_stat_text\">Kontekst akcji</"
+"span>"
 
 #. module: sms
 #: model_terms:ir.ui.view,arch_db:sms.sms_template_preview_form
@@ -167,30 +173,11 @@ msgid ""
 "                                    in the messaging history.\n"
 "                                </span>"
 msgstr ""
-"<span invisible=\"sms_method != 'sms'\">\n"
-"                                    Ta wiadomość zostanie wysłana jako SMS "
-"do odbiorców szablonu\n"
-"                                    i nie pojawi się w historii wiadomości.\n"
-"                                </span>\n"
-"                                <span invisible=\"sms_method != 'note'\">\n"
-"                                    SMS nie zostanie wysłany, będzie jedynie "
-"opublikowany jako\n"
-"                                    wiadomość wewnętrzna w historii "
-"wiadomości.\n"
-"                                </span>\n"
-"                                <span invisible=\"sms_method != "
-"'comment'\">\n"
-"                                    SMS zostanie wysłany jako SMS do "
-"odbiorców\n"
-"                                    szablonu i zostanie także opublikowany "
-"jako wiadomość wewnętrzna\n"
-"                                     w historii wiadomośći.\n"
-"                                </span>"
 
 #. module: sms
 #: model_terms:ir.ui.view,arch_db:sms.sms_composer_view_form
 msgid "<span> or to specify the country code.</span>"
-msgstr "<span> lub określ kod kraju.</span>"
+msgstr "<span>lub ustal kod kraju.</span>"
 
 #. module: sms
 #: model_terms:ir.ui.view,arch_db:sms.sms_composer_view_form
@@ -198,8 +185,8 @@ msgid ""
 "<strong>Invalid number:</strong>\n"
 "                        <span> make sure to set a country on the </span>"
 msgstr ""
-"<strong>Nieprawidłowy numer: </strong>\n"
-"<span> upewnij się że ustawiłeś kod kraju na </span>"
+"<strong>Niepoprawny numer: </strong>\n"
+"<span>upewnij się że ustawiłeś kod kraju na </span>"
 
 #. module: sms
 #: model:ir.model.constraint,message:sms.constraint_sms_tracker_sms_uuid_unique
@@ -219,8 +206,14 @@ msgid ""
 "Add a contextual action on the related model to open a sms composer with "
 "this template"
 msgstr ""
-"Dodaj akcję kontekstową na powiązanym modelu, aby otworzyć kreator SMS z tym "
-"szablonem."
+"Dodaj akcję kontekstu na powiązanym modelu, aby otworzyć kompozytor sms z "
+"tym szablonem."
+
+#. module: sms
+#: model:ir.model.fields.selection,name:sms.selection__sms_composer__sms_type__alert
+#: model:ir.model.fields.selection,name:sms.selection__sms_sms__sms_type__alert
+msgid "Alert"
+msgstr ""
 
 #. module: sms
 #: model:ir.model.fields,help:sms.field_sms_sms__uuid
@@ -254,7 +247,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:sms.field_sms_template__model_id
 #: model:ir.model.fields,field_description:sms.field_sms_template_preview__model_id
 msgid "Applies to"
-msgstr "Odnosi się do"
+msgstr "Stosowane do"
 
 #. module: sms
 #: model_terms:ir.ui.view,arch_db:sms.sms_template_reset_view_form
@@ -292,13 +285,10 @@ msgstr "Treść"
 #. odoo-python
 #: code:addons/sms/tools/sms_api.py:0
 msgid "Buy credits."
-msgstr "Kup kredyty."
+msgstr "Kup kredyty"
 
 #. module: sms
-#: model_terms:ir.ui.view,arch_db:sms.sms_account_code_view_form
-#: model_terms:ir.ui.view,arch_db:sms.sms_account_phone_view_form
 #: model_terms:ir.ui.view,arch_db:sms.sms_sms_view_tree
-#: model_terms:ir.ui.view,arch_db:sms.sms_template_reset_view_form
 #: model_terms:ir.ui.view,arch_db:sms.sms_tsms_view_form
 msgid "Cancel"
 msgstr "Anuluj"
@@ -333,8 +323,8 @@ msgstr "Wybierz swoją nazwę nadawcy"
 
 #. module: sms
 #: model:ir.model,name:sms.model_res_company
-msgid "Companies"
-msgstr "Firmy"
+msgid "Company"
+msgstr "Firma"
 
 #. module: sms
 #: model:ir.model.fields,field_description:sms.field_sms_composer__composition_mode
@@ -417,18 +407,12 @@ msgstr "Klient: zautomatyzowany SMS"
 #. module: sms
 #: model:sms.template,body:sms.sms_template_demo_0
 msgid "Dear {{ object.display_name }} this is an automated SMS."
-msgstr "Dzień dobry {{ object.display_name }} , to jest zautomatyzowany SMS."
+msgstr "Drogi {{ object.display_name }} , to jest zautomatyzowany SMS."
 
 #. module: sms
 #: model:ir.model.fields.selection,name:sms.selection__sms_sms__state__sent
 msgid "Delivered"
 msgstr "Dostarczone"
-
-#. module: sms
-#: model_terms:ir.ui.view,arch_db:sms.sms_composer_view_form
-#: model_terms:ir.ui.view,arch_db:sms.sms_template_preview_form
-msgid "Discard"
-msgstr "Odrzuć"
 
 #. module: sms
 #: model:ir.model.fields,field_description:sms.field_iap_account__display_name
@@ -453,8 +437,8 @@ msgstr "Nazwa wyświetlana"
 
 #. module: sms
 #: model:ir.model,name:sms.model_mail_followers
-msgid "Document Followers"
-msgstr "Obserwujący dokumentu"
+msgid "Document Follower"
+msgstr ""
 
 #. module: sms
 #: model:ir.model.fields,field_description:sms.field_sms_composer__res_id
@@ -507,7 +491,7 @@ msgstr "Błąd"
 #: code:addons/sms/static/src/core/notification_model_patch.js:0
 #: model:ir.model.fields.selection,name:sms.selection__mail_notification__failure_type__sms_expired
 msgid "Expired"
-msgstr "Po terminie"
+msgstr "Wygasło"
 
 #. module: sms
 #: model:ir.model.fields,field_description:sms.field_sms_sms__failure_type
@@ -522,7 +506,7 @@ msgstr "Typ niepowodzenia"
 #. module: sms
 #: model:ir.model.fields,help:sms.field_sms_template__template_fs
 msgid "File from where the template originates. Used to reset broken template."
-msgstr "Plik źródłowy szablonu. Używany do zresetowania uszkodzonego szablonu."
+msgstr "Plik źródłowy Szablonu. Używany do zresetowania uszkodzonego Szablonu."
 
 #. module: sms
 #. odoo-python
@@ -582,9 +566,9 @@ msgstr "ID"
 #: model:ir.model.fields,help:sms.field_mail_blacklist__message_has_sms_error
 #: model:ir.model.fields,help:sms.field_mail_thread__message_has_sms_error
 #: model:ir.model.fields,help:sms.field_mail_thread_blacklist__message_has_sms_error
-#: model:ir.model.fields,help:sms.field_mail_thread_cc__message_has_sms_error
 #: model:ir.model.fields,help:sms.field_mail_thread_main_attachment__message_has_sms_error
 #: model:ir.model.fields,help:sms.field_mail_thread_phone__message_has_sms_error
+#: model:ir.model.fields,help:sms.field_mail_thread_subject_suggested__message_has_sms_error
 #: model:ir.model.fields,help:sms.field_mail_tracking_duration_mixin__message_has_sms_error
 #: model:ir.model.fields,help:sms.field_maintenance_equipment__message_has_sms_error
 #: model:ir.model.fields,help:sms.field_maintenance_request__message_has_sms_error
@@ -637,8 +621,8 @@ msgstr "Nieprawidłowy cel"
 #. odoo-python
 #: code:addons/sms/tools/sms_api.py:0
 msgid ""
-"Invalid phone number. Please make sure to follow the international format, "
-"i.e. a plus sign (+), then country code, city code, and local phone number. "
+"Invalid phone number. Please make sure to follow the international format, i."
+"e. a plus sign (+), then country code, city code, and local phone number. "
 "For example: +1 555-555-555"
 msgstr ""
 "Nieprawidłowy numer telefonu. Prosimy się upewnić, że numer telefonu jest "
@@ -654,7 +638,7 @@ msgstr "Nieprawidłowy numer odbiorcy. Proszę go zaktualizować."
 #. module: sms
 #: model:ir.model.fields,field_description:sms.field_sms_composer__recipient_single_valid
 msgid "Is valid"
-msgstr "Jest prawidłowy"
+msgstr "Jest poprawny"
 
 #. module: sms
 #: model:ir.model.fields,field_description:sms.field_sms_composer__mass_keep_log
@@ -677,7 +661,7 @@ msgstr "Język"
 #: model:ir.model.fields,field_description:sms.field_sms_template_reset__write_uid
 #: model:ir.model.fields,field_description:sms.field_sms_tracker__write_uid
 msgid "Last Updated by"
-msgstr "Ostatnio zaktualizowane przez"
+msgstr "Ostatnio aktualizowane przez"
 
 #. module: sms
 #: model:ir.model.fields,field_description:sms.field_sms_account_code__write_date
@@ -700,7 +684,7 @@ msgstr "Powiąż SMS z modelami śledzenia mailingu/sms"
 #. module: sms
 #: model:ir.model.fields,field_description:sms.field_sms_sms__mail_message_id
 msgid "Mail Message"
-msgstr "Wiadomość e-mail"
+msgstr "Wiadomość"
 
 #. module: sms
 #: model:ir.model.fields,field_description:sms.field_sms_tracker__mail_notification_id
@@ -718,6 +702,12 @@ msgid "Marked for deletion"
 msgstr "Oznaczono do usunięcia"
 
 #. module: sms
+#: model:ir.model.fields.selection,name:sms.selection__sms_composer__sms_type__marketing
+#: model:ir.model.fields.selection,name:sms.selection__sms_sms__sms_type__marketing
+msgid "Marketing"
+msgstr ""
+
+#. module: sms
 #: model:ir.model,name:sms.model_mail_message
 #: model:ir.model.fields,field_description:sms.field_sms_composer__body
 #: model_terms:ir.ui.view,arch_db:sms.sms_tsms_view_form
@@ -726,8 +716,8 @@ msgstr "Wiadomość"
 
 #. module: sms
 #: model:ir.model,name:sms.model_mail_notification
-msgid "Message Notifications"
-msgstr "Powiadomienia o wiadomościach"
+msgid "Message Notification"
+msgstr ""
 
 #. module: sms
 #. odoo-javascript
@@ -739,8 +729,8 @@ msgstr "Brakujący numer"
 
 #. module: sms
 #: model:ir.model,name:sms.model_ir_model
-msgid "Models"
-msgstr "Modele"
+msgid "Model"
+msgstr ""
 
 #. module: sms
 #: model:ir.model.fields,field_description:sms.field_sms_template__name
@@ -777,8 +767,8 @@ msgid ""
 "Note that this is not required, if you don't set a sender name, your SMS "
 "will be sent from a short code."
 msgstr ""
-"Pamiętaj, że to nie jest wymagane, jeśli nie ustawisz nazwy nadawcy, Twój "
-"SMS zostanie wysłany z krótkiego kodu."
+"Proszę pamiętać, że to nie jest wymagane, jeśli nie ustawisz nazwy nadawcy, "
+"Twój SMS zostanie wysłany z krótkiego kodu."
 
 #. module: sms
 #: model:ir.model.fields,field_description:sms.field_mail_notification__notification_type
@@ -807,7 +797,7 @@ msgstr ""
 #. module: sms
 #: model:ir.model.fields.selection,name:sms.selection__sms_sms__failure_type__sms_optout
 msgid "Opted Out"
-msgstr "Wypisał się"
+msgstr "Opted Out"
 
 #. module: sms
 #: model:ir.model.fields,help:sms.field_sms_template__lang
@@ -830,7 +820,7 @@ msgstr "SMS wychodzący"
 #. module: sms
 #: model:ir.model.fields,field_description:sms.field_sms_account_phone__phone_number
 msgid "Phone Number"
-msgstr "Numer telefonu"
+msgstr "Numer Telefonu"
 
 #. module: sms
 #: model:ir.model.fields,help:sms.field_sms_composer__recipient_single_number_itf
@@ -844,7 +834,7 @@ msgstr ""
 #. module: sms
 #: model:ir.model.fields.selection,name:sms.selection__sms_composer__composition_mode__comment
 msgid "Post on a document"
-msgstr "Opublikuj w dokumencie"
+msgstr "Postuj w dokumencie"
 
 #. module: sms
 #: model:ir.model.fields,help:sms.field_sms_composer__use_exclusion_list
@@ -852,8 +842,6 @@ msgid ""
 "Prevent sending messages to blacklisted contacts. Disable only when "
 "absolutely necessary."
 msgstr ""
-"Zapobiegaj wysyłaniu wiadomości do kontaktów z czarnej listy. Wyłącz tę "
-"funkcję tylko wtedy, gdy jest to absolutnie konieczne."
 
 #. module: sms
 #: model_terms:ir.ui.view,arch_db:sms.sms_template_preview_form
@@ -949,12 +937,12 @@ msgstr "Wyślij ponownie"
 #. module: sms
 #: model:ir.actions.act_window,name:sms.sms_template_reset_action
 msgid "Reset SMS Template"
-msgstr "Zresetuj szablon SMS"
+msgstr "Resetowanie szablonu SMS"
 
 #. module: sms
 #: model_terms:ir.ui.view,arch_db:sms.sms_template_view_form
 msgid "Reset Template"
-msgstr "Zresetuj szablon"
+msgstr "Resetuj Szablon"
 
 #. module: sms
 #: model_terms:ir.ui.view,arch_db:sms.sms_sms_view_tree
@@ -964,7 +952,7 @@ msgstr "Ponów"
 
 #. module: sms
 #. odoo-javascript
-#: code:addons/sms/static/src/components/sms_button/sms_button.xml:0
+#: code:addons/sms/static/src/components/phone_field/phone_field.js:0
 #: code:addons/sms/static/src/core/notification_model_patch.js:0
 #: model:ir.actions.act_window,name:sms.sms_sms_action
 #: model:ir.model.fields,field_description:sms.field_mail_notification__sms_id
@@ -995,7 +983,7 @@ msgstr "SMS (bez notatki)"
 #. odoo-javascript
 #: code:addons/sms/static/src/thread/message_patch.js:0
 msgid "SMS Account"
-msgstr "Konto SMS"
+msgstr ""
 
 #. module: sms
 #: model:ir.model,name:sms.model_sms_account_phone
@@ -1032,9 +1020,9 @@ msgstr "Kreator kodów weryfikacyjnych konta SMS"
 #: model:ir.model.fields,field_description:sms.field_mail_blacklist__message_has_sms_error
 #: model:ir.model.fields,field_description:sms.field_mail_thread__message_has_sms_error
 #: model:ir.model.fields,field_description:sms.field_mail_thread_blacklist__message_has_sms_error
-#: model:ir.model.fields,field_description:sms.field_mail_thread_cc__message_has_sms_error
 #: model:ir.model.fields,field_description:sms.field_mail_thread_main_attachment__message_has_sms_error
 #: model:ir.model.fields,field_description:sms.field_mail_thread_phone__message_has_sms_error
+#: model:ir.model.fields,field_description:sms.field_mail_thread_subject_suggested__message_has_sms_error
 #: model:ir.model.fields,field_description:sms.field_mail_tracking_duration_mixin__message_has_sms_error
 #: model:ir.model.fields,field_description:sms.field_maintenance_equipment__message_has_sms_error
 #: model:ir.model.fields,field_description:sms.field_maintenance_request__message_has_sms_error
@@ -1181,7 +1169,7 @@ msgstr "Wyślij teraz"
 
 #. module: sms
 #. odoo-javascript
-#: code:addons/sms/static/src/components/sms_button/sms_button.js:0
+#: code:addons/sms/static/src/components/phone_field/phone_field.js:0
 #: model:ir.actions.act_window,name:sms.res_partner_act_window_sms_composer_multi
 #: model:ir.actions.act_window,name:sms.res_partner_act_window_sms_composer_single
 #: model:ir.actions.act_window,name:sms.sms_composer_action_form
@@ -1204,7 +1192,7 @@ msgstr "Wyślij SMS jako"
 #. module: sms
 #: model:ir.model,name:sms.model_sms_composer
 msgid "Send SMS Wizard"
-msgstr "Kreator wysyłania SMS-ów"
+msgstr "Kreator wysyłania SMSów"
 
 #. module: sms
 #: model:ir.model.fields.selection,name:sms.selection__sms_composer__composition_mode__mass
@@ -1252,8 +1240,6 @@ msgstr "Nazwa nadawcy"
 #: code:addons/sms/models/ir_actions_server.py:0
 msgid "Sending SMS can only be done on a not transient mail.thread model"
 msgstr ""
-"Wysyłanie SMS-ów jest możliwe tylko w modelu mail.thread, który nie jest "
-"tymczasowy"
 
 #. module: sms
 #: model:ir.model.fields.selection,name:sms.selection__sms_sms__state__pending
@@ -1281,7 +1267,7 @@ msgstr "Ustaw nazwę nadawcy"
 #. module: sms
 #: model:ir.model.fields,field_description:sms.field_sms_template__sidebar_action_id
 msgid "Sidebar action"
-msgstr "Akcja paska bocznego"
+msgstr "Akcja przycisku"
 
 #. module: sms
 #: model:ir.model.fields,help:sms.field_sms_template__sidebar_action_id
@@ -1289,8 +1275,7 @@ msgid ""
 "Sidebar action to make this template available on records of the related "
 "document model"
 msgstr ""
-"Akcja paska bocznego do udostępnienia tego szablonu w rekordach powiązanego "
-"modelu dokumentu"
+"Akcja w bocznym pasku to udostępnienia tego szablonu dla rekordów tego modelu"
 
 #. module: sms
 #: model:ir.model.fields,field_description:sms.field_sms_composer__comment_single_recipient
@@ -1306,6 +1291,12 @@ msgstr "Na razie pomiń"
 #: model:ir.model.fields,field_description:sms.field_sms_template_preview__sms_template_id
 msgid "Sms Template"
 msgstr "Szablon SMS"
+
+#. module: sms
+#: model:ir.model.fields,field_description:sms.field_sms_composer__sms_type
+#: model:ir.model.fields,field_description:sms.field_sms_sms__sms_type
+msgid "Sms Type"
+msgstr ""
 
 #. module: sms
 #: model:ir.model.fields,field_description:sms.field_sms_composer__recipient_single_number
@@ -1326,7 +1317,7 @@ msgstr "Szablon"
 #. module: sms
 #: model:ir.model.fields,field_description:sms.field_sms_template__template_fs
 msgid "Template Filename"
-msgstr "Nazwa pliku szablonu"
+msgstr "Nazwa pliku Szablonu"
 
 #. module: sms
 #: model:ir.actions.act_window,name:sms.sms_template_preview_action
@@ -1388,7 +1379,7 @@ msgstr "Typ dokumentu, z którym ten szablon może być używany"
 #. odoo-python
 #: code:addons/sms/tools/sms_api.py:0
 msgid "The verification code is incorrect."
-msgstr "Kod weryfikacyjny jest nieprawidłowy."
+msgstr "Kod weryfikacyjny jest niepoprawny/"
 
 #. module: sms
 #. odoo-python
@@ -1400,14 +1391,15 @@ msgstr "Nie ma żadnych wiadomości tekstowych SMS do ponownego wysłania."
 #. odoo-python
 #: code:addons/sms/tools/sms_api.py:0
 msgid "This SMS has been removed as the number was already used."
-msgstr "Ten SMS został usunięty, ponieważ ten numer był już użyty."
+msgstr "Ten SMS został usunięty, ponieważ ten numer już był użyty."
 
 #. module: sms
 #. odoo-python
 #: code:addons/sms/tools/sms_api.py:0
 msgid ""
 "This account already has an existing sender name and it cannot be changed."
-msgstr "To konto już ma istniejącą nazwę nadawcy i nie może zostać zmieniona."
+msgstr ""
+"To konto już ma istniejącą nazwę nadawcy i nie może ona zostać zmieniona."
 
 #. module: sms
 #: model:ir.model.fields,help:sms.field_iap_account__sender_name
@@ -1419,8 +1411,8 @@ msgstr "To jest nazwa, która zostanie wyświetlona jako nadawca SMS-a."
 msgid ""
 "This phone number is blacklisted for SMS Marketing. Click to unblacklist."
 msgstr ""
-"Ten numer telefonu jest na czarnej liście marketingu SMS. Kliknij, aby "
-"usunąć z czarnej listy."
+"Ten numer telefonu jest na czarnej liście marketingu SMS-owego. Kliknij, aby "
+"odblokować listę."
 
 #. module: sms
 #. odoo-python
@@ -1486,7 +1478,7 @@ msgstr "UUID musi być unikalne"
 #. module: sms
 #: model:ir.model.fields.selection,name:sms.selection__sms_sms__failure_type__unknown
 msgid "Unknown error"
-msgstr "Nieznany błąd"
+msgstr "Nieokreślony błąd"
 
 #. module: sms
 #. odoo-javascript
@@ -1499,7 +1491,7 @@ msgstr "Konto niezarejestrowane"
 #. module: sms
 #: model:ir.model.fields,field_description:sms.field_sms_composer__use_exclusion_list
 msgid "Use Exclusion List"
-msgstr "Użyj listy wykluczeń"
+msgstr ""
 
 #. module: sms
 #: model:ir.model.fields,field_description:sms.field_sms_composer__template_id
@@ -1521,7 +1513,7 @@ msgid ""
 msgstr ""
 "Służy do kategoryzacji generatora wiadomości\n"
 "„email”: generowane przez przychodzącą wiadomość e-mail, np. mailgateway\n"
-"„comment”: generowane przez użytkownika, np. poprzez dyskusje lub kreatora\n"
+"„comment”: generowane przez użytkownika, np. poprzez discuss lub composer\n"
 "'email_outgoing': generowane przez mailing\n"
 "'notification': generowane przez system, np. śledzenie wiadomości\n"
 "'auto_comment': generowany przez automatyczny mechanizm powiadomień, np. "
@@ -1586,7 +1578,7 @@ msgstr "Napisz wiadomość..."
 #: model:ir.model.fields.selection,name:sms.selection__mail_notification__failure_type__sms_number_format
 #: model:ir.model.fields.selection,name:sms.selection__sms_sms__failure_type__sms_number_format
 msgid "Wrong Number Format"
-msgstr "Nieprawidłowy format numeru"
+msgstr "Błędny format numeru"
 
 #. module: sms
 #. odoo-python
@@ -1611,8 +1603,7 @@ msgstr "Spróbowałeś zbyt wiele razy. Prosimy spróbować ponownie później."
 #: code:addons/sms/static/src/components/sms_widget/fields_sms_widget.js:0
 msgid ""
 "Your SMS Text Message must include at least one non-whitespace character"
-msgstr ""
-"Wiadomość SMS musi zawierać co najmniej jeden znak, który nie jest spacją"
+msgstr "Wiadomość tekstowa SMS musi zawierać co najmniej jeden znak nie-biały"
 
 #. module: sms
 #. odoo-python
@@ -1642,7 +1633,8 @@ msgstr ""
 "Twoja nazwa nadawcy musi mieć pomiędzy 3 a 11 znaków i zawierać jedynie "
 "znaki alfanumeryczne..\n"
 "                        Musi odpowiadać nazwie Twojej firmy i jeśli raz ją "
-"zarejestrujesz, nie będziesz mógł jej już zmodyfikować, więc wybierz mądrze."
+"już zarejestrujesz, nie będziesz mógł jej już zmodyfikować, więc wybierz "
+"mądrze."
 
 #. module: sms
 #. odoo-python
@@ -1682,273 +1674,9 @@ msgid ""
 "message."
 msgstr ""
 "odbiorcy mają nieprawidłowy numer telefonu i nie otrzymają tej wiadomości "
-"SMS."
+"tekstowej."
 
 #. module: sms
 #: model_terms:ir.ui.view,arch_db:sms.sms_template_preview_form
 msgid "record:"
 msgstr "rekord:"
-
-#~ msgid "+1 555-555-555"
-#~ msgstr "+1 555-555-555"
-
-#~ msgid ""
-#~ "%s out of the %s selected SMS Text Messages have successfully been resent."
-#~ msgstr ""
-#~ "%sz pośród %s wybranych wiadomości tekstowych SMS zostało pomyślnie "
-#~ "wysłanych ponownie."
-
-#~ msgid ""
-#~ "<span class=\"text-warning\" attrs=\"{'invisible': [('no_record', '=', "
-#~ "False)]}\">No records</span>"
-#~ msgstr ""
-#~ "<span class=\"text-warning\" attrs=\"{'invisible': [('no_record', '=', "
-#~ "False)]}\">Brak rekordów</span>"
-
-#~ msgid "Action Needed"
-#~ msgstr "Wymagane działanie"
-
-#~ msgid "Action To Do"
-#~ msgstr "Akcja do wykonania"
-
-#~ msgid "Attachment Count"
-#~ msgstr "Liczba załączników"
-
-#~ msgid "Blacklisted Phone Is Mobile"
-#~ msgstr "Telefon na czarnej liście to telefon komórkowy"
-
-#~ msgid "Blacklisted Phone is Phone"
-#~ msgstr "Telefon na czarnej liście to telefon"
-
-#~ msgid "Buy credits"
-#~ msgstr "Kup kredyty"
-
-#~ msgid "Can Cancel"
-#~ msgstr "Może anulować"
-
-#~ msgid "Can Resend"
-#~ msgstr "Może wysłać ponownie"
-
-#~ msgid "Canceled"
-#~ msgstr "Anulowano"
-
-#~ msgid ""
-#~ "Choose method for SMS sending:\n"
-#~ "SMS: mass SMS\n"
-#~ "Post as Message: log on document\n"
-#~ "Post as Note: mass SMS with archives"
-#~ msgstr ""
-#~ "Wybierz metodę wysyłki SMS:\n"
-#~ "SMS: masowa wysyłka SMS\n"
-#~ "Wyślij jako wiadomość: zapisz w dokumencie\n"
-#~ "Wyślij jako notatkę: masowy SMS z archiwami"
-
-#~ msgid "Close"
-#~ msgstr "Zamknij"
-
-#~ msgid "Edit Partners"
-#~ msgstr "Edytuj partnerów"
-
-#~ msgid "Error Message"
-#~ msgstr "Wiadomość o błędzie"
-
-#~ msgid ""
-#~ "Field used to store sanitized phone number. Helps speeding up searches "
-#~ "and comparisons."
-#~ msgstr ""
-#~ "Pole służące do przechowywania oczyszczonego numeru telefonu. Pomaga "
-#~ "przyspieszyć wyszukiwanie i porównywanie."
-
-#~ msgid "Followers"
-#~ msgstr "Obserwatorzy"
-
-#~ msgid "Followers (Partners)"
-#~ msgstr "Obserwatorzy (partnerzy)"
-
-#~ msgid "Has Insufficient Credit"
-#~ msgstr "Ma niewystarczającą ilość kredytów"
-
-#~ msgid "Has Message"
-#~ msgstr "Ma wiadomość"
-
-#~ msgid "Has Unregistered Account"
-#~ msgstr "Ma niezarejestrowane konto"
-
-#~ msgid "If checked, new messages require your attention."
-#~ msgstr "Jeśli zaznaczone, nowe wiadomości wymagają twojej uwagi."
-
-#~ msgid ""
-#~ "If the sanitized phone number is on the blacklist, the contact won't "
-#~ "receive mass mailing sms anymore, from any list"
-#~ msgstr ""
-#~ "Jeśli oczyszczony numer telefonu znajduje się na czarnej liście, kontakt "
-#~ "nie będzie już otrzymywał masowych wiadomości sms z żadnej listy."
-
-#~ msgid "Ignore all"
-#~ msgstr "Ignoruj wszystkie"
-
-#~ msgid ""
-#~ "Indicates if a blacklisted sanitized phone number is a mobile number. "
-#~ "Helps distinguish which number is blacklisted             when there is "
-#~ "both a mobile and phone field in a model."
-#~ msgstr ""
-#~ "Wskazuje, czy wpisany na czarną listę numer telefonu jest numerem "
-#~ "komórkowym. Pomaga odróżnić, który numer jest na czarnej liście, gdy w "
-#~ "modelu jest zarówno pole telefonu jak i komórki."
-
-#~ msgid ""
-#~ "Indicates if a blacklisted sanitized phone number is a phone number. "
-#~ "Helps distinguish which number is blacklisted             when there is "
-#~ "both a mobile and phone field in a model."
-#~ msgstr ""
-#~ "Wskazuje, czy wpisany na czarną listę oczyszczony numer telefonu jest "
-#~ "numerem telefonu. Pomaga odróżnić, który numer jest na czarnej liście, "
-#~ "gdy w modelu jest zarówno pole telefonu jak i komórki."
-
-#~ msgid "Is Follower"
-#~ msgstr "Jest obserwatorem"
-
-#~ msgid "Message Delivery error"
-#~ msgstr "Błąd doręczenia wiadomości"
-
-#~ msgid ""
-#~ "Message type: email for email message, notification for system message, "
-#~ "comment for other messages such as user replies"
-#~ msgstr ""
-#~ "Typ wiadomości: mail jako wiadomość, powiadomienie jako informacja "
-#~ "systemowa, komentarz jako odpowiedź na inne wiadomości."
-
-#~ msgid "Messages"
-#~ msgstr "Wiadomości"
-
-#~ msgid "Notification"
-#~ msgstr "Powiadomienie"
-
-#~ msgid "Number of Actions"
-#~ msgstr "Liczba akcji"
-
-#~ msgid "Number of errors"
-#~ msgstr "Liczba błędów"
-
-#~ msgid "Number of messages which requires an action"
-#~ msgstr "Liczba wiadomości wymagających akcji"
-
-#~ msgid "Number of messages with delivery error"
-#~ msgstr "Liczba wiadomości z błędami przy doręczeniu"
-
-#~ msgid ""
-#~ "Optional translation language (ISO code) to select when sending out an "
-#~ "email. If not set, the english version will be used. This should usually "
-#~ "be a placeholder expression that provides the appropriate language, e.g. "
-#~ "{{ object.partner_id.lang }}."
-#~ msgstr ""
-#~ "Opcjonalny język tłumaczenia (kod ISO) do wyboru podczas wysyłania "
-#~ "wiadomości e-mail. Jeśli nie jest ustawiony, zostanie użyta wersja "
-#~ "angielska. Powinno to być zazwyczaj wyrażenie placeholder, które zapewnia "
-#~ "odpowiedni język, np. {{ object.partner_id.lang }}."
-
-#~ msgid "Partner"
-#~ msgstr "Kontrahent"
-
-#~ msgid "Phone Blacklist Mixin"
-#~ msgstr "Mixin czarnej listy numerów"
-
-#~ msgid "Phone Blacklisted"
-#~ msgstr "Numer na czarnej liście"
-
-#~ msgid "Phone/Mobile"
-#~ msgstr "Telefon/Komórka"
-
-#~ msgid "Post as Message"
-#~ msgstr "Zapostuj jako Wiadomość"
-
-#~ msgid "Post as Note"
-#~ msgstr "Zapostuj jako Notatka"
-
-#~ msgid "Reason"
-#~ msgstr "Przyczyna"
-
-#~ msgid "Recipient"
-#~ msgstr "Adresat"
-
-#~ msgid "Recipient Name"
-#~ msgstr "Nazwa odbiorcy"
-
-#~ msgid "Recipients"
-#~ msgstr "Odbiorcy"
-
-#~ msgid "Resend Notification"
-#~ msgstr "Wyślij ponownie powiadomienie"
-
-#~ msgid "SMS API"
-#~ msgstr "SMS API"
-
-#~ msgid "SMS Resend"
-#~ msgstr "SMS został ponownie wysłany"
-
-#~ msgid "Send & Close"
-#~ msgstr "Wyślij i zamknij"
-
-#~ msgid "Send SMS Text Message"
-#~ msgstr "Wyślij wiadomość SMS"
-
-#~ msgid "Send as"
-#~ msgstr "Wyślij jako"
-
-#~ msgid "Send as (SMS)"
-#~ msgstr "Wyślij jako (SMS)"
-
-#~ msgid "Sending Failures"
-#~ msgstr "Błędy wysyłki"
-
-#~ msgid "Sending SMS can only be done on a mail.thread or a transient model"
-#~ msgstr ""
-#~ "Wysyłanie SMS-ów może odbywać się tylko w wątku wiadomości lub modelu "
-#~ "przejściowym"
-
-#~ msgid "Set up an account"
-#~ msgstr "Załóż konto"
-
-#~ msgid "Sms Resend"
-#~ msgstr "SMS został ponownie wysłany"
-
-#~ msgid "Try Again"
-#~ msgstr "Spróbuj ponownie"
-
-#~ msgid ""
-#~ "Type of server action. The following values are available:\n"
-#~ "- 'Execute Python Code': a block of python code that will be executed\n"
-#~ "- 'Create a new Record': create a new record with new values\n"
-#~ "- 'Update a Record': update the values of a record\n"
-#~ "- 'Execute several actions': define an action that triggers several other "
-#~ "server actions\n"
-#~ "- 'Send Email': post a message, a note or send an email (Discuss)\n"
-#~ "- 'Add Followers': add followers to a record (Discuss)\n"
-#~ "- 'Create Next Activity': create an activity (Discuss)\n"
-#~ "- 'Send SMS Text Message': send SMS, log them on documents (SMS)"
-#~ msgstr ""
-#~ "Typ działania serwera. Dostępne są następujące wartości:\n"
-#~ "- 'Wykonaj kod Python': blok kodu python, który zostanie wykonany\n"
-#~ "- \"Utwórz nowy rekord\": utworzenie nowego rekordu z nowymi wartościami\n"
-#~ "- \"Aktualizacja rekordu\": aktualizacja wartości rekordu\n"
-#~ "- \"Wykonaj kilka działań\": zdefiniowanie akcji, która uruchamia kilka "
-#~ "innych akcji serwera\n"
-#~ "- \"Wyślij Email': umieść wiadomość, notatkę lub wyślij email (Discuss)\n"
-#~ "- 'Dodaj followersów': dodawanie followersów do rekordu (dyskusja)\n"
-#~ "- Tworzenie następnej aktywności': tworzenie aktywności (Dyskusja)\n"
-#~ "- 'Wyślij wiadomość SMS': wyślij SMS, zaloguj je na dokumentach (SMS)"
-
-#~ msgid "Use blacklist"
-#~ msgstr "Użyj czarnej listy"
-
-#~ msgid "Website Messages"
-#~ msgstr "Wiadomości"
-
-#~ msgid "Website communication history"
-#~ msgstr "Historia komunikacji"
-
-#~ msgid "You do not have access to the message and/or related document."
-#~ msgstr "Nie masz dostępu do wiadomości i/lub powiązanego dokumentu"
-
-#~ msgid "characters, fits in"
-#~ msgstr "znaków, mieści się w"

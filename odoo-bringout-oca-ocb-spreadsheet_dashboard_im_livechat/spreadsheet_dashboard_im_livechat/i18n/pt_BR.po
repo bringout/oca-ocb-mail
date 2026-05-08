@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 18.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-25 18:37+0000\n"
+"POT-Creation-Date: 2025-10-08 18:39+0000\n"
 "PO-Revision-Date: 2025-12-03 17:14+0000\n"
 "Last-Translator: \"Maitê Dietze (madi)\" <madi@odoo.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.odoo.com/projects/"
@@ -451,48 +451,3 @@ msgstr "período anterior"
 #: code:addons/spreadsheet_dashboard_im_livechat/data/files/livechat_sample_dashboard.json:0
 msgid "since last period"
 msgstr "desde o período anterior"
-
-#~ msgid "Average Rating"
-#~ msgstr "Avaliação média"
-
-#~ msgid "Average session (seconds)"
-#~ msgstr "Sessão média (segundos)"
-
-#~ msgid "Avg. Session Duration"
-#~ msgstr "Duração média da sessão"
-
-#~ msgid "Avg. Time to Answer"
-#~ msgstr "Tempo médio para resposta"
-
-#~ msgid "Avg. time to answer"
-#~ msgstr "Tempo médio para resposta"
-
-#~ msgid "Daily Sessions"
-#~ msgstr "Sessões diárias"
-
-#~ msgid "David Morenas"
-#~ msgstr "David Morenas"
-
-#~ msgid "Emilia Stones"
-#~ msgstr "Emilia Stones"
-
-#~ msgid "Live chat"
-#~ msgstr "Chat ao vivo"
-
-#~ msgid "Michael Bay"
-#~ msgstr "Michael Bay"
-
-#~ msgid "Operator"
-#~ msgstr "Operador"
-
-#~ msgid "Rating"
-#~ msgstr "Avaliação"
-
-#~ msgid "Sessions by Operator"
-#~ msgstr "Sessões por operador"
-
-#~ msgid "Time to answer (seconds)"
-#~ msgstr "Tempo de resposta (segundos)"
-
-#~ msgid "Top Operators"
-#~ msgstr "Principais operadores"

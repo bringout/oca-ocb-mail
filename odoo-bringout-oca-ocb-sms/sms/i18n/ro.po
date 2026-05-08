@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0beta\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-10 18:39+0000\n"
+"POT-Creation-Date: 2026-03-12 18:37+0000\n"
 "PO-Revision-Date: 2025-11-27 09:03+0000\n"
 "Last-Translator: Adrian Cocos <adrian.cocos@capps.ai>\n"
 "Language-Team: Romanian <https://translate.odoo.com/projects/odoo-19/sms/ro/"
@@ -60,6 +60,11 @@ msgstr "%s (copie)"
 #: code:addons/sms/wizard/sms_composer.py:0
 msgid "%s invalid recipients"
 msgstr "%s destinatari nevalizi"
+
+#. module: sms
+#: model_terms:ir.ui.view,arch_db:sms.sms_account_phone_view_form
+msgid "+1 555-555-555"
+msgstr "+1 555-555-555"
 
 #. module: sms
 #: model_terms:ir.ui.view,arch_db:sms.iap_account_view_form
@@ -192,6 +197,12 @@ msgstr ""
 "compozitor sms cu acest șablon"
 
 #. module: sms
+#: model:ir.model.fields.selection,name:sms.selection__sms_composer__sms_type__alert
+#: model:ir.model.fields.selection,name:sms.selection__sms_sms__sms_type__alert
+msgid "Alert"
+msgstr ""
+
+#. module: sms
 #: model:ir.model.fields,help:sms.field_sms_sms__uuid
 msgid "Alternate way to identify a SMS record, used for delivery reports"
 msgstr ""
@@ -265,10 +276,7 @@ msgid "Buy credits."
 msgstr "Cumpărați credite."
 
 #. module: sms
-#: model_terms:ir.ui.view,arch_db:sms.sms_account_code_view_form
-#: model_terms:ir.ui.view,arch_db:sms.sms_account_phone_view_form
 #: model_terms:ir.ui.view,arch_db:sms.sms_sms_view_tree
-#: model_terms:ir.ui.view,arch_db:sms.sms_template_reset_view_form
 #: model_terms:ir.ui.view,arch_db:sms.sms_tsms_view_form
 msgid "Cancel"
 msgstr "Anulează"
@@ -303,8 +311,8 @@ msgstr "Alegeți numele expeditorului"
 
 #. module: sms
 #: model:ir.model,name:sms.model_res_company
-msgid "Companies"
-msgstr "Companii"
+msgid "Company"
+msgstr ""
 
 #. module: sms
 #: model:ir.model.fields,field_description:sms.field_sms_composer__composition_mode
@@ -395,12 +403,6 @@ msgid "Delivered"
 msgstr "Livrat"
 
 #. module: sms
-#: model_terms:ir.ui.view,arch_db:sms.sms_composer_view_form
-#: model_terms:ir.ui.view,arch_db:sms.sms_template_preview_form
-msgid "Discard"
-msgstr "Abandonează"
-
-#. module: sms
 #: model:ir.model.fields,field_description:sms.field_iap_account__display_name
 #: model:ir.model.fields,field_description:sms.field_ir_actions_server__display_name
 #: model:ir.model.fields,field_description:sms.field_ir_model__display_name
@@ -423,8 +425,8 @@ msgstr "Nume afișat"
 
 #. module: sms
 #: model:ir.model,name:sms.model_mail_followers
-msgid "Document Followers"
-msgstr "Interesați de document"
+msgid "Document Follower"
+msgstr ""
 
 #. module: sms
 #: model:ir.model.fields,field_description:sms.field_sms_composer__res_id
@@ -555,9 +557,9 @@ msgstr "ID"
 #: model:ir.model.fields,help:sms.field_mail_blacklist__message_has_sms_error
 #: model:ir.model.fields,help:sms.field_mail_thread__message_has_sms_error
 #: model:ir.model.fields,help:sms.field_mail_thread_blacklist__message_has_sms_error
-#: model:ir.model.fields,help:sms.field_mail_thread_cc__message_has_sms_error
 #: model:ir.model.fields,help:sms.field_mail_thread_main_attachment__message_has_sms_error
 #: model:ir.model.fields,help:sms.field_mail_thread_phone__message_has_sms_error
+#: model:ir.model.fields,help:sms.field_mail_thread_subject_suggested__message_has_sms_error
 #: model:ir.model.fields,help:sms.field_mail_tracking_duration_mixin__message_has_sms_error
 #: model:ir.model.fields,help:sms.field_maintenance_equipment__message_has_sms_error
 #: model:ir.model.fields,help:sms.field_maintenance_request__message_has_sms_error
@@ -608,8 +610,8 @@ msgstr "Destinație invalidă"
 #. odoo-python
 #: code:addons/sms/tools/sms_api.py:0
 msgid ""
-"Invalid phone number. Please make sure to follow the international format, "
-"i.e. a plus sign (+), then country code, city code, and local phone number. "
+"Invalid phone number. Please make sure to follow the international format, i."
+"e. a plus sign (+), then country code, city code, and local phone number. "
 "For example: +1 555-555-555"
 msgstr ""
 "Număr de telefon invalid. Vă rugăm să vă asigurați că respectați formatul "
@@ -689,6 +691,12 @@ msgid "Marked for deletion"
 msgstr "Marcat pentru ștergere"
 
 #. module: sms
+#: model:ir.model.fields.selection,name:sms.selection__sms_composer__sms_type__marketing
+#: model:ir.model.fields.selection,name:sms.selection__sms_sms__sms_type__marketing
+msgid "Marketing"
+msgstr ""
+
+#. module: sms
 #: model:ir.model,name:sms.model_mail_message
 #: model:ir.model.fields,field_description:sms.field_sms_composer__body
 #: model_terms:ir.ui.view,arch_db:sms.sms_tsms_view_form
@@ -697,8 +705,8 @@ msgstr "Mesaj"
 
 #. module: sms
 #: model:ir.model,name:sms.model_mail_notification
-msgid "Message Notifications"
-msgstr "Mesaje notificări"
+msgid "Message Notification"
+msgstr ""
 
 #. module: sms
 #. odoo-javascript
@@ -710,8 +718,8 @@ msgstr "Număr lipsă"
 
 #. module: sms
 #: model:ir.model,name:sms.model_ir_model
-msgid "Models"
-msgstr "Modele"
+msgid "Model"
+msgstr ""
 
 #. module: sms
 #: model:ir.model.fields,field_description:sms.field_sms_template__name
@@ -933,7 +941,7 @@ msgstr "Reîncearcă"
 
 #. module: sms
 #. odoo-javascript
-#: code:addons/sms/static/src/components/sms_button/sms_button.xml:0
+#: code:addons/sms/static/src/components/phone_field/phone_field.js:0
 #: code:addons/sms/static/src/core/notification_model_patch.js:0
 #: model:ir.actions.act_window,name:sms.sms_sms_action
 #: model:ir.model.fields,field_description:sms.field_mail_notification__sms_id
@@ -1001,9 +1009,9 @@ msgstr "Asistent cod verificare cont SMS"
 #: model:ir.model.fields,field_description:sms.field_mail_blacklist__message_has_sms_error
 #: model:ir.model.fields,field_description:sms.field_mail_thread__message_has_sms_error
 #: model:ir.model.fields,field_description:sms.field_mail_thread_blacklist__message_has_sms_error
-#: model:ir.model.fields,field_description:sms.field_mail_thread_cc__message_has_sms_error
 #: model:ir.model.fields,field_description:sms.field_mail_thread_main_attachment__message_has_sms_error
 #: model:ir.model.fields,field_description:sms.field_mail_thread_phone__message_has_sms_error
+#: model:ir.model.fields,field_description:sms.field_mail_thread_subject_suggested__message_has_sms_error
 #: model:ir.model.fields,field_description:sms.field_mail_tracking_duration_mixin__message_has_sms_error
 #: model:ir.model.fields,field_description:sms.field_maintenance_equipment__message_has_sms_error
 #: model:ir.model.fields,field_description:sms.field_maintenance_request__message_has_sms_error
@@ -1152,7 +1160,7 @@ msgstr "Trimite acum"
 
 #. module: sms
 #. odoo-javascript
-#: code:addons/sms/static/src/components/sms_button/sms_button.js:0
+#: code:addons/sms/static/src/components/phone_field/phone_field.js:0
 #: model:ir.actions.act_window,name:sms.res_partner_act_window_sms_composer_multi
 #: model:ir.actions.act_window,name:sms.res_partner_act_window_sms_composer_single
 #: model:ir.actions.act_window,name:sms.sms_composer_action_form
@@ -1277,6 +1285,12 @@ msgstr "Sari peste pentru moment"
 #: model:ir.model.fields,field_description:sms.field_sms_template_preview__sms_template_id
 msgid "Sms Template"
 msgstr "Șablon SMS"
+
+#. module: sms
+#: model:ir.model.fields,field_description:sms.field_sms_composer__sms_type
+#: model:ir.model.fields,field_description:sms.field_sms_sms__sms_type
+msgid "Sms Type"
+msgstr ""
 
 #. module: sms
 #: model:ir.model.fields,field_description:sms.field_sms_composer__recipient_single_number
@@ -1657,269 +1671,3 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:sms.sms_template_preview_form
 msgid "record:"
 msgstr "înregistrare:"
-
-#~ msgid "+1 555-555-555"
-#~ msgstr "+1 555-555-555"
-
-#~ msgid ""
-#~ "%s out of the %s selected SMS Text Messages have successfully been resent."
-#~ msgstr "%s din %s mesaje SMS selectate au fost trimise cu succes."
-
-#~ msgid ""
-#~ "<span class=\"text-warning\" attrs=\"{'invisible': [('no_record', '=', "
-#~ "False)]}\">No records</span>"
-#~ msgstr ""
-#~ "<span class=\"text-warning\" attrs=\"{'invisible': [('no_record', '=', "
-#~ "False)]}\">Fără înregistrări</span>"
-
-#~ msgid "Action Needed"
-#~ msgstr "Intervenție necesară"
-
-#~ msgid "Action To Do"
-#~ msgstr "Acțiune de efectuat"
-
-#~ msgid "Attachment Count"
-#~ msgstr "Număr atașamente"
-
-#~ msgid "Blacklisted Phone Is Mobile"
-#~ msgstr "Telefonul din lista neagră este mobil"
-
-#~ msgid "Blacklisted Phone is Phone"
-#~ msgstr "Telefonul pe lista neagră este telefon"
-
-#~ msgid "Buy credits"
-#~ msgstr "Cumpărare credit"
-
-#~ msgid "Can Cancel"
-#~ msgstr "Poate anula"
-
-#~ msgid "Can Resend"
-#~ msgstr "Poate retrimite"
-
-#~ msgid "Canceled"
-#~ msgstr "Anulat(ă)"
-
-#~ msgid ""
-#~ "Choose method for SMS sending:\n"
-#~ "SMS: mass SMS\n"
-#~ "Post as Message: log on document\n"
-#~ "Post as Note: mass SMS with archives"
-#~ msgstr ""
-#~ "Alegeți metoda de trimitere a SMS-urilor:\n"
-#~ "SMS: SMS în masă\n"
-#~ "Postează ca mesaj: înregistrează pe document\n"
-#~ "Postează ca notă: SMS în masă cu arhive"
-
-#~ msgid "Close"
-#~ msgstr "Închide"
-
-#~ msgid "Edit Partners"
-#~ msgstr "Editare Parteneri"
-
-#~ msgid "Error Message"
-#~ msgstr "Mesaj de eroare"
-
-#~ msgid ""
-#~ "Field used to store sanitized phone number. Helps speeding up searches "
-#~ "and comparisons."
-#~ msgstr ""
-#~ "Câmp folosit pentru a stoca numărul de telefon . Ajută la accelerarea "
-#~ "căutărilor și a comparațiilor."
-
-#~ msgid "Followers"
-#~ msgstr "Persoane interesate"
-
-#~ msgid "Followers (Partners)"
-#~ msgstr "Urmăritori (Parteneri)"
-
-#~ msgid "Has Insufficient Credit"
-#~ msgstr "Are Credit Insuficient"
-
-#~ msgid "Has Message"
-#~ msgstr "Are mesaj"
-
-#~ msgid "Has Unregistered Account"
-#~ msgstr "Are un cont neînregistrat"
-
-#~ msgid "If checked, new messages require your attention."
-#~ msgstr "Dacă este selectat, mesajele noi necesită atenția dumneavoastră."
-
-#~ msgid ""
-#~ "If the sanitized phone number is on the blacklist, the contact won't "
-#~ "receive mass mailing sms anymore, from any list"
-#~ msgstr ""
-#~ "Dacă numărul de telefon dezinfectat se află pe lista neagră, persoana de "
-#~ "contact nu va mai primi mesaje prin e-mail în masă, din nicio listă"
-
-#~ msgid "Ignore all"
-#~ msgstr "Ignoră tot"
-
-#~ msgid ""
-#~ "Indicates if a blacklisted sanitized phone number is a mobile number. "
-#~ "Helps distinguish which number is blacklisted             when there is "
-#~ "both a mobile and phone field in a model."
-#~ msgstr ""
-#~ "Indică dacă un număr de telefon dezinfectat este un număr de mobil. Ajută "
-#~ "la diferențierea numărului care este pe lista neagră             când "
-#~ "există atât un câmp de mobil și telefon într-un model."
-
-#~ msgid ""
-#~ "Indicates if a blacklisted sanitized phone number is a phone number. "
-#~ "Helps distinguish which number is blacklisted             when there is "
-#~ "both a mobile and phone field in a model."
-#~ msgstr ""
-#~ "Indică dacă un număr de telefon dezinfectat este un număr de telefon. "
-#~ "Ajută la diferențierea numărului care este pe lista neagră             "
-#~ "când există atât un câmp de mobil și telefon într-un model."
-
-#~ msgid "Is Follower"
-#~ msgstr "Este urmăritor"
-
-#~ msgid "Message Delivery error"
-#~ msgstr "Eroare livrare mesaj"
-
-#~ msgid ""
-#~ "Message type: email for email message, notification for system message, "
-#~ "comment for other messages such as user replies"
-#~ msgstr ""
-#~ "Tipul de mesaj: email pentru mesaj email, notificare pentru mesajul "
-#~ "sistem, comentariu pentru alte mesaje, cum ar fi răspunsurile "
-#~ "utilizatorului"
-
-#~ msgid "Messages"
-#~ msgstr "Mesaje"
-
-#~ msgid "Notification"
-#~ msgstr "Notificare"
-
-#~ msgid "Number of Actions"
-#~ msgstr "Număr de acțiuni"
-
-#~ msgid "Number of errors"
-#~ msgstr "Numărul de erori"
-
-#~ msgid "Number of messages which requires an action"
-#~ msgstr "Număr de mesaje ce necesită intervenție"
-
-#~ msgid "Number of messages with delivery error"
-#~ msgstr "Numărul de mesaje cu eroare de livrare"
-
-#~ msgid ""
-#~ "Optional translation language (ISO code) to select when sending out an "
-#~ "email. If not set, the english version will be used. This should usually "
-#~ "be a placeholder expression that provides the appropriate language, e.g. "
-#~ "{{ object.partner_id.lang }}."
-#~ msgstr ""
-#~ "Limba de traducere opțională (cod ISO) pentru a selecta când se trimite "
-#~ "un e-mail. Dacă nu este setat, versiunea engleză va fi folosită. Aceasta "
-#~ "ar trebui să fie de obicei o expresie rezervată care oferă limba "
-#~ "potrivită, de exemplu {{ object.partner_id.lang }}."
-
-#~ msgid "Partner"
-#~ msgstr "Partener"
-
-#~ msgid "Phone Blacklist Mixin"
-#~ msgstr "Telefon Blacklist Mixin"
-
-#~ msgid "Phone Blacklisted"
-#~ msgstr "Telefon pe lista neagră"
-
-#~ msgid "Phone/Mobile"
-#~ msgstr "Telefon/Mobil"
-
-#~ msgid "Post as Message"
-#~ msgstr "Postează ca mesaj"
-
-#~ msgid "Post as Note"
-#~ msgstr "Postează ca Notă"
-
-#~ msgid "Reason"
-#~ msgstr "Motiv"
-
-#~ msgid "Recipient"
-#~ msgstr "Destinatar"
-
-#~ msgid "Recipient Name"
-#~ msgstr "Numele destinatarului"
-
-#~ msgid "Recipients"
-#~ msgstr "Destinatari"
-
-#~ msgid "Resend Notification"
-#~ msgstr "Retrimitere Notificare"
-
-#~ msgid "SMS API"
-#~ msgstr "SMS API"
-
-#~ msgid "SMS Resend"
-#~ msgstr "Retrimitere SMS"
-
-#~ msgid "Send & Close"
-#~ msgstr "Trimite și închide"
-
-#~ msgid "Send SMS Text Message"
-#~ msgstr "Trimiteți mesaj SMS"
-
-#~ msgid "Send as"
-#~ msgstr "Trimite ca"
-
-#~ msgid "Send as (SMS)"
-#~ msgstr "Trimite ca (SMS)"
-
-#~ msgid "Sending Failures"
-#~ msgstr "Trimitere Eșecuri"
-
-#~ msgid "Sending SMS can only be done on a mail.thread or a transient model"
-#~ msgstr ""
-#~ "Trimiterea SMS poate fi făcută numai pe un fir de mail sau un model "
-#~ "transitoriu"
-
-#~ msgid "Set up an account"
-#~ msgstr "Configurați un cont"
-
-#~ msgid "Sms Resend"
-#~ msgstr "Retrimitere SMS"
-
-#~ msgid "Try Again"
-#~ msgstr "Încercați din nou"
-
-#~ msgid ""
-#~ "Type of server action. The following values are available:\n"
-#~ "- 'Execute Python Code': a block of python code that will be executed\n"
-#~ "- 'Create a new Record': create a new record with new values\n"
-#~ "- 'Update a Record': update the values of a record\n"
-#~ "- 'Execute several actions': define an action that triggers several other "
-#~ "server actions\n"
-#~ "- 'Send Email': post a message, a note or send an email (Discuss)\n"
-#~ "- 'Add Followers': add followers to a record (Discuss)\n"
-#~ "- 'Create Next Activity': create an activity (Discuss)\n"
-#~ "- 'Send SMS Text Message': send SMS, log them on documents (SMS)"
-#~ msgstr ""
-#~ "Tipul de acțiune server. Valorile disponibile sunt:\n"
-#~ "- 'Execută cod Python': un bloc de cod Python care va fi executat\n"
-#~ "- 'Creează un nou înregistrare': creează o nouă înregistrare cu valori "
-#~ "noi\n"
-#~ "- 'Actualizează o înregistrare': actualizează valorile unei înregistrări\n"
-#~ "- 'Execută mai multe acțiuni': definește o acțiune care declanșează mai "
-#~ "multe alte acțiuni server\n"
-#~ "- 'Trimite email': postați un mesaj, o notă sau trimiteți un email "
-#~ "(Discuții)\n"
-#~ "- 'Adaugă urmăritori': adaugă urmăritori unei înregistrări (Discuții)\n"
-#~ "- 'Creează următoarea activitate': creează o activitate (Discuții)\n"
-#~ "- 'Trimite mesaj text SMS': trimite SMS, înregistrează-le pe documente "
-#~ "(SMS)"
-
-#~ msgid "Use blacklist"
-#~ msgstr "Folosiți lista neagră"
-
-#~ msgid "Website Messages"
-#~ msgstr "Mesaje Website"
-
-#~ msgid "Website communication history"
-#~ msgstr "Istoric comunicare website"
-
-#~ msgid "You do not have access to the message and/or related document."
-#~ msgstr "Nu aveți acces la mesaj și / sau la documentul aferent."
-
-#~ msgid "characters, fits in"
-#~ msgstr "caractere, se potrivesc în"

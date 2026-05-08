@@ -8,14 +8,13 @@
 # Niyas Raphy, 2022
 # Malaz Abuidris <msea@odoo.com>, 2023
 # "Tiffany Chang (tic)" <tic@odoo.com>, 2025.
-# "Malaz Siddig Elsayed Abuidris (msea)" <msea@odoo.com>, 2025, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 15.5alpha1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-10 18:40+0000\n"
-"PO-Revision-Date: 2026-01-06 18:53+0000\n"
-"Last-Translator: \"Malaz Siddig Elsayed Abuidris (msea)\" <msea@odoo.com>\n"
+"POT-Creation-Date: 2026-01-04 18:37+0000\n"
+"PO-Revision-Date: 2025-09-16 13:40+0000\n"
+"Last-Translator: \"Tiffany Chang (tic)\" <tic@odoo.com>\n"
 "Language-Team: Arabic <https://translate.odoo.com/projects/odoo-19/"
 "mass_mailing_themes/ar/>\n"
 "Language: ar\n"
@@ -24,15 +23,9 @@ msgstr ""
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Weblate 5.14.3\n"
+"X-Generator: Weblate 5.12.2\n"
 
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_blogging_template
-msgid "&amp;nbsp; &amp;nbsp;"
-msgstr "&amp;nbsp; &amp;nbsp;"
-
-#. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_coffeebreak_template
 #: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
 msgid "&amp;nbsp;&amp;nbsp;"
 msgstr "&amp;nbsp;&amp;nbsp;"
@@ -212,8 +205,6 @@ msgid ""
 "<font style=\"color: rgb(255, 255, 255);\">Join the community to see our "
 "latest news, events, discounts and much more!</font>"
 msgstr ""
-"<font style=\"color: rgb(255, 255, 255);\">انضم إلى مجتمعنا للاطلاع على آخر "
-"الأخبار والفعاليات والخصومات والمزيد!</font>"
 
 #. module: mass_mailing_themes
 #: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_coupon_template
@@ -260,8 +251,8 @@ msgstr ""
 #. module: mass_mailing_themes
 #: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_promotion_template
 msgid ""
-"<font style=\"font-size: 62px; background-color: rgb(255, 255, 255);"
-"\">&amp;nbsp;10% OFF&amp;nbsp;</font>\n"
+"<font style=\"font-size: 62px; background-color: rgb(255, 255, 255);\">&amp;"
+"nbsp;10% OFF&amp;nbsp;</font>\n"
 "                    <br/>\n"
 "                    <font style=\"font-size: 62px; background-color: "
 "rgb(255, 255, 255);\">&amp;nbsp;SALES&amp;nbsp;</font>"
@@ -393,14 +384,6 @@ msgid ""
 "                <span style=\"font-size: 12px;\"><font style=\"color: "
 "rgb(183, 191, 199);\">You received this email from </font></span>"
 msgstr ""
-"<span style=\"font-size: 12px;\"><font style=\"color: rgb(183, 191, 199);"
-"\">8000 Marina Blvd, Suite 300</font></span>\n"
-"                <br/>\n"
-"                <span style=\"font-size: 12px;\"><font style=\"color: "
-"rgb(183, 191, 199);\">Brisbane, California 94005</font></span>\n"
-"                <br/>\n"
-"                <span style=\"font-size: 12px;\"><font style=\"color: "
-"rgb(183, 191, 199);\">You received this email from </font></span>"
 
 #. module: mass_mailing_themes
 #: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
@@ -832,10 +815,7 @@ msgstr ""
 "والعروض التوضيحية المتعددة."
 
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_blogging_template
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_coffeebreak_template
 #: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_training_template
 msgid "Facebook"
 msgstr "فيسبوك"
 
@@ -1026,10 +1006,7 @@ msgid "Infographic: Our Company Throughout The Generations"
 msgstr "مخطط معلومات بياني: شركتنا عبر الأجيال"
 
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_blogging_template
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_coffeebreak_template
 #: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_training_template
 msgid "Instagram"
 msgstr "Instagram"
 
@@ -1096,12 +1073,6 @@ msgstr "رابط 3"
 #: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_roadshow2_template
 msgid "Link 4"
 msgstr "رابط 4"
-
-#. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_blogging_template
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_training_template
-msgid "LinkedIn"
-msgstr "LinkedIn"
 
 #. module: mass_mailing_themes
 #: model_terms:ir.ui.view,arch_db:mass_mailing_themes.email_designer_themes
@@ -1438,11 +1409,6 @@ msgstr ""
 "feel"
 
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_blogging_template
-msgid "TikTok"
-msgstr "TikTok"
-
-#. module: mass_mailing_themes
 #: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
 msgid ""
 "To fuel my motivation, I had to pick someone to fight against. In business, "
@@ -1674,14 +1640,6 @@ msgid "Woman having breakfast in bed"
 msgstr "امرأة تتناول الفطور في السرير"
 
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_blogging_template
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_coffeebreak_template
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_training_template
-msgid "X"
-msgstr ""
-
-#. module: mass_mailing_themes
 #: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_roadshow2_template
 msgid "Yesterday's event at [venue] in [city] was incredible!"
 msgstr "لقد كانت فعالية الأمس في [المكان] in [المدينى] مذهلاً!"
@@ -1819,86 +1777,3 @@ msgstr "we changed our business model"
 #: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
 msgid "with 1549% growth of the turnover between 2007 and 2011)."
 msgstr "with 1549% growth of the turnover between 2007 and 2011)."
-
-#~ msgid ""
-#~ "<font style=\"font-size: 62px; background-color: rgb(255, 255, 255);"
-#~ "\">&amp;nbsp;10% OFF&amp;nbsp;</font>\n"
-#~ "                    <br/>\n"
-#~ "                        <font style=\"font-size: 62px; background-color: "
-#~ "rgb(255, 255, 255);\">&amp;nbsp;SALES&amp;nbsp;</font>"
-#~ msgstr ""
-#~ "<font style=\"font-size: 62px; background-color: rgb(255, 255, 255);"
-#~ "\">&amp;nbsp;خصم 10%&amp;nbsp;</font>\n"
-#~ "                    <br/>\n"
-#~ "                        <font style=\"font-size: 62px; background-color: "
-#~ "rgb(255, 255, 255);\">&amp;nbsp;المبيعات&amp;nbsp;</font>"
-
-#~ msgid "$100 OFF"
-#~ msgstr "خصم 100$ "
-
-#~ msgid ""
-#~ "<i class=\"fa fa-2x fa-ticket\" style=\"color: rgb(36, 37, 48) !important;"
-#~ "\"/>​"
-#~ msgstr ""
-#~ "<i class=\"fa fa-2x fa-ticket\" style=\"color: rgb(36, 37, 48) !important;"
-#~ "\"/>​"
-
-#~ msgid ""
-#~ "<span class=\"fa fa-facebook\" style=\"color: rgb(54, 166, 210) !"
-#~ "important; font-size: 18px;\"/>​"
-#~ msgstr ""
-#~ "<span class=\"fa fa-facebook\" style=\"color: rgb(54, 166, 210) !"
-#~ "important; font-size: 18px;\"/>​"
-
-#~ msgid ""
-#~ "<span class=\"fa fa-linkedin\" style=\"color: rgb(54, 166, 210) !"
-#~ "important; font-size: 18px;\"/>​"
-#~ msgstr ""
-#~ "<span class=\"fa fa-linkedin\" style=\"color: rgb(54, 166, 210) !"
-#~ "important; font-size: 18px;\"/>​"
-
-#~ msgid ""
-#~ "<span class=\"fa fa-twitter\" style=\"color: rgb(54, 166, 210) !"
-#~ "important; font-size: 18px;\"/>​"
-#~ msgstr ""
-#~ "<span class=\"fa fa-twitter\" style=\"color: rgb(54, 166, 210) !"
-#~ "important; font-size: 18px;\"/>​"
-
-#~ msgid "<span style=\"font-weight: bolder;\">VIP10</span>"
-#~ msgstr "<span style=\"font-weight: bolder;\">VIP10</span>"
-
-#~ msgid ""
-#~ "An interactive, fun\n"
-#~ "                                    <br/>and comprehensive experience"
-#~ msgstr ""
-#~ "تجربة تقاعلية\n"
-#~ "                                    <br/>وممتعة وشاملة "
-
-#~ msgid ""
-#~ "Get 6-months' worth of knowledge\n"
-#~ "                                    <br/>in just 2 days"
-#~ msgstr ""
-#~ "احصل على معرفة تضاهي مجهود 6 أشهر\n"
-#~ "                                    <br/>خلال يومين فقط "
-
-#~ msgid ""
-#~ "Join the community to see our latest news, events, discounts and much "
-#~ "more!"
-#~ msgstr ""
-#~ "انضم إلى المجتمع لرؤية آخر أخبارنا وفعالياتنا وخصوماتنا وغير ذلك الكثير! "
-
-#~ msgid ""
-#~ "Meet (other) awesome members\n"
-#~ "                                    <br/>of the community"
-#~ msgstr ""
-#~ "تعرف على الأعضاء (الآخرين) الرائعين\n"
-#~ "                                    <br/>في المجتمع "
-
-#~ msgid "Thank you for being one of our most loyal customers."
-#~ msgstr "شكراً لكونك أحد أكثر عملائنا ولاءً. "
-
-#~ msgid "Twitter"
-#~ msgstr "تويتر"
-
-#~ msgid "VIP members only"
-#~ msgstr "الأعضاء المهمين جداً فقط "

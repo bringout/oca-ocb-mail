@@ -1,4 +1,5 @@
-import { Component, useState } from "@odoo/owl";
+import { useState } from "@web/owl2/utils";
+import { Component } from "@odoo/owl";
 import { useOptionsSubEnv } from "@html_builder/utils/utils";
 import { OptionsContainer } from "@html_builder/sidebar/option_container";
 
@@ -7,6 +8,7 @@ export class DesignTab extends Component {
     static components = { OptionsContainer };
     static props = {
         colorPresetToShow: { optional: true },
+        shadowSizeToShow: { optional: true },
     };
 
     setup() {

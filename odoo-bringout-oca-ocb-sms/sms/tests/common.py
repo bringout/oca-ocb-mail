@@ -250,7 +250,7 @@ class SMSCase(MockSMS):
           :param content: SMS content
           :param mail_message_values: dictionary of expected mail message fields values
         """
-        partners = self.env['res.partner'].concat(*list(p['partner'] for p in recipients_info if p.get('partner')))
+        partners = self.env['res.partner'].concat(p['partner'] for p in recipients_info if p.get('partner'))
         numbers = [p['number'] for p in recipients_info if p.get('number')]
         # special case of void notifications: check for False / False notifications
         if not partners and not numbers:
@@ -331,7 +331,7 @@ class SMSCase(MockSMS):
 
     def assertSMSLogged(self, records, body):
         for record in records:
-            message = record.message_ids[-1]
+            message = record.message_ids[0]  # assume last message
             self.assertEqual(message.subtype_id, self.env.ref('mail.mt_note'))
             self.assertEqual(message.message_type, 'sms')
             self.assertEqual(tools.html2plaintext(message.body).rstrip('\n'), body)

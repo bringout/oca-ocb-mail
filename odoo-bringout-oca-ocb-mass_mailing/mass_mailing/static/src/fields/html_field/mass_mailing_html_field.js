@@ -1,26 +1,18 @@
-import { DYNAMIC_PLACEHOLDER_PLUGINS } from "@html_editor/backend/plugin_sets";
+import { useExternalListener, useLayoutEffect, useRef } from "@web/owl2/utils";
+import { DYNAMIC_FIELD_PLUGINS } from "@html_editor/backend/dynamic_field/dynamic_field_plugin";
 import { htmlField, HtmlField } from "@html_editor/fields/html_field";
 import { LocalOverlayContainer } from "@html_editor/local_overlay_container";
 import { MAIN_PLUGINS as MAIN_EDITOR_PLUGINS } from "@html_editor/plugin_sets";
 import { normalizeHTML, parseHTML } from "@html_editor/utils/html";
 import { MassMailingIframe } from "@mass_mailing/iframe/mass_mailing_iframe";
-import { ThemeSelector } from "@mass_mailing/themes/theme_selector/theme_selector";
-import {
-    onWillUpdateProps,
-    status,
-    toRaw,
-    useEffect,
-    useExternalListener,
-    useRef,
-} from "@odoo/owl";
+import { ThemeSelectorIframe } from "@mass_mailing/themes/theme_selector/theme_selector_iframe";
+import { onWillUpdateProps, status, toRaw } from "@odoo/owl";
 import { loadBundle } from "@web/core/assets";
 import { Domain } from "@web/core/domain";
 import { registry } from "@web/core/registry";
-import { Deferred } from "@web/core/utils/concurrency";
 import { effect } from "@web/core/utils/reactive";
 import { useChildRef, useService } from "@web/core/utils/hooks";
 import { batched } from "@web/core/utils/timing";
-import { PowerButtonsPlugin } from "@html_editor/main/power_buttons_plugin";
 import { useEmailHtmlConverter } from "@mail/convert_inline/hooks";
 import { fixInvalidHTML } from "@html_editor/utils/sanitize";
 
@@ -30,7 +22,7 @@ export class MassMailingHtmlField extends HtmlField {
         ...HtmlField.components,
         LocalOverlayContainer,
         MassMailingIframe,
-        ThemeSelector,
+        ThemeSelectorIframe,
     };
     static props = {
         ...HtmlField.props,
@@ -67,7 +59,6 @@ export class MassMailingHtmlField extends HtmlField {
             loadBundle("mass_mailing.assets_builder");
         }
 
-        this.resetIframe();
         this.iframeRef = useChildRef();
         this.iframeWrapperRef = useChildRef();
         this.codeViewButtonRef = useRef("codeViewButtonRef");
@@ -93,8 +84,6 @@ export class MassMailingHtmlField extends HtmlField {
                 }
                 if (state.key !== currentKey) {
                     // html value may have been reset from the server:
-                    // - await the new iframe
-                    this.resetIframe();
                     // - ensure that the activeTheme is up to date with the next
                     //   record.
                     this.updateActiveTheme(props.record);
@@ -107,7 +96,7 @@ export class MassMailingHtmlField extends HtmlField {
             [this.state]
         );
 
-        useEffect(
+        useLayoutEffect(
             () => {
                 if (!this.codeViewRef.el) {
                     return;
@@ -123,30 +112,6 @@ export class MassMailingHtmlField extends HtmlField {
 
     get withBuilder() {
         return this.state.activeTheme !== "basic" && !this.props.readonly;
-    }
-
-    /**
-     * @deprecated
-     */
-    resetIframe() {
-        this.iframeLoaded = new Deferred();
-    }
-
-    /**
-     * @deprecated
-     */
-    async ensureIframeLoaded() {
-        const iframeLoaded = this.iframeLoaded;
-        // iframeInfo is deprecated
-        const iframeInfo = await iframeLoaded;
-        return iframeLoaded === this.iframeLoaded ? iframeInfo : undefined;
-    }
-
-    /**
-     * @deprecated
-     */
-    onIframeLoad(iframeLoaded) {
-        this.iframeLoaded.resolve(iframeLoaded);
     }
 
     updateActiveTheme(record = this.props.record) {
@@ -198,9 +163,7 @@ export class MassMailingHtmlField extends HtmlField {
             iframeRef: this.iframeRef,
             iframeWrapperRef: this.iframeWrapperRef,
             onFocus: this.onFocus.bind(this),
-            onBlur: this.onBlur.bind(this), // deprecated
             onEditorLoad: this.onEditorLoad.bind(this),
-            onIframeLoad: this.onIframeLoad.bind(this), // deprecated
             readonly: this.props.readonly,
             showThemeSelector: this.state.showThemeSelector,
             showCodeView: this.state.showCodeView,
@@ -277,12 +240,9 @@ export class MassMailingHtmlField extends HtmlField {
         return {
             ...config,
             onEditorReady: () => this.commitChanges(),
-            Plugins: [
-                ...MAIN_EDITOR_PLUGINS,
-                ...DYNAMIC_PLACEHOLDER_PLUGINS,
-                ...registry.category("basic-editor-plugins").getAll(),
-                PowerButtonsPlugin,
-            ].filter((P) => !["banner", "prompt"].includes(P.id)),
+            Plugins: [...MAIN_EDITOR_PLUGINS, ...DYNAMIC_FIELD_PLUGINS]
+                .filter((P) => !["banner", "prompt", "link"].includes(P.id))
+                .concat(registry.category("basic-editor-plugins").getAll()),
         };
     }
 
@@ -503,8 +463,6 @@ export const massMailingHtmlField = {
         });
         return props;
     },
-    // Deprecated (to be defined in the view)
-    fieldDependencies: [{ name: "body_html", type: "html", readonly: "false" }],
 };
 
 registry.category("fields").add("mass_mailing_html", massMailingHtmlField);

@@ -1,4 +1,3 @@
-import { CW_LIVECHAT_STEP } from "@im_livechat/core/common/chat_window_model_patch";
 import { registerThreadAction, threadActionsRegistry } from "@mail/core/common/thread_actions";
 import "@mail/discuss/call/common/thread_actions";
 
@@ -6,13 +5,12 @@ import { _t } from "@web/core/l10n/translation";
 import { patch } from "@web/core/utils/patch";
 
 registerThreadAction("restart", {
-    condition: ({ owner, thread }) =>
-        thread?.chatbot?.canRestart && !owner.isDiscussSidebarChannelActions,
+    condition: ({ channel, owner }) =>
+        channel?.chatbot?.canRestart && !owner.isDiscussSidebarChannelActions,
     icon: "fa fa-fw fa-refresh",
     name: _t("Restart Conversation"),
-    open: ({ owner, thread }) => {
-        owner.props.chatWindow.livechatStep = CW_LIVECHAT_STEP.NONE;
-        thread.chatbot.restart();
+    onSelected: ({ channel, owner }) => {
+        channel.chatbot.restart();
         owner.props.chatWindow.open({ focus: true });
     },
     sequence: 99,
@@ -21,9 +19,9 @@ registerThreadAction("restart", {
 
 const callSettingsAction = threadActionsRegistry.get("call-settings");
 patch(callSettingsAction, {
-    condition({ store, thread }) {
-        return thread?.channel_type === "livechat"
-            ? store.rtc.state.channel?.eq(thread)
+    condition({ channel, store }) {
+        return channel?.channel_type === "livechat"
+            ? store.rtc.localChannel?.eq(channel)
             : super.condition(...arguments);
     },
 });

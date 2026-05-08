@@ -22,22 +22,21 @@
 # Ossi Mantylahti <ossi.mantylahti@obs-solutions.fi>, 2023
 # "Tiffany Chang (tic)" <tic@odoo.com>, 2025.
 # Weblate <noreply-mt-weblate@weblate.org>, 2025.
-# Saara Hakanen <sahak@odoo.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0beta\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-10 18:39+0000\n"
-"PO-Revision-Date: 2026-04-23 07:34+0000\n"
-"Last-Translator: Saara Hakanen <sahak@odoo.com>\n"
-"Language-Team: Finnish <https://translate.odoo.com/projects/odoo-19/sms/fi/>"
-"\n"
+"POT-Creation-Date: 2026-03-12 18:37+0000\n"
+"PO-Revision-Date: 2025-11-11 17:16+0000\n"
+"Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
+"Language-Team: Finnish <https://translate.odoo.com/projects/odoo-19/sms/fi/"
+">\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.17\n"
+"X-Generator: Weblate 5.12.2\n"
 
 #. module: sms
 #: model:ir.model.fields,field_description:sms.field_sms_composer__recipient_invalid_count
@@ -69,6 +68,11 @@ msgstr "%s (kopio)"
 #: code:addons/sms/wizard/sms_composer.py:0
 msgid "%s invalid recipients"
 msgstr "%s virheelliset vastaanottajat"
+
+#. module: sms
+#: model_terms:ir.ui.view,arch_db:sms.sms_account_phone_view_form
+msgid "+1 555-555-555"
+msgstr "+1 555-555-555"
 
 #. module: sms
 #: model_terms:ir.ui.view,arch_db:sms.iap_account_view_form
@@ -214,8 +218,14 @@ msgid ""
 "Add a contextual action on the related model to open a sms composer with "
 "this template"
 msgstr ""
-"Lisää kontekstuaalinen toiminto oikeaan malliin avataksesi tekstiviestin "
-"kirjoitusnäkymän tällä mallipohjalla"
+"Lisää kontekstisidonnainen toiminto asiaan liittyvään malliin sms-"
+"sommittelijan avaamiseksi tämän mallin avulla"
+
+#. module: sms
+#: model:ir.model.fields.selection,name:sms.selection__sms_composer__sms_type__alert
+#: model:ir.model.fields.selection,name:sms.selection__sms_sms__sms_type__alert
+msgid "Alert"
+msgstr ""
 
 #. module: sms
 #: model:ir.model.fields,help:sms.field_sms_sms__uuid
@@ -270,7 +280,7 @@ msgstr "Huonot parametrit"
 #. module: sms
 #: model:ir.model,name:sms.model_base
 msgid "Base"
-msgstr "Pohja"
+msgstr "Perus"
 
 #. module: sms
 #: model:ir.model.fields.selection,name:sms.selection__sms_sms__failure_type__sms_blacklist
@@ -291,10 +301,7 @@ msgid "Buy credits."
 msgstr "Osta krediittejä."
 
 #. module: sms
-#: model_terms:ir.ui.view,arch_db:sms.sms_account_code_view_form
-#: model_terms:ir.ui.view,arch_db:sms.sms_account_phone_view_form
 #: model_terms:ir.ui.view,arch_db:sms.sms_sms_view_tree
-#: model_terms:ir.ui.view,arch_db:sms.sms_template_reset_view_form
 #: model_terms:ir.ui.view,arch_db:sms.sms_tsms_view_form
 msgid "Cancel"
 msgstr "Peruuta"
@@ -312,7 +319,7 @@ msgstr "Valitse kieli:"
 #. module: sms
 #: model_terms:ir.ui.view,arch_db:sms.ir_actions_server_view_form
 msgid "Choose a template..."
-msgstr "Valitse mallipohja..."
+msgstr "Valitse malli..."
 
 #. module: sms
 #: model_terms:ir.ui.view,arch_db:sms.sms_template_preview_form
@@ -329,8 +336,8 @@ msgstr "Valitse lähettäjän nimi"
 
 #. module: sms
 #: model:ir.model,name:sms.model_res_company
-msgid "Companies"
-msgstr "Yritykset"
+msgid "Company"
+msgstr ""
 
 #. module: sms
 #: model:ir.model.fields,field_description:sms.field_sms_composer__composition_mode
@@ -421,12 +428,6 @@ msgid "Delivered"
 msgstr "Toimitettu"
 
 #. module: sms
-#: model_terms:ir.ui.view,arch_db:sms.sms_composer_view_form
-#: model_terms:ir.ui.view,arch_db:sms.sms_template_preview_form
-msgid "Discard"
-msgstr "Hylkää"
-
-#. module: sms
 #: model:ir.model.fields,field_description:sms.field_iap_account__display_name
 #: model:ir.model.fields,field_description:sms.field_ir_actions_server__display_name
 #: model:ir.model.fields,field_description:sms.field_ir_model__display_name
@@ -449,8 +450,8 @@ msgstr "Näyttönimi"
 
 #. module: sms
 #: model:ir.model,name:sms.model_mail_followers
-msgid "Document Followers"
-msgstr "Dokumentin seuraajat"
+msgid "Document Follower"
+msgstr ""
 
 #. module: sms
 #: model:ir.model.fields,field_description:sms.field_sms_composer__res_id
@@ -580,9 +581,9 @@ msgstr "ID"
 #: model:ir.model.fields,help:sms.field_mail_blacklist__message_has_sms_error
 #: model:ir.model.fields,help:sms.field_mail_thread__message_has_sms_error
 #: model:ir.model.fields,help:sms.field_mail_thread_blacklist__message_has_sms_error
-#: model:ir.model.fields,help:sms.field_mail_thread_cc__message_has_sms_error
 #: model:ir.model.fields,help:sms.field_mail_thread_main_attachment__message_has_sms_error
 #: model:ir.model.fields,help:sms.field_mail_thread_phone__message_has_sms_error
+#: model:ir.model.fields,help:sms.field_mail_thread_subject_suggested__message_has_sms_error
 #: model:ir.model.fields,help:sms.field_mail_tracking_duration_mixin__message_has_sms_error
 #: model:ir.model.fields,help:sms.field_maintenance_equipment__message_has_sms_error
 #: model:ir.model.fields,help:sms.field_maintenance_request__message_has_sms_error
@@ -634,8 +635,8 @@ msgstr "Virheellinen määränpää"
 #. odoo-python
 #: code:addons/sms/tools/sms_api.py:0
 msgid ""
-"Invalid phone number. Please make sure to follow the international format, "
-"i.e. a plus sign (+), then country code, city code, and local phone number. "
+"Invalid phone number. Please make sure to follow the international format, i."
+"e. a plus sign (+), then country code, city code, and local phone number. "
 "For example: +1 555-555-555"
 msgstr ""
 "Virheellinen puhelinnumero. Varmista, että noudatat kansainvälistä muotoa, "
@@ -707,12 +708,18 @@ msgstr "Posti-ilmoitus"
 #. module: sms
 #: model:ir.model.fields,field_description:sms.field_ir_model__is_mail_thread_sms
 msgid "Mail Thread SMS"
-msgstr "Tekstiviestiketju"
+msgstr "SMS-viestiketju"
 
 #. module: sms
 #: model:ir.model.fields,field_description:sms.field_sms_sms__to_delete
 msgid "Marked for deletion"
 msgstr "Merkitty poistettavaksi"
+
+#. module: sms
+#: model:ir.model.fields.selection,name:sms.selection__sms_composer__sms_type__marketing
+#: model:ir.model.fields.selection,name:sms.selection__sms_sms__sms_type__marketing
+msgid "Marketing"
+msgstr ""
 
 #. module: sms
 #: model:ir.model,name:sms.model_mail_message
@@ -723,8 +730,8 @@ msgstr "Viesti"
 
 #. module: sms
 #: model:ir.model,name:sms.model_mail_notification
-msgid "Message Notifications"
-msgstr "Viestien ilmoitukset"
+msgid "Message Notification"
+msgstr ""
 
 #. module: sms
 #. odoo-javascript
@@ -736,8 +743,8 @@ msgstr "Puuttuva numero"
 
 #. module: sms
 #: model:ir.model,name:sms.model_ir_model
-msgid "Models"
-msgstr "Mallit"
+msgid "Model"
+msgstr ""
 
 #. module: sms
 #: model:ir.model.fields,field_description:sms.field_sms_template__name
@@ -814,10 +821,6 @@ msgid ""
 "usually be a placeholder expression that provides the appropriate language, "
 "e.g. {{ object.partner_id.lang }}."
 msgstr ""
-"Valinnainen käännöskieli (ISO-koodi), joka valitaan sähköpostia "
-"lähetettäessä. Jos sitä ei ole määritetty, käytetään pääkumppanin kieltä. "
-"Tämän tulisi yleensä olla lausekkeen paikkamerkki, joka antaa sopivan "
-"kielen, esim. {{ object.partner_id.lang }}."
 
 #. module: sms
 #: model:ir.model,name:sms.model_sms_sms
@@ -849,8 +852,6 @@ msgid ""
 "Prevent sending messages to blacklisted contacts. Disable only when "
 "absolutely necessary."
 msgstr ""
-"Estä viestien lähettäminen mustan listan yhteystiedoille. Poista käytöstä "
-"vain, jos välttämätöntä."
 
 #. module: sms
 #: model_terms:ir.ui.view,arch_db:sms.sms_template_preview_form
@@ -914,14 +915,14 @@ msgstr "Rekisteröidy nyt."
 #: model_terms:ir.ui.view,arch_db:sms.sms_account_code_view_form
 #: model_terms:ir.ui.view,arch_db:sms.sms_account_phone_view_form
 msgid "Register your SMS account"
-msgstr "Rekisteröi tekstiviestitilisi"
+msgstr "Rekisteröi SMS-tilisi"
 
 #. module: sms
 #. odoo-javascript
 #: code:addons/sms/static/src/core/notification_model_patch.js:0
 #: model:ir.model.fields.selection,name:sms.selection__mail_notification__failure_type__sms_rejected
 msgid "Rejected"
-msgstr "Hylätty"
+msgstr "Rechazado"
 
 #. module: sms
 #: model:ir.model.fields,field_description:sms.field_sms_template__model
@@ -961,7 +962,7 @@ msgstr "Yritä uudelleen"
 
 #. module: sms
 #. odoo-javascript
-#: code:addons/sms/static/src/components/sms_button/sms_button.xml:0
+#: code:addons/sms/static/src/components/phone_field/phone_field.js:0
 #: code:addons/sms/static/src/core/notification_model_patch.js:0
 #: model:ir.actions.act_window,name:sms.sms_sms_action
 #: model:ir.model.fields,field_description:sms.field_mail_notification__sms_id
@@ -970,13 +971,13 @@ msgstr "Yritä uudelleen"
 #: model:ir.ui.menu,name:sms.sms_sms_menu
 #: model_terms:ir.ui.view,arch_db:sms.sms_tsms_view_form
 msgid "SMS"
-msgstr "Teskstiviesti"
+msgstr "SMS"
 
 #. module: sms
 #. odoo-javascript
 #: code:addons/sms/static/src/components/sms_widget/fields_sms_widget.xml:0
 msgid "SMS ("
-msgstr "Tekstiviesti ("
+msgstr "TEKSTIVIESTI ("
 
 #. module: sms
 #: model:ir.model.fields.selection,name:sms.selection__ir_actions_server__sms_method__comment
@@ -1029,9 +1030,9 @@ msgstr "Ohjattu tekstiviestitilin vahvistuskoodi"
 #: model:ir.model.fields,field_description:sms.field_mail_blacklist__message_has_sms_error
 #: model:ir.model.fields,field_description:sms.field_mail_thread__message_has_sms_error
 #: model:ir.model.fields,field_description:sms.field_mail_thread_blacklist__message_has_sms_error
-#: model:ir.model.fields,field_description:sms.field_mail_thread_cc__message_has_sms_error
 #: model:ir.model.fields,field_description:sms.field_mail_thread_main_attachment__message_has_sms_error
 #: model:ir.model.fields,field_description:sms.field_mail_thread_phone__message_has_sms_error
+#: model:ir.model.fields,field_description:sms.field_mail_thread_subject_suggested__message_has_sms_error
 #: model:ir.model.fields,field_description:sms.field_mail_tracking_duration_mixin__message_has_sms_error
 #: model:ir.model.fields,field_description:sms.field_maintenance_equipment__message_has_sms_error
 #: model:ir.model.fields,field_description:sms.field_maintenance_request__message_has_sms_error
@@ -1067,40 +1068,40 @@ msgstr "Tekstiviestin ID"
 #. module: sms
 #: model:ir.model.fields,field_description:sms.field_mail_notification__sms_number
 msgid "SMS Number"
-msgstr "Teskstiviestinumero"
+msgstr "SMS-numero"
 
 #. module: sms
 #: model_terms:ir.ui.view,arch_db:sms.sms_template_preview_form
 msgid "SMS Preview"
-msgstr "Tekstiviestin esikatselu"
+msgstr "SMS-esikatselu"
 
 #. module: sms
 #. odoo-javascript
 #: code:addons/sms/static/src/components/sms_widget/fields_sms_widget.xml:0
 msgid "SMS Pricing"
-msgstr "Tekstiviestien hinnoittelu"
+msgstr "SMS-hinnoittelu"
 
 #. module: sms
 #: model:ir.model.fields,field_description:sms.field_sms_sms__state
 msgid "SMS Status"
-msgstr "Tekstiviestin tila"
+msgstr "SMS-tila"
 
 #. module: sms
 #: model:ir.model.fields,field_description:sms.field_ir_actions_server__sms_template_id
 #: model:ir.model.fields,field_description:sms.field_ir_cron__sms_template_id
 #: model_terms:ir.ui.view,arch_db:sms.sms_template_view_form
 msgid "SMS Template"
-msgstr "Tekstiviestipohja"
+msgstr "SMS Malli"
 
 #. module: sms
 #: model:ir.model,name:sms.model_sms_template_preview
 msgid "SMS Template Preview"
-msgstr "Tekstiviestipohjan esikatselu"
+msgstr "SMS-mallin esikatselu"
 
 #. module: sms
 #: model:ir.model,name:sms.model_sms_template_reset
 msgid "SMS Template Reset"
-msgstr "Tekstiviestipohjan nollaus"
+msgstr "SMS-mallin nollaus"
 
 #. module: sms
 #: model:ir.model,name:sms.model_sms_template
@@ -1109,13 +1110,13 @@ msgstr "Tekstiviestipohjan nollaus"
 #: model_terms:ir.ui.view,arch_db:sms.sms_template_view_form
 #: model_terms:ir.ui.view,arch_db:sms.sms_template_view_tree
 msgid "SMS Templates"
-msgstr "Tekstiviestipohjat"
+msgstr "SMS-mallit"
 
 #. module: sms
 #. odoo-python
 #: code:addons/sms/wizard/sms_template_reset.py:0
 msgid "SMS Templates have been reset"
-msgstr "Tekstiviestipohjat on nollattu"
+msgstr "SMS-mallit on nollattu"
 
 #. module: sms
 #: model:ir.model.fields,field_description:sms.field_mail_notification__sms_tracker_ids
@@ -1125,13 +1126,13 @@ msgstr "Tekstiviestien seurannat"
 #. module: sms
 #: model_terms:ir.ui.view,arch_db:sms.sms_template_preview_form
 msgid "SMS content"
-msgstr "Tekstiviestin sisältö"
+msgstr "SMS-sisältö"
 
 #. module: sms
 #. odoo-python
 #: code:addons/sms/models/ir_actions_server.py:0
 msgid "SMS template model of %(action_name)s does not match action model."
-msgstr "Tekstiviestipohjan malli %(action_name)s ei vastaa toimintomallia."
+msgstr "SMS-mallin malli %(action_name)s ei vastaa toimintamallia."
 
 #. module: sms
 #: model:ir.model.fields,field_description:sms.field_sms_sms__sms_tracker_id
@@ -1141,12 +1142,12 @@ msgstr "Tekstiviestien seurannat"
 #. module: sms
 #: model:ir.model.fields,field_description:sms.field_sms_tracker__sms_uuid
 msgid "SMS uuid"
-msgstr "Tekstiviestin uuid"
+msgstr "SMS uuid"
 
 #. module: sms
 #: model:ir.actions.server,name:sms.ir_cron_sms_scheduler_action_ir_actions_server
 msgid "SMS: SMS Queue Manager"
-msgstr "TEKSTIVIESTI: tekstiviestijonon hallinta"
+msgstr "TEKSTIVIESTI: SMS Jonon hallinta"
 
 #. module: sms
 #: model:ir.model.fields,field_description:sms.field_sms_composer__sanitized_numbers
@@ -1157,7 +1158,7 @@ msgstr "Tarkistettu numero"
 #: model_terms:ir.ui.view,arch_db:sms.sms_sms_view_search
 #: model_terms:ir.ui.view,arch_db:sms.sms_template_view_search
 msgid "Search SMS Templates"
-msgstr "Hae tekstiviestipohjia"
+msgstr "Haku SMS-malleista"
 
 #. module: sms
 #: model_terms:ir.ui.view,arch_db:sms.sms_composer_view_form
@@ -1178,7 +1179,7 @@ msgstr "Lähetä heti"
 
 #. module: sms
 #. odoo-javascript
-#: code:addons/sms/static/src/components/sms_button/sms_button.js:0
+#: code:addons/sms/static/src/components/phone_field/phone_field.js:0
 #: model:ir.actions.act_window,name:sms.res_partner_act_window_sms_composer_multi
 #: model:ir.actions.act_window,name:sms.res_partner_act_window_sms_composer_single
 #: model:ir.actions.act_window,name:sms.sms_composer_action_form
@@ -1248,7 +1249,7 @@ msgstr "Lähettäjän nimi"
 #. odoo-python
 #: code:addons/sms/models/ir_actions_server.py:0
 msgid "Sending SMS can only be done on a not transient mail.thread model"
-msgstr "Tekstiviestejä voi lähettää vain pysyvistä mail.thread -malleista"
+msgstr "Tekstiviestejä voi lähettää vain pysyvistä mail.thread -malleista."
 
 #. module: sms
 #: model:ir.model.fields.selection,name:sms.selection__sms_sms__state__pending
@@ -1300,7 +1301,13 @@ msgstr "Ohita toistaiseksi"
 #. module: sms
 #: model:ir.model.fields,field_description:sms.field_sms_template_preview__sms_template_id
 msgid "Sms Template"
-msgstr "Tekstiviestipohja"
+msgstr "SMS-malli"
+
+#. module: sms
+#: model:ir.model.fields,field_description:sms.field_sms_composer__sms_type
+#: model:ir.model.fields,field_description:sms.field_sms_sms__sms_type
+msgid "Sms Type"
+msgstr ""
 
 #. module: sms
 #: model:ir.model.fields,field_description:sms.field_sms_composer__recipient_single_number
@@ -1455,17 +1462,18 @@ msgid ""
 msgstr ""
 "Palvelintoiminnon tyyppi. Saatavilla seuraavat arvot:\n"
 "- 'Päivitä tietue': päivitä tietueen arvot\n"
-"- 'Luo toimenpide': luo toimenpiteen (Viestintä)\n"
-"- 'Lähetä sähköposti': lähetä viesti, huomautus tai sähköposti (Viestintä)\n"
+"- 'Luo toimint': luo toiminnon (Viestintä)\n"
+"- 'Lähetä sähköposti': lähettää viestin, huomautuksen tai sähköpostin "
+"(Viestintä)\n"
 "- 'Lähetä tekstiviesti': lähetä tekstiviestejä, kirjaa ne asiakirjoihin "
-"(Tekstiviesti)- 'Lisää/Poista seuraajia': lisää tai poista tietueen "
-"seuraajia (Viestintä)\n"
+"(Tekstiviesti)- Lisää/Poista seuraajia: lisää tai poista seuraajia "
+"tietueesta (Viestintä)\n"
 "- 'Luo tietue': luo uusi tietue uusilla arvoilla\n"
 "- 'Suorita koodi': Python-koodin pätkä, joka suoritetaan\n"
 "- 'Lähetä Webhook-ilmoitus': lähetä POST-pyyntö ulkoiseen järjestelmään, "
 "joka tunnetaan myös nimellä Webhook\n"
-"- 'Monitoiminnot': Määritä toiminto, joka käynnistää useita muita "
-"palvelintoimintoja\n"
+"- 'Suorita useita toimintoja': Määritä toiminto, joka käynnistää useita "
+"muita palvelintoimintoja\n"
 
 #. module: sms
 #: model:ir.model.fields,field_description:sms.field_sms_sms__uuid
@@ -1493,7 +1501,7 @@ msgstr "Rekisteröimätön tili"
 #. module: sms
 #: model:ir.model.fields,field_description:sms.field_sms_composer__use_exclusion_list
 msgid "Use Exclusion List"
-msgstr "Käytä poissulkevaa listaa"
+msgstr ""
 
 #. module: sms
 #: model:ir.model.fields,field_description:sms.field_sms_composer__template_id
@@ -1610,7 +1618,7 @@ msgstr "Tekstiviestissäsi on oltava vähintään yksi muu kuin välilyöntimerk
 #. odoo-python
 #: code:addons/sms/wizard/sms_account_code.py:0
 msgid "Your SMS account has been successfully registered."
-msgstr "Tekstiviestitilisi on rekisteröity onnistuneesti."
+msgstr "SMS-tilisi on rekisteröity onnistuneesti."
 
 #. module: sms
 #. odoo-python
@@ -1640,7 +1648,7 @@ msgstr ""
 #. odoo-python
 #: code:addons/sms/tools/sms_api.py:0
 msgid "Your sms account has not been activated yet."
-msgstr "Tekstiviestitiliäsi ei ole vielä aktivoitu."
+msgstr "SMS-tiliäsi ei ole vielä aktivoitu."
 
 #. module: sms
 #: model_terms:ir.ui.view,arch_db:sms.sms_composer_view_form
@@ -1680,214 +1688,3 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:sms.sms_template_preview_form
 msgid "record:"
 msgstr "tietue:"
-
-#~ msgid "+1 555-555-555"
-#~ msgstr "+1 555-555-555"
-
-#~ msgid "Action Needed"
-#~ msgstr "Vaatii toimenpiteitä"
-
-#~ msgid "Action To Do"
-#~ msgstr "Tehtävät"
-
-#~ msgid "Attachment Count"
-#~ msgstr "Liitteiden määrä"
-
-#~ msgid "Blacklisted Phone Is Mobile"
-#~ msgstr "Markkinointikiellossa oleva puhelin on matkapuhelin"
-
-#~ msgid "Blacklisted Phone is Phone"
-#~ msgstr "Markkinointikiellossa oleva puhelin on muu puhelin"
-
-#~ msgid "Buy credits"
-#~ msgstr "Osta krediittejä"
-
-#~ msgid "Can Cancel"
-#~ msgstr "Voi perua"
-
-#~ msgid "Can Resend"
-#~ msgstr "Voi lähettää uudelleen"
-
-#~ msgid "Canceled"
-#~ msgstr "Peruttu"
-
-#~ msgid ""
-#~ "Choose method for SMS sending:\n"
-#~ "SMS: mass SMS\n"
-#~ "Post as Message: log on document\n"
-#~ "Post as Note: mass SMS with archives"
-#~ msgstr ""
-#~ "Valitse tapa tekstiviestien lähettämiseen:\n"
-#~ "SMS: joukkotekstiviesti\n"
-#~ "Lähetä viestinä: kirjaa dokumenttiin\n"
-#~ "Lähetä huomiona: joukkotekstiviesti liitteen kanssa"
-
-#~ msgid "Close"
-#~ msgstr "Sulje"
-
-#~ msgid "Edit Partners"
-#~ msgstr "Muokkaa kumppaneita"
-
-#~ msgid "Error Message"
-#~ msgstr "Virheviesti"
-
-#~ msgid ""
-#~ "Field used to store sanitized phone number. Helps speeding up searches "
-#~ "and comparisons."
-#~ msgstr ""
-#~ "Kenttä, jota käytetään puhdistetun puhelinnumeron tallentamiseen. Auttaa "
-#~ "nopeuttamaan hakuja ja vertailuja."
-
-#~ msgid "Followers"
-#~ msgstr "Seuraajat"
-
-#~ msgid "Followers (Partners)"
-#~ msgstr "Seuraajat (kumppanit)"
-
-#~ msgid "Has Message"
-#~ msgstr "Sisältää viestin"
-
-#~ msgid "If checked, new messages require your attention."
-#~ msgstr "Jos valittu, uudet viestit vaativat huomiotasi."
-
-#~ msgid ""
-#~ "If the sanitized phone number is on the blacklist, the contact won't "
-#~ "receive mass mailing sms anymore, from any list"
-#~ msgstr ""
-#~ "Jos puhdistettu puhelinnumero on mustalla listalla, yhteyshenkilö ei enää "
-#~ "saa massatekstiviestejä miltään listalta"
-
-#~ msgid "Ignore all"
-#~ msgstr "Ohita kaikki"
-
-#~ msgid ""
-#~ "Indicates if a blacklisted sanitized phone number is a mobile number. "
-#~ "Helps distinguish which number is blacklisted             when there is "
-#~ "both a mobile and phone field in a model."
-#~ msgstr ""
-#~ "Ilmaisee, onko mustalle listalle joutunut puhdistettu puhelinnumero "
-#~ "matkapuhelinnumero. Auttaa erottamaan, mikä numero on mustalla listalla, "
-#~ "kun mallissa on sekä matkapuhelin- että puhelinkenttä."
-
-#~ msgid ""
-#~ "Indicates if a blacklisted sanitized phone number is a phone number. "
-#~ "Helps distinguish which number is blacklisted             when there is "
-#~ "both a mobile and phone field in a model."
-#~ msgstr ""
-#~ "Ilmaisee, onko mustalle listalle merkitty puhdistettu puhelinnumero "
-#~ "puhelinnumero. Auttaa erottamaan, mikä numero on mustalla listalla, kun "
-#~ "mallissa on sekä matkapuhelin- että puhelinkenttä."
-
-#~ msgid "Is Follower"
-#~ msgstr "On seuraaja"
-
-#~ msgid "Message Delivery error"
-#~ msgstr "Ongelma viestin toimituksessa"
-
-#~ msgid ""
-#~ "Message type: email for email message, notification for system message, "
-#~ "comment for other messages such as user replies"
-#~ msgstr ""
-#~ "Viestityyppi: Sähköposti  sähköposteille, Ilmoitus järjestelmän "
-#~ "viesteille, ja Kommentti muille viesteille, kuten käyttäjien vastauksille."
-
-#~ msgid "Messages"
-#~ msgstr "Viestit"
-
-#~ msgid "Notification"
-#~ msgstr "Ilmoitus"
-
-#~ msgid "Number of Actions"
-#~ msgstr "Toimenpiteiden määrä"
-
-#~ msgid "Number of errors"
-#~ msgstr "Virheiden määrä"
-
-#~ msgid "Number of messages which requires an action"
-#~ msgstr "Toimenpiteitä vaativien viestien määrä"
-
-#~ msgid "Number of messages with delivery error"
-#~ msgstr "Toimitusvirheellisten viestien määrä"
-
-#~ msgid ""
-#~ "Optional translation language (ISO code) to select when sending out an "
-#~ "email. If not set, the english version will be used. This should usually "
-#~ "be a placeholder expression that provides the appropriate language, e.g. "
-#~ "{{ object.partner_id.lang }}."
-#~ msgstr ""
-#~ "Valinnainen käännöskieli (ISO-koodi), joka valitaan sähköpostia "
-#~ "lähetettäessä. Jos sitä ei ole asetettu, käytetään englanninkielistä "
-#~ "versiota. Tämän pitäisi yleensä olla sijoitusilmaus, joka antaa sopivan "
-#~ "kielen, esim. {{ object.partner_id.lang }}."
-
-#~ msgid "Partner"
-#~ msgstr "Kumppani"
-
-#~ msgid "Phone Blacklisted"
-#~ msgstr "Puhelin on markkinointikiellossa"
-
-#~ msgid "Phone/Mobile"
-#~ msgstr "Puhelin / matkapuhelin"
-
-#~ msgid "Post as Message"
-#~ msgstr "Lähetä viestinä"
-
-#~ msgid "Post as Note"
-#~ msgstr "Lähetä muistiinpanona"
-
-#~ msgid "Reason"
-#~ msgstr "Syy"
-
-#~ msgid "Recipient"
-#~ msgstr "Vastaanottaja"
-
-#~ msgid "Recipient Name"
-#~ msgstr "Vastaanottajan nimi"
-
-#~ msgid "Recipients"
-#~ msgstr "Vastaanottajat"
-
-#~ msgid "Send SMS Text Message"
-#~ msgstr "Lähetä tekstiviesti"
-
-#~ msgid "Send as"
-#~ msgstr "Lähetä nimellä"
-
-#~ msgid "Send as (SMS)"
-#~ msgstr "Lähetä tekstiviestinä"
-
-#~ msgid "Sending Failures"
-#~ msgstr "Lähetysvirheet"
-
-#~ msgid "Try Again"
-#~ msgstr "Yritä uudelleen"
-
-#~ msgid ""
-#~ "Type of server action. The following values are available:\n"
-#~ "- 'Execute Python Code': a block of python code that will be executed\n"
-#~ "- 'Create a new Record': create a new record with new values\n"
-#~ "- 'Update a Record': update the values of a record\n"
-#~ "- 'Execute several actions': define an action that triggers several other "
-#~ "server actions\n"
-#~ "- 'Send Email': post a message, a note or send an email (Discuss)\n"
-#~ "- 'Add Followers': add followers to a record (Discuss)\n"
-#~ "- 'Create Next Activity': create an activity (Discuss)\n"
-#~ "- 'Send SMS Text Message': send SMS, log them on documents (SMS)"
-#~ msgstr ""
-#~ "Palvelintoiminnon tyyppi. Seuraavat ovat mahdollisia:\n"
-#~ "- 'Execute Python Code': ajaa Python-koodia\n"
-#~ "- 'Create a new Record': luo uuden tietueen uusilla arvoilla\n"
-#~ "- 'Update a Record': päivittää tietueen arvot\n"
-#~ "- 'Execute several actions': määrittää toiminnon, joka käynnistää useita "
-#~ "muita toimintoja\n"
-#~ "- 'Send Email': lähettää viestin, huomion tai sähköpostin (Discuss)\n"
-#~ "- 'Add Followers': lisää tietueelle seuraajia (Discuss)\n"
-#~ "- 'Create Next Activity': luo uuden aktiviteetin (Discuss)\n"
-#~ "- 'Send SMS Text Message': lähettää tekstiviestin (SMS), kirjaa ne "
-#~ "dokumenttiin"
-
-#~ msgid "Website Messages"
-#~ msgstr "Verkkosivun ilmoitukset"
-
-#~ msgid "Website communication history"
-#~ msgstr "Verkkosivun viestihistoria"

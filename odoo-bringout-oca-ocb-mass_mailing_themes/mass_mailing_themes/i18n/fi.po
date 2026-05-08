@@ -13,13 +13,13 @@
 # Johanna Valkonen <miujohanna@gmail.com>, 2022
 # Ossi Mantylahti <ossi.mantylahti@obs-solutions.fi>, 2023
 # "Tiffany Chang (tic)" <tic@odoo.com>, 2025.
-# Saara Hakanen <sahak@odoo.com>, 2025, 2026.
+# Saara Hakanen <sahak@odoo.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 15.5alpha1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-10 18:40+0000\n"
-"PO-Revision-Date: 2026-02-16 13:48+0000\n"
+"POT-Creation-Date: 2026-01-04 18:37+0000\n"
+"PO-Revision-Date: 2025-12-20 09:35+0000\n"
 "Last-Translator: Saara Hakanen <sahak@odoo.com>\n"
 "Language-Team: Finnish <https://translate.odoo.com/projects/odoo-19/"
 "mass_mailing_themes/fi/>\n"
@@ -31,12 +31,6 @@ msgstr ""
 "X-Generator: Weblate 5.14.3\n"
 
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_blogging_template
-msgid "&amp;nbsp; &amp;nbsp;"
-msgstr "&amp;nbsp; &amp;nbsp;"
-
-#. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_coffeebreak_template
 #: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
 msgid "&amp;nbsp;&amp;nbsp;"
 msgstr "&amp;nbsp;&amp;nbsp;"
@@ -88,11 +82,11 @@ msgid ""
 "feeling that we were missing something. It's a strange feeling to build "
 "extraordinary things but to not be proud of ourselves."
 msgstr ""
-"2011 oli monimutkainen vuosi. Odotuksemme eivät täyttyneet: saavutimme vain "
-"70% myyntibudjetista. Johtoportaan kokoukset olivat jännittyneitä. Me "
-"alisuoritimme. Emme olleet tyytyväisiä itseemme. Tuntui jatkuvasti siltä, "
-"että jotain puuttui. Tuntuu oudolta rakentaa poikkeuksellisia asioita ilman, "
-"että voi olla ylpeä itsestään."
+"Vuosi 2011 oli monimutkainen vuosi. Emme täyttäneet odotuksiamme: saavutimme "
+"vain 70% myyntibudjetista. Johdon kokoukset olivat jännittyneitä ja "
+"suorituksemme jäi alle odotusten. Emme olleet tyytyväisiä itseemme. Meillä "
+"oli jatkuva tunne, että meiltä puuttui jotain. On outo tunne rakentaa "
+"poikkeuksellisia asioita, mutta olla ylpeä itsestään."
 
 #. module: mass_mailing_themes
 #: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_promotion_template
@@ -216,8 +210,6 @@ msgid ""
 "<font style=\"color: rgb(255, 255, 255);\">Join the community to see our "
 "latest news, events, discounts and much more!</font>"
 msgstr ""
-"<font style=\"color: rgb(255, 255, 255);\">Liity yhteisöön nähdäksesi "
-"uusimmat uutisemme, tapahtumamme, alennuksemme ja paljon muuta!</font>"
 
 #. module: mass_mailing_themes
 #: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_coupon_template
@@ -225,8 +217,6 @@ msgid ""
 "<font style=\"color: rgb(255, 255, 255);\">Thank you for being one of our "
 "most loyal customers.</font>"
 msgstr ""
-"<font style=\"color: rgb(255, 255, 255);\">Kiitos, että olet yksi "
-"uskollisimmista asiakkaistamme.</font>"
 
 #. module: mass_mailing_themes
 #: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_event_template
@@ -265,17 +255,12 @@ msgstr ""
 #. module: mass_mailing_themes
 #: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_promotion_template
 msgid ""
-"<font style=\"font-size: 62px; background-color: rgb(255, 255, 255);"
-"\">&amp;nbsp;10% OFF&amp;nbsp;</font>\n"
+"<font style=\"font-size: 62px; background-color: rgb(255, 255, 255);\">&amp;"
+"nbsp;10% OFF&amp;nbsp;</font>\n"
 "                    <br/>\n"
 "                    <font style=\"font-size: 62px; background-color: "
 "rgb(255, 255, 255);\">&amp;nbsp;SALES&amp;nbsp;</font>"
 msgstr ""
-"<font style=\"font-size: 62px; background-color: rgb(255, 255, 255);"
-"\">&amp;nbsp;10% ALE&amp;nbsp;</font>\n"
-"                    <br/>\n"
-"                    <font style=\"font-size: 62px; background-color: "
-"rgb(255, 255, 255);\">&amp;nbsp;MYYNTI&amp;nbsp;</font>"
 
 #. module: mass_mailing_themes
 #: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_training_template
@@ -283,8 +268,6 @@ msgid ""
 "<i class=\"fa fa-map-marker\" contenteditable=\"false\"/> London, United "
 "Kingdom"
 msgstr ""
-"<i class=\"fa fa-map-marker\" contenteditable=\"false\"/> Lontoo, Yhdistynyt "
-"kuningaskunta"
 
 #. module: mass_mailing_themes
 #: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_blogging_template
@@ -482,8 +465,6 @@ msgid ""
 "<span style=\"font-weight: bolder;\"><font class=\"text-white\">VIP10</"
 "font></span>"
 msgstr ""
-"<span style=\"font-weight: bolder;\"><font class=\"text-white\">VIP10</"
-"font></span>"
 
 #. module: mass_mailing_themes
 #: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_training_template
@@ -632,8 +613,8 @@ msgstr ""
 "Kuten tavallista, minun olisi pitänyt kuunnella vaimoani. Hän on paljon "
 "selväjärkisempi kuin minä. Joka viikko valitin hänelle: \"Se ei riitä, "
 "meidän pitäisi kasvaa nopeammin, mitä minulta jää huomaamatta?\", ja hänellä "
-"oli tapana vastata: \"Mutta te olette jo Belgian nopeimmin kasvava yritys!\" "
-"(Deloitte palkitsi meidät"
+"oli tapana vastata: \"Mutta te olette jo Belgian nopeimmin kasvava yritys!"
+"\" (Deloitte palkitsi meidät"
 
 #. module: mass_mailing_themes
 #: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
@@ -862,10 +843,7 @@ msgstr ""
 "interaktiivisiin esityksiin ja demoihin."
 
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_blogging_template
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_coffeebreak_template
 #: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_training_template
 msgid "Facebook"
 msgstr "Facebook"
 
@@ -1063,10 +1041,7 @@ msgid "Infographic: Our Company Throughout The Generations"
 msgstr "Infografiikka: Yrityksemme sukupolvien kautta"
 
 #. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_blogging_template
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_coffeebreak_template
 #: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_training_template
 msgid "Instagram"
 msgstr "Instagram"
 
@@ -1111,8 +1086,8 @@ msgid ""
 "Learn through workshops, product demos, and inspiring talks from Odoo "
 "Experts and Partners."
 msgstr ""
-"Opiskele työpajoissa, tuote-esittelyissä ja Odoo-asiantuntijoiden ja "
-"-kumppaneiden inspiroivissa puheenvuoroissa."
+"Opiskele työpajoissa, tuote-esittelyissä ja Odoo-asiantuntijoiden ja -"
+"kumppaneiden inspiroivissa puheenvuoroissa."
 
 #. module: mass_mailing_themes
 #: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_roadshow2_template
@@ -1133,12 +1108,6 @@ msgstr "Linkki 3"
 #: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_roadshow2_template
 msgid "Link 4"
 msgstr "Linkki 4"
-
-#. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_blogging_template
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_training_template
-msgid "LinkedIn"
-msgstr "LinkedIn"
 
 #. module: mass_mailing_themes
 #: model_terms:ir.ui.view,arch_db:mass_mailing_themes.email_designer_themes
@@ -1333,7 +1302,7 @@ msgstr "Nähdään pian!"
 #. module: mass_mailing_themes
 #: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_roadshow1_template
 msgid "See you soon."
-msgstr "Nähdään pian."
+msgstr "Nähdään pian!"
 
 #. module: mass_mailing_themes
 #: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_bignews_template
@@ -1476,11 +1445,6 @@ msgstr ""
 "Kolme vuotta myöhemmin huomasin, ettei maailmaa voi muuttaa, jos on "
 "\"pieni\". Varsinkin jos Yhdysvallat on osa tätä maailmaa, jossa on parempi "
 "olla BigERP kuin TinyERP. Voitko kuvitella, kuinka pieneksi tunnet itsesi"
-
-#. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_blogging_template
-msgid "TikTok"
-msgstr "TikTok"
 
 #. module: mass_mailing_themes
 #: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
@@ -1688,7 +1652,7 @@ msgstr "Viikoittaiset mietteet"
 #. module: mass_mailing_themes
 #: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_coffeebreak_template
 msgid "Why You Need Two Types of Content Strategists"
-msgstr "Miksi tarvitset kahdentyyppisiä sisältöstrategisteja"
+msgstr "Miksi tarvitset kahdenlaisia sisältöstrategioita?"
 
 #. module: mass_mailing_themes
 #: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
@@ -1717,14 +1681,6 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_magazine_template
 msgid "Woman having breakfast in bed"
 msgstr "Nainen syö aamiaista sängyssä"
-
-#. module: mass_mailing_themes
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_blogging_template
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_coffeebreak_template
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
-#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_training_template
-msgid "X"
-msgstr ""
 
 #. module: mass_mailing_themes
 #: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_roadshow2_template
@@ -1865,88 +1821,4 @@ msgstr "muutimme liiketoimintamalliamme"
 #. module: mass_mailing_themes
 #: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
 msgid "with 1549% growth of the turnover between 2007 and 2011)."
-msgstr "1549% liikevaihdon kasvulla vuosina 2007-2011)."
-
-#~ msgid ""
-#~ "<font style=\"font-size: 62px; background-color: rgb(255, 255, 255);"
-#~ "\">&amp;nbsp;10% OFF&amp;nbsp;</font>\n"
-#~ "                    <br/>\n"
-#~ "                        <font style=\"font-size: 62px; background-color: "
-#~ "rgb(255, 255, 255);\">&amp;nbsp;SALES&amp;nbsp;</font>"
-#~ msgstr ""
-#~ "<font style=\"font-size: 62px; background-color: rgb(255, 255, 255);"
-#~ "\">&amp;nbsp;10% ALE&amp;nbsp;</font>\n"
-#~ "                    <br/>\n"
-#~ "                        <font style=\"font-size: 62px; background-color: "
-#~ "rgb(255, 255, 255);\">&amp;nbsp;MYYNTI&amp;nbsp;</font>"
-
-#~ msgid "$100 OFF"
-#~ msgstr "100 € ALE"
-
-#~ msgid ""
-#~ "<i class=\"fa fa-2x fa-ticket\" style=\"color: rgb(36, 37, 48) !important;"
-#~ "\"/>​"
-#~ msgstr ""
-#~ "<i class=\"fa fa-2x fa-ticket\" style=\"color: rgb(36, 37, 48) !important;"
-#~ "\"/>"
-
-#~ msgid ""
-#~ "<span class=\"fa fa-facebook\" style=\"color: rgb(54, 166, 210) !"
-#~ "important; font-size: 18px;\"/>​"
-#~ msgstr ""
-#~ "<span class=\"fa fa-facebook\" style=\"color: rgb(54, 166, 210) !"
-#~ "important; font-size: 18px;\"/>"
-
-#~ msgid ""
-#~ "<span class=\"fa fa-linkedin\" style=\"color: rgb(54, 166, 210) !"
-#~ "important; font-size: 18px;\"/>​"
-#~ msgstr ""
-#~ "<span class=\"fa fa-linkedin\" style=\"color: rgb(54, 166, 210) !"
-#~ "important; font-size: 18px;\"/>"
-
-#~ msgid ""
-#~ "<span class=\"fa fa-twitter\" style=\"color: rgb(54, 166, 210) !"
-#~ "important; font-size: 18px;\"/>​"
-#~ msgstr ""
-#~ "<span class=\"fa fa-twitter\" style=\"color: rgb(54, 166, 210) !"
-#~ "important; font-size: 18px;\"/>"
-
-#~ msgid "<span style=\"font-weight: bolder;\">VIP10</span>"
-#~ msgstr "<span style=\"font-weight: bolder;\">VIP10</span>"
-
-#~ msgid ""
-#~ "An interactive, fun\n"
-#~ "                                    <br/>and comprehensive experience"
-#~ msgstr ""
-#~ "Vuorovaikutteinen, hauska\n"
-#~ "                                   <br/>ja kattava kokemus"
-
-#~ msgid ""
-#~ "Get 6-months' worth of knowledge\n"
-#~ "                                    <br/>in just 2 days"
-#~ msgstr ""
-#~ "Hanki 6 kuukauden tietämys\n"
-#~ "                                   <br/>vain 2 päivässä"
-
-#~ msgid ""
-#~ "Join the community to see our latest news, events, discounts and much "
-#~ "more!"
-#~ msgstr ""
-#~ "Liity yhteisöön nähdäksesi uusimmat uutiset, tapahtumat, alennukset ja "
-#~ "paljon muuta!"
-
-#~ msgid ""
-#~ "Meet (other) awesome members\n"
-#~ "                                    <br/>of the community"
-#~ msgstr ""
-#~ "Tapaa (muita) mahtavia \n"
-#~ "                                   <br/>yhteisön jäseniä"
-
-#~ msgid "Thank you for being one of our most loyal customers."
-#~ msgstr "Kiitos, että olet yksi uskollisimmista asiakkaistamme."
-
-#~ msgid "Twitter"
-#~ msgstr "Twitter"
-
-#~ msgid "VIP members only"
-#~ msgstr "Vain VIP-jäsenet"
+msgstr "1549% liikevaihdon kasvua vuosina 2007-2011)."

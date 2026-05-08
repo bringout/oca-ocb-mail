@@ -1,27 +1,18 @@
-import {
-    Component,
-    onMounted,
-    onWillDestroy,
-    status,
-    useComponent,
-    useEffect,
-    useRef,
-    useState,
-    useSubEnv,
-} from "@odoo/owl";
-import { LazyComponent, loadBundle } from "@web/core/assets";
-import { Deferred } from "@web/core/utils/concurrency";
+import { Editor } from "@html_editor/editor";
+import { LocalOverlayContainer } from "@html_editor/local_overlay_container";
+import { loadIframe, loadIframeBundles } from "@mail/convert_inline/iframe_utils";
+import { Component, onMounted, onWillDestroy, onWillUnmount, status } from "@odoo/owl";
+import { LazyComponent } from "@web/core/lazy_component";
+import { isBrowserSafari } from "@web/core/browser/feature_detection";
+import { localization } from "@web/core/l10n/localization";
+import { _t } from "@web/core/l10n/translation";
 import { uniqueId } from "@web/core/utils/functions";
 import { useChildRef, useForwardRefToParent } from "@web/core/utils/hooks";
 import { renderToFragment } from "@web/core/utils/render";
-import { LocalOverlayContainer } from "@html_editor/local_overlay_container";
-import { Editor } from "@html_editor/editor";
-import { useThrottleForAnimation } from "@web/core/utils/timing";
 import { closestScrollableY } from "@web/core/utils/scrolling";
-import { _t } from "@web/core/l10n/translation";
-import { localization } from "@web/core/l10n/localization";
-import { isBrowserSafari } from "@web/core/browser/feature_detection";
-import { loadIframe } from "@mail/convert_inline/iframe_utils";
+import { useThrottleForAnimation } from "@web/core/utils/timing";
+import { useComponent, useLayoutEffect, useRef, useState, useSubEnv } from "@web/owl2/utils";
+import { loadGoogleFonts } from "./mass_mailing_iframe_utils";
 
 const IFRAME_VALUE_SELECTOR = ".o_mass_mailing_value";
 
@@ -58,12 +49,10 @@ export class MassMailingIframe extends Component {
         iframeRef: { type: Function },
         iframeWrapperRef: { type: Function },
         showThemeSelector: { type: Boolean, optional: true },
-        onIframeLoad: { type: Function, optional: true }, // deprecated
         showCodeView: { type: Boolean, optional: true },
         toggleCodeView: { type: Function, optional: true },
         readonly: { type: Boolean, optional: true },
         onEditorLoad: { type: Function, optional: true },
-        onBlur: { type: Function, optional: true }, // deprecated
         onFocus: { type: Function, optional: true },
         extraClass: { type: String, optional: true },
         withBuilder: { type: Boolean, optional: true },
@@ -88,7 +77,7 @@ export class MassMailingIframe extends Component {
             isMobile: false,
             ready: false,
         });
-        this.iframeLoaded = new Deferred();
+        this.iframeLoaded = Promise.withResolvers();
         onMounted(() => {
             this.setupIframe();
         });
@@ -122,7 +111,6 @@ export class MassMailingIframe extends Component {
         };
         const sidebarResize = () => {
             const sidebar = this.sidebarRef.el;
-            const iframe = this.iframeRef.el;
             if (!sidebar) {
                 return;
             }
@@ -158,7 +146,12 @@ export class MassMailingIframe extends Component {
                     : `${stickyHeight}px`;
                 const maxHeight = this.state.isMobile
                     ? 1000
-                    : iframe.getBoundingClientRect().height;
+                    : Math.max(
+                          // height to fill remaining viewport space on an unscrolled page
+                          window.innerHeight - sidebar.parentElement.getBoundingClientRect().y - 5,
+                          // height of the parent element
+                          sidebar.parentElement.clientHeight
+                      );
                 const offsetHeight =
                     window.innerHeight -
                     stickyHeight -
@@ -177,9 +170,9 @@ export class MassMailingIframe extends Component {
             iframeResize();
             sidebarResize();
         });
-        useEffect(
+        useLayoutEffect(
             () => {
-                this.iframeLoaded.then(() => {
+                this.iframeLoaded.promise.then(() => {
                     if (status(this) === "destroyed") {
                         return;
                     }
@@ -192,9 +185,9 @@ export class MassMailingIframe extends Component {
             },
             () => [this.state.showFullscreen]
         );
-        useEffect(
+        useLayoutEffect(
             () => {
-                this.iframeLoaded.then(() => {
+                this.iframeLoaded.promise.then(() => {
                     if (status(this) === "destroyed") {
                         return;
                     }
@@ -207,6 +200,11 @@ export class MassMailingIframe extends Component {
             },
             () => [this.state.isMobile]
         );
+        onWillUnmount(() => {
+            if (this.htmlResizeObserver) {
+                this.htmlResizeObserver.disconnect();
+            }
+        });
         onWillDestroy(() => {
             this.iframeLoaded.resolve(false);
         });
@@ -214,15 +212,6 @@ export class MassMailingIframe extends Component {
 
     get isBrowserSafari() {
         return isBrowserSafari();
-    }
-
-    getIframeBundles({ readonly, withBuilder } = this.props) {
-        if (readonly) {
-            return ["mass_mailing.assets_iframe_style"];
-        } else if (withBuilder) {
-            return ["mass_mailing.assets_inside_builder_iframe"];
-        }
-        return ["mass_mailing.assets_inside_basic_editor_iframe"];
     }
 
     async setupIframe() {
@@ -240,7 +229,7 @@ export class MassMailingIframe extends Component {
         } else if (loadingError) {
             throw loadingError;
         }
-        const htmlResizeObserver = new ResizeObserver(this.throttledResize);
+        this.htmlResizeObserver = new ResizeObserver(this.throttledResize);
         this.iframeRef.el.contentDocument.body.classList.add("o_in_iframe");
         if (this.props.withBuilder) {
             this.iframeRef.el.contentDocument.body.classList.add("o_mass_mailing_with_builder");
@@ -248,7 +237,7 @@ export class MassMailingIframe extends Component {
             this.iframeRef.el.contentDocument.body.classList.add("bg-white");
         }
         this.iframeRef.el.contentDocument.body.appendChild(this.renderBodyContent());
-        htmlResizeObserver.observe(
+        this.htmlResizeObserver.observe(
             this.iframeRef.el.contentDocument.body.querySelector(IFRAME_VALUE_SELECTOR)
         );
         if (this.props.readonly) {
@@ -263,12 +252,7 @@ export class MassMailingIframe extends Component {
             this.iframeRef.el.removeAttribute("is-ready");
         });
         this.iframeRef.el.contentWindow.addEventListener("focus", this.props.onFocus.bind(this));
-        this.iframeLoaded.resolve({
-            iframe: this.iframeRef.el,
-            // TODO EGGMAIL: deprecated bundleControls
-            bundleControls: this.bundleControls,
-        });
-        this.props.onIframeLoad?.(this.iframeLoaded);
+        this.iframeLoaded.resolve(this.iframeRef.el);
         this.state.ready = true;
     }
 
@@ -300,7 +284,7 @@ export class MassMailingIframe extends Component {
     }
 
     async setupBasicEditor() {
-        await this.iframeLoaded;
+        await this.iframeLoaded.promise;
         if (status(this) === "destroyed") {
             return;
         }
@@ -313,48 +297,20 @@ export class MassMailingIframe extends Component {
         );
     }
 
-    /**
-     * @returns {Object} bundleControls { bundleName: activatorObject }
-     * TODO EGGMAIL: bundleControls are deprecated (unused)
-     */
     async loadIframeAssets() {
-        const bundleEntryPromises = this.getIframeBundles().map(async (bundle) => {
-            const targets = (
-                await loadBundle(bundle, {
-                    targetDoc: this.iframeRef.el.contentDocument,
-                    css: true,
-                    js: false,
-                })
-            ).map((bundleEvent) => bundleEvent.target);
-            const iframe = this.iframeRef.el;
-            return [
-                bundle,
-                {
-                    toggle(enable = false) {
-                        if (!iframe?.isConnected) {
-                            return;
-                        }
-                        for (const target of targets) {
-                            if (enable && !iframe.contentDocument.head.contains(target)) {
-                                iframe.contentDocument.head.appendChild(target);
-                            } else if (!enable && iframe.contentDocument.head.contains(target)) {
-                                target.remove();
-                            }
-                        }
-                    },
-                },
-            ];
-        });
-        return Object.fromEntries(await Promise.all(bundleEntryPromises));
-    }
-
-    /**
-     * @deprecated
-     */
-    onBlur(ev) {
-        if (!this.props.readonly) {
-            this.props.onBlur(ev);
+        const { readonly, withBuilder } = this.props;
+        let iframeBundles;
+        if (readonly) {
+            iframeBundles = ["mass_mailing.assets_iframe_style"];
+        } else if (withBuilder) {
+            iframeBundles = ["mass_mailing.assets_inside_builder_iframe"];
+        } else {
+            iframeBundles = ["mass_mailing.assets_inside_basic_editor_iframe"];
         }
+        return Promise.all([
+            loadIframeBundles(this.iframeRef.el, iframeBundles),
+            loadGoogleFonts(this.iframeRef.el.contentDocument),
+        ]);
     }
 
     renderHeadContent() {
@@ -368,10 +324,7 @@ export class MassMailingIframe extends Component {
     getBuilderProps() {
         return {
             overlayRef: this.overlayRef,
-            // TODO EGGMAIL: iframeInfo is deprecated (should resolve to iframe directly)
-            iframeLoaded: this.iframeLoaded.then((iframeInfo) =>
-                iframeInfo ? iframeInfo.iframe : false
-            ),
+            iframeLoaded: this.iframeLoaded.promise,
             snippetsName: "mass_mailing.email_designer_snippets",
             config: this.props.config,
             isMobile: this.state.isMobile,

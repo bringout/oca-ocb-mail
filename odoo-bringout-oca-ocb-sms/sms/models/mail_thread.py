@@ -179,6 +179,7 @@ class MailThread(models.AbstractModel):
             'body': body,
             'mail_message_id': message.id,
             'state': 'outgoing',
+            'sms_type': kwargs.get('sms_type'),
         }
 
         # notify from computed recipients_data (followers, specific recipients)
@@ -205,7 +206,7 @@ class MailThread(models.AbstractModel):
                 partner_id=False,
                 number=n,
                 state='outgoing' if n else 'error',
-                failure_type='' if n else 'sms_number_missing',
+                failure_type=False if n else 'sms_number_missing',
             ) for n in tocreate_numbers if n not in existing_partners_numbers]
 
         # create sms and notification
@@ -222,7 +223,7 @@ class MailThread(models.AbstractModel):
                 'sms_tracker_ids': [Command.create({'sms_uuid': sms.uuid})] if sms.state == 'outgoing' else False,
                 'is_read': True,  # discard Inbox notification
                 'notification_status': 'ready' if sms.state == 'outgoing' else 'exception',
-                'failure_type': '' if sms.state == 'outgoing' else sms.failure_type,
+                'failure_type': False if sms.state == 'outgoing' else sms.failure_type,
             } for sms in sms_all]
             if notif_create_values:
                 self.env['mail.notification'].sudo().create(notif_create_values)
@@ -234,7 +235,7 @@ class MailThread(models.AbstractModel):
 
     def _get_notify_valid_parameters(self):
         return super()._get_notify_valid_parameters() | {
-            'put_in_queue', 'sms_numbers', 'sms_pid_to_number', 'sms_content',
+            'put_in_queue', 'sms_numbers', 'sms_pid_to_number', 'sms_content', 'sms_type',
         }
 
     @api.model

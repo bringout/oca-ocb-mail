@@ -46,11 +46,11 @@ test("Can invite a partner to a livechat channel", async () => {
             }),
         ],
         channel_type: "livechat",
-        livechat_operator_id: serverState.partnerId,
     });
     await start();
     await openDiscuss(channelId);
     await contains(".o-livechat-ChannelInfoList"); // wait for auto-open of this panel
+    await click("button[title='Members']");
     await click("button[title='Invite People']");
     await click("input", {
         parent: [".o-discuss-ChannelInvitation-selectable", { text: "James" }],
@@ -63,7 +63,6 @@ test("Can invite a partner to a livechat channel", async () => {
         text: "Mitch (FR) invited James to the channel1:00 PM",
     });
     await contains(".o-discuss-ChannelInvitation", { count: 0 });
-    await click("button[title='Members']");
     await contains(".o-discuss-ChannelMember", { text: "James" });
 });
 
@@ -71,13 +70,11 @@ test("Available operators come first", async () => {
     const pyEnv = await startServer();
     pyEnv["res.partner"].create({
         name: "Harry",
-        im_status: "offline",
-        user_ids: [pyEnv["res.users"].create({ name: "Harry" })],
+        user_ids: [pyEnv["res.users"].create({ name: "Harry", im_status: "offline" })],
     });
     const ronId = pyEnv["res.partner"].create({
         name: "Ron",
-        im_status: "online",
-        user_ids: [pyEnv["res.users"].create({ name: "Available operator" })],
+        user_ids: [pyEnv["res.users"].create({ name: "Available operator", im_status: "online" })],
     });
     pyEnv["im_livechat.channel"].create({
         available_operator_ids: [Command.create({ partner_id: ronId })],
@@ -93,6 +90,7 @@ test("Available operators come first", async () => {
     await start();
     await openDiscuss(channelId);
     await contains(".o-livechat-ChannelInfoList"); // wait for auto-open of this panel
+    await click("button[title='Members']");
     await click("button[title='Invite People']");
     await contains(".o-discuss-ChannelInvitation-selectable", { count: 2 });
     await contains(":nth-child(1 of .o-discuss-ChannelInvitation-selectable)", { text: "Ron" });
@@ -104,13 +102,11 @@ test("Partners invited most frequently by the current user come first", async ()
     const pyEnv = await startServer();
     pyEnv["res.partner"].create({
         name: "John",
-        im_status: "offline",
-        user_ids: [pyEnv["res.users"].create({ name: "John" })],
+        user_ids: [pyEnv["res.users"].create({ name: "John", im_status: "offline" })],
     });
     pyEnv["res.partner"].create({
         name: "Albert",
-        im_status: "offline",
-        user_ids: [pyEnv["res.users"].create({ name: "Albert" })],
+        user_ids: [pyEnv["res.users"].create({ name: "Albert", im_status: "offline" })],
     });
     const guestId_1 = pyEnv["mail.guest"].create({ name: "Visitor #1" });
     pyEnv["discuss.channel"].create({
@@ -127,7 +123,6 @@ test("Partners invited most frequently by the current user come first", async ()
                 livechat_member_type: "visitor",
             }),
         ],
-        livechat_operator_id: serverState.partnerId,
     });
     const guestId_2 = pyEnv["mail.guest"].create({ name: "Visitor #2" });
     pyEnv["discuss.channel"].create({
@@ -144,15 +139,16 @@ test("Partners invited most frequently by the current user come first", async ()
                 livechat_member_type: "visitor",
             }),
         ],
-        livechat_operator_id: serverState.partnerId,
     });
     await start();
     await openDiscuss();
     await click(".o-mail-DiscussSidebarChannel", { text: "Visitor #1" });
     await contains(".o-livechat-ChannelInfoList"); // wait for auto-open of this panel
+    await click("button[title='Members']");
     await click("button[title='Invite People']");
     await click("input", { parent: [".o-discuss-ChannelInvitation-selectable", { text: "John" }] });
     await click("button:enabled", { text: "Invite" });
+    await contains(".o-discuss-ChannelMember", { text: "John" });
     await click(".o-mail-DiscussSidebarChannel", { text: "Visitor #2" });
     await click("button[title='Invite People']");
     await contains(".o-discuss-ChannelInvitation-selectable", { count: 2 });
@@ -193,6 +189,7 @@ test("shows operators are in call", async () => {
     await start();
     await openDiscuss(channelId);
     await contains(".o-livechat-ChannelInfoList"); // wait for auto-open of this panel
+    await click("button[title='Members']");
     await click("[title='Invite People']");
     await contains(".o-discuss-ChannelInvitation-selectable:contains('bob in a call')");
     await contains(".o-discuss-ChannelInvitation-selectable:contains('john')");
@@ -205,8 +202,7 @@ test("Operator invite shows livechat_username", async () => {
     const pyEnv = await startServer();
     pyEnv["res.partner"].create({
         name: "John",
-        im_status: "offline",
-        user_ids: [pyEnv["res.users"].create({ name: "John" })],
+        user_ids: [pyEnv["res.users"].create({ name: "John", im_status: "offline" })],
         user_livechat_username: "Johnny",
     });
     const guestId_1 = pyEnv["mail.guest"].create({ name: "Visitor #1" });
@@ -224,12 +220,12 @@ test("Operator invite shows livechat_username", async () => {
                 livechat_member_type: "visitor",
             }),
         ],
-        livechat_operator_id: serverState.partnerId,
     });
     await start();
     await openDiscuss();
     await click(".o-mail-DiscussSidebarChannel", { text: "Visitor #1" });
     await contains(".o-livechat-ChannelInfoList"); // wait for auto-open of this panel
+    await click("button[title='Members']");
     await click("button[title='Invite People']");
     await contains("input", {
         parent: [".o-discuss-ChannelInvitation-selectable", { text: "Johnny" }],

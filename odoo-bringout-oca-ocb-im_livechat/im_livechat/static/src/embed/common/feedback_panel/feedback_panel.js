@@ -1,7 +1,8 @@
+import { useState } from "@web/owl2/utils";
 import { RATING } from "@im_livechat/embed/common/livechat_service";
 import { TranscriptSender } from "@im_livechat/core/common/transcript_sender";
 
-import { Component, useState } from "@odoo/owl";
+import { Component } from "@odoo/owl";
 
 import { useService } from "@web/core/utils/hooks";
 import { session } from "@web/session";
@@ -49,11 +50,6 @@ export class FeedbackPanel extends Component {
             this.store.livechat_rule?.action !== "hide_button" &&
             this.livechatService.options.channel_id
         );
-    }
-
-    /** @deprecated use `thread.transcriptUrl` instead */
-    get transcriptUrl() {
-        return this.props.thread.transcriptUrl;
     }
 
     onClickSendFeedback() {

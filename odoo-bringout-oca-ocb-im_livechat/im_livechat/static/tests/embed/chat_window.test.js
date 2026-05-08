@@ -1,3 +1,4 @@
+import { waitUntilSubscribe } from "@bus/../tests/bus_test_helpers";
 import {
     defineLivechatModels,
     loadDefaultEmbedConfig,
@@ -14,8 +15,8 @@ import {
     startServer,
     triggerHotkey,
 } from "@mail/../tests/mail_test_helpers";
-import { describe, test } from "@odoo/hoot";
-import { asyncStep, serverState, waitForSteps, withUser } from "@web/../tests/web_test_helpers";
+import { describe, expect, test } from "@odoo/hoot";
+import { getService, serverState, withUser } from "@web/../tests/web_test_helpers";
 
 import { deserializeDateTime } from "@web/core/l10n/dates";
 import { rpc } from "@web/core/network/rpc";
@@ -40,13 +41,36 @@ test("internal users can upload file to temporary thread", async () => {
     await contains(".o-mail-Message .o-mail-AttachmentContainer:contains(text.txt)");
 });
 
-test("Conversation name is operator livechat user name", async () => {
+test("The name of the conversation changes based on the agents' names", async () => {
     const pyEnv = await startServer();
     await loadDefaultEmbedConfig();
     pyEnv["res.partner"].write(serverState.partnerId, { user_livechat_username: "MitchellOp" });
     await start({ authenticateAs: false });
     await click(".o-livechat-LivechatButton");
     await contains(".o-mail-ChatWindow-header", { text: "MitchellOp" });
+    await insertText(".o-mail-Composer-input", "Hello World!");
+    await triggerHotkey("Enter");
+    await waitUntilSubscribe();
+    const [channelId] = pyEnv["discuss.channel"].search([
+        ["channel_type", "=", "livechat"],
+        [
+            "channel_member_ids",
+            "in",
+            pyEnv["discuss.channel.member"].search([["guest_id", "=", pyEnv.cookie.get("dgid")]]),
+        ],
+    ]);
+    const userId = pyEnv["res.users"].create({
+        name: "James",
+    });
+    const secondAgent = pyEnv["res.partner"].create({
+        lang: "en",
+        name: "James",
+        user_ids: [userId],
+    });
+    getService("orm").call("discuss.channel", "add_members", [[channelId]], {
+        partner_ids: [secondAgent],
+    });
+    await contains(".o-mail-ChatWindow-header", { text: "MitchellOp, James" });
 });
 
 test("Portal users should not be able to start a call", async () => {
@@ -132,7 +156,7 @@ test("can close confirm livechat with keyboard", async () => {
     await loadDefaultEmbedConfig();
     onRpcBefore((route) => {
         if (route === "/im_livechat/visitor_leave_session") {
-            asyncStep(route);
+            expect.step(route);
         }
     });
     await start({ authenticateAs: false });
@@ -142,17 +166,17 @@ test("can close confirm livechat with keyboard", async () => {
     await triggerHotkey("Enter");
     await contains(".o-mail-Thread:not([data-transient])");
     await triggerHotkey("Escape");
-    await contains(".o-livechat-CloseConfirmation", {
-        text: "Leaving will end the live chat. Do you want to proceed?",
-    });
+    await contains(
+        ".o-livechat-CloseConfirmation:has(:text('Leaving will end the live chat with Mitchell Admin. Are you sure you want to continue?'))"
+    );
     await triggerHotkey("Escape");
     await contains(".o-livechat-CloseConfirmation", { count: 0 });
     await triggerHotkey("Escape");
-    await contains(".o-livechat-CloseConfirmation", {
-        text: "Leaving will end the live chat. Do you want to proceed?",
-    });
+    await contains(
+        ".o-livechat-CloseConfirmation:has(:text('Leaving will end the live chat with Mitchell Admin. Are you sure you want to continue?'))"
+    );
     await triggerHotkey("Enter");
-    await waitForSteps(["/im_livechat/visitor_leave_session"]);
+    await expect.waitForSteps(["/im_livechat/visitor_leave_session"]);
     await contains(".o-mail-ChatWindow", { text: "Did we correctly answer your question?" });
 });
 
@@ -167,10 +191,7 @@ test("Should not show IM status of agents", async () => {
         password: "joel",
     });
     pyEnv["res.partner"].create({ name: "Joel", user_ids: [joelUid] });
-    pyEnv["res.partner"].write(serverState.partnerId, {
-        im_status: "online",
-        user_livechat_username: "MitchellOp",
-    });
+    pyEnv["res.partner"].write(serverState.partnerId, { user_livechat_username: "MitchellOp" });
     await start({ authenticateAs: { login: "joel", password: "joel" } });
     await click(".o-livechat-LivechatButton");
     await contains(".o-mail-ChatWindow-header:text('MitchellOp')");

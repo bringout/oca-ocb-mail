@@ -2,8 +2,10 @@ import { BuilderAction } from "@html_builder/core/builder_action";
 import { Plugin } from "@html_editor/plugin";
 import { registry } from "@web/core/registry";
 import { memoize } from "@web/core/utils/functions";
-import { CUSTOMIZE_MAILING_VARIABLES } from "@mass_mailing/builder/plugins/customize_mailing_variables";
-import { CUSTOMIZE_MAILING_VARIABLES_DEFAULTS } from "./customize_mailing_variables";
+import {
+    CUSTOMIZE_MAILING_VARIABLES,
+    CUSTOMIZE_MAILING_VARIABLES_DEFAULTS,
+} from "@mass_mailing/builder/plugins/customize_mailing_variables";
 import { splitSelectorAroundCommasOutsideParentheses } from "@mail/views/web/fields/html_mail_field/convert_inline";
 import { getCSSVariableValue } from "@html_editor/utils/formatting";
 
@@ -25,8 +27,8 @@ export class CustomizeMailingPlugin extends Plugin {
         builder_actions: {
             CustomizeMailingVariable,
         },
-        clean_for_save_handlers: ({ root }) => this.cleanForSave(root),
-        snippet_preview_dialog_stylesheets_handlers: ({ iframe }) => {
+        clean_for_save_processors: (root) => this.cleanForSave(root),
+        snippet_preview_dialog_stylesheets_processors: ({ iframe }) => {
             const styleSheet = this.extractStylesheetForPreview(iframe.contentDocument);
             iframe.contentDocument.adoptedStyleSheets.push(styleSheet);
         },

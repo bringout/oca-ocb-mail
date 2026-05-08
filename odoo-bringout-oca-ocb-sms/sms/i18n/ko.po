@@ -12,10 +12,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0beta\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-10 18:39+0000\n"
-"PO-Revision-Date: 2026-02-26 06:52+0000\n"
+"POT-Creation-Date: 2026-03-12 18:37+0000\n"
+"PO-Revision-Date: 2026-02-28 13:51+0000\n"
 "Last-Translator: \"Kwanghee Park (kwpa)\" <kwpa@odoo.com>\n"
-"Language-Team: Korean <https://translate.odoo.com/projects/odoo-19/sms/ko/>\n"
+"Language-Team: Korean <https://translate.odoo.com/projects/odoo-s19-2/sms/ko/"
+">\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -54,6 +55,11 @@ msgstr "%s (사본)"
 #: code:addons/sms/wizard/sms_composer.py:0
 msgid "%s invalid recipients"
 msgstr "%s 잘못된 수신자"
+
+#. module: sms
+#: model_terms:ir.ui.view,arch_db:sms.sms_account_phone_view_form
+msgid "+1 555-555-555"
+msgstr "+1 555-555-555"
 
 #. module: sms
 #: model_terms:ir.ui.view,arch_db:sms.iap_account_view_form
@@ -204,6 +210,12 @@ msgstr ""
 "십시오."
 
 #. module: sms
+#: model:ir.model.fields.selection,name:sms.selection__sms_composer__sms_type__alert
+#: model:ir.model.fields.selection,name:sms.selection__sms_sms__sms_type__alert
+msgid "Alert"
+msgstr "경고"
+
+#. module: sms
 #: model:ir.model.fields,help:sms.field_sms_sms__uuid
 msgid "Alternate way to identify a SMS record, used for delivery reports"
 msgstr "배송 보고서에 사용되는 SMS 레코드를 식별할 수 있는 다른 방법"
@@ -274,10 +286,7 @@ msgid "Buy credits."
 msgstr "크레딧을 구매하십시오."
 
 #. module: sms
-#: model_terms:ir.ui.view,arch_db:sms.sms_account_code_view_form
-#: model_terms:ir.ui.view,arch_db:sms.sms_account_phone_view_form
 #: model_terms:ir.ui.view,arch_db:sms.sms_sms_view_tree
-#: model_terms:ir.ui.view,arch_db:sms.sms_template_reset_view_form
 #: model_terms:ir.ui.view,arch_db:sms.sms_tsms_view_form
 msgid "Cancel"
 msgstr "취소"
@@ -312,7 +321,7 @@ msgstr "보낸 사람 이름 선택"
 
 #. module: sms
 #: model:ir.model,name:sms.model_res_company
-msgid "Companies"
+msgid "Company"
 msgstr "회사"
 
 #. module: sms
@@ -404,12 +413,6 @@ msgid "Delivered"
 msgstr "배송완료"
 
 #. module: sms
-#: model_terms:ir.ui.view,arch_db:sms.sms_composer_view_form
-#: model_terms:ir.ui.view,arch_db:sms.sms_template_preview_form
-msgid "Discard"
-msgstr "취소"
-
-#. module: sms
 #: model:ir.model.fields,field_description:sms.field_iap_account__display_name
 #: model:ir.model.fields,field_description:sms.field_ir_actions_server__display_name
 #: model:ir.model.fields,field_description:sms.field_ir_model__display_name
@@ -432,7 +435,7 @@ msgstr "표시명"
 
 #. module: sms
 #: model:ir.model,name:sms.model_mail_followers
-msgid "Document Followers"
+msgid "Document Follower"
 msgstr "문서 팔로워"
 
 #. module: sms
@@ -563,9 +566,9 @@ msgstr "ID"
 #: model:ir.model.fields,help:sms.field_mail_blacklist__message_has_sms_error
 #: model:ir.model.fields,help:sms.field_mail_thread__message_has_sms_error
 #: model:ir.model.fields,help:sms.field_mail_thread_blacklist__message_has_sms_error
-#: model:ir.model.fields,help:sms.field_mail_thread_cc__message_has_sms_error
 #: model:ir.model.fields,help:sms.field_mail_thread_main_attachment__message_has_sms_error
 #: model:ir.model.fields,help:sms.field_mail_thread_phone__message_has_sms_error
+#: model:ir.model.fields,help:sms.field_mail_thread_subject_suggested__message_has_sms_error
 #: model:ir.model.fields,help:sms.field_mail_tracking_duration_mixin__message_has_sms_error
 #: model:ir.model.fields,help:sms.field_maintenance_equipment__message_has_sms_error
 #: model:ir.model.fields,help:sms.field_maintenance_request__message_has_sms_error
@@ -616,8 +619,8 @@ msgstr "대상이 잘못되었습니다."
 #. odoo-python
 #: code:addons/sms/tools/sms_api.py:0
 msgid ""
-"Invalid phone number. Please make sure to follow the international format, "
-"i.e. a plus sign (+), then country code, city code, and local phone number. "
+"Invalid phone number. Please make sure to follow the international format, i."
+"e. a plus sign (+), then country code, city code, and local phone number. "
 "For example: +1 555-555-555"
 msgstr ""
 "입력한 전화번호가 잘못되었습니다. 더하기 기호(+) 다음에 국가 번호, 도시 번"
@@ -697,6 +700,12 @@ msgid "Marked for deletion"
 msgstr "삭제 표시"
 
 #. module: sms
+#: model:ir.model.fields.selection,name:sms.selection__sms_composer__sms_type__marketing
+#: model:ir.model.fields.selection,name:sms.selection__sms_sms__sms_type__marketing
+msgid "Marketing"
+msgstr "마케팅"
+
+#. module: sms
 #: model:ir.model,name:sms.model_mail_message
 #: model:ir.model.fields,field_description:sms.field_sms_composer__body
 #: model_terms:ir.ui.view,arch_db:sms.sms_tsms_view_form
@@ -705,7 +714,7 @@ msgstr "메시지"
 
 #. module: sms
 #: model:ir.model,name:sms.model_mail_notification
-msgid "Message Notifications"
+msgid "Message Notification"
 msgstr "메시지 알림"
 
 #. module: sms
@@ -718,7 +727,7 @@ msgstr "누락된 번호"
 
 #. module: sms
 #: model:ir.model,name:sms.model_ir_model
-msgid "Models"
+msgid "Model"
 msgstr "모델"
 
 #. module: sms
@@ -939,7 +948,7 @@ msgstr "재시도"
 
 #. module: sms
 #. odoo-javascript
-#: code:addons/sms/static/src/components/sms_button/sms_button.xml:0
+#: code:addons/sms/static/src/components/phone_field/phone_field.js:0
 #: code:addons/sms/static/src/core/notification_model_patch.js:0
 #: model:ir.actions.act_window,name:sms.sms_sms_action
 #: model:ir.model.fields,field_description:sms.field_mail_notification__sms_id
@@ -1007,9 +1016,9 @@ msgstr "SMS 계정 인증 코드 마법사"
 #: model:ir.model.fields,field_description:sms.field_mail_blacklist__message_has_sms_error
 #: model:ir.model.fields,field_description:sms.field_mail_thread__message_has_sms_error
 #: model:ir.model.fields,field_description:sms.field_mail_thread_blacklist__message_has_sms_error
-#: model:ir.model.fields,field_description:sms.field_mail_thread_cc__message_has_sms_error
 #: model:ir.model.fields,field_description:sms.field_mail_thread_main_attachment__message_has_sms_error
 #: model:ir.model.fields,field_description:sms.field_mail_thread_phone__message_has_sms_error
+#: model:ir.model.fields,field_description:sms.field_mail_thread_subject_suggested__message_has_sms_error
 #: model:ir.model.fields,field_description:sms.field_mail_tracking_duration_mixin__message_has_sms_error
 #: model:ir.model.fields,field_description:sms.field_maintenance_equipment__message_has_sms_error
 #: model:ir.model.fields,field_description:sms.field_maintenance_request__message_has_sms_error
@@ -1156,7 +1165,7 @@ msgstr "지금 보내기"
 
 #. module: sms
 #. odoo-javascript
-#: code:addons/sms/static/src/components/sms_button/sms_button.js:0
+#: code:addons/sms/static/src/components/phone_field/phone_field.js:0
 #: model:ir.actions.act_window,name:sms.res_partner_act_window_sms_composer_multi
 #: model:ir.actions.act_window,name:sms.res_partner_act_window_sms_composer_single
 #: model:ir.actions.act_window,name:sms.sms_composer_action_form
@@ -1278,6 +1287,12 @@ msgstr "지금 건너뛰기"
 #: model:ir.model.fields,field_description:sms.field_sms_template_preview__sms_template_id
 msgid "Sms Template"
 msgstr "SMS 서식"
+
+#. module: sms
+#: model:ir.model.fields,field_description:sms.field_sms_composer__sms_type
+#: model:ir.model.fields,field_description:sms.field_sms_sms__sms_type
+msgid "Sms Type"
+msgstr "SMS 유형"
 
 #. module: sms
 #: model:ir.model.fields,field_description:sms.field_sms_composer__recipient_single_number
@@ -1646,159 +1661,3 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:sms.sms_template_preview_form
 msgid "record:"
 msgstr "레코드 :"
-
-#~ msgid "+1 555-555-555"
-#~ msgstr "+1 555-555-555"
-
-#~ msgid "Action Needed"
-#~ msgstr "조치 필요"
-
-#~ msgid "Action To Do"
-#~ msgstr "수행할 작업"
-
-#~ msgid "Attachment Count"
-#~ msgstr "첨부 파일 수"
-
-#~ msgid "Blacklisted Phone Is Mobile"
-#~ msgstr "블랙리스트 연락처가 휴대폰입니다"
-
-#~ msgid "Blacklisted Phone is Phone"
-#~ msgstr "블랙리스트 연락처가 전화번호입니다"
-
-#~ msgid "Buy credits"
-#~ msgstr "크레딧 구매하기"
-
-#~ msgid "Canceled"
-#~ msgstr "취소됨"
-
-#~ msgid "Close"
-#~ msgstr "닫기"
-
-#~ msgid "Edit Partners"
-#~ msgstr "협력사 편집하기"
-
-#~ msgid "Error Message"
-#~ msgstr "오류 메시지"
-
-#~ msgid ""
-#~ "Field used to store sanitized phone number. Helps speeding up searches "
-#~ "and comparisons."
-#~ msgstr ""
-#~ "삭제된 전화 번호를 저장하는 데 사용되는 필드입니다. 검색 및 비교 속도를 높"
-#~ "이는 데 도움이 됩니다."
-
-#~ msgid "Followers"
-#~ msgstr "팔로워"
-
-#~ msgid "Followers (Partners)"
-#~ msgstr "팔로워 (파트너)"
-
-#~ msgid "Has Insufficient Credit"
-#~ msgstr "크레딧 부족함"
-
-#~ msgid "Has Message"
-#~ msgstr "메시지가 있습니다"
-
-#~ msgid "If checked, new messages require your attention."
-#~ msgstr "만약 선택하였으면, 신규 메시지에 주의를 기울여야 합니다."
-
-#~ msgid "Ignore all"
-#~ msgstr "전체 무시"
-
-#~ msgid "Is Follower"
-#~ msgstr "팔로워임"
-
-#~ msgid "Message Delivery error"
-#~ msgstr "메시지 전송 오류"
-
-#~ msgid ""
-#~ "Message type: email for email message, notification for system message, "
-#~ "comment for other messages such as user replies"
-#~ msgstr ""
-#~ "메시지 유형: 이메일 메시지를 위한 이메일, 시스템 메시지를 위한 알림, 사용"
-#~ "자 댓글과 같은 기타 메시지에 대한 의견"
-
-#~ msgid "Messages"
-#~ msgstr "메시지"
-
-#~ msgid "Notification"
-#~ msgstr "알림"
-
-#~ msgid "Number of Actions"
-#~ msgstr "작업 수"
-
-#~ msgid "Number of errors"
-#~ msgstr "오류 횟수"
-
-#~ msgid "Number of messages which requires an action"
-#~ msgstr "조치가 필요한 메시지 수"
-
-#~ msgid "Number of messages with delivery error"
-#~ msgstr "전송 오류 메시지 수"
-
-#~ msgid ""
-#~ "Optional translation language (ISO code) to select when sending out an "
-#~ "email. If not set, the english version will be used. This should usually "
-#~ "be a placeholder expression that provides the appropriate language, e.g. "
-#~ "{{ object.partner_id.lang }}."
-#~ msgstr ""
-#~ "이메일 전송 시 번역 기능 (ISO code) 을 선택할 수 있습니다. 설정하지 않을 "
-#~ "경우, 영어 버전을 사용합니다. 적합한 언어를 제공하기 위한 다음과 같이 예시"
-#~ "용 메시지를 사용하도록 합니다. {{ object.partner_id.lang }}."
-
-#~ msgid "Partner"
-#~ msgstr "파트너"
-
-#~ msgid "Phone Blacklist Mixin"
-#~ msgstr "전화번호 블랙리스트 혼합"
-
-#~ msgid "Phone Blacklisted"
-#~ msgstr "전화번호 블랙리스트"
-
-#~ msgid "Phone/Mobile"
-#~ msgstr "전화번호/휴대전화"
-
-#~ msgid "Post as Message"
-#~ msgstr "메시지로 게시"
-
-#~ msgid "Post as Note"
-#~ msgstr "메모로 게시"
-
-#~ msgid "Reason"
-#~ msgstr "사유"
-
-#~ msgid "Recipient"
-#~ msgstr "수신인"
-
-#~ msgid "Recipients"
-#~ msgstr "수신인"
-
-#~ msgid "Resend Notification"
-#~ msgstr "알림 재전송"
-
-#~ msgid "SMS API"
-#~ msgstr "SMS API"
-
-#~ msgid "SMS Resend"
-#~ msgstr "SMS 재전송"
-
-#~ msgid "Send SMS Text Message"
-#~ msgstr "SMS 문자메시지 전송"
-
-#~ msgid "Sending Failures"
-#~ msgstr "전송 실패"
-
-#~ msgid "Sms Resend"
-#~ msgstr "SMS 재전송"
-
-#~ msgid "Use blacklist"
-#~ msgstr "블랙리스트 사용"
-
-#~ msgid "Website Messages"
-#~ msgstr "웹사이트 메시지"
-
-#~ msgid "Website communication history"
-#~ msgstr "웹사이트 대화 이력"
-
-#~ msgid "You do not have access to the message and/or related document."
-#~ msgstr "메시지 또는 관련 문서에 접근할 수 없습니다."

@@ -4,15 +4,15 @@
 #
 # Translators:
 # "Dylan Kiss (dyki)" <dyki@odoo.com>, 2025.
-# "Anastasiia Koroleva (koan)" <koan@odoo.com>, 2025, 2026.
+# "Anastasiia Koroleva (koan)" <koan@odoo.com>, 2025.
 # Weblate <noreply-mt-weblate@weblate.org>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-10 18:39+0000\n"
-"PO-Revision-Date: 2026-01-29 15:08+0000\n"
-"Last-Translator: \"Anastasiia Koroleva (koan)\" <koan@odoo.com>\n"
+"POT-Creation-Date: 2026-03-12 18:37+0000\n"
+"PO-Revision-Date: 2025-11-11 17:16+0000\n"
+"Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
 "Language-Team: Russian <https://translate.odoo.com/projects/odoo-19/sms/ru/"
 ">\n"
 "Language: ru\n"
@@ -22,7 +22,7 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
 "(n%100>=11 && n%100<=14)? 2 : 3);\n"
-"X-Generator: Weblate 5.14.3\n"
+"X-Generator: Weblate 5.12.2\n"
 
 #. module: sms
 #: model:ir.model.fields,field_description:sms.field_sms_composer__recipient_invalid_count
@@ -55,6 +55,11 @@ msgstr "%s (копия)"
 #: code:addons/sms/wizard/sms_composer.py:0
 msgid "%s invalid recipients"
 msgstr "%s недействительные получатели"
+
+#. module: sms
+#: model_terms:ir.ui.view,arch_db:sms.sms_account_phone_view_form
+msgid "+1 555-555-555"
+msgstr "+1 555-555-555"
 
 #. module: sms
 #: model_terms:ir.ui.view,arch_db:sms.iap_account_view_form
@@ -149,25 +154,6 @@ msgid ""
 "                                    in the messaging history.\n"
 "                                </span>"
 msgstr ""
-"<span invisible=\"sms_method != 'sms'\">\n"
-"                                    Сообщение будет отправлено в виде СМС "
-"получателям шаблона\n"
-"                                    и не будет отображаться в истории "
-"сообщений.\n"
-"                                </span>\n"
-"                                <span invisible=\"sms_method != 'note'\"> \n"
-"                                    СМС не будет отправлено, оно будет "
-"только опубликовано в виде\n"
-"                                    внутренней заметки в истории сообщений.\n"
-"                                </span>\n"
-"                                <span invisible=\"sms_method != "
-"'comment'\"> \n"
-"                                    СМС будет отправлено в виде СМС "
-"получателям шаблона\n"
-"                                    и также будет опубликовано в виде "
-"внутренней заметки\n"
-"                                    в истории сообщений.\n"
-"                                </span>"
 
 #. module: sms
 #: model_terms:ir.ui.view,arch_db:sms.sms_composer_view_form
@@ -203,6 +189,12 @@ msgid ""
 msgstr ""
 "Добавить контекстное действие по соответствующей модели, чтобы открыть с "
 "помощью этого шаблона создатель смс-сообщений"
+
+#. module: sms
+#: model:ir.model.fields.selection,name:sms.selection__sms_composer__sms_type__alert
+#: model:ir.model.fields.selection,name:sms.selection__sms_sms__sms_type__alert
+msgid "Alert"
+msgstr ""
 
 #. module: sms
 #: model:ir.model.fields,help:sms.field_sms_sms__uuid
@@ -278,10 +270,7 @@ msgid "Buy credits."
 msgstr "Купить кредиты."
 
 #. module: sms
-#: model_terms:ir.ui.view,arch_db:sms.sms_account_code_view_form
-#: model_terms:ir.ui.view,arch_db:sms.sms_account_phone_view_form
 #: model_terms:ir.ui.view,arch_db:sms.sms_sms_view_tree
-#: model_terms:ir.ui.view,arch_db:sms.sms_template_reset_view_form
 #: model_terms:ir.ui.view,arch_db:sms.sms_tsms_view_form
 msgid "Cancel"
 msgstr "Отменить"
@@ -316,8 +305,8 @@ msgstr "Выберите имя отправителя"
 
 #. module: sms
 #: model:ir.model,name:sms.model_res_company
-msgid "Companies"
-msgstr "Компании"
+msgid "Company"
+msgstr ""
 
 #. module: sms
 #: model:ir.model.fields,field_description:sms.field_sms_composer__composition_mode
@@ -408,12 +397,6 @@ msgid "Delivered"
 msgstr "Отгружено"
 
 #. module: sms
-#: model_terms:ir.ui.view,arch_db:sms.sms_composer_view_form
-#: model_terms:ir.ui.view,arch_db:sms.sms_template_preview_form
-msgid "Discard"
-msgstr "Отменить"
-
-#. module: sms
 #: model:ir.model.fields,field_description:sms.field_iap_account__display_name
 #: model:ir.model.fields,field_description:sms.field_ir_actions_server__display_name
 #: model:ir.model.fields,field_description:sms.field_ir_model__display_name
@@ -436,8 +419,8 @@ msgstr "Отображаемое имя"
 
 #. module: sms
 #: model:ir.model,name:sms.model_mail_followers
-msgid "Document Followers"
-msgstr "Подписчики документа"
+msgid "Document Follower"
+msgstr ""
 
 #. module: sms
 #: model:ir.model.fields,field_description:sms.field_sms_composer__res_id
@@ -567,9 +550,9 @@ msgstr "ID"
 #: model:ir.model.fields,help:sms.field_mail_blacklist__message_has_sms_error
 #: model:ir.model.fields,help:sms.field_mail_thread__message_has_sms_error
 #: model:ir.model.fields,help:sms.field_mail_thread_blacklist__message_has_sms_error
-#: model:ir.model.fields,help:sms.field_mail_thread_cc__message_has_sms_error
 #: model:ir.model.fields,help:sms.field_mail_thread_main_attachment__message_has_sms_error
 #: model:ir.model.fields,help:sms.field_mail_thread_phone__message_has_sms_error
+#: model:ir.model.fields,help:sms.field_mail_thread_subject_suggested__message_has_sms_error
 #: model:ir.model.fields,help:sms.field_mail_tracking_duration_mixin__message_has_sms_error
 #: model:ir.model.fields,help:sms.field_maintenance_equipment__message_has_sms_error
 #: model:ir.model.fields,help:sms.field_maintenance_request__message_has_sms_error
@@ -620,8 +603,8 @@ msgstr "Неверный пункт назначения"
 #. odoo-python
 #: code:addons/sms/tools/sms_api.py:0
 msgid ""
-"Invalid phone number. Please make sure to follow the international format, "
-"i.e. a plus sign (+), then country code, city code, and local phone number. "
+"Invalid phone number. Please make sure to follow the international format, i."
+"e. a plus sign (+), then country code, city code, and local phone number. "
 "For example: +1 555-555-555"
 msgstr ""
 "Неверный номер телефона. Пожалуйста, убедитесь, что вы используете "
@@ -701,6 +684,12 @@ msgid "Marked for deletion"
 msgstr "Помечен для удаления"
 
 #. module: sms
+#: model:ir.model.fields.selection,name:sms.selection__sms_composer__sms_type__marketing
+#: model:ir.model.fields.selection,name:sms.selection__sms_sms__sms_type__marketing
+msgid "Marketing"
+msgstr ""
+
+#. module: sms
 #: model:ir.model,name:sms.model_mail_message
 #: model:ir.model.fields,field_description:sms.field_sms_composer__body
 #: model_terms:ir.ui.view,arch_db:sms.sms_tsms_view_form
@@ -709,8 +698,8 @@ msgstr "Сообщение"
 
 #. module: sms
 #: model:ir.model,name:sms.model_mail_notification
-msgid "Message Notifications"
-msgstr "Сообщение Уведомлений"
+msgid "Message Notification"
+msgstr ""
 
 #. module: sms
 #. odoo-javascript
@@ -722,8 +711,8 @@ msgstr "Упущенный номер"
 
 #. module: sms
 #: model:ir.model,name:sms.model_ir_model
-msgid "Models"
-msgstr "Модели"
+msgid "Model"
+msgstr ""
 
 #. module: sms
 #: model:ir.model.fields,field_description:sms.field_sms_template__name
@@ -802,8 +791,8 @@ msgid ""
 msgstr ""
 "Опциональный язык перевода (код ISO), выбираемый при отправке e-mail. Если "
 "не установлен, будет использоваться язык основного партнера. Обычно это "
-"выражение-заполнитель, предоставляющее нужный язык, напр. "
-"{{ object.partner_id.lang }}."
+"выражение-заполнитель, предоставляющее нужный язык, напр. {{ object."
+"partner_id.lang }}."
 
 #. module: sms
 #: model:ir.model,name:sms.model_sms_sms
@@ -945,7 +934,7 @@ msgstr "Повторить"
 
 #. module: sms
 #. odoo-javascript
-#: code:addons/sms/static/src/components/sms_button/sms_button.xml:0
+#: code:addons/sms/static/src/components/phone_field/phone_field.js:0
 #: code:addons/sms/static/src/core/notification_model_patch.js:0
 #: model:ir.actions.act_window,name:sms.sms_sms_action
 #: model:ir.model.fields,field_description:sms.field_mail_notification__sms_id
@@ -1013,9 +1002,9 @@ msgstr "Мастер подтверждения номера телефона п
 #: model:ir.model.fields,field_description:sms.field_mail_blacklist__message_has_sms_error
 #: model:ir.model.fields,field_description:sms.field_mail_thread__message_has_sms_error
 #: model:ir.model.fields,field_description:sms.field_mail_thread_blacklist__message_has_sms_error
-#: model:ir.model.fields,field_description:sms.field_mail_thread_cc__message_has_sms_error
 #: model:ir.model.fields,field_description:sms.field_mail_thread_main_attachment__message_has_sms_error
 #: model:ir.model.fields,field_description:sms.field_mail_thread_phone__message_has_sms_error
+#: model:ir.model.fields,field_description:sms.field_mail_thread_subject_suggested__message_has_sms_error
 #: model:ir.model.fields,field_description:sms.field_mail_tracking_duration_mixin__message_has_sms_error
 #: model:ir.model.fields,field_description:sms.field_maintenance_equipment__message_has_sms_error
 #: model:ir.model.fields,field_description:sms.field_maintenance_request__message_has_sms_error
@@ -1163,7 +1152,7 @@ msgstr "Отправить сейчас"
 
 #. module: sms
 #. odoo-javascript
-#: code:addons/sms/static/src/components/sms_button/sms_button.js:0
+#: code:addons/sms/static/src/components/phone_field/phone_field.js:0
 #: model:ir.actions.act_window,name:sms.res_partner_act_window_sms_composer_multi
 #: model:ir.actions.act_window,name:sms.res_partner_act_window_sms_composer_single
 #: model:ir.actions.act_window,name:sms.sms_composer_action_form
@@ -1286,6 +1275,12 @@ msgstr "Пропустить"
 #: model:ir.model.fields,field_description:sms.field_sms_template_preview__sms_template_id
 msgid "Sms Template"
 msgstr "Шаблон смс"
+
+#. module: sms
+#: model:ir.model.fields,field_description:sms.field_sms_composer__sms_type
+#: model:ir.model.fields,field_description:sms.field_sms_sms__sms_type
+msgid "Sms Type"
+msgstr ""
 
 #. module: sms
 #: model:ir.model.fields,field_description:sms.field_sms_composer__recipient_single_number
@@ -1667,266 +1662,3 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:sms.sms_template_preview_form
 msgid "record:"
 msgstr "рекорд:"
-
-#~ msgid "+1 555-555-555"
-#~ msgstr "+1 555-555-555"
-
-#~ msgid ""
-#~ "%s out of the %s selected SMS Text Messages have successfully been resent."
-#~ msgstr "%s из %s выбранных SMS-сообщений были успешно отправлены повторно."
-
-#~ msgid ""
-#~ "<span invisible=\"sms_method != 'sms'\">\n"
-#~ "                                The message will be sent as an SMS to the "
-#~ "recipients of the template\n"
-#~ "                                and will not appear in the messaging "
-#~ "history.\n"
-#~ "                            </span>\n"
-#~ "                            <span invisible=\"sms_method != 'note'\">\n"
-#~ "                                The SMS will not be sent, it will only be "
-#~ "posted as an\n"
-#~ "                                internal note in the messaging history.\n"
-#~ "                            </span>\n"
-#~ "                            <span invisible=\"sms_method != 'comment'\">\n"
-#~ "                                The SMS will be sent as an SMS to the "
-#~ "recipients of the\n"
-#~ "                                template and it will also be posted as an "
-#~ "internal note\n"
-#~ "                                in the messaging history.\n"
-#~ "                            </span>"
-#~ msgstr ""
-#~ "<span invisible=\"sms_method != 'sms'\">\n"
-#~ "                                Сообщение будет отправлено в виде SMS "
-#~ "получателям шаблона\n"
-#~ "                                и не появится в истории сообщений.\n"
-#~ "                            </span>\n"
-#~ "                            <span invisible=\"sms_method != 'note'\">\n"
-#~ "                                SMS-сообщение не будет отправлено, оно "
-#~ "будет только опубликовано как\n"
-#~ "                                внутренняя заметка в истории сообщений.\n"
-#~ "                            </span>\n"
-#~ "                            <span invisible=\"sms_method != 'comment'\">\n"
-#~ "                                SMS будет отправлено в виде SMS "
-#~ "получателям шаблона\n"
-#~ "                                шаблона и также будет опубликовано как "
-#~ "внутренняя заметка\n"
-#~ "                                в истории сообщений.\n"
-#~ "                            </span>"
-
-#~ msgid "Action Needed"
-#~ msgstr "Требуются действия"
-
-#~ msgid "Attachment Count"
-#~ msgstr "Количество вложений"
-
-#~ msgid "Blacklisted Phone Is Mobile"
-#~ msgstr "Телефон, внесенный в черный список, является мобильным"
-
-#~ msgid "Blacklisted Phone is Phone"
-#~ msgstr "Телефон в черном списке - это телефон"
-
-#~ msgid "Buy credits"
-#~ msgstr "Купить услуги"
-
-#~ msgid "Can Cancel"
-#~ msgstr "Можно отменить"
-
-#~ msgid "Can Resend"
-#~ msgstr "Можно отправить повторно"
-
-#~ msgid "Close"
-#~ msgstr "Закрыть"
-
-#~ msgid "Edit Partners"
-#~ msgstr "Редактировать партнера"
-
-#~ msgid "Error Message"
-#~ msgstr "Сообщение об ошибке"
-
-#~ msgid ""
-#~ "Field used to store sanitized phone number. Helps speeding up searches "
-#~ "and comparisons."
-#~ msgstr ""
-#~ "Поле, используемое для хранения очищенного телефонного номера. Помогает "
-#~ "ускорить поиск и сравнение."
-
-#~ msgid "Followers"
-#~ msgstr "Подписчики"
-
-#~ msgid "Followers (Partners)"
-#~ msgstr "Подписчики"
-
-#~ msgid "Has Insufficient Credit"
-#~ msgstr "Имеет недостаточный кредит"
-
-#~ msgid "Has Message"
-#~ msgstr "Есть сообщение"
-
-#~ msgid "Has Unregistered Account"
-#~ msgstr "Имеет незарегистрированную учетную запись"
-
-#~ msgid "If checked, new messages require your attention."
-#~ msgstr ""
-#~ "Если флажок установлен, значит, новые сообщения требуют вашего внимания."
-
-#~ msgid ""
-#~ "If the sanitized phone number is on the blacklist, the contact won't "
-#~ "receive mass mailing sms anymore, from any list"
-#~ msgstr ""
-#~ "Если санируемый номер телефона находится в черном списке, контакт больше "
-#~ "не будет получать массовые рассылки смс из любого списка"
-
-#~ msgid "Ignore all"
-#~ msgstr "Игнорировать все"
-
-#~ msgid ""
-#~ "Indicates if a blacklisted sanitized phone number is a mobile number. "
-#~ "Helps distinguish which number is blacklisted             when there is "
-#~ "both a mobile and phone field in a model."
-#~ msgstr ""
-#~ "Указывает, является ли занесенный в черный список номер телефона "
-#~ "мобильным. Помогает определить, какой номер занесен в черный "
-#~ "список             , если в модели присутствуют поля \"мобильный\" и "
-#~ "\"телефон\"."
-
-#~ msgid ""
-#~ "Indicates if a blacklisted sanitized phone number is a phone number. "
-#~ "Helps distinguish which number is blacklisted             when there is "
-#~ "both a mobile and phone field in a model."
-#~ msgstr ""
-#~ "Указывает, является ли номер телефона, занесенный в черный список, "
-#~ "номером телефона. Помогает определить, какой номер занесен в черный "
-#~ "список             , если в модели есть поле \"мобильный\" и \"телефон\"."
-
-#~ msgid "Is Follower"
-#~ msgstr "Является подписчиком"
-
-#~ msgid "Message Delivery error"
-#~ msgstr "Ошибка доставки сообщения"
-
-#~ msgid "Messages"
-#~ msgstr "Сообщения"
-
-#~ msgid "Notification"
-#~ msgstr "Уведомление"
-
-#~ msgid "Number of Actions"
-#~ msgstr "Число действий"
-
-#~ msgid "Number of errors"
-#~ msgstr "Число ошибок"
-
-#~ msgid "Number of messages requiring action"
-#~ msgstr "Количество сообщений, требующих принятия мер"
-
-#~ msgid "Number of messages with delivery error"
-#~ msgstr "Количество недоставленных сообщений"
-
-#~ msgid ""
-#~ "Optional translation language (ISO code) to select when sending out an "
-#~ "email. If not set, the english version will be used. This should usually "
-#~ "be a placeholder expression that provides the appropriate language, e.g. "
-#~ "{{ object.partner_id.lang }}."
-#~ msgstr ""
-#~ "Необязательный язык перевода (код ISO) для выбора при отправке сообщения "
-#~ "электронной почты. Если он не задан, будет использоваться английская "
-#~ "версия. Как правило, это должно быть выражение-заполнитель, "
-#~ "обеспечивающее соответствующий язык, например "
-#~ "{{ object.partner_id.lang }}."
-
-#~ msgid "Partner"
-#~ msgstr "Партнер"
-
-#~ msgid "Phone Blacklisted"
-#~ msgstr "Телефон в черном списке"
-
-#~ msgid "Phone/Mobile"
-#~ msgstr "Текст над номером в хедере для мобильных"
-
-#~ msgid "Ratings"
-#~ msgstr "Рейтинги"
-
-#~ msgid "Reason"
-#~ msgstr "Причина"
-
-#~ msgid "Recipient"
-#~ msgstr "Получатель"
-
-#~ msgid "Recipient Name"
-#~ msgstr "Имя получателя"
-
-#~ msgid "Recipients"
-#~ msgstr "Получатели"
-
-#~ msgid "Resend Notification"
-#~ msgstr "Повторное уведомление"
-
-#~ msgid "SMS Resend"
-#~ msgstr "Повторная отправка SMS"
-
-#~ msgid "Send & Close"
-#~ msgstr "Отправить и закрыть"
-
-#~ msgid "Send SMS Text Message"
-#~ msgstr "Отправить текстовое сообщение SMS"
-
-#~ msgid "Sending Failures"
-#~ msgstr "Сбои при отправке"
-
-#~ msgid "Sending SMS can only be done on a mail.thread or a transient model"
-#~ msgstr ""
-#~ "Отправка SMS может осуществляться только в потоке mail.thread или в "
-#~ "переходной модели"
-
-#~ msgid "Set up an account"
-#~ msgstr "Создайте учетную запись"
-
-#~ msgid "Sms Resend"
-#~ msgstr "Повторная отправка смс"
-
-#~ msgid "Try Again"
-#~ msgstr "Попробуй еще раз"
-
-#~ msgid ""
-#~ "Type of server action. The following values are available:\n"
-#~ "- 'Update a Record': update the values of a record\n"
-#~ "- 'Create Activity': create an activity (Discuss)\n"
-#~ "- 'Send Email': post a message, a note or send an email (Discuss)\n"
-#~ "- 'Send SMS': send SMS, log them on documents (SMS)- 'Add/Remove "
-#~ "Followers': add or remove followers to a record (Discuss)\n"
-#~ "- 'Create Record': create a new record with new values\n"
-#~ "- 'Execute Code': a block of Python code that will be executed\n"
-#~ "- 'Send Webhook Notification': send a POST request to an external system, "
-#~ "also known as a Webhook\n"
-#~ "- 'Execute Existing Actions': define an action that triggers several "
-#~ "other server actions\n"
-#~ msgstr ""
-#~ "Тип действия сервера. Доступны следующие значения:\n"
-#~ "- 'Update a Record': обновить значения записи\n"
-#~ "- 'Создать активность': создать активность (обсудить)\n"
-#~ "- 'Отправить электронное письмо': опубликовать сообщение, заметку или "
-#~ "отправить электронное письмо (Обсудить)\n"
-#~ "- 'Send SMS': отправлять SMS, регистрировать их в документах (SMS)- 'Add/"
-#~ "Remove Followers': добавлять или удалять последователей к записи "
-#~ "(Обсудить)\n"
-#~ "- 'Создать запись': создать новую запись с новыми значениями\n"
-#~ "- 'Execute Code': блок кода Python, который будет выполнен\n"
-#~ "- 'Send Webhook Notification': отправить POST-запрос во внешнюю систему, "
-#~ "также известный как Webhook\n"
-#~ "- 'Execute Existing Actions': определить действие, которое запускает "
-#~ "несколько других действий сервера\n"
-
-#~ msgid "Use blacklist"
-#~ msgstr "Использовать черный список"
-
-#~ msgid "Website Messages"
-#~ msgstr "Веб-сайт сообщения"
-
-#~ msgid "Website communication history"
-#~ msgstr "История общений с сайта"
-
-#~ msgid "You do not have access to the message and/or related document."
-#~ msgstr "Вы не имеете доступа к сообщению и/или соответствующему документу."
-
-#~ msgid "characters, fits in"
-#~ msgstr "персонажей, вписывается в"

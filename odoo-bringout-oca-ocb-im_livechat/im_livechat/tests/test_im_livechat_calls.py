@@ -3,12 +3,11 @@
 from functools import wraps
 from unittest.mock import patch
 
-from odoo.tests.common import tagged
+from odoo.http import request
 from odoo.addons.im_livechat.controllers.main import LivechatController
 from odoo.addons.im_livechat.tests.common import TestImLivechatCommon
 
 
-@tagged("post_install", "-at_install")
 class TestImLivechatCalls(TestImLivechatCommon):
     def test_meeting_view(self):
         og_get_session = LivechatController.get_session
@@ -17,7 +16,7 @@ class TestImLivechatCalls(TestImLivechatCommon):
             result = og_get_session(*args, **kwargs)
             if kwargs["persisted"]:
                 self.env.flush_all()
-                channel = self.env["discuss.channel"].search([("id", "=", result["channel_id"])])
+                channel = request.env["discuss.channel"].search([("id", "=", result["channel_id"])])  # nosemgrep: requests-in-models
                 agent = channel.channel_member_ids.filtered(lambda m: m.partner_id)
                 agent.sudo()._rtc_join_call()
             return result

@@ -14,9 +14,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-md-6 col-12 o_mail_header_social" style="text-align: right;">
-                    <t t-call="mass_mailing.social_links"/>
-                </div>
+                <t t-call="mass_mailing.s_social_media_template" optionalTextPosition.f="text-end" optionalSnippetClass.f="col-md-6 col-12 o_mail_header_social"/>
             </div>
         </div>
     </section>
@@ -176,21 +174,6 @@
                                 t-attf-data-original-src="/web/image/res.company/{{ company_id.id if company_id.id else user_id.company_id.id }}/logo" />
                         </a>
                     </div>
-                </div>
-                <div class="col-md-6 col-12">
-                    <p class="m-0" style="text-align: center;"><a href="#" class="btn btn-link">News</a><a href="#" class="btn btn-link">Shop</a><a href="#" class="btn btn-link">Contact Us</a></p>
-                </div>
-            </div>
-        </div>
-    </section>
-</template>
-
-<template id="s_mail_block_header_name_and_inline_menu" name="Company Name and Menu">
-    <section class="o_mail_snippet_general pt32 pb32" data-vxml="001">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6 col-12">
-                    <h1><span class="h2-fs" t-out="company_id.partner_id.name"/></h1>
                 </div>
                 <div class="col-md-6 col-12">
                     <p class="m-0" style="text-align: center;"><a href="#" class="btn btn-link">News</a><a href="#" class="btn btn-link">Shop</a><a href="#" class="btn btn-link">Contact Us</a></p>

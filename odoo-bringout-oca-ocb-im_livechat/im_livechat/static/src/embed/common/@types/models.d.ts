@@ -1,25 +1,24 @@
 declare module "models" {
+    export interface DiscussChannel {
+        _toggleChatbot: boolean;
+        hasWelcomeMessage: Readonly<boolean>;
+        isLastMessageFromCustomer: Readonly<unknown>;
+        livechatWelcomeMessage: Message;
+        requested_by_operator: boolean;
+        storeAsActiveVisitorLivechats: Store;
+    }
     export interface Message {
         disableChatbotAnswers: boolean;
     }
     export interface Store {
-        activeLivechats: Thread[];
-        activeVisitorLivechats: Thread[];
+        activeVisitorLivechats: DiscussChannel[];
         guest_token: null;
         livechat_available: boolean;
         livechat_rule: LivechatChannelRule;
     }
     export interface Thread {
-        _toggleChatbot: boolean;
-        chatbot: Chatbot;
-        chatbotTypingMessage: Message;
-        hasWelcomeMessage: Readonly<boolean>;
-        isLastMessageFromCustomer: Readonly<boolean>;
-        livechat_operator_id: ResPartner;
-        livechatWelcomeMessage: Message;
-        readyToSwapDeferred: Deferred;
-        requested_by_operator: boolean;
-        storeAsActiveLivechats: Store;
-        storeAsActiveVisitorLivechats: Store;
+        _prevComposerDisabled: boolean;
+        readyToSwapPromise: Promise<void>;
+        resolveReadyToSwap: (value?: void) => void;
     }
 }
