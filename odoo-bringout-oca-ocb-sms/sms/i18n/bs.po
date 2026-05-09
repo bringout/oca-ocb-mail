@@ -1,1576 +1,1454 @@
-# Translation of Odoo Server.
-# This file contains the translation of the following modules:
-# * sms
 #
-# Translators:
-# Martin Trigaux, 2018
-# Boško Stojaković <bluesoft83@gmail.com>, 2018
-# Bole <bole@dajmi5.com>, 2018
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server saas~11.5\n"
+"Project-Id-Version: Odoo Server master (sms)\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-12 18:37+0000\n"
-"PO-Revision-Date: 2018-09-21 13:17+0000\n"
-"Last-Translator: Bole <bole@dajmi5.com>, 2018\n"
-"Language-Team: Bosnian (https://www.transifex.com/odoo/teams/41243/bs/)\n"
+"Language-Team: Bosnian\n"
 "Language: bs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: \n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
-#. module: sms
-#: model:ir.model.fields,field_description:sms.field_sms_composer__recipient_invalid_count
+# model:
+# model:ir.model.fields,field_description:sms.field_sms_composer__recipient_invalid_count
+#, []
 msgid "# Invalid recipients"
-msgstr ""
+msgstr "# Nevažeći primaoci"
 
-#. module: sms
-#: model:ir.model.fields,field_description:sms.field_sms_composer__recipient_valid_count
+# model:
+# model:ir.model.fields,field_description:sms.field_sms_composer__recipient_valid_count
+#, []
 msgid "# Valid recipients"
-msgstr ""
+msgstr "# Važeći primaoci"
 
-#. module: sms
-#. odoo-python
-#: code:addons/sms/models/sms_sms.py:0
+# model: code:addons/sms/models/sms_sms.py
+#, []
 msgid ""
 "%(count)s out of the %(total)s selected SMS Text Messages have successfully "
 "been resent."
 msgstr ""
+"%(count)s od %(total)s odabranih SMS poruka uspješno je ponovo poslano."
 
-#. module: sms
-#. odoo-python
-#: code:addons/sms/models/sms_template.py:0
+# model: code:addons/sms/models/sms_template.py
+#, []
 msgid "%s (copy)"
-msgstr ""
+msgstr "%s (kopija)"
 
-#. module: sms
-#. odoo-python
-#: code:addons/sms/wizard/sms_composer.py:0
+# model: code:addons/sms/wizard/sms_composer.py
+#, []
 msgid "%s invalid recipients"
-msgstr ""
+msgstr "%s nevažećih primalaca"
 
-#. module: sms
-#: model_terms:ir.ui.view,arch_db:sms.sms_account_phone_view_form
-msgid "+1 555-555-555"
-msgstr ""
-
-#. module: sms
-#: model_terms:ir.ui.view,arch_db:sms.iap_account_view_form
+# model: model_terms:ir.ui.view,arch_db:sms.iap_account_view_form
+#, []
 msgid ""
 "<i class=\"fa fa-warning\"/> An error occurred with your account. Please "
 "contact the support for more information..."
 msgstr ""
+"<i class=\"fa fa-warning\"/> Došlo je do greške s vašim računom. "
+"Kontaktirajte podršku za više informacija..."
 
-#. module: sms
-#: model_terms:ir.ui.view,arch_db:sms.iap_account_view_form
+# model: model_terms:ir.ui.view,arch_db:sms.iap_account_view_form
+#, []
 msgid ""
 "<i class=\"fa fa-warning\"/> You cannot send SMS while your account is not "
 "registered."
 msgstr ""
+"<i class=\"fa fa-warning\"/> Ne možete slati SMS dok vaš račun nije "
+"registrovan."
 
-#. module: sms
-#: model_terms:ir.ui.view,arch_db:sms.iap_account_view_form
+# model: model_terms:ir.ui.view,arch_db:sms.iap_account_view_form
+#, []
 msgid ""
 "<i class=\"oi oi-arrow-right\"/>\n"
 "                            Register"
 msgstr ""
+"<i class=\"oi oi-arrow-right\"/>\n"
+"                            Registruj"
 
-#. module: sms
-#: model_terms:ir.ui.view,arch_db:sms.iap_account_view_form
+# model: model_terms:ir.ui.view,arch_db:sms.iap_account_view_form
+#, []
 msgid ""
 "<i class=\"oi oi-arrow-right\"/>\n"
 "                            Set Sender Name"
 msgstr ""
+"<i class=\"oi oi-arrow-right\"/>\n"
+"                            Postavi ime pošiljaoca"
 
-#. module: sms
-#: model_terms:ir.ui.view,arch_db:sms.sms_template_view_form
+# model: model_terms:ir.ui.view,arch_db:sms.sms_template_view_form
+#, []
 msgid ""
 "<span class=\"o_stat_text\">Add</span>\n"
-"                                <span class=\"o_stat_text\">Context Action</"
-"span>"
+"                                <span class=\"o_stat_text\">Context Action</span>"
 msgstr ""
+"<span class=\"o_stat_text\">Dodaj</span>\n"
+"                                <span class=\"o_stat_text\">Kontekstna radnja</span>"
 
-#. module: sms
-#: model_terms:ir.ui.view,arch_db:sms.sms_template_view_form
+# model: model_terms:ir.ui.view,arch_db:sms.sms_template_view_form
+#, []
 msgid "<span class=\"o_stat_text\">Preview</span>"
-msgstr ""
+msgstr "<span class=\"o_stat_text\">Pregled</span>"
 
-#. module: sms
-#: model_terms:ir.ui.view,arch_db:sms.sms_template_view_form
+# model: model_terms:ir.ui.view,arch_db:sms.sms_template_view_form
+#, []
 msgid ""
 "<span class=\"o_stat_text\">Remove</span>\n"
-"                                <span class=\"o_stat_text\">Context Action</"
-"span>"
+"                                <span class=\"o_stat_text\">Context Action</span>"
 msgstr ""
+"<span class=\"o_stat_text\">Ukloni</span>\n"
+"                                <span class=\"o_stat_text\">Kontekstna radnja</span>"
 
-#. module: sms
-#: model_terms:ir.ui.view,arch_db:sms.sms_template_preview_form
-msgid ""
-"<span class=\"text-warning\" invisible=\"not no_record\">No records</span>"
-msgstr ""
+# model: model_terms:ir.ui.view,arch_db:sms.sms_template_preview_form
+#, []
+msgid "<span class=\"text-warning\" invisible=\"not no_record\">No records</span>"
+msgstr "<span class=\"text-warning\" invisible=\"not no_record\">Nema zapisa</span>"
 
-#. module: sms
-#: model_terms:ir.ui.view,arch_db:sms.ir_actions_server_view_form
+# model: model_terms:ir.ui.view,arch_db:sms.ir_actions_server_view_form
+#, []
 msgid ""
 "<span invisible=\"sms_method != 'sms'\">\n"
-"                                    The message will be sent as an SMS to "
-"the recipients of the template\n"
-"                                    and will not appear in the messaging "
-"history.\n"
+"                                    The message will be sent as an SMS to the recipients of the template\n"
+"                                    and will not appear in the messaging history.\n"
 "                                </span>\n"
 "                                <span invisible=\"sms_method != 'note'\">\n"
-"                                    The SMS will not be sent, it will only "
-"be posted as an\n"
+"                                    The SMS will not be sent, it will only be posted as an\n"
 "                                    internal note in the messaging history.\n"
 "                                </span>\n"
-"                                <span invisible=\"sms_method != "
-"'comment'\">\n"
-"                                    The SMS will be sent as an SMS to the "
-"recipients of the\n"
-"                                    template and it will also be posted as "
-"an internal note\n"
+"                                <span invisible=\"sms_method != 'comment'\">\n"
+"                                    The SMS will be sent as an SMS to the recipients of the\n"
+"                                    template and it will also be posted as an internal note\n"
 "                                    in the messaging history.\n"
 "                                </span>"
 msgstr ""
+"<span invisible=\"sms_method != 'sms'\">\n"
+"                                    Poruka će biti poslana kao SMS primaocima predloška\n"
+"                                    i neće se pojaviti u historiji poruka.\n"
+"                                </span>\n"
+"                                <span invisible=\"sms_method != 'note'\">\n"
+"                                    SMS neće biti poslan, biće samo objavljen kao\n"
+"                                    interna napomena u historiji poruka.\n"
+"                                </span>\n"
+"                                <span invisible=\"sms_method != 'comment'\">\n"
+"                                    SMS će biti poslan kao SMS primaocima\n"
+"                                    predloška i također će biti objavljen kao interna napomena\n"
+"                                    u historiji poruka.\n"
+"                                </span>"
 
-#. module: sms
-#: model_terms:ir.ui.view,arch_db:sms.sms_composer_view_form
+# model: model_terms:ir.ui.view,arch_db:sms.sms_composer_view_form
+#, []
 msgid "<span> or to specify the country code.</span>"
-msgstr ""
+msgstr "<span> ili navedite pozivni broj države.</span>"
 
-#. module: sms
-#: model_terms:ir.ui.view,arch_db:sms.sms_composer_view_form
+# model: model_terms:ir.ui.view,arch_db:sms.sms_composer_view_form
+#, []
 msgid ""
 "<strong>Invalid number:</strong>\n"
 "                        <span> make sure to set a country on the </span>"
 msgstr ""
+"<strong>Nevažeći broj:</strong>\n"
+"                        <span> provjerite jeste li postavili državu</span>"
 
-#. module: sms
-#: model:ir.model.constraint,message:sms.constraint_sms_tracker_sms_uuid_unique
+# model:
+# model:ir.model.constraint,message:sms.constraint_sms_tracker_sms_uuid_unique
+#, []
 msgid "A record for this UUID already exists"
-msgstr ""
+msgstr "Zapis za ovaj UUID već postoji"
 
-#. module: sms
-#: model:ir.model.fields,field_description:sms.field_sms_account_code__account_id
-#: model:ir.model.fields,field_description:sms.field_sms_account_phone__account_id
-#: model:ir.model.fields,field_description:sms.field_sms_account_sender__account_id
+# model:
+# model:ir.model.fields,field_description:sms.field_sms_account_code__account_id
+#, []
 msgid "Account"
-msgstr ""
+msgstr "Konto"
 
-#. module: sms
-#: model_terms:ir.ui.view,arch_db:sms.sms_template_view_form
+# model: model_terms:ir.ui.view,arch_db:sms.sms_template_view_form
+#, []
 msgid ""
 "Add a contextual action on the related model to open a sms composer with "
 "this template"
 msgstr ""
+"Dodajte kontekstnu radnju na povezani model da otvorite SMS uređivač s ovim "
+"šablonom."
 
-#. module: sms
-#: model:ir.model.fields.selection,name:sms.selection__sms_composer__sms_type__alert
-#: model:ir.model.fields.selection,name:sms.selection__sms_sms__sms_type__alert
+# model:
+# model:ir.model.fields.selection,name:sms.selection__sms_composer__sms_type__alert
+#, []
 msgid "Alert"
 msgstr ""
 
-#. module: sms
-#: model:ir.model.fields,help:sms.field_sms_sms__uuid
+# model: model:ir.model.fields,help:sms.field_sms_sms__uuid
+#, []
 msgid "Alternate way to identify a SMS record, used for delivery reports"
 msgstr ""
+"Alternativni način identifikacije SMS zapisa, koristi se za izvještaje o "
+"isporuci"
 
-#. module: sms
-#. odoo-javascript
-#: code:addons/sms/static/src/core/failure_model_patch.js:0
+# model: code:addons/sms/static/src/core/failure_model_patch.js
+#, []
 msgid "An error occurred when sending an SMS"
-msgstr ""
+msgstr "Došlo je do greške prilikom slanja SMS-a"
 
-#. module: sms
-#. odoo-javascript
-#: code:addons/sms/static/src/core/failure_model_patch.js:0
+# model: code:addons/sms/static/src/core/failure_model_patch.js
+#, []
 msgid "An error occurred when sending an SMS on “%(record_name)s”"
-msgstr ""
+msgstr "Došlo je do greške prilikom slanja SMS-a na “%(record_name)s”"
 
-#. module: sms
-#. odoo-python
-#: code:addons/sms/tools/sms_api.py:0
+# model: code:addons/sms/tools/sms_api.py
+#, []
 msgid ""
 "An unknown error occurred. Please contact Odoo support if this error "
 "persists."
 msgstr ""
+"Došlo je do nepoznate greške. Kontaktirajte Odoo podršku ako se greška "
+"ponavlja."
 
-#. module: sms
-#: model:ir.model.fields,field_description:sms.field_sms_template__model_id
-#: model:ir.model.fields,field_description:sms.field_sms_template_preview__model_id
+# model:
+# model:ir.model.fields,field_description:sms.field_sms_template__model_id
+#, []
 msgid "Applies to"
-msgstr ""
+msgstr "Odnosi se na"
 
-#. module: sms
-#: model_terms:ir.ui.view,arch_db:sms.sms_template_reset_view_form
+# model: model_terms:ir.ui.view,arch_db:sms.sms_template_reset_view_form
+#, []
 msgid ""
 "Are you sure you want to reset these sms templates to their original "
 "configuration? Changes and translations will be lost."
 msgstr ""
+"Jeste li sigurni da želite vratiti ove SMS šablone na početnu konfiguraciju?"
+" Promjene i prijevodi će biti izgubljeni."
 
-#. module: sms
-#. odoo-python
-#: code:addons/sms/controllers/main.py:0
+# model: code:addons/sms/controllers/main.py
+#, []
 msgid "Bad parameters"
-msgstr ""
+msgstr "Loši parametri"
 
-#. module: sms
-#: model:ir.model,name:sms.model_base
+# model: model:ir.model,name:sms.model_base
+#, []
 msgid "Base"
-msgstr ""
+msgstr "Osnovica"
 
-#. module: sms
-#: model:ir.model.fields.selection,name:sms.selection__sms_sms__failure_type__sms_blacklist
+# model:
+# model:ir.model.fields.selection,name:sms.selection__sms_sms__failure_type__sms_blacklist
+#, []
 msgid "Blacklisted"
-msgstr ""
+msgstr "Na crnoj listi"
 
-#. module: sms
-#: model:ir.model.fields,field_description:sms.field_sms_sms__body
-#: model:ir.model.fields,field_description:sms.field_sms_template__body
-#: model:ir.model.fields,field_description:sms.field_sms_template_preview__body
+# model: model:ir.model.fields,field_description:sms.field_sms_sms__body
+#, []
 msgid "Body"
-msgstr ""
+msgstr "Tijelo"
 
-#. module: sms
-#. odoo-python
-#: code:addons/sms/tools/sms_api.py:0
+# model: code:addons/sms/tools/sms_api.py
+#, []
 msgid "Buy credits."
-msgstr ""
+msgstr "Kupi kredite."
 
-#. module: sms
-#: model_terms:ir.ui.view,arch_db:sms.sms_sms_view_tree
-#: model_terms:ir.ui.view,arch_db:sms.sms_tsms_view_form
+# model: model_terms:ir.ui.view,arch_db:sms.sms_sms_view_tree
+#, []
 msgid "Cancel"
 msgstr "Otkaži"
 
-#. module: sms
-#: model:ir.model.fields.selection,name:sms.selection__sms_sms__state__canceled
+# model:
+# model:ir.model.fields.selection,name:sms.selection__sms_sms__state__canceled
+#, []
 msgid "Cancelled"
-msgstr ""
+msgstr "Otkazano"
 
-#. module: sms
-#: model_terms:ir.ui.view,arch_db:sms.sms_template_preview_form
+# model: model_terms:ir.ui.view,arch_db:sms.sms_template_preview_form
+#, []
 msgid "Choose a language:"
-msgstr ""
+msgstr "Odaberite jezik:"
 
-#. module: sms
-#: model_terms:ir.ui.view,arch_db:sms.ir_actions_server_view_form
+# model: model_terms:ir.ui.view,arch_db:sms.ir_actions_server_view_form
+#, []
 msgid "Choose a template..."
-msgstr ""
+msgstr "Odaberite predložak..."
 
-#. module: sms
-#: model_terms:ir.ui.view,arch_db:sms.sms_template_preview_form
+# model: model_terms:ir.ui.view,arch_db:sms.sms_template_preview_form
+#, []
 msgid "Choose an example"
-msgstr ""
+msgstr "Izaberi primjer"
 
-#. module: sms
-#. odoo-python
-#: code:addons/sms/models/iap_account.py:0
-#: code:addons/sms/wizard/sms_account_code.py:0
-#: model_terms:ir.ui.view,arch_db:sms.sms_account_sender_view_form
+# model: code:addons/sms/models/iap_account.py
+#, []
 msgid "Choose your sender name"
-msgstr ""
+msgstr "Odaberite ime pošiljaoca"
 
-#. module: sms
-#: model:ir.model,name:sms.model_res_company
+# model: model:ir.model,name:sms.model_res_company
+#, []
 msgid "Company"
 msgstr ""
 
-#. module: sms
-#: model:ir.model.fields,field_description:sms.field_sms_composer__composition_mode
+# model:
+# model:ir.model.fields,field_description:sms.field_sms_composer__composition_mode
+#, []
 msgid "Composition Mode"
-msgstr ""
+msgstr "Režim pisanja"
 
-#. module: sms
-#: model_terms:ir.ui.view,arch_db:sms.sms_tsms_view_form
+# model: model_terms:ir.ui.view,arch_db:sms.sms_tsms_view_form
+#, []
 msgid "Contact"
 msgstr "Kontakt"
 
-#. module: sms
-#: model_terms:ir.ui.view,arch_db:sms.sms_template_view_form
+# model: model_terms:ir.ui.view,arch_db:sms.sms_template_view_form
+#, []
 msgid "Content"
-msgstr ""
+msgstr "Sadržaj"
 
-#. module: sms
-#. odoo-javascript
-#: code:addons/sms/static/src/core/notification_model_patch.js:0
-#: model:ir.model.fields.selection,name:sms.selection__mail_notification__failure_type__sms_country_not_supported
-#: model:ir.model.fields.selection,name:sms.selection__sms_sms__failure_type__sms_country_not_supported
+# model: code:addons/sms/static/src/core/notification_model_patch.js
+#, []
 msgid "Country Not Supported"
-msgstr ""
+msgstr "Zemlja nije podržana"
 
-#. module: sms
-#. odoo-javascript
-#: code:addons/sms/static/src/core/notification_model_patch.js:0
-#: model:ir.model.fields.selection,name:sms.selection__mail_notification__failure_type__sms_registration_needed
-#: model:ir.model.fields.selection,name:sms.selection__sms_sms__failure_type__sms_registration_needed
+# model: code:addons/sms/static/src/core/notification_model_patch.js
+#, []
 msgid "Country-specific Registration Required"
-msgstr ""
+msgstr "Potrebna registracija specifična za zemlju"
 
-#. module: sms
-#. odoo-python
-#: code:addons/sms/tools/sms_api.py:0
+# model: code:addons/sms/tools/sms_api.py
+#, []
 msgid "Country-specific registration required."
-msgstr ""
+msgstr "Potrebna je registracija specifična za državu."
 
-#. module: sms
-#: model:ir.model.fields,field_description:sms.field_sms_account_code__create_uid
-#: model:ir.model.fields,field_description:sms.field_sms_account_phone__create_uid
-#: model:ir.model.fields,field_description:sms.field_sms_account_sender__create_uid
-#: model:ir.model.fields,field_description:sms.field_sms_composer__create_uid
-#: model:ir.model.fields,field_description:sms.field_sms_sms__create_uid
-#: model:ir.model.fields,field_description:sms.field_sms_template__create_uid
-#: model:ir.model.fields,field_description:sms.field_sms_template_preview__create_uid
-#: model:ir.model.fields,field_description:sms.field_sms_template_reset__create_uid
-#: model:ir.model.fields,field_description:sms.field_sms_tracker__create_uid
+# model:
+# model:ir.model.fields,field_description:sms.field_sms_account_code__create_uid
+#, []
 msgid "Created by"
 msgstr "Kreirao"
 
-#. module: sms
-#: model:ir.model.fields,field_description:sms.field_sms_account_code__create_date
-#: model:ir.model.fields,field_description:sms.field_sms_account_phone__create_date
-#: model:ir.model.fields,field_description:sms.field_sms_account_sender__create_date
-#: model:ir.model.fields,field_description:sms.field_sms_composer__create_date
-#: model:ir.model.fields,field_description:sms.field_sms_sms__create_date
-#: model:ir.model.fields,field_description:sms.field_sms_template__create_date
-#: model:ir.model.fields,field_description:sms.field_sms_template_preview__create_date
-#: model:ir.model.fields,field_description:sms.field_sms_template_reset__create_date
-#: model:ir.model.fields,field_description:sms.field_sms_tracker__create_date
+# model:
+# model:ir.model.fields,field_description:sms.field_sms_account_code__create_date
+#, []
 msgid "Created on"
 msgstr "Kreirano"
 
-#. module: sms
-#: model:iap.service,unit_name:sms.iap_service_sms
+# model: model:iap.service,unit_name:sms.iap_service_sms
+#, []
 msgid "Credits"
-msgstr ""
+msgstr "Krediti"
 
-#. module: sms
-#: model:ir.model.fields,field_description:sms.field_sms_sms__partner_id
+# model: model:ir.model.fields,field_description:sms.field_sms_sms__partner_id
+#, []
 msgid "Customer"
-msgstr ""
+msgstr "Kupac"
 
-#. module: sms
-#: model:sms.template,name:sms.sms_template_demo_0
+# model: model:sms.template,name:sms.sms_template_demo_0
+#, []
 msgid "Customer: automated SMS"
-msgstr ""
+msgstr "Kupac: automatski SMS"
 
-#. module: sms
-#: model:sms.template,body:sms.sms_template_demo_0
+# model: model:sms.template,body:sms.sms_template_demo_0
+#, []
 msgid "Dear {{ object.display_name }} this is an automated SMS."
-msgstr ""
+msgstr "Poštovani {{ object.display_name }}, ovo je automatski SMS."
 
-#. module: sms
-#: model:ir.model.fields.selection,name:sms.selection__sms_sms__state__sent
+# model:
+# model:ir.model.fields.selection,name:sms.selection__sms_sms__state__sent
+#, []
 msgid "Delivered"
-msgstr ""
+msgstr "Isporučeno"
 
-#. module: sms
-#: model:ir.model.fields,field_description:sms.field_iap_account__display_name
-#: model:ir.model.fields,field_description:sms.field_ir_actions_server__display_name
-#: model:ir.model.fields,field_description:sms.field_ir_model__display_name
-#: model:ir.model.fields,field_description:sms.field_mail_followers__display_name
-#: model:ir.model.fields,field_description:sms.field_mail_message__display_name
-#: model:ir.model.fields,field_description:sms.field_mail_notification__display_name
-#: model:ir.model.fields,field_description:sms.field_mail_thread__display_name
-#: model:ir.model.fields,field_description:sms.field_res_company__display_name
-#: model:ir.model.fields,field_description:sms.field_sms_account_code__display_name
-#: model:ir.model.fields,field_description:sms.field_sms_account_phone__display_name
-#: model:ir.model.fields,field_description:sms.field_sms_account_sender__display_name
-#: model:ir.model.fields,field_description:sms.field_sms_composer__display_name
-#: model:ir.model.fields,field_description:sms.field_sms_sms__display_name
-#: model:ir.model.fields,field_description:sms.field_sms_template__display_name
-#: model:ir.model.fields,field_description:sms.field_sms_template_preview__display_name
-#: model:ir.model.fields,field_description:sms.field_sms_template_reset__display_name
-#: model:ir.model.fields,field_description:sms.field_sms_tracker__display_name
+# model:
+# model:ir.model.fields,field_description:sms.field_iap_account__display_name
+#, []
 msgid "Display Name"
-msgstr "Prikazani naziv"
+msgstr "Naziv za prikaz"
 
-#. module: sms
-#: model:ir.model,name:sms.model_mail_followers
+# model: model:ir.model,name:sms.model_mail_followers
+#, []
 msgid "Document Follower"
 msgstr ""
 
-#. module: sms
-#: model:ir.model.fields,field_description:sms.field_sms_composer__res_id
+# model:
+# model:ir.model.fields,field_description:sms.field_sms_composer__res_id
+#, []
 msgid "Document ID"
-msgstr ""
+msgstr "ID dokumenta"
 
-#. module: sms
-#: model:ir.model.fields,field_description:sms.field_sms_composer__res_ids
+# model:
+# model:ir.model.fields,field_description:sms.field_sms_composer__res_ids
+#, []
 msgid "Document IDs"
-msgstr ""
+msgstr "ID-jevi dokumenata"
 
-#. module: sms
-#: model:ir.model.fields,field_description:sms.field_sms_composer__res_model_description
+# model:
+# model:ir.model.fields,field_description:sms.field_sms_composer__res_model_description
+#, []
 msgid "Document Model Description"
-msgstr ""
+msgstr "Opis modela dokumenta"
 
-#. module: sms
-#: model:ir.model.fields,field_description:sms.field_sms_composer__res_model
+# model:
+# model:ir.model.fields,field_description:sms.field_sms_composer__res_model
+#, []
 msgid "Document Model Name"
-msgstr ""
+msgstr "Naziv modela dokumenta"
 
-#. module: sms
-#: model:ir.model.fields.selection,name:sms.selection__sms_sms__failure_type__sms_duplicate
+# model:
+# model:ir.model.fields.selection,name:sms.selection__sms_sms__failure_type__sms_duplicate
+#, []
 msgid "Duplicate"
-msgstr ""
+msgstr "Dupliciraj"
 
-#. module: sms
-#: model:ir.model,name:sms.model_mail_thread
+# model: model:ir.model,name:sms.model_mail_thread
+#, []
 msgid "Email Thread"
 msgstr "Nit e-pošte"
 
-#. module: sms
-#. odoo-javascript
-#: code:addons/sms/static/src/components/phone_field/phone_field.js:0
+# model: code:addons/sms/static/src/components/phone_field/phone_field.js
+#, []
 msgid "Enable SMS"
-msgstr ""
+msgstr "Omogući SMS"
 
-#. module: sms
-#: model_terms:ir.ui.view,arch_db:sms.sms_account_phone_view_form
+# model: model_terms:ir.ui.view,arch_db:sms.sms_account_phone_view_form
+#, []
 msgid "Enter a phone number to get an SMS with a verification code."
-msgstr ""
+msgstr "Unesite broj telefona da dobijete SMS s verifikacionim kodom."
 
-#. module: sms
-#: model:ir.model.fields.selection,name:sms.selection__sms_sms__state__error
+# model:
+# model:ir.model.fields.selection,name:sms.selection__sms_sms__state__error
+#, []
 msgid "Error"
-msgstr ""
+msgstr "Greška"
 
-#. module: sms
-#. odoo-javascript
-#: code:addons/sms/static/src/core/notification_model_patch.js:0
-#: model:ir.model.fields.selection,name:sms.selection__mail_notification__failure_type__sms_expired
+# model: code:addons/sms/static/src/core/notification_model_patch.js
+#, []
 msgid "Expired"
-msgstr ""
+msgstr "Isteklo"
 
-#. module: sms
-#: model:ir.model.fields,field_description:sms.field_sms_sms__failure_type
+# model:
+# model:ir.model.fields,field_description:sms.field_sms_sms__failure_type
+#, []
 msgid "Failure Type"
-msgstr ""
+msgstr "Vrsta greške"
 
-#. module: sms
-#: model:ir.model.fields,field_description:sms.field_mail_notification__failure_type
+# model:
+# model:ir.model.fields,field_description:sms.field_mail_notification__failure_type
+#, []
 msgid "Failure type"
-msgstr ""
+msgstr "Tip greške"
 
-#. module: sms
-#: model:ir.model.fields,help:sms.field_sms_template__template_fs
-msgid "File from where the template originates. Used to reset broken template."
+# model: model:ir.model.fields,help:sms.field_sms_template__template_fs
+#, []
+msgid ""
+"File from where the template originates. Used to reset broken template."
 msgstr ""
+"Datoteka iz koje predložak potiče. Koristi se za resetiranje pokvarenog "
+"predloška."
 
-#. module: sms
-#. odoo-python
-#: code:addons/sms/wizard/sms_composer.py:0
+# model: code:addons/sms/wizard/sms_composer.py
+#, []
 msgid "Following numbers are not correctly encoded: %s"
-msgstr ""
+msgstr "Sljedeći brojevi nisu ispravno kodirani: %s"
 
-#. module: sms
-#: model:ir.model.fields,field_description:sms.field_mail_mail__has_sms_error
-#: model:ir.model.fields,field_description:sms.field_mail_message__has_sms_error
+# model:
+# model:ir.model.fields,field_description:sms.field_mail_mail__has_sms_error
+#, []
 msgid "Has SMS error"
-msgstr ""
+msgstr "Ima SMS grešku"
 
-#. module: sms
-#: model:ir.model,name:sms.model_iap_account
+# model: model:ir.model,name:sms.model_iap_account
+#, []
 msgid "IAP Account"
-msgstr ""
+msgstr "IAP konto"
 
-#. module: sms
-#: model:ir.model.fields,field_description:sms.field_iap_account__id
-#: model:ir.model.fields,field_description:sms.field_ir_actions_server__id
-#: model:ir.model.fields,field_description:sms.field_ir_model__id
-#: model:ir.model.fields,field_description:sms.field_mail_followers__id
-#: model:ir.model.fields,field_description:sms.field_mail_message__id
-#: model:ir.model.fields,field_description:sms.field_mail_notification__id
-#: model:ir.model.fields,field_description:sms.field_mail_thread__id
-#: model:ir.model.fields,field_description:sms.field_res_company__id
-#: model:ir.model.fields,field_description:sms.field_sms_account_code__id
-#: model:ir.model.fields,field_description:sms.field_sms_account_phone__id
-#: model:ir.model.fields,field_description:sms.field_sms_account_sender__id
-#: model:ir.model.fields,field_description:sms.field_sms_composer__id
-#: model:ir.model.fields,field_description:sms.field_sms_sms__id
-#: model:ir.model.fields,field_description:sms.field_sms_template__id
-#: model:ir.model.fields,field_description:sms.field_sms_template_preview__id
-#: model:ir.model.fields,field_description:sms.field_sms_template_reset__id
-#: model:ir.model.fields,field_description:sms.field_sms_tracker__id
+# model: model:ir.model.fields,field_description:sms.field_iap_account__id
+#, []
 msgid "ID"
 msgstr "ID"
 
-#. module: sms
-#: model:ir.model.fields,help:sms.field_account_analytic_account__message_has_sms_error
-#: model:ir.model.fields,help:sms.field_calendar_event__message_has_sms_error
-#: model:ir.model.fields,help:sms.field_crm_team__message_has_sms_error
-#: model:ir.model.fields,help:sms.field_crm_team_member__message_has_sms_error
-#: model:ir.model.fields,help:sms.field_discuss_channel__message_has_sms_error
-#: model:ir.model.fields,help:sms.field_fleet_vehicle__message_has_sms_error
-#: model:ir.model.fields,help:sms.field_fleet_vehicle_log_contract__message_has_sms_error
-#: model:ir.model.fields,help:sms.field_fleet_vehicle_log_services__message_has_sms_error
-#: model:ir.model.fields,help:sms.field_fleet_vehicle_model__message_has_sms_error
-#: model:ir.model.fields,help:sms.field_gamification_badge__message_has_sms_error
-#: model:ir.model.fields,help:sms.field_gamification_badge_user__message_has_sms_error
-#: model:ir.model.fields,help:sms.field_gamification_challenge__message_has_sms_error
-#: model:ir.model.fields,help:sms.field_iap_account__message_has_sms_error
-#: model:ir.model.fields,help:sms.field_ir_actions_server__message_has_sms_error
-#: model:ir.model.fields,help:sms.field_ir_cron__message_has_sms_error
-#: model:ir.model.fields,help:sms.field_lunch_supplier__message_has_sms_error
-#: model:ir.model.fields,help:sms.field_mail_blacklist__message_has_sms_error
-#: model:ir.model.fields,help:sms.field_mail_thread__message_has_sms_error
-#: model:ir.model.fields,help:sms.field_mail_thread_blacklist__message_has_sms_error
-#: model:ir.model.fields,help:sms.field_mail_thread_main_attachment__message_has_sms_error
-#: model:ir.model.fields,help:sms.field_mail_thread_phone__message_has_sms_error
-#: model:ir.model.fields,help:sms.field_mail_thread_subject_suggested__message_has_sms_error
-#: model:ir.model.fields,help:sms.field_mail_tracking_duration_mixin__message_has_sms_error
-#: model:ir.model.fields,help:sms.field_maintenance_equipment__message_has_sms_error
-#: model:ir.model.fields,help:sms.field_maintenance_request__message_has_sms_error
-#: model:ir.model.fields,help:sms.field_maintenance_team__message_has_sms_error
-#: model:ir.model.fields,help:sms.field_phone_blacklist__message_has_sms_error
-#: model:ir.model.fields,help:sms.field_product_category__message_has_sms_error
-#: model:ir.model.fields,help:sms.field_product_pricelist__message_has_sms_error
-#: model:ir.model.fields,help:sms.field_product_product__message_has_sms_error
-#: model:ir.model.fields,help:sms.field_product_template__message_has_sms_error
-#: model:ir.model.fields,help:sms.field_rating_mixin__message_has_sms_error
-#: model:ir.model.fields,help:sms.field_res_partner__message_has_sms_error
-#: model:ir.model.fields,help:sms.field_res_users__message_has_sms_error
+# model:
+# model:ir.model.fields,help:sms.field_account_analytic_account__message_has_sms_error
+#, []
 msgid "If checked, some messages have a delivery error."
-msgstr ""
+msgstr "Ako je označeno, neke poruke imaju grešku u dostavi."
 
-#. module: sms
-#: model:ir.model.fields.selection,name:sms.selection__sms_sms__state__outgoing
+# model:
+# model:ir.model.fields.selection,name:sms.selection__sms_sms__state__outgoing
+#, []
 msgid "In Queue"
-msgstr ""
+msgstr "U redu čekanja"
 
-#. module: sms
-#: model:ir.model.fields,help:sms.field_sms_composer__comment_single_recipient
+# model:
+# model:ir.model.fields,help:sms.field_sms_composer__comment_single_recipient
+#, []
 msgid "Indicates if the SMS composer targets a single specific recipient"
-msgstr ""
+msgstr "Označava da li sastavljač SMS-a cilja jednog određenog primaoca"
 
-#. module: sms
-#. odoo-javascript
-#: code:addons/sms/static/src/components/sms_widget/fields_sms_widget.xml:0
+# model:
+# code:addons/sms/static/src/components/sms_widget/fields_sms_widget.xml
+#, []
 msgid "Insert Field"
-msgstr ""
+msgstr "Umetni polje"
 
-#. module: sms
-#. odoo-javascript
-#: code:addons/sms/static/src/core/notification_model_patch.js:0
-#: model:ir.model.fields.selection,name:sms.selection__mail_notification__failure_type__sms_credit
-#: model:ir.model.fields.selection,name:sms.selection__sms_sms__failure_type__sms_credit
+# model: code:addons/sms/static/src/core/notification_model_patch.js
+#, []
 msgid "Insufficient Credit"
-msgstr ""
+msgstr "Nedovoljno kredita"
 
-#. module: sms
-#. odoo-javascript
-#: code:addons/sms/static/src/core/notification_model_patch.js:0
-#: model:ir.model.fields.selection,name:sms.selection__mail_notification__failure_type__sms_invalid_destination
+# model: code:addons/sms/static/src/core/notification_model_patch.js
+#, []
 msgid "Invalid Destination"
-msgstr ""
+msgstr "Neispravna destinacija"
 
-#. module: sms
-#. odoo-python
-#: code:addons/sms/tools/sms_api.py:0
+# model: code:addons/sms/tools/sms_api.py
+#, []
 msgid ""
-"Invalid phone number. Please make sure to follow the international format, i."
-"e. a plus sign (+), then country code, city code, and local phone number. "
+"Invalid phone number. Please make sure to follow the international format, "
+"i.e. a plus sign (+), then country code, city code, and local phone number. "
 "For example: +1 555-555-555"
 msgstr ""
+"Nevažeći broj telefona. Pridržavajte se međunarodnog formata, tj. znak plus "
+"(+), zatim pozivni broj države, pozivni broj grada i lokalni broj telefona. "
+"Na primjer: +1 555-555-555"
 
-#. module: sms
-#. odoo-python
-#: code:addons/sms/wizard/sms_composer.py:0
+# model: code:addons/sms/wizard/sms_composer.py
+#, []
 msgid "Invalid recipient number. Please update it."
-msgstr ""
+msgstr "Nevažeći broj primaoca. Ažurirajte ga."
 
-#. module: sms
-#: model:ir.model.fields,field_description:sms.field_sms_composer__recipient_single_valid
+# model:
+# model:ir.model.fields,field_description:sms.field_sms_composer__recipient_single_valid
+#, []
 msgid "Is valid"
-msgstr ""
+msgstr "Je važeći"
 
-#. module: sms
-#: model:ir.model.fields,field_description:sms.field_sms_composer__mass_keep_log
+# model:
+# model:ir.model.fields,field_description:sms.field_sms_composer__mass_keep_log
+#, []
 msgid "Keep a note on document"
-msgstr ""
+msgstr "Sačuvaj bilješku na dokumentu"
 
-#. module: sms
-#: model:ir.model.fields,field_description:sms.field_sms_template__lang
+# model: model:ir.model.fields,field_description:sms.field_sms_template__lang
+#, []
 msgid "Language"
-msgstr ""
+msgstr "Jezik"
 
-#. module: sms
-#: model:ir.model.fields,field_description:sms.field_sms_account_code__write_uid
-#: model:ir.model.fields,field_description:sms.field_sms_account_phone__write_uid
-#: model:ir.model.fields,field_description:sms.field_sms_account_sender__write_uid
-#: model:ir.model.fields,field_description:sms.field_sms_composer__write_uid
-#: model:ir.model.fields,field_description:sms.field_sms_sms__write_uid
-#: model:ir.model.fields,field_description:sms.field_sms_template__write_uid
-#: model:ir.model.fields,field_description:sms.field_sms_template_preview__write_uid
-#: model:ir.model.fields,field_description:sms.field_sms_template_reset__write_uid
-#: model:ir.model.fields,field_description:sms.field_sms_tracker__write_uid
+# model:
+# model:ir.model.fields,field_description:sms.field_sms_account_code__write_uid
+#, []
 msgid "Last Updated by"
-msgstr "Zadnji ažurirao"
+msgstr "Posljednji put ažurirao"
 
-#. module: sms
-#: model:ir.model.fields,field_description:sms.field_sms_account_code__write_date
-#: model:ir.model.fields,field_description:sms.field_sms_account_phone__write_date
-#: model:ir.model.fields,field_description:sms.field_sms_account_sender__write_date
-#: model:ir.model.fields,field_description:sms.field_sms_composer__write_date
-#: model:ir.model.fields,field_description:sms.field_sms_sms__write_date
-#: model:ir.model.fields,field_description:sms.field_sms_template__write_date
-#: model:ir.model.fields,field_description:sms.field_sms_template_preview__write_date
-#: model:ir.model.fields,field_description:sms.field_sms_template_reset__write_date
-#: model:ir.model.fields,field_description:sms.field_sms_tracker__write_date
+# model:
+# model:ir.model.fields,field_description:sms.field_sms_account_code__write_date
+#, []
 msgid "Last Updated on"
-msgstr "Zadnje ažurirano"
+msgstr "Posljednji put ažurirano"
 
-#. module: sms
-#: model:ir.model,name:sms.model_sms_tracker
+# model: model:ir.model,name:sms.model_sms_tracker
+#, []
 msgid "Link SMS to mailing/sms tracking models"
-msgstr ""
+msgstr "Poveži SMS sa modelima praćenja mailinga/sms"
 
-#. module: sms
-#: model:ir.model.fields,field_description:sms.field_sms_sms__mail_message_id
+# model:
+# model:ir.model.fields,field_description:sms.field_sms_sms__mail_message_id
+#, []
 msgid "Mail Message"
-msgstr ""
+msgstr "Poruka pošte"
 
-#. module: sms
-#: model:ir.model.fields,field_description:sms.field_sms_tracker__mail_notification_id
+# model:
+# model:ir.model.fields,field_description:sms.field_sms_tracker__mail_notification_id
+#, []
 msgid "Mail Notification"
-msgstr ""
+msgstr "Mail obavještenje"
 
-#. module: sms
-#: model:ir.model.fields,field_description:sms.field_ir_model__is_mail_thread_sms
+# model:
+# model:ir.model.fields,field_description:sms.field_ir_model__is_mail_thread_sms
+#, []
 msgid "Mail Thread SMS"
-msgstr ""
+msgstr "Mail Thread SMS"
 
-#. module: sms
-#: model:ir.model.fields,field_description:sms.field_sms_sms__to_delete
+# model: model:ir.model.fields,field_description:sms.field_sms_sms__to_delete
+#, []
 msgid "Marked for deletion"
-msgstr ""
+msgstr "Označeno za brisanje"
 
-#. module: sms
-#: model:ir.model.fields.selection,name:sms.selection__sms_composer__sms_type__marketing
-#: model:ir.model.fields.selection,name:sms.selection__sms_sms__sms_type__marketing
+# model:
+# model:ir.model.fields.selection,name:sms.selection__sms_composer__sms_type__marketing
+#, []
 msgid "Marketing"
 msgstr ""
 
-#. module: sms
-#: model:ir.model,name:sms.model_mail_message
-#: model:ir.model.fields,field_description:sms.field_sms_composer__body
-#: model_terms:ir.ui.view,arch_db:sms.sms_tsms_view_form
+# model: model:ir.model,name:sms.model_mail_message
+#, []
 msgid "Message"
 msgstr "Poruka"
 
-#. module: sms
-#: model:ir.model,name:sms.model_mail_notification
+# model: model:ir.model,name:sms.model_mail_notification
+#, []
 msgid "Message Notification"
 msgstr ""
 
-#. module: sms
-#. odoo-javascript
-#: code:addons/sms/static/src/core/notification_model_patch.js:0
-#: model:ir.model.fields.selection,name:sms.selection__mail_notification__failure_type__sms_number_missing
-#: model:ir.model.fields.selection,name:sms.selection__sms_sms__failure_type__sms_number_missing
+# model: code:addons/sms/static/src/core/notification_model_patch.js
+#, []
 msgid "Missing Number"
-msgstr ""
+msgstr "Nedostaje broj"
 
-#. module: sms
-#: model:ir.model,name:sms.model_ir_model
+# model: model:ir.model,name:sms.model_ir_model
+#, []
 msgid "Model"
 msgstr ""
 
-#. module: sms
-#: model:ir.model.fields,field_description:sms.field_sms_template__name
+# model: model:ir.model.fields,field_description:sms.field_sms_template__name
+#, []
 msgid "Name"
-msgstr ""
+msgstr "Naziv"
 
-#. module: sms
-#: model:ir.model.fields,field_description:sms.field_sms_template_preview__no_record
+# model:
+# model:ir.model.fields,field_description:sms.field_sms_template_preview__no_record
+#, []
 msgid "No Record"
-msgstr ""
+msgstr "Nema zapisa"
 
-#. module: sms
-#. odoo-javascript
-#: code:addons/sms/static/src/core/notification_model_patch.js:0
-#: model:ir.model.fields.selection,name:sms.selection__mail_notification__failure_type__sms_not_allowed
+# model: code:addons/sms/static/src/core/notification_model_patch.js
+#, []
 msgid "Not Allowed"
-msgstr ""
+msgstr "Nije dozvoljeno"
 
-#. module: sms
-#. odoo-javascript
-#: code:addons/sms/static/src/core/notification_model_patch.js:0
-#: model:ir.model.fields.selection,name:sms.selection__mail_notification__failure_type__sms_not_delivered
+# model: code:addons/sms/static/src/core/notification_model_patch.js
+#, []
 msgid "Not Delivered"
-msgstr ""
+msgstr "Nije isporučeno"
 
-#. module: sms
-#: model:ir.model.fields.selection,name:sms.selection__ir_actions_server__sms_method__note
+# model:
+# model:ir.model.fields.selection,name:sms.selection__ir_actions_server__sms_method__note
+#, []
 msgid "Note only"
-msgstr ""
+msgstr "Samo napomena"
 
-#. module: sms
-#: model_terms:ir.ui.view,arch_db:sms.sms_account_sender_view_form
+# model: model_terms:ir.ui.view,arch_db:sms.sms_account_sender_view_form
+#, []
 msgid ""
 "Note that this is not required, if you don't set a sender name, your SMS "
 "will be sent from a short code."
 msgstr ""
+"Napomena: ovo nije obavezno, ako ne postavite ime pošiljaoca, vaš SMS će "
+"biti poslan sa kratkog koda."
 
-#. module: sms
-#: model:ir.model.fields,field_description:sms.field_mail_notification__notification_type
+# model:
+# model:ir.model.fields,field_description:sms.field_mail_notification__notification_type
+#, []
 msgid "Notification Type"
-msgstr ""
+msgstr "Tip obavijesti"
 
-#. module: sms
-#: model:ir.model.fields,field_description:sms.field_sms_sms__number
+# model: model:ir.model.fields,field_description:sms.field_sms_sms__number
+#, []
 msgid "Number"
-msgstr ""
+msgstr "Broj"
 
-#. module: sms
-#: model:ir.model.fields,field_description:sms.field_sms_composer__number_field_name
+# model:
+# model:ir.model.fields,field_description:sms.field_sms_composer__number_field_name
+#, []
 msgid "Number Field"
-msgstr ""
+msgstr "Polje za broj"
 
-#. module: sms
-#: model:ir.model.fields,help:sms.field_sms_composer__res_ids_count
+# model: model:ir.model.fields,help:sms.field_sms_composer__res_ids_count
+#, []
 msgid ""
-"Number of recipients that will receive the SMS if sent in mass mode, without "
-"applying the Active Domain value"
+"Number of recipients that will receive the SMS if sent in mass mode, without"
+" applying the Active Domain value"
 msgstr ""
+"Broj primalaca koji će primiti SMS ako se pošalje u masovnom načinu, bez "
+"primjene vrijednosti aktivne domene"
 
-#. module: sms
-#: model:ir.model.fields.selection,name:sms.selection__sms_sms__failure_type__sms_optout
+# model:
+# model:ir.model.fields.selection,name:sms.selection__sms_sms__failure_type__sms_optout
+#, []
 msgid "Opted Out"
-msgstr ""
+msgstr "Odjavljen"
 
-#. module: sms
-#: model:ir.model.fields,help:sms.field_sms_template__lang
+# model: model:ir.model.fields,help:sms.field_sms_template__lang
+#, []
 msgid ""
 "Optional translation language (ISO code) to select when sending out an "
 "email. If not set, the main partner's language will be used. This should "
 "usually be a placeholder expression that provides the appropriate language, "
 "e.g. {{ object.partner_id.lang }}."
 msgstr ""
+"Opcionalni jezik prijevoda (ISO kod) za izbor pri slanju e-pošte. Ako nije "
+"postavljen, koristit će se jezik glavnog partnera. Obično to treba biti "
+"placeholder izraz koji daje odgovarajući jezik, npr. {{ "
+"object.partner_id.lang }}."
 
-#. module: sms
-#: model:ir.model,name:sms.model_sms_sms
+# model: model:ir.model,name:sms.model_sms_sms
+#, []
 msgid "Outgoing SMS"
-msgstr ""
+msgstr "Odlazni SMS"
 
-#. module: sms
-#: model:ir.model.fields,field_description:sms.field_sms_account_phone__phone_number
+# model:
+# model:ir.model.fields,field_description:sms.field_sms_account_phone__phone_number
+#, []
 msgid "Phone Number"
-msgstr ""
+msgstr "Broj telefona"
 
-#. module: sms
-#: model:ir.model.fields,help:sms.field_sms_composer__recipient_single_number_itf
+# model:
+# model:ir.model.fields,help:sms.field_sms_composer__recipient_single_number_itf
+#, []
 msgid ""
 "Phone number of the recipient. If changed, it will be recorded on "
 "recipient's profile."
 msgstr ""
+"Telefonski broj primaoca. Ako se promijeni, bit će zabilježen na profilu "
+"primaoca."
 
-#. module: sms
-#: model:ir.model.fields.selection,name:sms.selection__sms_composer__composition_mode__comment
+# model:
+# model:ir.model.fields.selection,name:sms.selection__sms_composer__composition_mode__comment
+#, []
 msgid "Post on a document"
-msgstr ""
+msgstr "Objavi na dokumentu"
 
-#. module: sms
-#: model:ir.model.fields,help:sms.field_sms_composer__use_exclusion_list
+# model: model:ir.model.fields,help:sms.field_sms_composer__use_exclusion_list
+#, []
 msgid ""
 "Prevent sending messages to blacklisted contacts. Disable only when "
 "absolutely necessary."
 msgstr ""
+"Spriječite slanje poruka blokiranim kontaktima. Onemogućite samo kada je "
+"apsolutno neophodno."
 
-#. module: sms
-#: model_terms:ir.ui.view,arch_db:sms.sms_template_preview_form
+# model: model_terms:ir.ui.view,arch_db:sms.sms_template_preview_form
+#, []
 msgid "Preview of"
-msgstr ""
+msgstr "Pregled"
 
-#. module: sms
-#: model_terms:ir.ui.view,arch_db:sms.sms_template_reset_view_form
+# model: model_terms:ir.ui.view,arch_db:sms.sms_template_reset_view_form
+#, []
 msgid "Proceed"
-msgstr ""
+msgstr "Nastavi"
 
-#. module: sms
-#: model:ir.model.fields.selection,name:sms.selection__sms_sms__state__process
+# model:
+# model:ir.model.fields.selection,name:sms.selection__sms_sms__state__process
+#, []
 msgid "Processing"
-msgstr ""
+msgstr "Obrada"
 
-#. module: sms
-#: model_terms:ir.ui.view,arch_db:sms.sms_composer_view_form
+# model: model_terms:ir.ui.view,arch_db:sms.sms_composer_view_form
+#, []
 msgid "Put in queue"
-msgstr ""
+msgstr "Stavi u red"
 
-#. module: sms
-#: model:ir.model.fields,field_description:sms.field_sms_composer__recipient_single_number_itf
+# model:
+# model:ir.model.fields,field_description:sms.field_sms_composer__recipient_single_number_itf
+#, []
 msgid "Recipient Number"
-msgstr ""
+msgstr "Broj primaoca"
 
-#. module: sms
-#: model:ir.model.fields,field_description:sms.field_sms_composer__numbers
+# model:
+# model:ir.model.fields,field_description:sms.field_sms_composer__numbers
+#, []
 msgid "Recipients (Numbers)"
-msgstr ""
+msgstr "Primaoci (Brojevi)"
 
-#. module: sms
-#: model:ir.model.fields,field_description:sms.field_sms_composer__recipient_single_description
+# model:
+# model:ir.model.fields,field_description:sms.field_sms_composer__recipient_single_description
+#, []
 msgid "Recipients (Partners)"
-msgstr ""
+msgstr "Primaoci (Partneri)"
 
-#. module: sms
-#: model:ir.model.fields,field_description:sms.field_sms_template_preview__resource_ref
+# model:
+# model:ir.model.fields,field_description:sms.field_sms_template_preview__resource_ref
+#, []
 msgid "Record reference"
-msgstr ""
+msgstr "Referenca zapisa"
 
-#. module: sms
-#: model_terms:ir.ui.view,arch_db:sms.sms_account_code_view_form
+# model: model_terms:ir.ui.view,arch_db:sms.sms_account_code_view_form
+#, []
 msgid "Register"
-msgstr ""
+msgstr "Kasa"
 
-#. module: sms
-#. odoo-python
-#: code:addons/sms/models/iap_account.py:0
-#: code:addons/sms/wizard/sms_account_phone.py:0
+# model: code:addons/sms/models/iap_account.py
+#, []
 msgid "Register Account"
-msgstr ""
+msgstr "Registruj račun"
 
-#. module: sms
-#. odoo-python
-#: code:addons/sms/tools/sms_api.py:0
+# model: code:addons/sms/tools/sms_api.py
+#, []
 msgid "Register now."
-msgstr ""
+msgstr "Registrujte se sada."
 
-#. module: sms
-#: model_terms:ir.ui.view,arch_db:sms.sms_account_code_view_form
-#: model_terms:ir.ui.view,arch_db:sms.sms_account_phone_view_form
+# model: model_terms:ir.ui.view,arch_db:sms.sms_account_code_view_form
+#, []
 msgid "Register your SMS account"
-msgstr ""
+msgstr "Registrujte svoj SMS račun"
 
-#. module: sms
-#. odoo-javascript
-#: code:addons/sms/static/src/core/notification_model_patch.js:0
-#: model:ir.model.fields.selection,name:sms.selection__mail_notification__failure_type__sms_rejected
+# model: code:addons/sms/static/src/core/notification_model_patch.js
+#, []
 msgid "Rejected"
-msgstr ""
+msgstr "Odbijeno"
 
-#. module: sms
-#: model:ir.model.fields,field_description:sms.field_sms_template__model
+# model: model:ir.model.fields,field_description:sms.field_sms_template__model
+#, []
 msgid "Related Document Model"
-msgstr ""
+msgstr "Povezani model dokumenta"
 
-#. module: sms
-#: model_terms:ir.ui.view,arch_db:sms.sms_template_view_form
+# model: model_terms:ir.ui.view,arch_db:sms.sms_template_view_form
+#, []
 msgid "Remove the contextual action of the related model"
-msgstr ""
+msgstr "Ukloni kontekstualnu akciju povezanog modela"
 
-#. module: sms
-#: model:ir.model.fields,field_description:sms.field_sms_template__render_model
+# model:
+# model:ir.model.fields,field_description:sms.field_sms_template__render_model
+#, []
 msgid "Rendering Model"
-msgstr ""
+msgstr "Model renderiranja"
 
-#. module: sms
-#: model:ir.actions.server,name:sms.ir_actions_server_sms_sms_resend
+# model: model:ir.actions.server,name:sms.ir_actions_server_sms_sms_resend
+#, []
 msgid "Resend"
-msgstr ""
+msgstr "Pošalji ponovo"
 
-#. module: sms
-#: model:ir.actions.act_window,name:sms.sms_template_reset_action
+# model: model:ir.actions.act_window,name:sms.sms_template_reset_action
+#, []
 msgid "Reset SMS Template"
-msgstr ""
+msgstr "Resetuj SMS predložak"
 
-#. module: sms
-#: model_terms:ir.ui.view,arch_db:sms.sms_template_view_form
+# model: model_terms:ir.ui.view,arch_db:sms.sms_template_view_form
+#, []
 msgid "Reset Template"
-msgstr ""
+msgstr "Resetuj predložak"
 
-#. module: sms
-#: model_terms:ir.ui.view,arch_db:sms.sms_sms_view_tree
-#: model_terms:ir.ui.view,arch_db:sms.sms_tsms_view_form
+# model: model_terms:ir.ui.view,arch_db:sms.sms_sms_view_tree
+#, []
 msgid "Retry"
-msgstr ""
+msgstr "Pokušaj ponovo"
 
-#. module: sms
-#. odoo-javascript
-#: code:addons/sms/static/src/components/phone_field/phone_field.js:0
-#: code:addons/sms/static/src/core/notification_model_patch.js:0
-#: model:ir.actions.act_window,name:sms.sms_sms_action
-#: model:ir.model.fields,field_description:sms.field_mail_notification__sms_id
-#: model:ir.model.fields.selection,name:sms.selection__mail_message__message_type__sms
-#: model:ir.model.fields.selection,name:sms.selection__mail_notification__notification_type__sms
-#: model:ir.ui.menu,name:sms.sms_sms_menu
-#: model_terms:ir.ui.view,arch_db:sms.sms_tsms_view_form
+# model: code:addons/sms/static/src/components/phone_field/phone_field.js
+#, []
 msgid "SMS"
-msgstr ""
+msgstr "SMS"
 
-#. module: sms
-#. odoo-javascript
-#: code:addons/sms/static/src/components/sms_widget/fields_sms_widget.xml:0
+# model:
+# code:addons/sms/static/src/components/sms_widget/fields_sms_widget.xml
+#, []
 msgid "SMS ("
-msgstr ""
+msgstr "SMS ("
 
-#. module: sms
-#: model:ir.model.fields.selection,name:sms.selection__ir_actions_server__sms_method__comment
+# model:
+# model:ir.model.fields.selection,name:sms.selection__ir_actions_server__sms_method__comment
+#, []
 msgid "SMS (with note)"
-msgstr ""
+msgstr "SMS (s napomenom)"
 
-#. module: sms
-#: model:ir.model.fields.selection,name:sms.selection__ir_actions_server__sms_method__sms
+# model:
+# model:ir.model.fields.selection,name:sms.selection__ir_actions_server__sms_method__sms
+#, []
 msgid "SMS (without note)"
-msgstr ""
+msgstr "SMS (bez napomene)"
 
-#. module: sms
-#. odoo-javascript
-#: code:addons/sms/static/src/thread/message_patch.js:0
+# model: code:addons/sms/static/src/thread/message_patch.js
+#, []
 msgid "SMS Account"
-msgstr ""
+msgstr "SMS račun"
 
-#. module: sms
-#: model:ir.model,name:sms.model_sms_account_phone
+# model: model:ir.model,name:sms.model_sms_account_phone
+#, []
 msgid "SMS Account Registration Phone Number Wizard"
-msgstr ""
+msgstr "Čarobnjak za broj telefona registracije SMS računa"
 
-#. module: sms
-#: model:ir.model,name:sms.model_sms_account_sender
+# model: model:ir.model,name:sms.model_sms_account_sender
+#, []
 msgid "SMS Account Sender Name Wizard"
-msgstr ""
+msgstr "Čarobnjak za ime pošiljaoca SMS računa"
 
-#. module: sms
-#: model:ir.model,name:sms.model_sms_account_code
+# model: model:ir.model,name:sms.model_sms_account_code
+#, []
 msgid "SMS Account Verification Code Wizard"
-msgstr ""
+msgstr "Čarobnjak za verifikacioni kod SMS računa"
 
-#. module: sms
-#: model:ir.model.fields,field_description:sms.field_account_analytic_account__message_has_sms_error
-#: model:ir.model.fields,field_description:sms.field_calendar_event__message_has_sms_error
-#: model:ir.model.fields,field_description:sms.field_crm_team__message_has_sms_error
-#: model:ir.model.fields,field_description:sms.field_crm_team_member__message_has_sms_error
-#: model:ir.model.fields,field_description:sms.field_discuss_channel__message_has_sms_error
-#: model:ir.model.fields,field_description:sms.field_fleet_vehicle__message_has_sms_error
-#: model:ir.model.fields,field_description:sms.field_fleet_vehicle_log_contract__message_has_sms_error
-#: model:ir.model.fields,field_description:sms.field_fleet_vehicle_log_services__message_has_sms_error
-#: model:ir.model.fields,field_description:sms.field_fleet_vehicle_model__message_has_sms_error
-#: model:ir.model.fields,field_description:sms.field_gamification_badge__message_has_sms_error
-#: model:ir.model.fields,field_description:sms.field_gamification_badge_user__message_has_sms_error
-#: model:ir.model.fields,field_description:sms.field_gamification_challenge__message_has_sms_error
-#: model:ir.model.fields,field_description:sms.field_iap_account__message_has_sms_error
-#: model:ir.model.fields,field_description:sms.field_ir_actions_server__message_has_sms_error
-#: model:ir.model.fields,field_description:sms.field_ir_cron__message_has_sms_error
-#: model:ir.model.fields,field_description:sms.field_lunch_supplier__message_has_sms_error
-#: model:ir.model.fields,field_description:sms.field_mail_blacklist__message_has_sms_error
-#: model:ir.model.fields,field_description:sms.field_mail_thread__message_has_sms_error
-#: model:ir.model.fields,field_description:sms.field_mail_thread_blacklist__message_has_sms_error
-#: model:ir.model.fields,field_description:sms.field_mail_thread_main_attachment__message_has_sms_error
-#: model:ir.model.fields,field_description:sms.field_mail_thread_phone__message_has_sms_error
-#: model:ir.model.fields,field_description:sms.field_mail_thread_subject_suggested__message_has_sms_error
-#: model:ir.model.fields,field_description:sms.field_mail_tracking_duration_mixin__message_has_sms_error
-#: model:ir.model.fields,field_description:sms.field_maintenance_equipment__message_has_sms_error
-#: model:ir.model.fields,field_description:sms.field_maintenance_request__message_has_sms_error
-#: model:ir.model.fields,field_description:sms.field_maintenance_team__message_has_sms_error
-#: model:ir.model.fields,field_description:sms.field_phone_blacklist__message_has_sms_error
-#: model:ir.model.fields,field_description:sms.field_product_category__message_has_sms_error
-#: model:ir.model.fields,field_description:sms.field_product_pricelist__message_has_sms_error
-#: model:ir.model.fields,field_description:sms.field_product_product__message_has_sms_error
-#: model:ir.model.fields,field_description:sms.field_product_template__message_has_sms_error
-#: model:ir.model.fields,field_description:sms.field_rating_mixin__message_has_sms_error
-#: model:ir.model.fields,field_description:sms.field_res_partner__message_has_sms_error
-#: model:ir.model.fields,field_description:sms.field_res_users__message_has_sms_error
+# model:
+# model:ir.model.fields,field_description:sms.field_account_analytic_account__message_has_sms_error
+#, []
 msgid "SMS Delivery error"
-msgstr ""
+msgstr "Greška u dostavi SMS-a"
 
-#. module: sms
-#. odoo-javascript
-#: code:addons/sms/static/src/messaging_menu/messaging_menu_patch.js:0
+# model: code:addons/sms/static/src/messaging_menu/messaging_menu_patch.js
+#, []
 msgid "SMS Failure: %(modelName)s"
-msgstr ""
+msgstr "SMS greška: %(modelName)s"
 
-#. module: sms
-#. odoo-javascript
-#: code:addons/sms/static/src/messaging_menu/messaging_menu_patch.js:0
+# model: code:addons/sms/static/src/messaging_menu/messaging_menu_patch.js
+#, []
 msgid "SMS Failures"
-msgstr ""
+msgstr "SMS greške"
 
-#. module: sms
-#: model:ir.model.fields,field_description:sms.field_mail_notification__sms_id_int
+# model:
+# model:ir.model.fields,field_description:sms.field_mail_notification__sms_id_int
+#, []
 msgid "SMS ID"
-msgstr ""
+msgstr "SMS ID"
 
-#. module: sms
-#: model:ir.model.fields,field_description:sms.field_mail_notification__sms_number
+# model:
+# model:ir.model.fields,field_description:sms.field_mail_notification__sms_number
+#, []
 msgid "SMS Number"
-msgstr ""
+msgstr "SMS broj"
 
-#. module: sms
-#: model_terms:ir.ui.view,arch_db:sms.sms_template_preview_form
+# model: model_terms:ir.ui.view,arch_db:sms.sms_template_preview_form
+#, []
 msgid "SMS Preview"
-msgstr ""
+msgstr "SMS pregled"
 
-#. module: sms
-#. odoo-javascript
-#: code:addons/sms/static/src/components/sms_widget/fields_sms_widget.xml:0
+# model:
+# code:addons/sms/static/src/components/sms_widget/fields_sms_widget.xml
+#, []
 msgid "SMS Pricing"
-msgstr ""
+msgstr "SMS cijene"
 
-#. module: sms
-#: model:ir.model.fields,field_description:sms.field_sms_sms__state
+# model: model:ir.model.fields,field_description:sms.field_sms_sms__state
+#, []
 msgid "SMS Status"
-msgstr ""
+msgstr "Status SMS-a"
 
-#. module: sms
-#: model:ir.model.fields,field_description:sms.field_ir_actions_server__sms_template_id
-#: model:ir.model.fields,field_description:sms.field_ir_cron__sms_template_id
-#: model_terms:ir.ui.view,arch_db:sms.sms_template_view_form
+# model:
+# model:ir.model.fields,field_description:sms.field_ir_actions_server__sms_template_id
+#, []
 msgid "SMS Template"
-msgstr ""
+msgstr "Predložak SMS poruke"
 
-#. module: sms
-#: model:ir.model,name:sms.model_sms_template_preview
+# model: model:ir.model,name:sms.model_sms_template_preview
+#, []
 msgid "SMS Template Preview"
-msgstr ""
+msgstr "Pregled SMS predloška"
 
-#. module: sms
-#: model:ir.model,name:sms.model_sms_template_reset
+# model: model:ir.model,name:sms.model_sms_template_reset
+#, []
 msgid "SMS Template Reset"
-msgstr ""
+msgstr "Resetovanje SMS predloška"
 
-#. module: sms
-#: model:ir.model,name:sms.model_sms_template
-#: model:ir.ui.menu,name:sms.sms_template_menu
-#: model_terms:ir.ui.view,arch_db:sms.sms_sms_view_tree
-#: model_terms:ir.ui.view,arch_db:sms.sms_template_view_form
-#: model_terms:ir.ui.view,arch_db:sms.sms_template_view_tree
+# model: model:ir.model,name:sms.model_sms_template
+#, []
 msgid "SMS Templates"
-msgstr ""
+msgstr "SMS predlošci"
 
-#. module: sms
-#. odoo-python
-#: code:addons/sms/wizard/sms_template_reset.py:0
+# model: code:addons/sms/wizard/sms_template_reset.py
+#, []
 msgid "SMS Templates have been reset"
-msgstr ""
+msgstr "SMS predlošci su resetovani"
 
-#. module: sms
-#: model:ir.model.fields,field_description:sms.field_mail_notification__sms_tracker_ids
+# model:
+# model:ir.model.fields,field_description:sms.field_mail_notification__sms_tracker_ids
+#, []
 msgid "SMS Trackers"
-msgstr ""
+msgstr "Praćenje SMS-a"
 
-#. module: sms
-#: model_terms:ir.ui.view,arch_db:sms.sms_template_preview_form
+# model: model_terms:ir.ui.view,arch_db:sms.sms_template_preview_form
+#, []
 msgid "SMS content"
-msgstr ""
+msgstr "Sadržaj SMS poruke"
 
-#. module: sms
-#. odoo-python
-#: code:addons/sms/models/ir_actions_server.py:0
+# model: code:addons/sms/models/ir_actions_server.py
+#, []
 msgid "SMS template model of %(action_name)s does not match action model."
-msgstr ""
+msgstr "Model SMS predloška za %(action_name)s ne odgovara modelu akcije."
 
-#. module: sms
-#: model:ir.model.fields,field_description:sms.field_sms_sms__sms_tracker_id
+# model:
+# model:ir.model.fields,field_description:sms.field_sms_sms__sms_tracker_id
+#, []
 msgid "SMS trackers"
-msgstr ""
+msgstr "SMS pratioci"
 
-#. module: sms
-#: model:ir.model.fields,field_description:sms.field_sms_tracker__sms_uuid
+# model:
+# model:ir.model.fields,field_description:sms.field_sms_tracker__sms_uuid
+#, []
 msgid "SMS uuid"
-msgstr ""
+msgstr "SMS uuid"
 
-#. module: sms
-#: model:ir.actions.server,name:sms.ir_cron_sms_scheduler_action_ir_actions_server
+# model:
+# model:ir.actions.server,name:sms.ir_cron_sms_scheduler_action_ir_actions_server
+#, []
 msgid "SMS: SMS Queue Manager"
-msgstr ""
+msgstr "SMS: Upravitelj SMS reda"
 
-#. module: sms
-#: model:ir.model.fields,field_description:sms.field_sms_composer__sanitized_numbers
+# model:
+# model:ir.model.fields,field_description:sms.field_sms_composer__sanitized_numbers
+#, []
 msgid "Sanitized Number"
-msgstr ""
+msgstr "Sanirani broj"
 
-#. module: sms
-#: model_terms:ir.ui.view,arch_db:sms.sms_sms_view_search
-#: model_terms:ir.ui.view,arch_db:sms.sms_template_view_search
+# model: model_terms:ir.ui.view,arch_db:sms.sms_sms_view_search
+#, []
 msgid "Search SMS Templates"
-msgstr ""
+msgstr "Pretraga SMS predložaka"
 
-#. module: sms
-#: model_terms:ir.ui.view,arch_db:sms.sms_composer_view_form
+# model: model_terms:ir.ui.view,arch_db:sms.sms_composer_view_form
+#, []
 msgid "Send"
-msgstr ""
+msgstr "Pošalji"
 
-#. module: sms
-#. odoo-python
-#: code:addons/sms/models/ir_actions_server.py:0
+# model: code:addons/sms/models/ir_actions_server.py
+#, []
 msgid "Send %(template_name)s"
-msgstr ""
+msgstr "Pošalji %(template_name)s"
 
-#. module: sms
-#: model_terms:ir.ui.view,arch_db:sms.sms_sms_view_tree
-#: model_terms:ir.ui.view,arch_db:sms.sms_tsms_view_form
+# model: model_terms:ir.ui.view,arch_db:sms.sms_sms_view_tree
+#, []
 msgid "Send Now"
-msgstr ""
+msgstr "Pošalji odmah"
 
-#. module: sms
-#. odoo-javascript
-#: code:addons/sms/static/src/components/phone_field/phone_field.js:0
-#: model:ir.actions.act_window,name:sms.res_partner_act_window_sms_composer_multi
-#: model:ir.actions.act_window,name:sms.res_partner_act_window_sms_composer_single
-#: model:ir.actions.act_window,name:sms.sms_composer_action_form
-#: model:ir.model.fields.selection,name:sms.selection__ir_actions_server__state__sms
+# model: code:addons/sms/static/src/components/phone_field/phone_field.js
+#, []
 msgid "Send SMS"
-msgstr ""
+msgstr "Pošalji SMS"
 
-#. module: sms
-#. odoo-python
-#: code:addons/sms/models/sms_template.py:0
+# model: code:addons/sms/models/sms_template.py
+#, []
 msgid "Send SMS (%s)"
-msgstr ""
+msgstr "Pošalji SMS (%s)"
 
-#. module: sms
-#: model:ir.model.fields,field_description:sms.field_ir_actions_server__sms_method
-#: model:ir.model.fields,field_description:sms.field_ir_cron__sms_method
+# model:
+# model:ir.model.fields,field_description:sms.field_ir_actions_server__sms_method
+#, []
 msgid "Send SMS As"
-msgstr ""
+msgstr "Pošalji SMS kao"
 
-#. module: sms
-#: model:ir.model,name:sms.model_sms_composer
+# model: model:ir.model,name:sms.model_sms_composer
+#, []
 msgid "Send SMS Wizard"
-msgstr ""
+msgstr "Čarobnjak za slanje SMS-a"
 
-#. module: sms
-#: model:ir.model.fields.selection,name:sms.selection__sms_composer__composition_mode__mass
+# model:
+# model:ir.model.fields.selection,name:sms.selection__sms_composer__composition_mode__mass
+#, []
 msgid "Send SMS in batch"
-msgstr ""
+msgstr "Pošalji SMS u grupi"
 
-#. module: sms
-#: model:iap.service,description:sms.iap_service_sms
+# model: model:iap.service,description:sms.iap_service_sms
+#, []
 msgid "Send SMS to your contacts directly from your database."
-msgstr ""
+msgstr "Šaljite SMS vašim kontaktima direktno iz vaše baze podataka."
 
-#. module: sms
-#: model_terms:ir.ui.view,arch_db:sms.sms_composer_view_form
+# model: model_terms:ir.ui.view,arch_db:sms.sms_composer_view_form
+#, []
 msgid "Send an SMS"
-msgstr ""
+msgstr "Pošalji SMS"
 
-#. module: sms
-#: model:ir.model.fields,field_description:sms.field_sms_composer__mass_force_send
+# model:
+# model:ir.model.fields,field_description:sms.field_sms_composer__mass_force_send
+#, []
 msgid "Send directly"
-msgstr ""
+msgstr "Pošalji direktno"
 
-#. module: sms
-#: model_terms:ir.ui.view,arch_db:sms.sms_composer_view_form
+# model: model_terms:ir.ui.view,arch_db:sms.sms_composer_view_form
+#, []
 msgid "Send now"
-msgstr ""
+msgstr "Pošalji sada"
 
-#. module: sms
-#: model:ir.model.fields.selection,name:sms.selection__sms_composer__composition_mode__numbers
+# model:
+# model:ir.model.fields.selection,name:sms.selection__sms_composer__composition_mode__numbers
+#, []
 msgid "Send to numbers"
-msgstr ""
+msgstr "Pošalji na brojeve"
 
-#. module: sms
-#: model_terms:ir.ui.view,arch_db:sms.sms_account_phone_view_form
+# model: model_terms:ir.ui.view,arch_db:sms.sms_account_phone_view_form
+#, []
 msgid "Send verification code"
-msgstr ""
+msgstr "Pošalji verifikacioni kod"
 
-#. module: sms
-#: model:ir.model.fields,field_description:sms.field_iap_account__sender_name
-#: model:ir.model.fields,field_description:sms.field_sms_account_sender__sender_name
+# model:
+# model:ir.model.fields,field_description:sms.field_iap_account__sender_name
+#, []
 msgid "Sender Name"
-msgstr ""
+msgstr "Ime pošiljaoca"
 
-#. module: sms
-#. odoo-python
-#: code:addons/sms/models/ir_actions_server.py:0
+# model: code:addons/sms/models/ir_actions_server.py
+#, []
 msgid "Sending SMS can only be done on a not transient mail.thread model"
-msgstr ""
+msgstr "Slanje SMS-a može se obaviti samo na nepostojanom mail.thread modelu"
 
-#. module: sms
-#: model:ir.model.fields.selection,name:sms.selection__sms_sms__state__pending
+# model:
+# model:ir.model.fields.selection,name:sms.selection__sms_sms__state__pending
+#, []
 msgid "Sent"
-msgstr ""
+msgstr "Poslano"
 
-#. module: sms
-#: model:ir.model,name:sms.model_ir_actions_server
+# model: model:ir.model,name:sms.model_ir_actions_server
+#, []
 msgid "Server Action"
-msgstr ""
+msgstr "Serverske radnje"
 
-#. module: sms
-#. odoo-javascript
-#: code:addons/sms/static/src/core/notification_model_patch.js:0
-#: model:ir.model.fields.selection,name:sms.selection__mail_notification__failure_type__sms_server
-#: model:ir.model.fields.selection,name:sms.selection__sms_sms__failure_type__sms_server
+# model: code:addons/sms/static/src/core/notification_model_patch.js
+#, []
 msgid "Server Error"
-msgstr ""
+msgstr "Greška poslužitelja"
 
-#. module: sms
-#: model_terms:ir.ui.view,arch_db:sms.sms_account_sender_view_form
+# model: model_terms:ir.ui.view,arch_db:sms.sms_account_sender_view_form
+#, []
 msgid "Set sender name"
-msgstr ""
+msgstr "Postavi ime pošiljaoca"
 
-#. module: sms
-#: model:ir.model.fields,field_description:sms.field_sms_template__sidebar_action_id
+# model:
+# model:ir.model.fields,field_description:sms.field_sms_template__sidebar_action_id
+#, []
 msgid "Sidebar action"
-msgstr ""
+msgstr "Bočna akcija"
 
-#. module: sms
-#: model:ir.model.fields,help:sms.field_sms_template__sidebar_action_id
+# model: model:ir.model.fields,help:sms.field_sms_template__sidebar_action_id
+#, []
 msgid ""
 "Sidebar action to make this template available on records of the related "
 "document model"
 msgstr ""
+"Bočna akcija kako bi ovaj predložak bio dostupan na zapisima povezanog "
+"modela dokumenta"
 
-#. module: sms
-#: model:ir.model.fields,field_description:sms.field_sms_composer__comment_single_recipient
+# model:
+# model:ir.model.fields,field_description:sms.field_sms_composer__comment_single_recipient
+#, []
 msgid "Single Mode"
-msgstr ""
+msgstr "Pojedinačni režim"
 
-#. module: sms
-#: model_terms:ir.ui.view,arch_db:sms.sms_account_sender_view_form
+# model: model_terms:ir.ui.view,arch_db:sms.sms_account_sender_view_form
+#, []
 msgid "Skip for now"
-msgstr ""
+msgstr "Preskoči zasada"
 
-#. module: sms
-#: model:ir.model.fields,field_description:sms.field_sms_template_preview__sms_template_id
+# model:
+# model:ir.model.fields,field_description:sms.field_sms_template_preview__sms_template_id
+#, []
 msgid "Sms Template"
-msgstr ""
+msgstr "Predložak SMS poruke"
 
-#. module: sms
-#: model:ir.model.fields,field_description:sms.field_sms_composer__sms_type
-#: model:ir.model.fields,field_description:sms.field_sms_sms__sms_type
+# model:
+# model:ir.model.fields,field_description:sms.field_sms_composer__sms_type
+#, []
 msgid "Sms Type"
 msgstr ""
 
-#. module: sms
-#: model:ir.model.fields,field_description:sms.field_sms_composer__recipient_single_number
+# model:
+# model:ir.model.fields,field_description:sms.field_sms_composer__recipient_single_number
+#, []
 msgid "Stored Recipient Number"
-msgstr ""
+msgstr "Pohranjeni broj primaoca"
 
-#. module: sms
-#. odoo-python
-#: code:addons/sms/models/sms_sms.py:0
+# model: code:addons/sms/models/sms_sms.py
+#, []
 msgid "Success"
-msgstr ""
+msgstr "Uspjeh"
 
-#. module: sms
-#: model:ir.model.fields,field_description:sms.field_sms_template_reset__template_ids
+# model:
+# model:ir.model.fields,field_description:sms.field_sms_template_reset__template_ids
+#, []
 msgid "Template"
-msgstr ""
+msgstr "Predložak"
 
-#. module: sms
-#: model:ir.model.fields,field_description:sms.field_sms_template__template_fs
+# model:
+# model:ir.model.fields,field_description:sms.field_sms_template__template_fs
+#, []
 msgid "Template Filename"
-msgstr ""
+msgstr "Naziv datoteke predloška"
 
-#. module: sms
-#: model:ir.actions.act_window,name:sms.sms_template_preview_action
+# model: model:ir.actions.act_window,name:sms.sms_template_preview_action
+#, []
 msgid "Template Preview"
-msgstr ""
+msgstr "Pregled predloška"
 
-#. module: sms
-#: model:ir.model.fields,field_description:sms.field_sms_template_preview__lang
+# model:
+# model:ir.model.fields,field_description:sms.field_sms_template_preview__lang
+#, []
 msgid "Template Preview Language"
-msgstr ""
+msgstr "Jezik za pregled predloška"
 
-#. module: sms
-#: model:ir.actions.act_window,name:sms.sms_template_action
+# model: model:ir.actions.act_window,name:sms.sms_template_action
+#, []
 msgid "Templates"
-msgstr ""
+msgstr "Predlošci"
 
-#. module: sms
-#. odoo-python
-#: code:addons/sms/tools/sms_api.py:0
+# model: code:addons/sms/tools/sms_api.py
+#, []
 msgid ""
 "The SMS Service is currently unavailable for new users and new accounts "
 "registrations are suspended."
 msgstr ""
+"SMS usluga je trenutno nedostupna za nove korisnike i nove registracije "
+"računa su obustavljene."
 
-#. module: sms
-#. odoo-python
-#: code:addons/sms/models/sms_sms.py:0
+# model: code:addons/sms/models/sms_sms.py
+#, []
 msgid "The SMS Text Messages could not be resent."
-msgstr ""
+msgstr "SMS poruke nije moguće ponovo poslati."
 
-#. module: sms
-#. odoo-python
-#: code:addons/sms/tools/sms_api.py:0
+# model: code:addons/sms/tools/sms_api.py
+#, []
 msgid "The content of the message violates rules applied by our providers."
-msgstr ""
+msgstr "Sadržaj poruke krši pravila koja primjenjuju naši provajderi."
 
-#. module: sms
-#. odoo-python
-#: code:addons/sms/tools/sms_api.py:0
+# model: code:addons/sms/tools/sms_api.py
+#, []
 msgid "The destination country is not supported."
-msgstr ""
+msgstr "Odredišna država nije podržana."
 
-#. module: sms
-#. odoo-python
-#: code:addons/sms/tools/sms_api.py:0
+# model: code:addons/sms/tools/sms_api.py
+#, []
 msgid "The number you're trying to reach is not correctly formatted."
-msgstr ""
+msgstr "Broj koji pokušavate dosegnuti nije ispravno formatiran."
 
-#. module: sms
-#: model:ir.model.fields,help:sms.field_sms_template__model_id
-#: model:ir.model.fields,help:sms.field_sms_template_preview__model_id
+# model: model:ir.model.fields,help:sms.field_sms_template__model_id
+#, []
 msgid "The type of document this template can be used with"
-msgstr ""
+msgstr "Tip dokumenta s kojim se može koristiti ovaj predložak"
 
-#. module: sms
-#. odoo-python
-#: code:addons/sms/tools/sms_api.py:0
+# model: code:addons/sms/tools/sms_api.py
+#, []
 msgid "The verification code is incorrect."
-msgstr ""
+msgstr "Verifikacioni kod nije ispravan."
 
-#. module: sms
-#. odoo-python
-#: code:addons/sms/models/sms_sms.py:0
+# model: code:addons/sms/models/sms_sms.py
+#, []
 msgid "There are no SMS Text Messages to resend."
-msgstr ""
+msgstr "Nema SMS poruka za ponovno slanje."
 
-#. module: sms
-#. odoo-python
-#: code:addons/sms/tools/sms_api.py:0
+# model: code:addons/sms/tools/sms_api.py
+#, []
 msgid "This SMS has been removed as the number was already used."
-msgstr ""
+msgstr "Ovaj SMS je uklonjen jer je broj već korišten."
 
-#. module: sms
-#. odoo-python
-#: code:addons/sms/tools/sms_api.py:0
+# model: code:addons/sms/tools/sms_api.py
+#, []
 msgid ""
 "This account already has an existing sender name and it cannot be changed."
-msgstr ""
+msgstr "Ovaj račun već ima postojeće ime pošiljaoca i ne može se promijeniti."
 
-#. module: sms
-#: model:ir.model.fields,help:sms.field_iap_account__sender_name
+# model: model:ir.model.fields,help:sms.field_iap_account__sender_name
+#, []
 msgid "This is the name that will be displayed as the sender of the SMS."
-msgstr ""
+msgstr "Ovo je ime koje će biti prikazano kao pošiljalac SMS-a."
 
-#. module: sms
-#: model_terms:ir.ui.view,arch_db:sms.res_partner_view_form
+# model: model_terms:ir.ui.view,arch_db:sms.res_partner_view_form
+#, []
 msgid ""
 "This phone number is blacklisted for SMS Marketing. Click to unblacklist."
 msgstr ""
+"Ovaj broj telefona je na crnoj listi za SMS marketing. Kliknite za "
+"uklanjanje s crne liste."
 
-#. module: sms
-#. odoo-python
-#: code:addons/sms/tools/sms_api.py:0
+# model: code:addons/sms/tools/sms_api.py
+#, []
 msgid "This phone number/account has been banned from our service."
-msgstr ""
+msgstr "Ovaj broj telefona/račun je zabranjen na našoj usluzi."
 
-#. module: sms
-#: model_terms:ir.ui.view,arch_db:sms.sms_composer_view_form
+# model: model_terms:ir.ui.view,arch_db:sms.sms_composer_view_form
+#, []
 msgid "To"
-msgstr ""
+msgstr "Do"
 
-#. module: sms
-#: model:ir.model.fields,field_description:sms.field_ir_actions_server__state
-#: model:ir.model.fields,field_description:sms.field_ir_cron__state
-#: model:ir.model.fields,field_description:sms.field_mail_mail__message_type
-#: model:ir.model.fields,field_description:sms.field_mail_message__message_type
+# model:
+# model:ir.model.fields,field_description:sms.field_ir_actions_server__state
+#, []
 msgid "Type"
-msgstr ""
+msgstr "Tip"
 
-#. module: sms
-#: model:ir.model.fields,help:sms.field_ir_actions_server__state
-#: model:ir.model.fields,help:sms.field_ir_cron__state
+# model: model:ir.model.fields,help:sms.field_ir_actions_server__state
+#, []
 msgid ""
 "Type of server action. The following values are available:\n"
 "- 'Update a Record': update the values of a record\n"
 "- 'Create Activity': create an activity (Discuss)\n"
 "- 'Send Email': post a message, a note or send an email (Discuss)\n"
-"- 'Send SMS': send SMS, log them on documents (SMS)- 'Add/Remove Followers': "
-"add or remove followers to a record (Discuss)\n"
+"- 'Send SMS': send SMS, log them on documents (SMS)- 'Add/Remove Followers': add or remove followers to a record (Discuss)\n"
 "- 'Create Record': create a new record with new values\n"
 "- 'Execute Code': a block of Python code that will be executed\n"
-"- 'Send Webhook Notification': send a POST request to an external system, "
-"also known as a Webhook\n"
-"- 'Multi Actions': define an action that triggers several other server "
-"actions\n"
+"- 'Send Webhook Notification': send a POST request to an external system, also known as a Webhook\n"
+"- 'Multi Actions': define an action that triggers several other server actions\n"
 msgstr ""
+"Tip server akcije. Dostupne su sljedeće vrijednosti:\n"
+"- 'Ažuriraj zapis': ažurira vrijednosti zapisa\n"
+"- 'Kreiraj aktivnost': kreira aktivnost (Discuss)\n"
+"- 'Pošalji email': objavi poruku, napomenu ili pošalji email (Discuss)\n"
+"- 'Pošalji SMS': pošalji SMS, evidentira ga na dokumentima (SMS)- 'Dodaj/Ukloni pratioce': dodaj ili ukloni pratioce zapisa (Discuss)\n"
+"- 'Kreiraj zapis': kreira novi zapis sa novim vrijednostima\n"
+"- 'Izvrši kod': blok Python koda koji će se izvršiti\n"
+"- 'Pošalji Webhook obavještenje': šalje POST zahtjev eksternom sistemu, poznato kao Webhook\n"
+"- 'Više akcija': definiše akciju koja pokreće nekoliko drugih server akcija\n"
 
-#. module: sms
-#: model:ir.model.fields,field_description:sms.field_sms_sms__uuid
+# model: model:ir.model.fields,field_description:sms.field_sms_sms__uuid
+#, []
 msgid "UUID"
-msgstr ""
+msgstr "UUID"
 
-#. module: sms
-#: model:ir.model.constraint,message:sms.constraint_sms_sms_uuid_unique
+# model: model:ir.model.constraint,message:sms.constraint_sms_sms_uuid_unique
+#, []
 msgid "UUID must be unique"
-msgstr ""
+msgstr "UUID mora biti jedinstven"
 
-#. module: sms
-#: model:ir.model.fields.selection,name:sms.selection__sms_sms__failure_type__unknown
+# model:
+# model:ir.model.fields.selection,name:sms.selection__sms_sms__failure_type__unknown
+#, []
 msgid "Unknown error"
-msgstr ""
+msgstr "Nepoznata greška"
 
-#. module: sms
-#. odoo-javascript
-#: code:addons/sms/static/src/core/notification_model_patch.js:0
-#: model:ir.model.fields.selection,name:sms.selection__mail_notification__failure_type__sms_acc
-#: model:ir.model.fields.selection,name:sms.selection__sms_sms__failure_type__sms_acc
+# model: code:addons/sms/static/src/core/notification_model_patch.js
+#, []
 msgid "Unregistered Account"
-msgstr ""
+msgstr "Neregistrovan račun"
 
-#. module: sms
-#: model:ir.model.fields,field_description:sms.field_sms_composer__use_exclusion_list
+# model:
+# model:ir.model.fields,field_description:sms.field_sms_composer__use_exclusion_list
+#, []
 msgid "Use Exclusion List"
-msgstr ""
+msgstr "Koristi listu isključenja"
 
-#. module: sms
-#: model:ir.model.fields,field_description:sms.field_sms_composer__template_id
+# model:
+# model:ir.model.fields,field_description:sms.field_sms_composer__template_id
+#, []
 msgid "Use Template"
-msgstr ""
+msgstr "Koristi predložak"
 
-#. module: sms
-#: model:ir.model.fields,help:sms.field_mail_mail__message_type
-#: model:ir.model.fields,help:sms.field_mail_message__message_type
+# model: model:ir.model.fields,help:sms.field_mail_mail__message_type
+#, []
 msgid ""
 "Used to categorize message generator\n"
 "'email': generated by an incoming email e.g. mailgateway\n"
 "'comment': generated by user input e.g. through discuss or composer\n"
 "'email_outgoing': generated by a mailing\n"
 "'notification': generated by system e.g. tracking messages\n"
-"'auto_comment': generated by automated notification mechanism e.g. "
-"acknowledgment\n"
+"'auto_comment': generated by automated notification mechanism e.g. acknowledgment\n"
 "'user_notification': generated for a specific recipient"
 msgstr ""
+"Koristi se za kategorizaciju generatora poruka\n"
+"'email': generisano dolaznom e-poštom npr. mailgateway\n"
+"'comment': generisano korisničkim unosom npr. kroz discuss ili composer\n"
+"'email_outgoing': generisano slanjem mailinga\n"
+"'notification': generisano od strane sistema npr. poruke praćenja\n"
+"'auto_comment': generisano automatskim mehanizmom obavještenja npr. potvrda\n"
+"'user_notification': generisano za određenog primaoca"
 
-#. module: sms
-#: model:ir.model.fields,field_description:sms.field_sms_account_code__verification_code
+# model:
+# model:ir.model.fields,field_description:sms.field_sms_account_code__verification_code
+#, []
 msgid "Verification Code"
-msgstr ""
+msgstr "Verifikacioni kod"
 
-#. module: sms
-#: model:ir.model.fields,field_description:sms.field_sms_composer__res_ids_count
+# model:
+# model:ir.model.fields,field_description:sms.field_sms_composer__res_ids_count
+#, []
 msgid "Visible records count"
-msgstr ""
+msgstr "Broj vidljivih zapisa"
 
-#. module: sms
-#. odoo-python
-#: code:addons/sms/models/sms_sms.py:0
+# model: code:addons/sms/models/sms_sms.py
+#, []
 msgid "Warning"
-msgstr ""
+msgstr "Upozorenje"
 
-#. module: sms
-#. odoo-python
-#: code:addons/sms/tools/sms_api.py:0
+# model: code:addons/sms/tools/sms_api.py
+#, []
 msgid "We were not able to find your account in our database."
-msgstr ""
+msgstr "Nismo uspjeli pronaći vaš račun u našoj bazi podataka."
 
-#. module: sms
-#. odoo-python
-#: code:addons/sms/tools/sms_api.py:0
+# model: code:addons/sms/tools/sms_api.py
+#, []
 msgid ""
 "We were not able to reach you via your phone number. If you have requested "
 "multiple codes recently, please retry later."
 msgstr ""
+"Nismo uspjeli da vas dosegnemo putem broja telefona. Ako ste nedavno "
+"zatražili više kodova, pokušajte ponovo kasnije."
 
-#. module: sms
-#: model:ir.model.fields,help:sms.field_ir_model__is_mail_thread_sms
+# model: model:ir.model.fields,help:sms.field_ir_model__is_mail_thread_sms
+#, []
 msgid "Whether this model supports messages and notifications through SMS"
-msgstr ""
+msgstr "Da li ovaj model podržava poruke i obavijesti putem SMS-a"
 
-#. module: sms
-#: model:ir.model.fields,help:sms.field_sms_sms__to_delete
+# model: model:ir.model.fields,help:sms.field_sms_sms__to_delete
+#, []
 msgid ""
 "Will automatically be deleted, while notifications will not be deleted in "
 "any case."
 msgstr ""
+"Bit će automatski obrisano, dok obavještenja neće biti obrisana ni u kom "
+"slučaju."
 
-#. module: sms
-#: model_terms:ir.ui.view,arch_db:sms.sms_composer_view_form
+# model: model_terms:ir.ui.view,arch_db:sms.sms_composer_view_form
+#, []
 msgid "Write a message..."
-msgstr ""
+msgstr "Napišite poruku..."
 
-#. module: sms
-#. odoo-javascript
-#: code:addons/sms/static/src/core/notification_model_patch.js:0
-#: model:ir.model.fields.selection,name:sms.selection__mail_notification__failure_type__sms_number_format
-#: model:ir.model.fields.selection,name:sms.selection__sms_sms__failure_type__sms_number_format
+# model: code:addons/sms/static/src/core/notification_model_patch.js
+#, []
 msgid "Wrong Number Format"
-msgstr ""
+msgstr "Pogrešan format broja"
 
-#. module: sms
-#. odoo-python
-#: code:addons/sms/tools/sms_api.py:0
+# model: code:addons/sms/tools/sms_api.py
+#, []
 msgid "You don't have an eligible IAP account."
-msgstr ""
+msgstr "Nemate prikladan IAP račun."
 
-#. module: sms
-#. odoo-python
-#: code:addons/sms/tools/sms_api.py:0
+# model: code:addons/sms/tools/sms_api.py
+#, []
 msgid "You don't have enough credits on your IAP account."
-msgstr ""
+msgstr "Nemate dovoljno kredita na vašem IAP računu."
 
-#. module: sms
-#. odoo-python
-#: code:addons/sms/tools/sms_api.py:0
+# model: code:addons/sms/tools/sms_api.py
+#, []
 msgid "You tried too many times. Please retry later."
-msgstr ""
+msgstr "Pokušali ste previše puta. Pokušajte ponovo kasnije."
 
-#. module: sms
-#. odoo-javascript
-#: code:addons/sms/static/src/components/sms_widget/fields_sms_widget.js:0
+# model: code:addons/sms/static/src/components/sms_widget/fields_sms_widget.js
+#, []
 msgid ""
 "Your SMS Text Message must include at least one non-whitespace character"
-msgstr ""
+msgstr "SMS poruka mora sadržavati najmanje jedan znak koji nije razmak."
 
-#. module: sms
-#. odoo-python
-#: code:addons/sms/wizard/sms_account_code.py:0
+# model: code:addons/sms/wizard/sms_account_code.py
+#, []
 msgid "Your SMS account has been successfully registered."
-msgstr ""
+msgstr "Vaš SMS račun je uspješno registrovan."
 
-#. module: sms
-#. odoo-python
-#: code:addons/sms/tools/sms_api.py:0
-#: code:addons/sms/wizard/sms_account_sender.py:0
+# model: code:addons/sms/tools/sms_api.py
+#, []
 msgid ""
 "Your sender name must be between 3 and 11 characters long and only contain "
 "alphanumeric characters."
 msgstr ""
+"Vaše ime pošiljaoca mora biti dugačko između 3 i 11 znakova i sadržavati "
+"samo alfanumeričke znakove."
 
-#. module: sms
-#: model_terms:ir.ui.view,arch_db:sms.sms_account_sender_view_form
+# model: model_terms:ir.ui.view,arch_db:sms.sms_account_sender_view_form
+#, []
 msgid ""
-"Your sender name must be between 3 and 11 characters long and only contain "
-"alphanumeric characters.\n"
-"                        It must fit your company name, and you aren't "
-"allowed to modify it once you registered one, choose it carefully."
+"Your sender name must be between 3 and 11 characters long and only contain alphanumeric characters.\n"
+"                        It must fit your company name, and you aren't allowed to modify it once you registered one, choose it carefully."
 msgstr ""
+"Vaše ime pošiljaoca mora biti dugačko između 3 i 11 znakova i sadržavati samo alfanumeričke znakove.\n"
+"                        Mora odgovarati nazivu vaše kompanije, i nije dozvoljeno mijenjati ga nakon registracije, pa pažljivo odaberite."
 
-#. module: sms
-#. odoo-python
-#: code:addons/sms/tools/sms_api.py:0
+# model: code:addons/sms/tools/sms_api.py
+#, []
 msgid "Your sms account has not been activated yet."
-msgstr ""
+msgstr "Vaš SMS račun još nije aktiviran."
 
-#. module: sms
-#: model_terms:ir.ui.view,arch_db:sms.sms_composer_view_form
+# model: model_terms:ir.ui.view,arch_db:sms.sms_composer_view_form
+#, []
 msgid "e.g. +1 415 555 0100"
-msgstr ""
+msgstr "npr. +1 415 555 0100"
 
-#. module: sms
-#: model_terms:ir.ui.view,arch_db:sms.sms_template_view_form
+# model: model_terms:ir.ui.view,arch_db:sms.sms_template_view_form
+#, []
 msgid "e.g. Calendar Reminder"
-msgstr ""
+msgstr "npr. Podsjetnik kalendara"
 
-#. module: sms
-#: model_terms:ir.ui.view,arch_db:sms.sms_template_view_form
+# model: model_terms:ir.ui.view,arch_db:sms.sms_template_view_form
+#, []
 msgid "e.g. Contact"
-msgstr ""
+msgstr "npr. Kontakt"
 
-#. module: sms
-#: model_terms:ir.ui.view,arch_db:sms.sms_template_view_form
+# model: model_terms:ir.ui.view,arch_db:sms.sms_template_view_form
+#, []
 msgid "e.g. en_US or {{ object.partner_id.lang }}"
-msgstr ""
+msgstr "npr. en_US ili {{ object.partner_id.lang }}"
 
-#. module: sms
-#: model_terms:ir.ui.view,arch_db:sms.sms_composer_view_form
+# model: model_terms:ir.ui.view,arch_db:sms.sms_composer_view_form
+#, []
 msgid "out of"
-msgstr ""
+msgstr "od"
 
-#. module: sms
-#: model_terms:ir.ui.view,arch_db:sms.sms_composer_view_form
+# model: model_terms:ir.ui.view,arch_db:sms.sms_composer_view_form
+#, []
 msgid ""
 "recipients have an invalid phone number and will not receive this text "
 "message."
-msgstr ""
+msgstr "primaoci imaju nevažeći broj telefona i neće primiti ovu SMS poruku."
 
-#. module: sms
-#: model_terms:ir.ui.view,arch_db:sms.sms_template_preview_form
+# model: model_terms:ir.ui.view,arch_db:sms.sms_template_preview_form
+#, []
 msgid "record:"
-msgstr ""
+msgstr "zapis:"

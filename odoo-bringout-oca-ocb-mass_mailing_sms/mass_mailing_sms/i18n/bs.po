@@ -1,56 +1,41 @@
-# Translation of Odoo Server.
-# This file contains the translation of the following modules:
-# * mass_mailing_sms
 #
-# Odoo Translation Bot <c3p@odoo.com>, 2025.
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 19.0\n"
+"Project-Id-Version: Odoo Server master (mass_mailing_sms)\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-20 09:00+0000\n"
-"PO-Revision-Date: 2025-10-08 18:37+0000\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"Language-Team: Bosnian\n"
 "Language: bs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: \n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
-#. module: mass_mailing_sms
-#. odoo-javascript
-#: code:addons/mass_mailing_sms/static/src/components/sms_widget/fields_sms_widget.js:0
+# model:
+# code:addons/mass_mailing_sms/static/src/components/sms_widget/fields_sms_widget.js
+#, []
 msgid " (including link trackers and opt-out link)"
-msgstr ""
+msgstr " (uključujući praćenje linkova i link za odjavu)"
 
-#. module: mass_mailing_sms
-#. odoo-javascript
-#: code:addons/mass_mailing_sms/static/src/components/sms_widget/fields_sms_widget.js:0
+# model:
+# code:addons/mass_mailing_sms/static/src/components/sms_widget/fields_sms_widget.js
+#, []
 msgid " (including link trackers)"
-msgstr ""
+msgstr " (uključujući praćenje linkova)"
 
-#. module: mass_mailing_sms
-#. odoo-javascript
-#: code:addons/mass_mailing_sms/static/src/components/sms_widget/fields_sms_widget.js:0
+# model:
+# code:addons/mass_mailing_sms/static/src/components/sms_widget/fields_sms_widget.js
+#, []
 msgid " (including opt-out link)"
-msgstr ""
+msgstr " (uključujući link za odjavu)"
 
-#. module: mass_mailing_sms
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_sms_test_view_form
-msgid ""
-"+32 495 85 85 77\n"
-"+33 545 55 55 55"
-msgstr ""
-
-#. module: mass_mailing_sms
-#. odoo-python
-#: code:addons/mass_mailing_sms/models/mailing_mailing.py:0
+# model: code:addons/mass_mailing_sms/models/mailing_mailing.py
+#, []
 msgid "24H Stats of %(mailing_type)s \"%(mailing_name)s\""
-msgstr ""
+msgstr "24-satna statistika %(mailing_type)s \"%(mailing_name)s\""
 
-#. module: mass_mailing_sms
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_list_view_kanban
+# model:
+# model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_list_view_kanban
+#, []
 msgid ""
 "<br/>\n"
 "                    <span class=\"text-muted\">\n"
@@ -58,1041 +43,1161 @@ msgid ""
 "                    </span>"
 msgstr ""
 
-#. module: mass_mailing_sms
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_contact_view_kanban
+# model:
+# model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_contact_view_kanban
+#, []
 msgid "<i class=\"fa fa-phone text-primary me-2\" title=\"Phone\"/>"
 msgstr ""
 
-#. module: mass_mailing_sms
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_form_sms
+# model:
+# model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_form_sms
+#, []
 msgid ""
 "<span name=\"canceled_text_sms\" invisible=\"mailing_type != 'sms'\">SMS "
 "Text Message have been cancelled and will not be sent.</span>"
 msgstr ""
+"<span name=\"canceled_text_sms\" invisible=\"mailing_type != 'sms'\">SMS "
+"poruke su otkazane i neće biti poslane.</span>"
 
-#. module: mass_mailing_sms
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_form_sms
+# model:
+# model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_form_sms
+#, []
 msgid ""
 "<span name=\"failed_text_sms\" invisible=\"mailing_type != 'sms'\">SMS Text "
 "Messages could not be delivered.</span>"
 msgstr ""
+"<span name=\"failed_text_sms\" invisible=\"mailing_type != 'sms'\">SMS "
+"poruke nisu mogle biti isporučene.</span>"
 
-#. module: mass_mailing_sms
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_form_sms
+# model:
+# model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_form_sms
+#, []
 msgid ""
 "<span name=\"next_departure_text\" invisible=\"mailing_type != 'sms'\">This "
 "SMS marketing is scheduled for </span>"
 msgstr ""
+"<span name=\"next_departure_text\" invisible=\"mailing_type != 'sms'\">Ovaj "
+"SMS marketing je zakazan za </span>"
 
-#. module: mass_mailing_sms
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_form_sms
+# model:
+# model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_form_sms
+#, []
 msgid ""
-"<span name=\"process_text_sms\" invisible=\"mailing_type != 'sms'\">SMS Text "
-"Messages are being processed.</span>"
+"<span name=\"process_text_sms\" invisible=\"mailing_type != 'sms'\">SMS Text"
+" Messages are being processed.</span>"
 msgstr ""
+"<span name=\"process_text_sms\" invisible=\"mailing_type != 'sms'\">SMS "
+"poruke se obrađuju.</span>"
 
-#. module: mass_mailing_sms
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_form_sms
+# model:
+# model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_form_sms
+#, []
 msgid ""
 "<span name=\"scheduled_text_sms\" invisible=\"mailing_type != 'sms'\">SMS "
 "Text Messages are in queue and will be sent soon.</span>"
 msgstr ""
+"<span name=\"scheduled_text_sms\" invisible=\"mailing_type != 'sms'\">SMS "
+"poruke su u redu čekanja i bit će uskoro poslane.</span>"
 
-#. module: mass_mailing_sms
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_form_sms
+# model:
+# model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_form_sms
+#, []
 msgid ""
 "<span name=\"sent_sms\" invisible=\"mailing_type != 'sms'\">SMS Text "
 "Messages have been sent.</span>"
 msgstr ""
+"<span name=\"sent_sms\" invisible=\"mailing_type != 'sms'\">SMS poruke su "
+"poslane.</span>"
 
-#. module: mass_mailing_sms
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_trace_view_form_sms
+# model:
+# model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_trace_view_form_sms
+#, []
 msgid "<span widget=\"statinfo\">Open Recipient</span>"
-msgstr ""
+msgstr "<span widget=\"statinfo\">Otvori primatelja</span>"
 
-#. module: mass_mailing_sms
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_form_sms
+# model:
+# model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_form_sms
+#, []
 msgid ""
 "<strong>\n"
-"                            It appears you don't have enough IAP credits. "
-"Click here to buy credits.\n"
+"                            It appears you don't have enough IAP credits. Click here to buy credits.\n"
 "                        </strong>"
 msgstr ""
+"<strong>\n"
+"Čini se da nemate dovoljno IAP kredita. Kliknite ovdje za kupnju kredita.\n"
+"</strong>"
 
-#. module: mass_mailing_sms
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_form_sms
+# model:
+# model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_form_sms
+#, []
 msgid ""
 "<strong>\n"
-"                            It appears your SMS account is not registered. "
-"Click here to set up your account.\n"
+"                            It appears your SMS account is not registered. Click here to set up your account.\n"
 "                        </strong>"
 msgstr ""
+"<strong>\n"
+"Čini se da vaš SMS račun nije registriran. Kliknite ovdje za postavljanje računa.\n"
+"</strong>"
 
-#. module: mass_mailing_sms
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.blacklist_number
+# model: model_terms:ir.ui.view,arch_db:mass_mailing_sms.blacklist_number
+#, []
 msgid "<strong>Mailing List</strong>"
-msgstr ""
+msgstr "<strong>Mailing lista</strong>"
 
-#. module: mass_mailing_sms
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_trace_view_form_sms
+# model:
+# model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_trace_view_form_sms
+#, []
 msgid "<strong>This SMS could not be delivered.</strong>"
-msgstr ""
+msgstr "<strong>Ova SMS poruka nije mogla biti isporučena.</strong>"
 
-#. module: mass_mailing_sms
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_trace_view_form_sms
+# model:
+# model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_trace_view_form_sms
+#, []
 msgid "<strong>This SMS could not be sent.</strong>"
-msgstr ""
+msgstr "<strong>Ovaj SMS nije mogao biti poslan.</strong>"
 
-#. module: mass_mailing_sms
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_trace_view_form_sms
+# model:
+# model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_trace_view_form_sms
+#, []
 msgid "<strong>This number appears to be invalid.</strong>"
-msgstr ""
+msgstr "<strong>Čini se da je ovaj broj nevažeći.</strong>"
 
-#. module: mass_mailing_sms
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_tree_sms
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.utm_campaign_view_form
+# model:
+# model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_tree_sms
+#, []
 msgid "A/B Test"
-msgstr ""
+msgstr "A/B test"
 
-#. module: mass_mailing_sms
-#: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_mailing__ab_testing_mailings_sms_count
-#: model:ir.model.fields,field_description:mass_mailing_sms.field_utm_campaign__ab_testing_mailings_sms_count
+# model:
+# model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_mailing__ab_testing_mailings_sms_count
+#, []
 msgid "A/B Test Mailings SMS #"
-msgstr ""
+msgstr "Broj A/B testnih SMS pošiljki"
 
-#. module: mass_mailing_sms
-#. odoo-python
-#: code:addons/mass_mailing_sms/models/mailing_mailing.py:0
+# model: code:addons/mass_mailing_sms/models/mailing_mailing.py
+#, []
 msgid "A/B Test: %s"
-msgstr ""
+msgstr "A/B test: %s"
 
-#. module: mass_mailing_sms
-#: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_contact__message_needaction
+# model:
+# model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_contact__message_needaction
+#, []
 msgid "Action Needed"
-msgstr ""
+msgstr "Potrebna akcija"
 
-#. module: mass_mailing_sms
-#. odoo-python
-#: code:addons/mass_mailing_sms/wizard/mailing_sms_test.py:0
+# model: code:addons/mass_mailing_sms/wizard/mailing_sms_test.py
+#, []
 msgid "An error occurred."
-msgstr ""
+msgstr "Došlo je do greške."
 
-#. module: mass_mailing_sms
-#: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_contact__message_attachment_count
+# model:
+# model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_contact__message_attachment_count
+#, []
 msgid "Attachment Count"
-msgstr ""
+msgstr "Broj priloga"
 
-#. module: mass_mailing_sms
-#: model:ir.model.fields.selection,name:mass_mailing_sms.selection__mailing_trace__failure_type__twilio_authentication
+# model:
+# model:ir.model.fields.selection,name:mass_mailing_sms.selection__mailing_trace__failure_type__twilio_authentication
+#, []
 msgid "Authentication Error\""
-msgstr ""
+msgstr "Greška autentifikacije\""
 
-#. module: mass_mailing_sms
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_tree_sms
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.utm_campaign_view_form
+# model:
+# model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_tree_sms
+#, []
 msgid "Average of Bounced"
-msgstr ""
+msgstr "Prosjek odbijenih"
 
-#. module: mass_mailing_sms
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_tree_sms
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.utm_campaign_view_form
+# model:
+# model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_tree_sms
+#, []
 msgid "Average of Clicked"
-msgstr ""
+msgstr "Prosjek kliknutih"
 
-#. module: mass_mailing_sms
-#. odoo-python
-#: code:addons/mass_mailing_sms/models/mailing_mailing.py:0
+# model: code:addons/mass_mailing_sms/models/mailing_mailing.py
+#, []
 msgid "BOUNCED (%i)"
-msgstr ""
+msgstr "ODBIJENO (%i)"
 
-#. module: mass_mailing_sms
-#. odoo-python
-#: code:addons/mass_mailing_sms/controllers/main.py:0
+# model: code:addons/mass_mailing_sms/controllers/main.py
+#, []
 msgid ""
 "Blacklist through SMS Marketing unsubscribe (mailing ID: %(mailing_id)s - "
 "model: %(model)s)"
 msgstr ""
+"Blokiranje preko odjave SMS marketinga (ID mailinga: %(mailing_id)s - model:"
+" %(model)s)"
 
-#. module: mass_mailing_sms
-#: model:ir.model.fields.selection,name:mass_mailing_sms.selection__mailing_trace__failure_type__sms_blacklist
+# model:
+# model:ir.model.fields.selection,name:mass_mailing_sms.selection__mailing_trace__failure_type__sms_blacklist
+#, []
 msgid "Blacklisted"
-msgstr ""
+msgstr "Na crnoj listi"
 
-#. module: mass_mailing_sms
-#: model:ir.ui.menu,name:mass_mailing_sms.phone_blacklist_menu
+# model: model:ir.ui.menu,name:mass_mailing_sms.phone_blacklist_menu
+#, []
 msgid "Blacklisted Phone Numbers"
-msgstr ""
+msgstr "Brojevi na crnoj listi"
 
-#. module: mass_mailing_sms
-#: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_contact__phone_blacklisted
+# model:
+# model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_contact__phone_blacklisted
+#, []
 msgid "Blacklisted Phone is Phone"
-msgstr ""
+msgstr "Brojevi na crnoj listi su telefonski"
 
-#. module: mass_mailing_sms
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_tree_sms
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.utm_campaign_view_form
+# model:
+# model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_tree_sms
+#, []
 msgid "Bounced (%)"
-msgstr ""
+msgstr "Odbijeno (%)"
 
-#. module: mass_mailing_sms
-#. odoo-python
-#: code:addons/mass_mailing_sms/models/mailing_mailing.py:0
+# model: code:addons/mass_mailing_sms/models/mailing_mailing.py
+#, []
 msgid "CLICKED (%i)"
-msgstr ""
+msgstr "KLIKNUTO (%i)"
 
-#. module: mass_mailing_sms
-#: model:ir.model.fields,field_description:mass_mailing_sms.field_sms_composer__utm_campaign_id
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_tree_sms
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.utm_campaign_view_form
+# model:
+# model:ir.model.fields,field_description:mass_mailing_sms.field_sms_composer__utm_campaign_id
+#, []
 msgid "Campaign"
-msgstr ""
+msgstr "Kampanja"
 
-#. module: mass_mailing_sms
-#: model:ir.ui.menu,name:mass_mailing_sms.menu_email_campaigns
+# model: model:ir.ui.menu,name:mass_mailing_sms.menu_email_campaigns
+#, []
 msgid "Campaigns"
-msgstr ""
+msgstr "Kampanje"
 
-#. module: mass_mailing_sms
-#: model:ir.model.fields,help:mass_mailing_sms.field_mailing_sms_test__numbers
+# model:
+# model:ir.model.fields,help:mass_mailing_sms.field_mailing_sms_test__numbers
+#, []
 msgid "Carriage-return-separated list of phone numbers"
-msgstr ""
+msgstr "Popis telefonskih brojeva odvojenih prijelomom retka"
 
-#. module: mass_mailing_sms
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_tree_sms
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.utm_campaign_view_form
+# model:
+# model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_tree_sms
+#, []
 msgid "Clicked (%)"
-msgstr ""
+msgstr "Kliknuto (%)"
 
-#. module: mass_mailing_sms
-#: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_trace__sms_code
+# model:
+# model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_trace__sms_code
+#, []
 msgid "Code"
-msgstr ""
+msgstr "Kod"
 
-#. module: mass_mailing_sms
-#: model_terms:ir.actions.act_window,help:mass_mailing_sms.mailing_trace_report_action_sms
+# model:
+# model_terms:ir.actions.act_window,help:mass_mailing_sms.mailing_trace_report_action_sms
+#, []
 msgid ""
 "Come back once some SMS Mailings are sent to check out aggregated results."
 msgstr ""
+"Vratite se nakon što se pošalju neke SMS pošiljke kako biste provjerili "
+"agregirane rezultate."
 
-#. module: mass_mailing_sms
-#: model:ir.ui.menu,name:mass_mailing_sms.mass_mailing_sms_menu_configuration
+# model:
+# model:ir.ui.menu,name:mass_mailing_sms.mass_mailing_sms_menu_configuration
+#, []
 msgid "Configuration"
-msgstr ""
+msgstr "Konfiguracija"
 
-#. module: mass_mailing_sms
-#: model:ir.model.fields.selection,name:mass_mailing_sms.selection__mailing_trace__failure_type__sms_country_not_supported
+# model:
+# model:ir.model.fields.selection,name:mass_mailing_sms.selection__mailing_trace__failure_type__sms_country_not_supported
+#, []
 msgid "Country Not Supported"
-msgstr ""
+msgstr "Zemlja nije podržana"
 
-#. module: mass_mailing_sms
-#: model:ir.model.fields.selection,name:mass_mailing_sms.selection__mailing_trace__failure_type__sms_registration_needed
+# model:
+# model:ir.model.fields.selection,name:mass_mailing_sms.selection__mailing_trace__failure_type__sms_registration_needed
+#, []
 msgid "Country-specific Registration Required"
-msgstr ""
+msgstr "Potrebna registracija specifična za zemlju"
 
-#. module: mass_mailing_sms
-#: model_terms:ir.actions.act_window,help:mass_mailing_sms.mailing_list_action_sms
+# model:
+# model_terms:ir.actions.act_window,help:mass_mailing_sms.mailing_list_action_sms
+#, []
 msgid "Create a Mailing List"
-msgstr ""
+msgstr "Kreiraj mailing listu"
 
-#. module: mass_mailing_sms
-#: model_terms:ir.actions.act_window,help:mass_mailing_sms.mailing_mailing_action_sms
+# model:
+# model_terms:ir.actions.act_window,help:mass_mailing_sms.mailing_mailing_action_sms
+#, []
 msgid "Create a SMS Marketing Mailing"
-msgstr ""
+msgstr "Kreiraj SMS marketinšku pošiljku"
 
-#. module: mass_mailing_sms
-#: model_terms:ir.actions.act_window,help:mass_mailing_sms.mailing_contact_action_sms
+# model:
+# model_terms:ir.actions.act_window,help:mass_mailing_sms.mailing_contact_action_sms
+#, []
 msgid "Create a mailing contact"
-msgstr ""
+msgstr "Kreiraj kontakt za slanje pošte"
 
-#. module: mass_mailing_sms
-#: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_sms_test__create_uid
+# model:
+# model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_sms_test__create_uid
+#, []
 msgid "Created by"
-msgstr ""
+msgstr "Kreirao"
 
-#. module: mass_mailing_sms
-#: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_sms_test__create_date
+# model:
+# model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_sms_test__create_date
+#, []
 msgid "Created on"
-msgstr ""
+msgstr "Kreirano"
 
-#. module: mass_mailing_sms
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_tree_sms
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.utm_campaign_view_form
+# model:
+# model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_tree_sms
+#, []
 msgid "Date"
-msgstr ""
+msgstr "Datum"
 
-#. module: mass_mailing_sms
-#: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_contact__display_name
-#: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_list__display_name
-#: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_mailing__display_name
-#: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_sms_test__display_name
-#: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_trace__display_name
-#: model:ir.model.fields,field_description:mass_mailing_sms.field_res_users__display_name
-#: model:ir.model.fields,field_description:mass_mailing_sms.field_sms_composer__display_name
-#: model:ir.model.fields,field_description:mass_mailing_sms.field_sms_sms__display_name
-#: model:ir.model.fields,field_description:mass_mailing_sms.field_sms_tracker__display_name
-#: model:ir.model.fields,field_description:mass_mailing_sms.field_utm_campaign__display_name
-#: model:ir.model.fields,field_description:mass_mailing_sms.field_utm_mixin__display_name
+# model:
+# model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_contact__display_name
+#, []
 msgid "Display Name"
-msgstr ""
+msgstr "Naziv za prikaz"
 
-#. module: mass_mailing_sms
-#: model:ir.model.fields.selection,name:mass_mailing_sms.selection__mailing_trace__failure_type__sms_duplicate
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.utm_campaign_view_form
+# model:
+# model:ir.model.fields.selection,name:mass_mailing_sms.selection__mailing_trace__failure_type__sms_duplicate
+#, []
 msgid "Duplicate"
-msgstr ""
+msgstr "Dupliciraj"
 
-#. module: mass_mailing_sms
-#. odoo-python
-#: code:addons/mass_mailing_sms/models/res_users.py:0
+# model: code:addons/mass_mailing_sms/models/res_users.py
+#, []
 msgid "Email Marketing"
-msgstr ""
+msgstr "E-mail marketing"
 
-#. module: mass_mailing_sms
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_contact_view_search
+# model:
+# model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_contact_view_search
+#, []
 msgid "Exclude Blacklisted Phone"
-msgstr ""
+msgstr "Isključi brojeve na crnoj listi"
 
-#. module: mass_mailing_sms
-#: model:ir.model.fields.selection,name:mass_mailing_sms.selection__mailing_trace__failure_type__sms_expired
+# model:
+# model:ir.model.fields.selection,name:mass_mailing_sms.selection__mailing_trace__failure_type__sms_expired
+#, []
 msgid "Expired"
-msgstr ""
+msgstr "Isteklo"
 
-#. module: mass_mailing_sms
-#: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_trace__failure_type
+# model:
+# model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_trace__failure_type
+#, []
 msgid "Failure type"
-msgstr ""
+msgstr "Vrsta neuspjeha"
 
-#. module: mass_mailing_sms
-#: model:ir.model.fields,help:mass_mailing_sms.field_mailing_contact__phone_sanitized
+# model:
+# model:ir.model.fields,help:mass_mailing_sms.field_mailing_contact__phone_sanitized
+#, []
 msgid ""
 "Field used to store sanitized phone number. Helps speeding up searches and "
 "comparisons."
 msgstr ""
+"Polje koje se koristi za pohranu sanitiziranog telefonskog broja. Pomaže "
+"ubrzati pretraživanja i usporedbe."
 
-#. module: mass_mailing_sms
-#: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_contact__message_follower_ids
+# model:
+# model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_contact__message_follower_ids
+#, []
 msgid "Followers"
-msgstr ""
+msgstr "Pratioci"
 
-#. module: mass_mailing_sms
-#: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_contact__message_partner_ids
+# model:
+# model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_contact__message_partner_ids
+#, []
 msgid "Followers (Partners)"
-msgstr ""
+msgstr "Pratioci (Partneri)"
 
-#. module: mass_mailing_sms
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_form_sms
+# model:
+# model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_form_sms
+#, []
 msgid ""
 "For an Email, Subject your Recipients will see in their inbox.\n"
 "                    For an SMS Text Message, internal Title of the Message."
 msgstr ""
+"Za e-poštu, predmet koji će vaši primatelji vidjeti u svom sandučiću.\n"
+"Za SMS tekstualnu poruku, interni naslov poruke."
 
-#. module: mass_mailing_sms
-#: model:ir.model.fields,help:mass_mailing_sms.field_mailing_mailing__sms_subject
+# model:
+# model:ir.model.fields,help:mass_mailing_sms.field_mailing_mailing__sms_subject
+#, []
 msgid ""
 "For an email, the subject your recipients will see in their inbox.\n"
 "For an SMS, the internal title of the message."
 msgstr ""
+"Za e-poštu, predmet koji će vaši primatelji vidjeti u svom sandučiću.\n"
+"Za SMS, interni naslov poruke."
 
-#. module: mass_mailing_sms
-#: model:ir.model.fields.selection,name:mass_mailing_sms.selection__mailing_trace__failure_type__twilio_from_to
+# model:
+# model:ir.model.fields.selection,name:mass_mailing_sms.selection__mailing_trace__failure_type__twilio_from_to
+#, []
 msgid "From / To identic"
-msgstr ""
+msgstr "Od / Za identično"
 
-#. module: mass_mailing_sms
-#: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_contact__has_message
+# model:
+# model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_contact__has_message
+#, []
 msgid "Has Message"
-msgstr ""
+msgstr "Ima poruku"
 
-#. module: mass_mailing_sms
-#: model:ir.model.fields.selection,name:mass_mailing_sms.selection__utm_campaign__ab_testing_sms_winner_selection__clicks_ratio
+# model:
+# model:ir.model.fields.selection,name:mass_mailing_sms.selection__utm_campaign__ab_testing_sms_winner_selection__clicks_ratio
+#, []
 msgid "Highest Click Rate"
-msgstr ""
+msgstr "Najviša stopa klikova"
 
-#. module: mass_mailing_sms
-#: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_contact__id
-#: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_list__id
-#: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_mailing__id
-#: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_sms_test__id
-#: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_trace__id
-#: model:ir.model.fields,field_description:mass_mailing_sms.field_res_users__id
-#: model:ir.model.fields,field_description:mass_mailing_sms.field_sms_composer__id
-#: model:ir.model.fields,field_description:mass_mailing_sms.field_sms_sms__id
-#: model:ir.model.fields,field_description:mass_mailing_sms.field_sms_tracker__id
-#: model:ir.model.fields,field_description:mass_mailing_sms.field_utm_campaign__id
-#: model:ir.model.fields,field_description:mass_mailing_sms.field_utm_mixin__id
+# model:
+# model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_contact__id
+#, []
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
-#. module: mass_mailing_sms
-#: model:ir.model.fields,help:mass_mailing_sms.field_mailing_contact__message_needaction
+# model:
+# model:ir.model.fields,help:mass_mailing_sms.field_mailing_contact__message_needaction
+#, []
 msgid "If checked, new messages require your attention."
-msgstr ""
+msgstr "Ako je označeno, nove poruke zahtijevaju vašu pažnju."
 
-#. module: mass_mailing_sms
-#: model:ir.model.fields,help:mass_mailing_sms.field_mailing_contact__message_has_error
-#: model:ir.model.fields,help:mass_mailing_sms.field_mailing_contact__message_has_sms_error
+# model:
+# model:ir.model.fields,help:mass_mailing_sms.field_mailing_contact__message_has_error
+#, []
 msgid "If checked, some messages have a delivery error."
-msgstr ""
+msgstr "Ako je označeno, neke poruke imaju grešku u dostavi."
 
-#. module: mass_mailing_sms
-#: model:ir.model.fields,help:mass_mailing_sms.field_mailing_contact__phone_sanitized_blacklisted
+# model:
+# model:ir.model.fields,help:mass_mailing_sms.field_mailing_contact__phone_sanitized_blacklisted
+#, []
 msgid ""
-"If the sanitized phone number is on the blacklist, the contact won't receive "
-"mass mailing sms anymore, from any list"
+"If the sanitized phone number is on the blacklist, the contact won't receive"
+" mass mailing sms anymore, from any list"
 msgstr ""
+"Ako je telefonski broj na crnoj listi, kontakt više neće primati SMS poruke "
+"iz masovnih kampanja, s bilo kojeg popisa."
 
-#. module: mass_mailing_sms
-#: model:ir.model.fields,help:mass_mailing_sms.field_mailing_mailing__sms_force_send
+# model:
+# model:ir.model.fields,help:mass_mailing_sms.field_mailing_mailing__sms_force_send
+#, []
 msgid ""
-"Immediately send the SMS Mailing instead of queuing up. Use at your own risk."
+"Immediately send the SMS Mailing instead of queuing up. Use at your own "
+"risk."
 msgstr ""
+"Odmah pošaljite SMS pošiljku umjesto stavljanja u red čekanja. Koristite na "
+"vlastitu odgovornost."
 
-#. module: mass_mailing_sms
-#: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_mailing__sms_allow_unsubscribe
-#: model:ir.model.fields,field_description:mass_mailing_sms.field_sms_composer__mass_sms_allow_unsubscribe
+# model:
+# model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_mailing__sms_allow_unsubscribe
+#, []
 msgid "Include opt-out link"
-msgstr ""
+msgstr "Uključi link za odjavu"
 
-#. module: mass_mailing_sms
-#: model:ir.model.fields.selection,name:mass_mailing_sms.selection__mailing_trace__failure_type__twilio_callback
+# model:
+# model:ir.model.fields.selection,name:mass_mailing_sms.selection__mailing_trace__failure_type__twilio_callback
+#, []
 msgid "Incorrect callback URL"
-msgstr ""
+msgstr "Neispravan callback URL"
 
-#. module: mass_mailing_sms
-#: model:ir.model.fields,help:mass_mailing_sms.field_mailing_contact__phone_blacklisted
+# model:
+# model:ir.model.fields,help:mass_mailing_sms.field_mailing_contact__phone_blacklisted
+#, []
 msgid ""
 "Indicates if a blacklisted sanitized phone number is a phone number. Helps "
 "distinguish which number is blacklisted             when there is both a "
 "mobile and phone field in a model."
 msgstr ""
+"Označava je li sanitizirani telefonski broj na crnoj listi telefonski broj. "
+"Pomaže razlikovati koji je broj na crnoj listi kada u modelu postoje i polje"
+" za mobilni i polje za telefon."
 
-#. module: mass_mailing_sms
-#: model:ir.model.fields.selection,name:mass_mailing_sms.selection__mailing_trace__failure_type__sms_credit
+# model:
+# model:ir.model.fields.selection,name:mass_mailing_sms.selection__mailing_trace__failure_type__sms_credit
+#, []
 msgid "Insufficient Credit"
-msgstr ""
+msgstr "Nedovoljno kredita"
 
-#. module: mass_mailing_sms
-#: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_mailing__sms_has_insufficient_credit
+# model:
+# model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_mailing__sms_has_insufficient_credit
+#, []
 msgid "Insufficient IAP credits"
-msgstr ""
+msgstr "Nedovoljno IAP kredita"
 
-#. module: mass_mailing_sms
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_kanban_sms
+# model:
+# model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_kanban_sms
+#, []
 msgid "Insufficient credits"
-msgstr ""
+msgstr "Nedovoljno kredita"
 
-#. module: mass_mailing_sms
-#: model:ir.model.fields.selection,name:mass_mailing_sms.selection__mailing_trace__failure_type__sms_invalid_destination
+# model:
+# model:ir.model.fields.selection,name:mass_mailing_sms.selection__mailing_trace__failure_type__sms_invalid_destination
+#, []
 msgid "Invalid Destination"
-msgstr ""
+msgstr "Neispravna destinacija"
 
-#. module: mass_mailing_sms
-#: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_contact__message_is_follower
+# model:
+# model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_contact__message_is_follower
+#, []
 msgid "Is Follower"
-msgstr ""
+msgstr "Je pratilac"
 
-#. module: mass_mailing_sms
-#: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_sms_test__write_uid
+# model:
+# model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_sms_test__write_uid
+#, []
 msgid "Last Updated by"
-msgstr ""
+msgstr "Posljednji put ažurirao"
 
-#. module: mass_mailing_sms
-#: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_sms_test__write_date
+# model:
+# model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_sms_test__write_date
+#, []
 msgid "Last Updated on"
-msgstr ""
+msgstr "Posljednji put ažurirano"
 
-#. module: mass_mailing_sms
-#: model:ir.model,name:mass_mailing_sms.model_sms_tracker
+# model: model:ir.model,name:mass_mailing_sms.model_sms_tracker
+#, []
 msgid "Link SMS to mailing/sms tracking models"
-msgstr ""
+msgstr "Poveži SMS sa modelima praćenja mailinga/sms"
 
-#. module: mass_mailing_sms
-#: model:ir.ui.menu,name:mass_mailing_sms.link_tracker_menu
+# model: model:ir.ui.menu,name:mass_mailing_sms.link_tracker_menu
+#, []
 msgid "Link Tracker"
-msgstr ""
+msgstr "Praćenje linkova"
 
-#. module: mass_mailing_sms
-#: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_sms_test__mailing_id
-#: model:ir.model.fields,field_description:mass_mailing_sms.field_sms_composer__mailing_id
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_trace_view_form_sms
+# model:
+# model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_sms_test__mailing_id
+#, []
 msgid "Mailing"
-msgstr ""
+msgstr "Slanje mailova"
 
-#. module: mass_mailing_sms
-#: model:ir.model,name:mass_mailing_sms.model_mailing_contact
+# model: model:ir.model,name:mass_mailing_sms.model_mailing_contact
+#, []
 msgid "Mailing Contact"
-msgstr ""
+msgstr "Kontakt za slanje pošte"
 
-#. module: mass_mailing_sms
-#: model:ir.model,name:mass_mailing_sms.model_mailing_list
+# model: model:ir.model,name:mass_mailing_sms.model_mailing_list
+#, []
 msgid "Mailing List"
-msgstr ""
+msgstr "Lista za slanje mailova"
 
-#. module: mass_mailing_sms
-#: model:ir.actions.act_window,name:mass_mailing_sms.mailing_contact_action_sms
-#: model:ir.ui.menu,name:mass_mailing_sms.mailing_contact_menu_sms
+# model:
+# model:ir.actions.act_window,name:mass_mailing_sms.mailing_contact_action_sms
+#, []
 msgid "Mailing List Contacts"
-msgstr ""
+msgstr "Kontakti mailing liste"
 
-#. module: mass_mailing_sms
-#: model:ir.actions.act_window,name:mass_mailing_sms.mailing_list_action_sms
-#: model:ir.ui.menu,name:mass_mailing_sms.mailing_list_menu_sms
-#: model:ir.ui.menu,name:mass_mailing_sms.mass_mailing_sms_menu_contacts
+# model:
+# model:ir.actions.act_window,name:mass_mailing_sms.mailing_list_action_sms
+#, []
 msgid "Mailing Lists"
-msgstr ""
+msgstr "Liste za slanje mailova"
 
-#. module: mass_mailing_sms
-#: model:ir.model,name:mass_mailing_sms.model_mailing_trace
+# model: model:ir.model,name:mass_mailing_sms.model_mailing_trace
+#, []
 msgid "Mailing Statistics"
-msgstr ""
+msgstr "Statistika slanja pošte"
 
-#. module: mass_mailing_sms
-#: model:ir.model.fields,field_description:mass_mailing_sms.field_sms_tracker__mailing_trace_id
+# model:
+# model:ir.model.fields,field_description:mass_mailing_sms.field_sms_tracker__mailing_trace_id
+#, []
 msgid "Mailing Trace"
-msgstr ""
+msgstr "Trag mailinga"
 
-#. module: mass_mailing_sms
-#: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_mailing__mailing_type
+# model:
+# model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_mailing__mailing_type
+#, []
 msgid "Mailing Type"
-msgstr ""
+msgstr "Vrsta slanja pošte"
 
-#. module: mass_mailing_sms
-#: model_terms:ir.actions.act_window,help:mass_mailing_sms.mailing_contact_action_sms
+# model:
+# model_terms:ir.actions.act_window,help:mass_mailing_sms.mailing_contact_action_sms
+#, []
 msgid ""
 "Mailing contacts allow you to separate your marketing audience from your "
 "contact directory."
 msgstr ""
+"Kontakti za slanje pošte omogućuju vam da odvojite svoju marketinšku publiku"
+" od svog imenika kontakata."
 
-#. module: mass_mailing_sms
-#: model:ir.model.fields.selection,name:mass_mailing_sms.selection__utm_campaign__ab_testing_sms_winner_selection__manual
+# model:
+# model:ir.model.fields.selection,name:mass_mailing_sms.selection__utm_campaign__ab_testing_sms_winner_selection__manual
+#, []
 msgid "Manual"
-msgstr ""
+msgstr "Ručno"
 
-#. module: mass_mailing_sms
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_trace_view_form_sms
+# model:
+# model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_trace_view_form_sms
+#, []
 msgid "Marketing"
-msgstr ""
+msgstr "Marketing"
 
-#. module: mass_mailing_sms
-#: model:ir.model,name:mass_mailing_sms.model_mailing_mailing
-#: model:ir.model.fields,field_description:mass_mailing_sms.field_sms_sms__mailing_id
+# model: model:ir.model,name:mass_mailing_sms.model_mailing_mailing
+#, []
 msgid "Mass Mailing"
-msgstr ""
+msgstr "Grupna e-pošta"
 
-#. module: mass_mailing_sms
-#: model:ir.model.fields,field_description:mass_mailing_sms.field_utm_campaign__mailing_sms_ids
+# model:
+# model:ir.model.fields,field_description:mass_mailing_sms.field_utm_campaign__mailing_sms_ids
+#, []
 msgid "Mass SMS"
-msgstr ""
+msgstr "Masovni SMS"
 
-#. module: mass_mailing_sms
-#: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_contact__message_has_error
+# model:
+# model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_contact__message_has_error
+#, []
 msgid "Message Delivery error"
-msgstr ""
+msgstr "Greška u dostavi poruke"
 
-#. module: mass_mailing_sms
-#: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_contact__message_ids
+# model:
+# model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_contact__message_ids
+#, []
 msgid "Messages"
-msgstr ""
+msgstr "Poruke"
 
-#. module: mass_mailing_sms
-#: model:ir.model.fields.selection,name:mass_mailing_sms.selection__mailing_trace__failure_type__twilio_from_missing
+# model:
+# model:ir.model.fields.selection,name:mass_mailing_sms.selection__mailing_trace__failure_type__twilio_from_missing
+#, []
 msgid "Missing From Number"
-msgstr ""
+msgstr "Nedostaje broj pošiljaoca"
 
-#. module: mass_mailing_sms
-#: model:ir.model.fields.selection,name:mass_mailing_sms.selection__mailing_trace__failure_type__sms_number_missing
+# model:
+# model:ir.model.fields.selection,name:mass_mailing_sms.selection__mailing_trace__failure_type__sms_number_missing
+#, []
 msgid "Missing Number"
-msgstr ""
+msgstr "Nedostaje broj"
 
-#. module: mass_mailing_sms
-#: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_contact__mobile
+# model:
+# model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_contact__mobile
+#, []
 msgid "Mobile"
-msgstr ""
+msgstr "Mobitel"
 
-#. module: mass_mailing_sms
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_search_sms
+# model:
+# model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_search_sms
+#, []
 msgid "My SMS Marketing"
-msgstr ""
+msgstr "Moj SMS marketing"
 
-#. module: mass_mailing_sms
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_list_view_kanban
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.utm_campaign_view_form
+# model:
+# model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_list_view_kanban
+#, []
 msgid "New SMS"
 msgstr ""
 
-#. module: mass_mailing_sms
-#: model_terms:ir.actions.act_window,help:mass_mailing_sms.mailing_trace_report_action_sms
+# model:
+# model_terms:ir.actions.act_window,help:mass_mailing_sms.mailing_trace_report_action_sms
+#, []
 msgid "No data yet!"
-msgstr ""
+msgstr "Nema još podataka!"
 
-#. module: mass_mailing_sms
-#: model_terms:ir.actions.act_window,help:mass_mailing_sms.mailing_list_action_sms
+# model:
+# model_terms:ir.actions.act_window,help:mass_mailing_sms.mailing_list_action_sms
+#, []
 msgid ""
-"No need to import mailing lists, you can send SMS to contacts saved in other "
-"Odoo apps."
+"No need to import mailing lists, you can send SMS to contacts saved in other"
+" Odoo apps."
 msgstr ""
+"Nije potrebno uvoziti mailing liste, možete slati SMS kontaktima sačuvanim u"
+" drugim Odoo aplikacijama."
 
-#. module: mass_mailing_sms
-#: model:ir.model.fields.selection,name:mass_mailing_sms.selection__mailing_trace__failure_type__sms_not_allowed
+# model:
+# model:ir.model.fields.selection,name:mass_mailing_sms.selection__mailing_trace__failure_type__sms_not_allowed
+#, []
 msgid "Not Allowed"
-msgstr ""
+msgstr "Nije dozvoljeno"
 
-#. module: mass_mailing_sms
-#: model:ir.model.fields.selection,name:mass_mailing_sms.selection__mailing_trace__failure_type__sms_not_delivered
+# model:
+# model:ir.model.fields.selection,name:mass_mailing_sms.selection__mailing_trace__failure_type__sms_not_delivered
+#, []
 msgid "Not Delivered"
-msgstr ""
+msgstr "Nije isporučeno"
 
-#. module: mass_mailing_sms
-#: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_trace__sms_number
+# model:
+# model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_trace__sms_number
+#, []
 msgid "Number"
-msgstr ""
+msgstr "Broj"
 
-#. module: mass_mailing_sms
-#: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_contact__message_needaction_counter
+# model:
+# model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_contact__message_needaction_counter
+#, []
 msgid "Number of Actions"
-msgstr ""
+msgstr "Broj akcija"
 
-#. module: mass_mailing_sms
-#: model:ir.model.fields,field_description:mass_mailing_sms.field_utm_campaign__mailing_sms_count
+# model:
+# model:ir.model.fields,field_description:mass_mailing_sms.field_utm_campaign__mailing_sms_count
+#, []
 msgid "Number of Mass SMS"
-msgstr ""
+msgstr "Broj masovnih SMS-ova"
 
-#. module: mass_mailing_sms
-#: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_contact__message_has_error_counter
+# model:
+# model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_contact__message_has_error_counter
+#, []
 msgid "Number of errors"
-msgstr ""
+msgstr "Broj grešaka"
 
-#. module: mass_mailing_sms
-#: model:ir.model.fields,help:mass_mailing_sms.field_mailing_contact__message_needaction_counter
+# model:
+# model:ir.model.fields,help:mass_mailing_sms.field_mailing_contact__message_needaction_counter
+#, []
 msgid "Number of messages requiring action"
-msgstr ""
+msgstr "Broj poruka koje zahtijevaju akciju"
 
-#. module: mass_mailing_sms
-#: model:ir.model.fields,help:mass_mailing_sms.field_mailing_contact__message_has_error_counter
+# model:
+# model:ir.model.fields,help:mass_mailing_sms.field_mailing_contact__message_has_error_counter
+#, []
 msgid "Number of messages with delivery error"
-msgstr ""
+msgstr "Broj poruka sa greškom u dostavi"
 
-#. module: mass_mailing_sms
-#: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_sms_test__numbers
+# model:
+# model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_sms_test__numbers
+#, []
 msgid "Number(s)"
-msgstr ""
+msgstr "Broj(evi)"
 
-#. module: mass_mailing_sms
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_form_sms
+# model:
+# model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_form_sms
+#, []
 msgid ""
-"Once you send these text messages, they'll be making a grand entrance in all "
-"pockets, creating quite the bzzzzz!"
+"Once you send these text messages, they'll be making a grand entrance in all"
+" pockets, creating quite the bzzzzz!"
 msgstr ""
+"Kada pošaljete ove SMS poruke, napravit će veliki ulazak u sve džepove, "
+"stvarajući pravi bzzzzz!"
 
-#. module: mass_mailing_sms
-#. odoo-python
-#: code:addons/mass_mailing_sms/controllers/main.py:0
+# model: code:addons/mass_mailing_sms/controllers/main.py
+#, []
 msgid "Oops! Number not found"
-msgstr ""
+msgstr "Ups! Broj nije pronađen"
 
-#. module: mass_mailing_sms
-#. odoo-python
-#: code:addons/mass_mailing_sms/controllers/main.py:0
+# model: code:addons/mass_mailing_sms/controllers/main.py
+#, []
 msgid ""
 "Oops! The phone number seems to be incorrect. Please make sure to include "
 "the country code."
 msgstr ""
+"Ups! Broj telefona izgleda neispravno. Provjerite da li ste uključili "
+"pozivni broj zemlje."
 
-#. module: mass_mailing_sms
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_trace_view_tree_sms
+# model:
+# model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_trace_view_tree_sms
+#, []
 msgid "Open Recipient"
-msgstr ""
+msgstr "Otvori primatelja"
 
-#. module: mass_mailing_sms
-#: model:ir.model.fields.selection,name:mass_mailing_sms.selection__mailing_trace__failure_type__sms_optout
+# model:
+# model:ir.model.fields.selection,name:mass_mailing_sms.selection__mailing_trace__failure_type__sms_optout
+#, []
 msgid "Opted Out"
-msgstr ""
+msgstr "Odjavljen"
 
-#. module: mass_mailing_sms
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_form_sms
+# model:
+# model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_form_sms
+#, []
 msgid "Options"
-msgstr ""
+msgstr "Opcije"
 
-#. module: mass_mailing_sms
-#: model:ir.model,name:mass_mailing_sms.model_sms_sms
+# model: model:ir.model,name:mass_mailing_sms.model_sms_sms
+#, []
 msgid "Outgoing SMS"
-msgstr ""
+msgstr "Odlazni SMS"
 
-#. module: mass_mailing_sms
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_contact_view_form
+# model:
+# model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_contact_view_form
+#, []
 msgid "Phone"
 msgstr ""
 
-#. module: mass_mailing_sms
-#: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_contact__phone_sanitized_blacklisted
+# model:
+# model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_contact__phone_sanitized_blacklisted
+#, []
 msgid "Phone Blacklisted"
-msgstr ""
+msgstr "Telefon je stavljen na crnu listu"
 
-#. module: mass_mailing_sms
-#: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_contact__phone_mobile_search
+# model:
+# model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_contact__phone_mobile_search
+#, []
 msgid "Phone Number"
-msgstr ""
+msgstr "Broj telefona"
 
-#. module: mass_mailing_sms
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.blacklist_main
+# model: model_terms:ir.ui.view,arch_db:mass_mailing_sms.blacklist_main
+#, []
 msgid "Please confirm your phone number to unsubscribe :"
-msgstr ""
+msgstr "Potvrdite svoj broj telefona za odjavu:"
 
-#. module: mass_mailing_sms
-#. odoo-python
-#: code:addons/mass_mailing_sms/models/mailing_mailing.py:0
+# model: code:addons/mass_mailing_sms/models/mailing_mailing.py
+#, []
 msgid "RECEIVED (%i)"
-msgstr ""
+msgstr "PRIMLJENO (%i)"
 
-#. module: mass_mailing_sms
-#: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_contact__rating_ids
+# model:
+# model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_contact__rating_ids
+#, []
 msgid "Ratings"
-msgstr ""
+msgstr "Ocjene"
 
-#. module: mass_mailing_sms
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_form_sms
+# model:
+# model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_form_sms
+#, []
 msgid "Ready to unleash your text messages?"
-msgstr ""
+msgstr "Spremni za slanje SMS poruka?"
 
-#. module: mass_mailing_sms
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_tree_sms
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.utm_campaign_view_form
+# model:
+# model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_tree_sms
+#, []
 msgid "Recipients"
-msgstr ""
+msgstr "Primaoci"
 
-#. module: mass_mailing_sms
-#: model:ir.model.fields.selection,name:mass_mailing_sms.selection__mailing_trace__failure_type__sms_rejected
+# model:
+# model:ir.model.fields.selection,name:mass_mailing_sms.selection__mailing_trace__failure_type__sms_rejected
+#, []
 msgid "Rejected"
-msgstr ""
+msgstr "Odbijeno"
 
-#. module: mass_mailing_sms
-#. odoo-python
-#: code:addons/mass_mailing_sms/models/mailing_mailing.py:0
+# model: code:addons/mass_mailing_sms/models/mailing_mailing.py
+#, []
 msgid "Report for %(expected)i %(mailing_type)s Sent"
-msgstr ""
+msgstr "Izvještaj za %(expected)i poslanih %(mailing_type)s"
 
-#. module: mass_mailing_sms
-#: model:ir.ui.menu,name:mass_mailing_sms.mass_mailing_sms_menu_reporting
+# model:
+# model:ir.ui.menu,name:mass_mailing_sms.mass_mailing_sms_menu_reporting
+#, []
 msgid "Reporting"
-msgstr ""
+msgstr "Izvještavanje"
 
-#. module: mass_mailing_sms
-#: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_trace__sms_id
-#: model:ir.model.fields.selection,name:mass_mailing_sms.selection__mailing_mailing__mailing_type__sms
-#: model:ir.model.fields.selection,name:mass_mailing_sms.selection__mailing_trace__trace_type__sms
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.utm_campaign_view_form
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.utm_campaign_view_kanban
+# model:
+# model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_trace__sms_id
+#, []
 msgid "SMS"
-msgstr ""
+msgstr "SMS"
 
-#. module: mass_mailing_sms
-#: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_mailing__body_plaintext
+# model:
+# model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_mailing__body_plaintext
+#, []
 msgid "SMS Body"
-msgstr ""
+msgstr "Tijelo SMS-a"
 
-#. module: mass_mailing_sms
-#: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_list__contact_count_sms
+# model:
+# model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_list__contact_count_sms
+#, []
 msgid "SMS Contacts"
-msgstr ""
+msgstr "SMS kontakti"
 
-#. module: mass_mailing_sms
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_form_sms
+# model:
+# model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_form_sms
+#, []
 msgid "SMS Content"
-msgstr ""
+msgstr "Sadržaj SMS poruke"
 
-#. module: mass_mailing_sms
-#: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_contact__message_has_sms_error
+# model:
+# model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_contact__message_has_sms_error
+#, []
 msgid "SMS Delivery error"
-msgstr ""
+msgstr "Greška u dostavi SMS-a"
 
-#. module: mass_mailing_sms
-#: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_trace__sms_id_int
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_trace_view_form
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_trace_view_form_sms
+# model:
+# model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_trace__sms_id_int
+#, []
 msgid "SMS ID"
-msgstr ""
+msgstr "SMS ID"
 
-#. module: mass_mailing_sms
-#. odoo-python
-#: code:addons/mass_mailing_sms/models/res_users.py:0
-#: model:ir.actions.act_window,name:mass_mailing_sms.mailing_mailing_action_sms
-#: model:ir.ui.menu,name:mass_mailing_sms.mass_mailing_sms_menu_mass_sms
-#: model:ir.ui.menu,name:mass_mailing_sms.mass_mailing_sms_menu_root
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_tree_sms
+# model: code:addons/mass_mailing_sms/models/res_users.py
+#, []
 msgid "SMS Marketing"
-msgstr ""
+msgstr "SMS marketing"
 
-#. module: mass_mailing_sms
-#: model:ir.actions.act_window,name:mass_mailing_sms.mailing_trace_report_action_sms
+# model:
+# model:ir.actions.act_window,name:mass_mailing_sms.mailing_trace_report_action_sms
+#, []
 msgid "SMS Marketing Analysis"
-msgstr ""
+msgstr "Analiza SMS marketinga"
 
-#. module: mass_mailing_sms
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.blacklist_number
+# model: model_terms:ir.ui.view,arch_db:mass_mailing_sms.blacklist_number
+#, []
 msgid "SMS Subscription"
-msgstr ""
+msgstr "Pretplata na SMS"
 
-#. module: mass_mailing_sms
-#: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_mailing__sms_template_id
+# model:
+# model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_mailing__sms_template_id
+#, []
 msgid "SMS Template"
-msgstr ""
+msgstr "Predložak SMS poruke"
 
-#. module: mass_mailing_sms
-#. odoo-python
-#: code:addons/mass_mailing_sms/models/mailing_mailing.py:0
+# model: code:addons/mass_mailing_sms/models/mailing_mailing.py
+#, []
 msgid "SMS Text Message"
-msgstr ""
+msgstr "SMS poruka"
 
-#. module: mass_mailing_sms
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_trace_view_form_sms
+# model:
+# model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_trace_view_form_sms
+#, []
 msgid "SMS Trace"
-msgstr ""
+msgstr "SMS trag"
 
-#. module: mass_mailing_sms
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_trace_view_tree_sms
+# model:
+# model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_trace_view_tree_sms
+#, []
 msgid "SMS Traces"
-msgstr ""
+msgstr "SMS tragovi"
 
-#. module: mass_mailing_sms
-#: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_trace__sms_tracker_ids
+# model:
+# model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_trace__sms_tracker_ids
+#, []
 msgid "SMS Trackers"
-msgstr ""
+msgstr "Praćenje SMS-a"
 
-#. module: mass_mailing_sms
-#: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_mailing__ab_testing_sms_winner_selection
-#: model:ir.model.fields,field_description:mass_mailing_sms.field_utm_campaign__ab_testing_sms_winner_selection
+# model:
+# model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_mailing__ab_testing_sms_winner_selection
+#, []
 msgid "SMS Winner Selection"
-msgstr ""
+msgstr "Odabir pobjednika SMS-a"
 
-#. module: mass_mailing_sms
-#. odoo-python
-#: code:addons/mass_mailing_sms/wizard/sms_composer.py:0
+# model: code:addons/mass_mailing_sms/wizard/sms_composer.py
+#, []
 msgid "STOP SMS: %(unsubscribe_url)s"
-msgstr ""
+msgstr "STOP SMS: %(unsubscribe_url)s"
 
-#. module: mass_mailing_sms
-#: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_contact__phone_sanitized
+# model:
+# model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_contact__phone_sanitized
+#, []
 msgid "Sanitized Number"
-msgstr ""
+msgstr "Sanirani broj"
 
-#. module: mass_mailing_sms
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_form_sms
+# model:
+# model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_form_sms
+#, []
 msgid "Send"
-msgstr ""
+msgstr "Pošalji"
 
-#. module: mass_mailing_sms
-#: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_mailing__sms_force_send
+# model:
+# model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_mailing__sms_force_send
+#, []
 msgid "Send Directly"
-msgstr ""
+msgstr "Pošalji izravno"
 
-#. module: mass_mailing_sms
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_form_sms
+# model:
+# model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_form_sms
+#, []
 msgid "Send Now"
-msgstr ""
+msgstr "Pošalji odmah"
 
-#. module: mass_mailing_sms
-#: model:ir.model,name:mass_mailing_sms.model_sms_composer
+# model: model:ir.model,name:mass_mailing_sms.model_sms_composer
+#, []
 msgid "Send SMS Wizard"
-msgstr ""
+msgstr "Čarobnjak za slanje SMS-a"
 
-#. module: mass_mailing_sms
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_sms_test_view_form
+# model:
+# model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_sms_test_view_form
+#, []
 msgid "Send Test"
-msgstr ""
+msgstr "Pošalji test"
 
-#. module: mass_mailing_sms
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_sms_test_view_form
+# model:
+# model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_sms_test_view_form
+#, []
 msgid "Send a Sample SMS"
-msgstr ""
+msgstr "Pošalji uzorak SMS-a"
 
-#. module: mass_mailing_sms
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_sms_test_view_form
+# model:
+# model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_sms_test_view_form
+#, []
 msgid "Send a sample SMS for testing purpose to the numbers below."
-msgstr ""
+msgstr "Pošaljite primjer SMS poruke u svrhu testiranja na donje brojeve."
 
-#. module: mass_mailing_sms
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_form_sms
+# model:
+# model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_form_sms
+#, []
 msgid "Send to all"
-msgstr ""
+msgstr "Pošalji svima"
 
-#. module: mass_mailing_sms
-#: model:ir.model.fields.selection,name:mass_mailing_sms.selection__mailing_trace__failure_type__sms_server
+# model:
+# model:ir.model.fields.selection,name:mass_mailing_sms.selection__mailing_trace__failure_type__sms_server
+#, []
 msgid "Server Error"
-msgstr ""
+msgstr "Greška poslužitelja"
 
-#. module: mass_mailing_sms
-#: model:ir.model.fields,field_description:mass_mailing_sms.field_sms_sms__mailing_trace_ids
+# model:
+# model:ir.model.fields,field_description:mass_mailing_sms.field_sms_sms__mailing_trace_ids
+#, []
 msgid "Statistics"
-msgstr ""
+msgstr "Statistike"
 
-#. module: mass_mailing_sms
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_trace_view_form_sms
+# model:
+# model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_trace_view_form_sms
+#, []
 msgid "Status"
-msgstr ""
+msgstr "Status"
 
-#. module: mass_mailing_sms
-#: model:ir.model,website_form_label:mass_mailing_sms.model_mailing_contact
+# model:
+# model:ir.model,website_form_label:mass_mailing_sms.model_mailing_contact
+#, []
 msgid "Subscribe to Newsletter"
-msgstr ""
+msgstr "Prijavi se na newsletter"
 
-#. module: mass_mailing_sms
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_trace_view_form_sms
+# model:
+# model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_trace_view_form_sms
+#, []
 msgid "Test"
-msgstr ""
+msgstr "Test"
 
-#. module: mass_mailing_sms
-#. odoo-python
-#: code:addons/mass_mailing_sms/models/mailing_mailing.py:0
-#: model:ir.actions.act_window,name:mass_mailing_sms.mailing_sms_test_action
+# model: code:addons/mass_mailing_sms/models/mailing_mailing.py
+#, []
 msgid "Test Mailing"
-msgstr ""
+msgstr "Testni mailing"
 
-#. module: mass_mailing_sms
-#: model:ir.model,name:mass_mailing_sms.model_mailing_sms_test
+# model: model:ir.model,name:mass_mailing_sms.model_mailing_sms_test
+#, []
 msgid "Test SMS Mailing"
-msgstr ""
+msgstr "Testno slanje SMS-a"
 
-#. module: mass_mailing_sms
-#. odoo-python
-#: code:addons/mass_mailing_sms/wizard/mailing_sms_test.py:0
+# model: code:addons/mass_mailing_sms/wizard/mailing_sms_test.py
+#, []
 msgid "Test SMS could not be sent to %(destination)s: %(state)s"
 msgstr ""
+"Testna SMS poruka nije mogla biti poslana na %(destination)s: %(state)s"
 
-#. module: mass_mailing_sms
-#. odoo-python
-#: code:addons/mass_mailing_sms/wizard/mailing_sms_test.py:0
+# model: code:addons/mass_mailing_sms/wizard/mailing_sms_test.py
+#, []
 msgid "Test SMS skipped those numbers as they appear invalid: %(numbers)s"
 msgstr ""
+"Testna SMS poruka je preskočila te brojeve jer izgledaju nevažeće: "
+"%(numbers)s"
 
-#. module: mass_mailing_sms
-#. odoo-python
-#: code:addons/mass_mailing_sms/wizard/mailing_sms_test.py:0
+# model: code:addons/mass_mailing_sms/wizard/mailing_sms_test.py
+#, []
 msgid "Test SMS successfully sent to %s"
-msgstr ""
+msgstr "Testni SMS uspješno poslan na %s"
 
-#. module: mass_mailing_sms
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.blacklist_main
+# model: model_terms:ir.ui.view,arch_db:mass_mailing_sms.blacklist_main
+#, []
 msgid "There was an error when trying to unsubscribe"
-msgstr ""
+msgstr "Došlo je do pogreške prilikom pokušaja odjave"
 
-#. module: mass_mailing_sms
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_contact_view_form
+# model:
+# model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_contact_view_form
+#, []
 msgid ""
 "This phone number is blacklisted for SMS Marketing. Click to unblacklist."
 msgstr ""
+"Ovaj broj telefona je na crnoj listi za SMS marketing. Kliknite za "
+"uklanjanje s crne liste."
 
-#. module: mass_mailing_sms
-#: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_mailing__sms_subject
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_form_sms
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_tree_sms
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.utm_campaign_view_form
+# model:
+# model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_mailing__sms_subject
+#, []
 msgid "Title"
-msgstr ""
+msgstr "Naslov"
 
-#. module: mass_mailing_sms
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_tree_sms
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.utm_campaign_view_form
+# model:
+# model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_tree_sms
+#, []
 msgid "Total Sent"
-msgstr ""
+msgstr "Ukupno poslano"
 
-#. module: mass_mailing_sms
-#: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_trace__trace_type
+# model:
+# model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_trace__trace_type
+#, []
 msgid "Type"
-msgstr ""
+msgstr "Tip"
 
-#. module: mass_mailing_sms
-#: model:ir.model,name:mass_mailing_sms.model_utm_campaign
+# model: model:ir.model,name:mass_mailing_sms.model_utm_campaign
+#, []
 msgid "UTM Campaign"
-msgstr ""
+msgstr "UTM kampanja"
 
-#. module: mass_mailing_sms
-#: model:ir.model,name:mass_mailing_sms.model_utm_mixin
+# model: model:ir.model,name:mass_mailing_sms.model_utm_mixin
+#, []
 msgid "UTM Mixin"
 msgstr ""
 
-#. module: mass_mailing_sms
-#: model:ir.model.fields.selection,name:mass_mailing_sms.selection__mailing_trace__failure_type__sms_acc
+# model:
+# model:ir.model.fields.selection,name:mass_mailing_sms.selection__mailing_trace__failure_type__sms_acc
+#, []
 msgid "Unregistered Account"
-msgstr ""
+msgstr "Neregistrirani račun"
 
-#. module: mass_mailing_sms
-#: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_mailing__sms_has_unregistered_account
+# model:
+# model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_mailing__sms_has_unregistered_account
+#, []
 msgid "Unregistered IAP account"
-msgstr ""
+msgstr "Neregistrirani IAP račun"
 
-#. module: mass_mailing_sms
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_kanban_sms
+# model:
+# model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_kanban_sms
+#, []
 msgid "Unregistered account"
-msgstr ""
+msgstr "Neregistrirani račun"
 
-#. module: mass_mailing_sms
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.blacklist_main
+# model: model_terms:ir.ui.view,arch_db:mass_mailing_sms.blacklist_main
+#, []
 msgid "Unsubscribe"
-msgstr ""
+msgstr "Odjavi se"
 
-#. module: mass_mailing_sms
-#. odoo-python
-#: code:addons/mass_mailing_sms/models/mailing_mailing.py:0
+# model: code:addons/mass_mailing_sms/models/mailing_mailing.py
+#, []
 msgid "Unsupported %s for mass SMS"
-msgstr ""
+msgstr "Nepodržan %s za masovni SMS"
 
-#. module: mass_mailing_sms
-#: model:ir.model,name:mass_mailing_sms.model_res_users
+# model: model:ir.model,name:mass_mailing_sms.model_res_users
+#, []
 msgid "User"
-msgstr ""
+msgstr "Korisnik"
 
-#. module: mass_mailing_sms
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_contact_view_search
+# model:
+# model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_contact_view_search
+#, []
 msgid "Valid SMS Recipients"
-msgstr ""
+msgstr "Važeći primatelji SMS-a"
 
-#. module: mass_mailing_sms
-#: model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_contact__website_message_ids
+# model:
+# model:ir.model.fields,field_description:mass_mailing_sms.field_mailing_contact__website_message_ids
+#, []
 msgid "Website Messages"
-msgstr ""
+msgstr "Poruke web stranice"
 
-#. module: mass_mailing_sms
-#: model:ir.model.fields,help:mass_mailing_sms.field_mailing_contact__website_message_ids
+# model:
+# model:ir.model.fields,help:mass_mailing_sms.field_mailing_contact__website_message_ids
+#, []
 msgid "Website communication history"
-msgstr ""
+msgstr "Historija komunikacije web stranice"
 
-#. module: mass_mailing_sms
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_form_sms
+# model:
+# model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_form_sms
+#, []
 msgid "Winner Selection"
-msgstr ""
+msgstr "Odabir pobjednika"
 
-#. module: mass_mailing_sms
-#: model_terms:ir.actions.act_window,help:mass_mailing_sms.mailing_mailing_action_sms
+# model:
+# model_terms:ir.actions.act_window,help:mass_mailing_sms.mailing_mailing_action_sms
+#, []
 msgid ""
-"Write an appealing SMS Text Message, define recipients and track its results."
+"Write an appealing SMS Text Message, define recipients and track its "
+"results."
 msgstr ""
+"Napišite privlačnu SMS tekstualnu poruku, definirajte primatelje i pratite "
+"njezine rezultate."
 
-#. module: mass_mailing_sms
-#: model:ir.model.fields.selection,name:mass_mailing_sms.selection__mailing_trace__failure_type__sms_number_format
+# model:
+# model:ir.model.fields.selection,name:mass_mailing_sms.selection__mailing_trace__failure_type__sms_number_format
+#, []
 msgid "Wrong Number Format"
-msgstr ""
+msgstr "Pogrešan format broja"
 
-#. module: mass_mailing_sms
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.blacklist_main
+# model: model_terms:ir.ui.view,arch_db:mass_mailing_sms.blacklist_main
+#, []
 msgid "e.g. \"+1 (555) 123-4567\""
-msgstr ""
+msgstr "npr. \"+1 (555) 123-4567\""
 
-#. module: mass_mailing_sms
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_form_sms
+# model:
+# model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_mailing_view_form_sms
+#, []
 msgid "e.g. Black Friday SMS coupon"
-msgstr ""
+msgstr "npr. SMS kupon za Crni petak"
 
-#. module: mass_mailing_sms
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.blacklist_number
+# model: model_terms:ir.ui.view,arch_db:mass_mailing_sms.blacklist_number
+#, []
 msgid "has been successfully blacklisted"
-msgstr ""
+msgstr "je uspješno stavljen na crnu listu"
 
-#. module: mass_mailing_sms
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.blacklist_number
+# model: model_terms:ir.ui.view,arch_db:mass_mailing_sms.blacklist_number
+#, []
 msgid "has been successfully removed from"
-msgstr ""
+msgstr "je uspješno uklonjen iz"
 
-#. module: mass_mailing_sms
-#: model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_contact_view_tree
+# model:
+# model_terms:ir.ui.view,arch_db:mass_mailing_sms.mailing_contact_view_tree
+#, []
 msgid "📵 Blacklisted"
 msgstr ""
