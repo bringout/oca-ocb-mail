@@ -599,7 +599,7 @@ msgstr "Chrome"
 # code:addons/im_livechat/static/src/embed/common/feedback_panel/feedback_panel.xml
 #, []
 msgid "Close"
-msgstr "Amortizovano"
+msgstr "Zatvori"
 
 # model:
 # code:addons/im_livechat/static/src/core/common/thread_actions_patch.js
