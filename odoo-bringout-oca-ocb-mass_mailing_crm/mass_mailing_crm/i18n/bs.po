@@ -143,3 +143,20 @@ msgstr "ID"
 #: model:ir.model,name:mass_mailing_crm.model_crm_lead
 msgid "Lead"
 msgstr "Lead"
+
+#. module: mass_mailing_crm
+#: code:addons/mass_mailing_crm/models/mailing_mailing.py:0
+msgid "Lead Recall"
+msgstr ""
+
+#. module: mass_mailing_crm
+#: code:addons/mass_mailing_crm/models/mailing_mailing.py:0
+msgid "Learn More"
+msgstr ""
+
+#. module: mass_mailing_crm
+#: code:addons/mass_mailing_crm/models/mailing_mailing.py:0
+msgid ""
+"Looking to turn your mailings into leads? Use your sales team's email as the"
+" reply-to address."
+msgstr ""

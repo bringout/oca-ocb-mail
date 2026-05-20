@@ -206,7 +206,7 @@ msgstr "Može ponovo poslati"
 #. module: sms
 #: model_terms:ir.ui.view,arch_db:sms.sms_account_code_view_form
 msgid "Cancel"
-msgstr "Otkaži"
+msgstr "Odustani"
 
 # taken from hr.po
 #. module: sms
@@ -299,7 +299,7 @@ msgstr "Odbaci"
 #. module: sms
 #: model:ir.model.fields,field_description:sms.field_iap_account__display_name
 msgid "Display Name"
-msgstr "Naziv za prikaz"
+msgstr "Naziv prikaza"
 
 # taken from hr.po
 #. module: sms
@@ -533,19 +533,19 @@ msgstr "Jezik"
 #. module: sms
 #: model:ir.model.fields,field_description:sms.field_sms_composer____last_update
 msgid "Last Modified on"
-msgstr "Zadnja izmjena"
+msgstr "Zadnji put izmijenjeno"
 
 # taken from hr.po
 #. module: sms
 #: model:ir.model.fields,field_description:sms.field_sms_account_code__write_uid
 msgid "Last Updated by"
-msgstr "Zadnji ažurirao"
+msgstr "Zadnji put ažurirao"
 
 # taken from hr.po
 #. module: sms
 #: model:ir.model.fields,field_description:sms.field_sms_account_code__write_date
 msgid "Last Updated on"
-msgstr "Zadnje ažurirano"
+msgstr "Zadnji put ažurirano"
 
 #. module: sms
 #: model:ir.model.fields,field_description:sms.field_sms_sms__mail_message_id
@@ -1928,3 +1928,38 @@ msgstr ""
 #: code:addons/sms/tools/sms_api.py:0
 msgid "Your sms account has not been activated yet."
 msgstr "Vaš SMS račun još nije aktiviran."
+
+#. module: sms
+#: model:ir.model.fields.selection,name:sms.selection__sms_composer__sms_type__alert
+msgid "Alert"
+msgstr "Upozorenje"
+
+#. module: sms
+#: model:ir.model,name:sms.model_res_company
+msgid "Company"
+msgstr ""
+
+#. module: sms
+#: model:ir.model,name:sms.model_mail_followers
+msgid "Document Follower"
+msgstr "Pratilac dokumenta"
+
+#. module: sms
+#: model:ir.model.fields.selection,name:sms.selection__sms_composer__sms_type__marketing
+msgid "Marketing"
+msgstr ""
+
+#. module: sms
+#: model:ir.model,name:sms.model_mail_notification
+msgid "Message Notification"
+msgstr "Obavještenje o poruci"
+
+#. module: sms
+#: model:ir.model,name:sms.model_ir_model
+msgid "Model"
+msgstr "Modeli"
+
+#. module: sms
+#: model:ir.model.fields,field_description:sms.field_sms_composer__sms_type
+msgid "Sms Type"
+msgstr ""

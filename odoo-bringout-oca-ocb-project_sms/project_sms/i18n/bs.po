@@ -112,3 +112,8 @@ msgstr ""
 "        !!! Postavi zadatku hitan prioritet\n"
 "\n"
 "        Pazite da koristite ispravan format i redoslijed npr. Improve the configuration screen 5h #feature #v16 @Mitchell !"
+
+#. module: project_sms
+#: model_terms:ir.ui.view,arch_db:project_sms.project_project_stage_view_form_inherit_project_sms
+msgid "No text message"
+msgstr ""

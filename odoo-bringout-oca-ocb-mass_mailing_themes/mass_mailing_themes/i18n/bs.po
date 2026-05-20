@@ -1871,3 +1871,15 @@ msgstr "promijenili smo naš poslovni model"
 #: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
 msgid "with 1549% growth of the turnover between 2007 and 2011)."
 msgstr "sa rastom prometa od 1549% između 2007. i 2011.)."
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_promotion_template
+msgid ""
+"<span style=\"font-weight: bolder;\">View in Browser</span>&amp;nbsp;<span "
+"class=\"fa fa-external-link\"/>"
+msgstr ""
+
+#. module: mass_mailing_themes
+#: model_terms:ir.ui.view,arch_db:mass_mailing_themes.theme_newsletter_template
+msgid "View in Browser"
+msgstr ""
